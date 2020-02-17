@@ -1,0 +1,32 @@
+.header {
+    font-size: 1.4rem;
+    height: 10rem;
+    display: flex;
+    background-color: white;
+    //to align elements along the main axes
+    justify-content: space-between;
+    //to align elements along the cross axes
+    align-self: stretch;
+    border-bottom: 2px solid grey;
+    box-shadow: 0 0.2rem 0.1rem grey;
+}
+
+.container {
+    //if not enough space, then 100% of the viewport width
+   max-width: 120rem;
+   margin: 8rem auto;
+   background-color: lightblue;
+   box-shadow: black;
+
+   min-height: 50rem;
+   
+}
+
+.logo {
+    height: 1.3rem;
+    margin-left: 2rem;
+    align-self: center;
+}
+
+
+

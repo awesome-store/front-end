@@ -1,0 +1,55 @@
+/* selecting each and every element on the page and applying reset to it */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /*border box inherited from body*/
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /*easier to calculate props: total  width and height will include paddings */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  font-size: 1.4rem;
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  border-bottom: 2px solid grey;
+  -webkit-box-shadow: 0 0.2rem 0.1rem grey;
+          box-shadow: 0 0.2rem 0.1rem grey;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: lightblue;
+  -webkit-box-shadow: black;
+          box-shadow: black;
+  min-height: 50rem;
+}
+
+.logo {
+  height: 1.3rem;
+  margin-left: 2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=main.css.map */
