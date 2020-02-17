@@ -34,6 +34,10 @@ function Header() {
                     </ul>
                 </nav>
 
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search"/>
+                </form>
+
             </header>
         </div>
     );
