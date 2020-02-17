@@ -52,4 +52,33 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
 }
+
+.nav {
+  font-size: 1.4rem;
+  list-style: none;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__item {
+  position: relative;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.nav__link:link, .nav__link:visited {
+  color: grey;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 1.5rem 3rem;
+}
+
+.nav__link:hover {
+  color: silver;
+}
 /*# sourceMappingURL=main.css.map */
