@@ -22,10 +22,29 @@
    
 }
 
+//ICONS
 .logo {
     height: 1.3rem;
     margin-left: 2rem;
     align-self: center;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+
+    &__img {
+        //display: block;
+    }
+}
+
+.user {
+    display: flex;
+
+    &__dropdown {
+
+    }
 }
 
 

@@ -38,6 +38,15 @@ function Header() {
                     <input type="text" class="search__input" placeholder="Search"/>
                 </form>
 
+                <div class="cart">
+                    <img src={cart} alt="Cart photo" class="cart__img"/>
+                    <span>Items</span>
+                </div>
+
+                <div className="user">
+                    <img src={user} alt="User account" className="user__dropdown"/>
+                </div>
+
             </header>
         </div>
     );
