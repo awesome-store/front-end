@@ -31,23 +31,20 @@ body {
           justify-content: space-between;
   -ms-flex-item-align: stretch;
       align-self: stretch;
-  border-bottom: 2px solid grey;
   -webkit-box-shadow: 0 0.2rem 0.1rem grey;
           box-shadow: 0 0.2rem 0.1rem grey;
 }
 
 .container {
-  max-width: 120rem;
-  margin: 8rem auto;
+  max-width: 200rem;
   background-color: lightblue;
   -webkit-box-shadow: black;
           box-shadow: black;
-  min-height: 50rem;
 }
 
 .logo {
   height: 1.3rem;
-  margin-left: 2rem;
+  margin-left: 5rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -60,7 +57,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 4rem;
+  margin-right: 6rem;
+}
+
+.cart__img {
+  margin-right: 0.5rem;
 }
 
 .user {
@@ -69,10 +70,24 @@ body {
   display: flex;
 }
 
+.user__dropdown {
+  margin-right: 5rem;
+}
+
+.navigation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3rem;
+}
+
 .nav {
   font-size: 1.4rem;
   list-style: none;
-  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,5 +151,9 @@ body {
 
 .search__input:focus {
   background-color: lightgrey;
+}
+
+.content {
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */

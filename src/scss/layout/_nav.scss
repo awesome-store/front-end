@@ -1,11 +1,13 @@
 .navigation {
-
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
 }
 
 .nav {
     font-size: 1.4rem;
     list-style: none;
-    margin-top: 2rem;
     display: flex;
     
 

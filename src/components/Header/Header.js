@@ -46,7 +46,6 @@ function Header() {
                 <div className="user">
                     <img src={user} alt="User account" className="user__dropdown"/>
                 </div>
-
             </header>
         </div>
     );
