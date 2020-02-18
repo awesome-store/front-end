@@ -1,0 +1,36 @@
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.nav {
+    font-size: 1.4rem;
+    list-style: none;
+    display: flex;
+    
+
+    &__item {
+        position: relative;
+        
+        &:not(:last-child) {
+            margin-right: .5rem;
+        }
+    }
+
+    &__link:link,
+    &__link:visited {
+        color: grey;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        padding: 1.5rem 3rem;
+
+    }
+
+    &__link:hover {
+        color: silver;
+    }
+
+}

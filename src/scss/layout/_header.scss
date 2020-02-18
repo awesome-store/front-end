@@ -1,0 +1,49 @@
+.header {
+    font-size: 1.4rem;
+    height: 10rem;
+    display: flex;
+    background-color: white;
+    //to align elements along the main axes
+    justify-content: space-between;
+    //to align elements along the cross axes
+    align-self: stretch;
+    box-shadow: 0 0.2rem 0.1rem grey;
+}
+
+.container {
+    //if not enough space, then 100% of the viewport width
+   max-width: 200rem;
+   background-color: lightblue;
+   box-shadow: black;
+   
+}
+
+//ICONS
+.logo {
+    height: 1.3rem;
+    margin-left: 5rem;
+    align-self: center;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    margin-right: 6rem;
+
+    &__img {
+        //display: block;
+        margin-right: 0.5rem;
+    }
+}
+
+.user {
+    display: flex;
+
+    &__dropdown {
+        margin-right: 5rem;
+    }
+}
+
+
+
+
