@@ -19,6 +19,10 @@ body {
           box-sizing: border-box;
 }
 
+main {
+  height: 200vh;
+}
+
 .header {
   font-size: 1.4rem;
   height: 10vh;
@@ -156,5 +160,10 @@ body {
 .section-slideshow {
   height: 70vh;
   background-color: silver;
+}
+
+.banner {
+  height: 20vh;
+  background-color: #444444;
 }
 /*# sourceMappingURL=main.css.map */
