@@ -15,8 +15,31 @@
 }
 
 .heading-primary {
-
     font-weight: 800;
-    font-size: 3.2rem;
-    color: white;
+    font-size: 3.5rem;
+    color: $color-primary;
 }
+
+.products-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+        margin: 5rem;
+        height: 35rem;
+        width: 25rem;
+        background-color: slateblue;
+    }
+}
+
+.section-popular-products {
+    margin: 10rem 5rem;
+}
+
+.heading-secondary {
+    font-weight: 800;
+    font-size: 3rem;
+    color: $color-secondary-dark;
+}
+

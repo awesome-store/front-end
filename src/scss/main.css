@@ -178,8 +178,37 @@ main {
 
 .heading-primary {
   font-weight: 800;
-  font-size: 3.2rem;
-  color: white;
+  font-size: 3.5rem;
+  color: #FFFFFF;
+}
+
+.products-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products-cont__item {
+  margin: 5rem;
+  height: 35rem;
+  width: 25rem;
+  background-color: slateblue;
+}
+
+.section-popular-products {
+  margin: 10rem 5rem;
+}
+
+.heading-secondary {
+  font-weight: 800;
+  font-size: 3rem;
+  color: #444444;
 }
 
 .btn-store {
