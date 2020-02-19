@@ -6,8 +6,8 @@ function Home() {
             <section className="section-slideshow">
             </section>
             <div className="banner">
-                <h1 className="banner-ad">More Than 2 Millions Items Available In Store</h1>
-                <button className="btn-store">
+                <h1 className="heading-primary">More Than 2 Millions Items Available In Store</h1>
+                <button className="btn-store"> Store
                 </button>
             </div>
         </main>

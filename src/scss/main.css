@@ -165,5 +165,30 @@ main {
 .banner {
   height: 20vh;
   background-color: #444444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heading-primary {
+  font-weight: 800;
+  font-size: 3.2rem;
+  color: white;
+}
+
+.btn-store {
+  background-color: #FFD557;
+  height: 5rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 1.6rem;
 }
 /*# sourceMappingURL=main.css.map */

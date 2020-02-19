@@ -9,4 +9,14 @@
 .banner {
     height: 20vh;
     background-color: $color-secondary-dark;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.heading-primary {
+
+    font-weight: 800;
+    font-size: 3.2rem;
+    color: white;
 }
