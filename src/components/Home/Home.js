@@ -2,8 +2,11 @@ import React from 'react';
 
 function Home() {
     return (
-        <div class="content">
-        </div>
+        <main>
+            <section class="section-slideshow">
+            </section>
+            
+        </main>
     );
 }
 
