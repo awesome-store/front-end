@@ -1,45 +1,58 @@
 //////////////////////
 /////Home Page
 
-.section-slideshow {
-    height: 70vh;
+.section-categories {
+    height: 90vh;
     background-color: silver;
+    margin: 10rem 5rem;
 }
 
-.banner {
-    height: 20vh;
-    background-color: $color-secondary-dark;
+.categories-cont {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    //to wrap onto multiple lines
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__item {
+        margin: 2rem;
+        height: 20rem;
+        width: 20rem;
+        background-color: red;
+        display: flex;
+    }
+
+    &__item-cat {
+        align-self: flex-end;
+        font-size: 2.5rem;
+    }
 }
 
-.heading-primary {
-    font-weight: 800;
-    font-size: 3.5rem;
-    color: $color-primary;
+// .banner {
+//     height: 20vh;
+//     background-color: $color-secondary-dark;
+//     display: flex;
+//     justify-content: space-evenly;
+//     align-items: center;
+// }
+
+.section-popular-products {
+    margin: 10rem 5rem;
+    background-color: greenyellow;
+    height: 90vh;
 }
 
 .products-cont {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 
     &__item {
-        margin: 5rem;
-        height: 35rem;
+        margin: 2rem;
+        height: 25rem;
         width: 25rem;
         background-color: slateblue;
     }
 }
 
-.section-popular-products {
-    margin: 10rem 5rem;
-}
 
-.heading-secondary {
-    font-weight: 800;
-    font-size: 3rem;
-    color: $color-secondary-dark;
-}
 

@@ -19,8 +19,17 @@ body {
           box-sizing: border-box;
 }
 
-main {
-  height: 200vh;
+.heading-primary {
+  font-weight: 800;
+  font-size: 3.5rem;
+  color: #000000;
+}
+
+.heading-secondary {
+  font-weight: 800;
+  font-size: 3rem;
+  color: #444444;
+  padding: 2rem 5rem;
 }
 
 .header {
@@ -157,29 +166,43 @@ main {
   background-color: lightgrey;
 }
 
-.section-slideshow {
-  height: 70vh;
+.section-categories {
+  height: 90vh;
   background-color: silver;
+  margin: 10rem 5rem;
 }
 
-.banner {
-  height: 20vh;
-  background-color: #444444;
+.categories-cont {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.heading-primary {
-  font-weight: 800;
-  font-size: 3.5rem;
-  color: #FFFFFF;
+.categories-cont__item {
+  margin: 2rem;
+  height: 20rem;
+  width: 20rem;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.categories-cont__item-cat {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 2.5rem;
+}
+
+.section-popular-products {
+  margin: 10rem 5rem;
+  background-color: greenyellow;
+  height: 90vh;
 }
 
 .products-cont {
@@ -189,26 +212,15 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .products-cont__item {
-  margin: 5rem;
-  height: 35rem;
+  margin: 2rem;
+  height: 25rem;
   width: 25rem;
   background-color: slateblue;
-}
-
-.section-popular-products {
-  margin: 10rem 5rem;
-}
-
-.heading-secondary {
-  font-weight: 800;
-  font-size: 3rem;
-  color: #444444;
 }
 
 .btn-store {
