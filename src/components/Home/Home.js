@@ -45,44 +45,70 @@ function Home() {
                 </h2>
                 <div className="products-cont">
                     <div className="products-cont__item">
-
+                        <div className="products-cont__item-heading">Item</div>
+                        <div className="products-cont__item-stars">5</div>
+                        <div className="products-cont__item-price">0</div>
                     </div>
                     <div className="products-cont__item">
-
+                        <div className="products-cont__item-heading">Item</div>
+                        <div className="products-cont__item-stars">5</div>
+                        <div className="products-cont__item-price">0</div>
                     </div>
                     <div className="products-cont__item">
-
+                        <div className="products-cont__item-heading">Item</div>
+                        <div className="products-cont__item-stars">5</div>
+                        <div className="products-cont__item-price">0</div>
                     </div>
                     <div className="products-cont__item">
-
-                    </div>
-
-                    <div className="products-cont__item">
-
-                    </div>
-                    <div className="products-cont__item">
-
-                    </div>
-                    <div className="products-cont__item">
-
-                    </div>
-                    <div className="products-cont__item">
-
+                        <div className="products-cont__item-heading">Item</div>
+                        <div className="products-cont__item-stars">5</div>
+                        <div className="products-cont__item-price">0</div>
                     </div>
 
                     <div className="products-cont__item">
-
+                        <div className="products-cont__item-heading">Item</div>
+                        <div className="products-cont__item-stars">5</div>
+                        <div className="products-cont__item-price">0</div>
                     </div>
                     <div className="products-cont__item">
-
+                        <div className="products-cont__item-heading">Item</div>
+                        <div className="products-cont__item-stars">5</div>
+                        <div className="products-cont__item-price">0</div>
                     </div>
                     <div className="products-cont__item">
-
+                        <div className="products-cont__item-heading">Item</div>
+                        <div className="products-cont__item-stars">5</div>
+                        <div className="products-cont__item-price">0</div>
                     </div>
                     <div className="products-cont__item">
-
+                        <div className="products-cont__item-heading">Item</div>
+                        <div className="products-cont__item-stars">5</div>
+                        <div className="products-cont__item-price">0</div>
                     </div>
 
+                    <div className="products-cont__item">
+                        <div className="products-cont__item-heading">Item</div>
+                        <div className="products-cont__item-stars">5</div>
+                        <div className="products-cont__item-price">0</div>
+                    </div>
+                    <div className="products-cont__item">
+                        <div className="products-cont__item-heading">Item</div>
+                        <div className="products-cont__item-stars">5</div>
+                        <div className="products-cont__item-price">0</div>
+                    </div>
+                    <div className="products-cont__item">
+                        <div className="products-cont__item-heading">Item</div>
+                        <div className="products-cont__item-stars">5</div>
+                        <div className="products-cont__item-price">0</div>
+                    </div>
+                    <div className="products-cont__item">
+                        <div className="products-cont__item-heading">Item</div>
+                        <div className="products-cont__item-stars">5</div>
+                        <div className="products-cont__item-price">0</div>
+                    </div>
+                </div>
+                <div className="wrapper">
+                    <div className="btn-store">Click</div>
                 </div>
             </section>
         </main>

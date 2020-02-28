@@ -51,6 +51,22 @@
         height: 25rem;
         width: 25rem;
         background-color: slateblue;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        
+
+        &-heading {
+            margin-top: 1rem;
+        }
+
+        &-stars {
+            margin-top: 1rem;
+        }
+
+        &-price {
+            margin-top: 1rem;
+        }
     }
 }
 
