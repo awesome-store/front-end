@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import logo from "../../img/logo.png";
 import cart from "../../icons/cart.svg";
 import user from "../../icons/user.svg";
@@ -12,24 +13,24 @@ function Header() {
                 <nav class="navigation">
                     <ul class="nav">
                         <li class="nav__item">
-                            <a href="#" class="nav__link">
+                            <Link to="#" class="nav__link">
                                 <span>Home</span>
-                            </a>
+                            </Link>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">
+                            <Link to="#" class="nav__link">
                                 <span>Store</span>
-                            </a>
+                            </Link>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">
+                            <Link to="#" class="nav__link">
                                 <span>Tutorials</span>
-                            </a>
+                            </Link>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">
+                            <Link to="#" class="nav__link">
                                 <span>Help</span>
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>
@@ -39,7 +40,7 @@ function Header() {
                 </form>
 
                 <div class="cart">
-                    <img src={cart} alt="Cart photo" class="cart__img"/>
+                    <img src={cart} alt="Cart" class="cart__img"/>
                     <span>Items</span>
                 </div>
 
