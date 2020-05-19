@@ -79,16 +79,22 @@ a {
   color: #444444;
   padding: 2rem 5rem; }
 
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-dark-gray); }
+
 .header {
+  max-width: 1180px;
   font-size: 1.4rem;
   height: 10vh;
   display: flex;
-  background-color: var(--color-dark-gray);
   justify-content: space-between;
   align-self: stretch; }
-
-.container {
-  background-color: lightblue; }
+  .header__logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
 
 .logo {
   height: 3.3rem;

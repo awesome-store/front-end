@@ -1,20 +1,27 @@
+.container {
+    display: flex;
+    justify-content: center;
+    //if not enough space, then 100% of the viewport width
+    background-color: var(--color-dark-gray);
+    // box-shadow: black;
+}
+
 .header {
+    max-width: 1180px;
     font-size: 1.4rem;
     height: 10vh;
     display: flex;
-    background-color: var(--color-dark-gray);
     //to align elements along the main axes
     justify-content: space-between;
     //to align elements along the cross axes
     align-self: stretch;
     // box-shadow: 0 0.2rem 0.1rem grey;
-}
 
-.container {
-    //if not enough space, then 100% of the viewport width
-    // max-width: 200rem;
-    background-color: lightblue;
-    // box-shadow: black;
+    &__logo-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 //ICONS

@@ -8,7 +8,7 @@ function Header() {
     return (
         <div className="container">
             <header className="header">
-                <NavLink to="/">
+                <NavLink className="header__logo-container" to="/">
                     <img src={logo} alt="Awesome Store logo" className="logo"/>
                 </NavLink>
                 <nav className="navigation">
@@ -36,9 +36,9 @@ function Header() {
                     </ul>
                 </nav>
 
-                <form action="#" className="search">
+                {/* <form action="#" className="search">
                     <input type="text" className="search__input" placeholder="Search"/>
-                </form>
+                </form> */}
 
                 <div className="cart">
                     <img src={cart} alt="Cart" className="cart__img"/>
