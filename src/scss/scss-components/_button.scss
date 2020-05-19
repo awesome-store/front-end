@@ -7,12 +7,12 @@
 
 
 .btn-store {
-    background-color: $color-buttons;
+    background-color: var(--color-secondary);
     height: 5rem;
     width: 20rem;
     border-radius: 0.5rem;
     font-weight: 700;
-    color: $color-primary;
+    color: var(--color-primary);
 
     //text inside of the button
     font-size: 2rem;

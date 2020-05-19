@@ -71,12 +71,12 @@ a {
 .heading-primary {
   font-weight: 800;
   font-size: 3.5rem;
-  color: #000000; }
+  color: var(--color-black); }
 
 .heading-secondary {
   font-weight: 800;
   font-size: 3rem;
-  color: #444444;
+  color: var(--color-dark-gray);
   padding: 2rem 5rem; }
 
 .container {
@@ -210,12 +210,12 @@ a {
   justify-content: center; }
 
 .btn-store {
-  background-color: #FFD557;
+  background-color: var(--color-secondary);
   height: 5rem;
   width: 20rem;
   border-radius: 0.5rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: var(--color-primary);
   font-size: 2rem;
   text-align: center;
   line-height: 2.5; }

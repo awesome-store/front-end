@@ -1,12 +1,12 @@
 .heading-primary {
     font-weight: 800;
     font-size: 3.5rem;
-    color: $color-black;
+    color: var(--color-black);
 }
 
 .heading-secondary {
     font-weight: 800;
     font-size: 3rem;
-    color: $color-secondary-dark;
+    color: var(--color-dark-gray);
     padding: 2rem 5rem; 
 }
