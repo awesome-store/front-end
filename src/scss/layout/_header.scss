@@ -13,6 +13,7 @@
     display: flex;
     //to align elements along the main axes
     justify-content: space-between;
+    align-items: center;
     //to align elements along the cross axes
     align-self: stretch;
     // box-shadow: 0 0.2rem 0.1rem grey;
@@ -48,6 +49,13 @@
 
 .user {
     display: flex;
+    align-items: center;
+    height: 42px;
+    width: 42px;
+
+    &__user-name {
+        color: var(--color-primary);
+    }
 
     &__dropdown {
         margin-right: 5rem;

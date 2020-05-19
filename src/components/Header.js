@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from "../img/logo.png";
-import cart from "../icons/cart.svg";
-import user from "../icons/user.svg";
+import cart from "../img/icons/cart.svg";
+import user from "../img/avatar.png";
 
 function Header() {
     return (
@@ -42,10 +42,11 @@ function Header() {
 
                 <div className="cart">
                     <img src={cart} alt="Cart" className="cart__img"/>
-                    <span className="cart__text">Items</span>
+                    <span className="cart__text">12 items</span>
                 </div>
 
                 <div className="user">
+                    <span className="user__user-name">Mike Kainov</span>
                     <img src={user} alt="User account" className="user__dropdown"/>
                 </div>
             </header>
