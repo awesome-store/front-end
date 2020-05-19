@@ -25,7 +25,7 @@
 
     &__link:link,
     &__link:visited {
-        color: grey;
+        color: var(--color-primary);
         text-decoration: none;
         text-transform: uppercase;
         display: block;
