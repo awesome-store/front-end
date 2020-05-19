@@ -101,6 +101,8 @@ a {
   margin-right: 6rem; }
   .cart__img {
     margin-right: 0.5rem; }
+  .cart__text {
+    color: var(--color-primary); }
 
 .user {
   display: flex; }

@@ -41,7 +41,7 @@ function Header() {
 
                 <div class="cart">
                     <img src={cart} alt="Cart" class="cart__img"/>
-                    <span>Items</span>
+                    <span className="cart__text">Items</span>
                 </div>
 
                 <div className="user">
