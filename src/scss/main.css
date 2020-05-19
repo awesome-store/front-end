@@ -129,7 +129,6 @@ a {
   .nav__link:link, .nav__link:visited {
     color: var(--color-primary);
     text-decoration: none;
-    text-transform: uppercase;
     display: block;
     padding: 1.5rem 3rem; }
   .nav__link:hover {
