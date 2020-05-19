@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from "../../img/logo.png";
-import cart from "../../icons/cart.svg";
-import user from "../../icons/user.svg";
+import logo from "../img/logo.png";
+import cart from "../icons/cart.svg";
+import user from "../icons/user.svg";
 
 function Header() {
     return (
