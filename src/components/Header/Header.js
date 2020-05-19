@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from "../../img/logo.png";
 import cart from "../../icons/cart.svg";
 import user from "../../icons/user.svg";
@@ -8,29 +8,30 @@ function Header() {
     return (
         <div className="container">
             <header className="header">
-                <img src={logo} alt="Awesome Store logo" className="logo"/>
-
+                <NavLink to="/">
+                    <img src={logo} alt="Awesome Store logo" className="logo"/>
+                </NavLink>
                 <nav className="navigation">
                     <ul className="nav">
                         <li className="nav__item">
-                            <Link to="#" className="nav__link">
+                            <NavLink to="#" className="nav__link">
                                 <span>Home</span>
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className="nav__item">
-                            <Link to="#" className="nav__link">
+                            <NavLink to="#" className="nav__link">
                                 <span>Store</span>
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className="nav__item">
-                            <Link to="#" className="nav__link">
+                            <NavLink to="#" className="nav__link">
                                 <span>Tutorials</span>
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className="nav__item">
-                            <Link to="#" className="nav__link">
+                            <NavLink to="#" className="nav__link">
                                 <span>Help</span>
-                            </Link>
+                            </NavLink>
                         </li>
                     </ul>
                 </nav>
