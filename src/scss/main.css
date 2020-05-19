@@ -1,3 +1,12 @@
+:root {
+  --color-primary: #FFFFFF;
+  --color-secondary: #FFCE3A;
+  --color-black: #000000;
+  --color-gray: #879095;
+  --color-dark-gray: #353B3E;
+  --color-light-gray: #CFD7DC;
+  --color-gray-stroke: #979797; }
+
 /* selecting each and every element on the page and applying reset to it */
 *,
 *::after,
@@ -29,18 +38,15 @@ body {
   font-size: 1.4rem;
   height: 10vh;
   display: flex;
-  background-color: white;
+  background-color: var(--color-dark-gray);
   justify-content: space-between;
-  align-self: stretch;
-  box-shadow: 0 0.2rem 0.1rem grey; }
+  align-self: stretch; }
 
 .container {
-  max-width: 200rem;
-  background-color: lightblue;
-  box-shadow: black; }
+  background-color: lightblue; }
 
 .logo {
-  height: 1.3rem;
+  height: 3.3rem;
   margin-left: 5rem;
   align-self: center; }
 
