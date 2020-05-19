@@ -6,41 +6,41 @@ import user from "../../icons/user.svg";
 
 function Header() {
     return (
-        <div class="container">
-            <header class="header">
-                <img src={logo} alt="Awesome Store logo" class="logo"/>
+        <div className="container">
+            <header className="header">
+                <img src={logo} alt="Awesome Store logo" className="logo"/>
 
-                <nav class="navigation">
-                    <ul class="nav">
-                        <li class="nav__item">
-                            <Link to="#" class="nav__link">
+                <nav className="navigation">
+                    <ul className="nav">
+                        <li className="nav__item">
+                            <Link to="#" className="nav__link">
                                 <span>Home</span>
                             </Link>
                         </li>
-                        <li class="nav__item">
-                            <Link to="#" class="nav__link">
+                        <li className="nav__item">
+                            <Link to="#" className="nav__link">
                                 <span>Store</span>
                             </Link>
                         </li>
-                        <li class="nav__item">
-                            <Link to="#" class="nav__link">
+                        <li className="nav__item">
+                            <Link to="#" className="nav__link">
                                 <span>Tutorials</span>
                             </Link>
                         </li>
-                        <li class="nav__item">
-                            <Link to="#" class="nav__link">
+                        <li className="nav__item">
+                            <Link to="#" className="nav__link">
                                 <span>Help</span>
                             </Link>
                         </li>
                     </ul>
                 </nav>
 
-                <form action="#" class="search">
-                    <input type="text" class="search__input" placeholder="Search"/>
+                <form action="#" className="search">
+                    <input type="text" className="search__input" placeholder="Search"/>
                 </form>
 
-                <div class="cart">
-                    <img src={cart} alt="Cart" class="cart__img"/>
+                <div className="cart">
+                    <img src={cart} alt="Cart" className="cart__img"/>
                     <span className="cart__text">Items</span>
                 </div>
 
