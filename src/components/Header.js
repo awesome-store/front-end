@@ -2,8 +2,9 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from "../img/logo.png";
 import cart from "../img/icons/cart.svg";
-import avatar from "../img/avatar.png";
-import avatarDefault from "../img/avatar-default.svg";
+// import avatar from "../img/avatar.png";
+import avatarDefault from "../img/icons/avatar-default.svg";
+import hamburger from "../img/icons/menu.svg";
 
 function Header() {
     return (
@@ -61,10 +62,12 @@ function Header() {
                         <img src={avatarDefault} alt="User account" className=" user__avatar user__dropdown"/>
                     </div>
                 </div>
+                <div>
+                    <img src={hamburger} alt="Hamburger"/>
+                </div>
             </header>
         </div>
     );
 }
 
 export default Header;
-

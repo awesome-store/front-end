@@ -78,3 +78,15 @@
         height: 100%;
     }
 }
+
+@media only screen and (max-width: 1024px) {
+    .cart {
+        margin-left: 12rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation {
+        display: none;
+    }
+}
