@@ -36,5 +36,19 @@
     &__link:hover {
         color: silver;
     }
+}
 
+// .navigation-mobile {
+// }
+
+.navigation-mobile__hamburger {
+    width: 16px;
+    height: 16px;
+    margin: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation {
+        display: none;
+    }
 }

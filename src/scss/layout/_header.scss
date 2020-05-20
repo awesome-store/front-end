@@ -82,11 +82,34 @@
 @media only screen and (max-width: 1024px) {
     .cart {
         margin-left: 12rem;
+
+        &__text-number {
+            display: none;
+        }
+
+        &__text-items {
+            display: none;
+        }
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .navigation {
+    .header {
+        max-width: initial;
+        width: 100%;
+    }
+
+    .header {
+        &__logo-container {
+            margin-left: 2rem;
+        }
+    }
+
+    .cart {
+        margin-left: 0;
+    }
+
+    .user {
         display: none;
     }
 }

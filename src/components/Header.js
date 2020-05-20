@@ -44,8 +44,8 @@ function Header() {
 
                 <div className="cart">
                     <img src={cart} alt="Cart" className="cart__img"/>
-                    <p className="cart__text">12</p>
-                    <p className="cart__text">&nbsp;items</p>
+                    <p className="cart__text cart__text-number">12</p>
+                    <p className="cart__text cart__text-items">&nbsp;items</p>
                 </div>
 
                 {/* <div className="user">
@@ -62,8 +62,8 @@ function Header() {
                         <img src={avatarDefault} alt="User account" className=" user__avatar user__dropdown"/>
                     </div>
                 </div>
-                <div>
-                    <img src={hamburger} alt="Hamburger"/>
+                <div className="navigation-mobile">
+                    <img className="navigation-mobile__hamburger" src={hamburger} alt="Hamburger"/>
                 </div>
             </header>
         </div>
