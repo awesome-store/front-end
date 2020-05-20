@@ -28,14 +28,13 @@
 //ICONS
 .logo {
     height: 3.3rem;
-    margin-left: 5rem;
+    // margin-left: 5rem;
     align-self: center;
 }
 
 .cart {
     display: flex;
     align-items: center;
-    margin-right: 6rem;
 
     &__img {
         //display: block;
@@ -52,6 +51,7 @@
     align-items: center;
     height: 42px;
     width: 42px;
+    margin-left: 6rem;
 
     &__user-name {
         color: var(--color-primary);
