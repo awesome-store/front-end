@@ -1,8 +1,9 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from "../img/logo.png";
 import cart from "../img/icons/cart.svg";
-import user from "../img/avatar.png";
+import avatar from "../img/avatar.png";
+import avatarDefault from "../img/avatar-default.svg";
 
 function Header() {
     return (
@@ -42,12 +43,23 @@ function Header() {
 
                 <div className="cart">
                     <img src={cart} alt="Cart" className="cart__img"/>
-                    <span className="cart__text">12 items</span>
+                    <p className="cart__text">12</p>
+                    <p className="cart__text">&nbsp;items</p>
                 </div>
 
-                <div className="user">
+                {/* <div className="user">
                     <span className="user__user-name">Mike Kainov</span>
-                    <img src={user} alt="User account" className="user__dropdown"/>
+                    <div className="user__avatar-container">
+                        <img src={user} alt="User account" className="user__dropdown"/>
+                    </div>
+                </div> */}
+                <div className="user">
+                    <Link to="/" className="user__login-link">
+                        <p className="user__login">Login</p>
+                    </Link>
+                    <div className="user__avatar-container">
+                        <img src={avatarDefault} alt="User account" className=" user__avatar user__dropdown"/>
+                    </div>
                 </div>
             </header>
         </div>
