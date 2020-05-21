@@ -28,7 +28,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-/*  
+/*
     Below is part of reset.css
     http://meyerweb.com/eric/tools/css/reset/
     v2.0 | 20110126
@@ -91,6 +91,10 @@ a {
   font-size: 3rem;
   color: var(--color-dark-gray);
   padding: 2rem 5rem;
+}
+
+.footer {
+  background-color: var(--color-dark-gray);
 }
 
 .container {
@@ -356,6 +360,12 @@ a {
   line-height: 2.5;
 }
 
+/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */

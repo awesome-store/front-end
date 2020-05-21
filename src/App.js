@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
-import Home from './components/Home';
+import Footer from './components/Footer';
 import routes from './routes';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Header/>
       { routes }
+      <Footer/>
     </div>
   );
 }

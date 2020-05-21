@@ -5,7 +5,7 @@
     justify-content: center;
 
     &__input {
-        
+
         font-family: inherit;
         font-size: inherit;
         color: inherit;
@@ -14,7 +14,6 @@
         border-radius: 0.5rem;
         width: 50%;
         transition: all .2s;
-        
 
         &:focus {
             width: 70%;
@@ -25,7 +24,6 @@
         &::-webkit-input-placeholder {
             font-weight: 900;
         }
-        
     }
 
     &__input:focus {
