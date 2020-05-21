@@ -230,15 +230,23 @@ a {
   color: silver;
 }
 
-.navigation-mobile__hamburger {
-  width: 16px;
-  height: 16px;
-  margin: 2rem;
+.navigation-mobile {
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {
   .navigation {
     display: none;
+  }
+
+  .navigation-mobile {
+    display: block;
+  }
+
+  .navigation-mobile__hamburger {
+    width: 16px;
+    height: 16px;
+    margin: 2rem;
   }
 }
 .search {
@@ -348,6 +356,8 @@ a {
   line-height: 2.5;
 }
 
+/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
