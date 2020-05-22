@@ -81,13 +81,23 @@ a {
   padding: 2rem 5rem; }
 
 .footer {
-  background-color: var(--color-dark-gray); }
+  background-color: var(--color-dark-gray);
+  display: flex;
+  justify-content: center; }
+  .footer__footer-content {
+    max-width: 1180px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
   .footer__logo-container {
     width: 150px; }
   .footer__logo {
     width: 100%;
     height: auto; }
 
+@media only screen and (max-width: 768px) {
+  .footer__footer-content {
+    flex-direction: column; } }
 .container {
   display: flex;
   justify-content: center;
