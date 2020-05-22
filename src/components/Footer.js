@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '../img/logo.png';
-import icon from '../img/icons/cart.svg';
+import facebook from '../img/icons/facebook.svg';
+import twitter from '../img/icons/twitter.svg'
+import instagram from '../img/icons/instagram.svg';
 
 function Footer() {
     return (
@@ -21,9 +23,9 @@ function Footer() {
                     <h3>Follow us</h3>
                     <p>Let’s get connected!</p>
                     <div>
-                        <img src={icon}/>
-                        <img src={icon}/>
-                        <img src={icon}/>
+                        <img src={facebook}/>
+                        <img src={twitter}/>
+                        <img src={instagram}/>
                     </div>
                 </div>
                 <div>
