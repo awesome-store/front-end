@@ -7,8 +7,8 @@ function Footer() {
         <div className="footer">
             <div className="footer__footer-content">
                 <div>
-                    <div>
-                        <img src={logo}/>
+                    <div className="footer__logo-container">
+                        <img className="footer__logo" src={logo}/>
                     </div>
                     <div>
                         <p>12345 Valley Ave 1, Seattle, WA</p>
