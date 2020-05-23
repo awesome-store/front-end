@@ -86,9 +86,11 @@ a {
   justify-content: center; }
   .footer__footer-content {
     max-width: 1180px;
+    margin: 60px 0;
     width: 100%;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    color: var(--color-primary); }
   .footer__logo-container {
     width: 150px; }
   .footer__logo {
