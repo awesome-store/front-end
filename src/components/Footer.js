@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../img/logo.png';
 import facebook from '../img/icons/facebook.svg';
 import twitter from '../img/icons/twitter.svg'
@@ -23,9 +24,15 @@ function Footer() {
                     <h3>Follow us</h3>
                     <p>Let’s get connected!</p>
                     <div>
-                        <img src={facebook}/>
-                        <img src={twitter}/>
-                        <img src={instagram}/>
+                        <Link to="/">
+                            <img src={facebook} alt="facebook"/>
+                        </Link>
+                        <Link to="/">
+                            <img src={twitter} alt="twitter"/>
+                        </Link>
+                        <Link to="/">
+                            <img src={instagram} alt="instagram"/>
+                        </Link>
                     </div>
                 </div>
                 <div>
