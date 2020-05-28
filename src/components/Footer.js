@@ -11,7 +11,7 @@ function Footer() {
             <div className="footer__footer-content">
                 <div>
                     <div className="footer__logo-container">
-                        <img className="footer__logo" src={logo}/>
+                        <img className="footer__logo" src={logo} alt="logo"/>
                     </div>
                     <div>
                         <p>12345 Valley Ave 1, Seattle, WA</p>
@@ -38,7 +38,7 @@ function Footer() {
                 <div>
                     <h3>Sign up for our newsletter</h3>
                     <p>Get $10 off your next purchase.</p>
-                    <input/>
+                    <input type="email"/>
                 </div>
             </div>
         </div>
