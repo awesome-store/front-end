@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ExternalLink } from 'react-external-link';
 import logo from '../img/logo.png';
 import facebook from '../img/icons/facebook.svg';
 import twitter from '../img/icons/twitter.svg'
@@ -18,7 +19,9 @@ function Footer() {
                         <p>(800) 123-45-67</p>
                         <p>(800) 123-45-67</p>
                     </div>
-                    <p>mail@mail.com</p>
+                    <ExternalLink className="footer__link" href="mailto:mail@mail.com">
+                        <p>mail@mail.com</p>
+                    </ExternalLink>
                 </div>
                 <div>
                     <h3>Follow us</h3>

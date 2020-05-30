@@ -96,6 +96,8 @@ a {
   .footer__logo {
     width: 100%;
     height: auto; }
+  .footer__link {
+    color: var(--color-secondary); }
 
 @media only screen and (max-width: 768px) {
   .footer__footer-content {
