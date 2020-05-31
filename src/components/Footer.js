@@ -10,11 +10,11 @@ function Footer() {
     return (
         <div className="footer">
             <div className="footer__footer-content">
-                <div>
+                <div className="footer-content__column">
                     <div className="footer__logo-container">
                         <img className="footer__logo" src={logo} alt="logo"/>
                     </div>
-                    <div>
+                    <div className="footercs">
                         <p>12345 Valley Ave 1, Seattle, WA</p>
                         <p>(800) 123-45-67</p>
                         <p>(800) 123-45-67</p>
@@ -23,7 +23,7 @@ function Footer() {
                         <p>mail@mail.com</p>
                     </ExternalLink>
                 </div>
-                <div>
+                <div className="footer-content__column">
                     <h3>Follow us</h3>
                     <p>Let’s get connected!</p>
                     <div>
@@ -38,7 +38,7 @@ function Footer() {
                         </Link>
                     </div>
                 </div>
-                <div>
+                <div className="footer-content__column">
                     <h3>Sign up for our newsletter</h3>
                     <p>Get $10 off your next purchase.</p>
                     <input type="email"/>

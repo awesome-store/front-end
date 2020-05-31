@@ -14,6 +14,11 @@
 
     &__logo-container {
         width: 150px;
+        margin-bottom: 2.5rem;
+    }
+
+    &__contact-info-container {
+        margin-bottom: 2.5rem;
     }
 
     &__logo {
@@ -24,6 +29,12 @@
     &__link {
         color: var(--color-secondary);
     }
+}
+
+.footer-content__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 @media only screen and (max-width: 768px) {

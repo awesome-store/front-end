@@ -92,12 +92,20 @@ a {
     justify-content: space-between;
     color: var(--color-primary); }
   .footer__logo-container {
-    width: 150px; }
+    width: 150px;
+    margin-bottom: 2.5rem; }
+  .footer__contact-info-container {
+    margin-bottom: 2.5rem; }
   .footer__logo {
     width: 100%;
     height: auto; }
   .footer__link {
     color: var(--color-secondary); }
+
+.footer-content__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 @media only screen and (max-width: 768px) {
   .footer__footer-content {
