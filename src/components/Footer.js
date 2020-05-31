@@ -14,7 +14,7 @@ function Footer() {
                     <div className="footer__logo-container">
                         <img className="footer__logo" src={logo} alt="logo"/>
                     </div>
-                    <div className="footercs">
+                    <div className="footer__contact-info-container">
                         <p>12345 Valley Ave 1, Seattle, WA</p>
                         <p>(800) 123-45-67</p>
                         <p>(800) 123-45-67</p>
@@ -24,8 +24,8 @@ function Footer() {
                     </ExternalLink>
                 </div>
                 <div className="footer-content__column">
-                    <h3>Follow us</h3>
-                    <p>Let’s get connected!</p>
+                    <h3 className="footer__header">Follow us</h3>
+                    <p className="footer__text">Let’s get connected!</p>
                     <div>
                         <Link to="/">
                             <img src={facebook} alt="facebook"/>

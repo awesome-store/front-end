@@ -29,12 +29,16 @@
     &__link {
         color: var(--color-secondary);
     }
+
+    &__header {
+        font-weight: bold;
+    }
 }
 
 .footer-content__column {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 @media only screen and (max-width: 768px) {

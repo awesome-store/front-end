@@ -101,11 +101,13 @@ a {
     height: auto; }
   .footer__link {
     color: var(--color-secondary); }
+  .footer__header {
+    font-weight: bold; }
 
 .footer-content__column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: flex-start; }
 
 @media only screen and (max-width: 768px) {
   .footer__footer-content {
