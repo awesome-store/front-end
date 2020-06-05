@@ -14,7 +14,7 @@ function Home() {
                     <div className="categories-cont__item">
                         <p className="categories-cont__item-cat">Categories</p>
                     </div>
-                    <div className="categories-cont__item">
+                    {/* <div className="categories-cont__item">
                         <p className="categories-cont__item-cat">Categories</p>
                     </div>
                     <div className="categories-cont__item">
@@ -31,7 +31,7 @@ function Home() {
                     </div>
                     <div className="categories-cont__item">
                         <p className="categories-cont__item-cat">Categories</p>
-                    </div>
+                    </div> */}
                 </div>
             </section>
             {/* <div className="banner">
@@ -65,7 +65,7 @@ function Home() {
                         <div className="products-cont__item-price">0</div>
                     </div>
 
-                    <div className="products-cont__item">
+                    {/* <div className="products-cont__item">
                         <div className="products-cont__item-heading">Item</div>
                         <div className="products-cont__item-stars">5</div>
                         <div className="products-cont__item-price">0</div>
@@ -105,7 +105,7 @@ function Home() {
                         <div className="products-cont__item-heading">Item</div>
                         <div className="products-cont__item-stars">5</div>
                         <div className="products-cont__item-price">0</div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="wrapper">
                     <div className="btn-store">Click</div>

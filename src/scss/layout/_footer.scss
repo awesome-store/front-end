@@ -44,7 +44,6 @@
 
     &__logo-container {
         width: 150px;
-        // margin-bottom: 2.5rem;
     }
 
     &__logo {
@@ -62,7 +61,6 @@
 
     &__header {
         font-weight: bold;
-        // margin-bottom: 2.5rem;
     }
 
     &__text {
@@ -87,7 +85,7 @@
 @media only screen and (max-width: 768px) {
     .footer {
         &__footer-content {
-            flex-direction: column;
+            grid-template-columns: 1fr;
         }
     }
 }
