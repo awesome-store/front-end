@@ -10,10 +10,10 @@ function Footer() {
     return (
         <div className="footer">
             <div className="footer__footer-content">
-                <div className="footer-content__column">
-                    <div className="footer__logo-container">
-                        <img className="footer__logo" src={logo} alt="logo"/>
-                    </div>
+                <div className="footer__logo-container footer__top-left">
+                    <img className="footer__logo" src={logo} alt="logo"/>
+                </div>
+                <div className="footer__bottom-left">
                     <div className="footer__contact-info-container">
                         <p>12345 Valley Ave 1, Seattle, WA</p>
                         <p>(800) 123-45-67</p>
@@ -23,9 +23,9 @@ function Footer() {
                         <p>mail@mail.com</p>
                     </ExternalLink>
                 </div>
-                <div className="footer-content__column">
-                    <h3 className="footer__header">Follow us</h3>
-                    <p className="footer__text">Let’s get connected!</p>
+                <h3 className="footer__header footer__top-middle">Follow us</h3>
+                <div className="footer__bottom-middle">
+                    <p className="footer__lets-get-connected">Let’s get connected!</p>
                     <div>
                         <Link to="/">
                             <img src={facebook} alt="facebook"/>
@@ -38,9 +38,9 @@ function Footer() {
                         </Link>
                     </div>
                 </div>
-                <div className="footer-content__column">
-                    <h3>Sign up for our newsletter</h3>
-                    <p>Get $10 off your next purchase.</p>
+                <h3 className="footer__top-right">Sign up for our newsletter</h3>
+                <div className="footer__bottom-right">
+                    <p className="footer__get-ten-percent-off">Get $10 off your next purchase.</p>
                     <input type="email"/>
                 </div>
             </div>
