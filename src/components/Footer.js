@@ -8,8 +8,8 @@ import instagram from '../img/icons/instagram.svg';
 
 function Footer() {
     return (
-        <div className="footer">
-            <div className="footer__footer-content">
+        <footer className="footer">
+            <div className="footer__main-container">
                 <div className="footer__logo-container footer__top-left">
                     <img className="footer__logo" src={logo} alt="logo"/>
                 </div>
@@ -44,7 +44,21 @@ function Footer() {
                     <input type="email"/>
                 </div>
             </div>
-        </div>
+            <div className="footer__footer-legal-container">
+                <div className="footer-legal-container__links-container">
+                    <Link className="footer-legal-container__link-item" to="/policy">
+                        <p>Policy statement</p>
+                    </Link>
+                    <Link className="footer-legal-container__link-item" to="/cookies-usage">
+                        <p>Cookie usage</p>
+                    </Link>
+                </div>
+                <div></div>
+                <div className="footer-legal-container__copyright-container">
+                    <p>© 2020 Copyright</p>
+                </div>
+            </div>
+        </footer>
     );
 }
 
