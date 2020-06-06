@@ -80,6 +80,14 @@
 
     &__footer-legal-container {
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid var(--color-gray);
+    }
+
+    &__footer-legal-inner-container {
+        width: 100%;
         max-width: 1180px;
         padding: 2rem 0;
         display: grid;

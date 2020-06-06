@@ -45,17 +45,19 @@ function Footer() {
                 </div>
             </div>
             <div className="footer__footer-legal-container">
-                <div className="footer-legal-container__links-container">
-                    <Link className="footer-legal-container__link-item" to="/policy">
-                        <p>Policy statement</p>
-                    </Link>
-                    <Link className="footer-legal-container__link-item" to="/cookies-usage">
-                        <p>Cookie usage</p>
-                    </Link>
-                </div>
-                <div></div>
-                <div className="footer-legal-container__copyright-container">
-                    <p>© 2020 Copyright</p>
+                <div className="footer__footer-legal-inner-container">
+                    <div className="footer-legal-container__links-container">
+                        <Link className="footer-legal-container__link-item" to="/policy">
+                            <p>Policy statement</p>
+                        </Link>
+                        <Link className="footer-legal-container__link-item" to="/cookies-usage">
+                            <p>Cookie usage</p>
+                        </Link>
+                    </div>
+                    <div></div>
+                    <div className="footer-legal-container__copyright-container">
+                        <p>© 2020 Copyright</p>
+                    </div>
                 </div>
             </div>
         </footer>
