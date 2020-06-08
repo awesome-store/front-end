@@ -95,16 +95,22 @@
     }
 }
 
-.footer-legal-container__links-container {
-    display: flex;
-}
+.footer-legal-container {
+    &__links-container {
+        display: flex;
+    }
+    
+    &__link-item {
+        color: var(--color-gray);
+    }
 
-.footer-legal-container__link-item {
-    color: var(--color-gray);
-}
-
-.footer-legal-container__copyright-container {
-    color: var(--color-gray);
+    &__link-item-text {
+        text-decoration: underline;
+    }
+    
+    &__copyright-container {
+        color: var(--color-gray);
+    }
 }
 
 .footer-content__column {

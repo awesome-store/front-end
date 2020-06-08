@@ -48,10 +48,10 @@ function Footer() {
                 <div className="footer__footer-legal-inner-container">
                     <div className="footer-legal-container__links-container">
                         <Link className="footer-legal-container__link-item" to="/policy">
-                            <p>Policy statement</p>
+                            <p className="footer-legal-container__link-item-text">Policy statement</p>
                         </Link>
                         <Link className="footer-legal-container__link-item" to="/cookies-usage">
-                            <p>Cookie usage</p>
+                            <p className="footer-legal-container__link-item-text">Cookie usage</p>
                         </Link>
                     </div>
                     <div></div>

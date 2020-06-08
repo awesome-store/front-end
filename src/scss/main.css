@@ -141,10 +141,10 @@ a {
 
 .footer-legal-container__links-container {
   display: flex; }
-
 .footer-legal-container__link-item {
   color: var(--color-gray); }
-
+.footer-legal-container__link-item-text {
+  text-decoration: underline; }
 .footer-legal-container__copyright-container {
   color: var(--color-gray); }
 
