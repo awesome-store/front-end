@@ -4,19 +4,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 1.5rem;
 
     &__main-container {
         max-width: 1180px;
         padding: 6rem 0;
         width: 100%;
         display: grid;
-        // justify-content: center;
         grid-template-areas:
                         "footer-top-left footer-top-middle footer-top-right"
                         "footer-bottom-left footer-bottom-middle footer-bottom-right";
         grid-template-columns: 1fr 1fr 1fr;
-        row-gap: 2.5rem;
-        // grid-template-rows: 1fr 1fr;
+        row-gap: 1.5rem;
         justify-content: space-between;
         color: var(--color-primary);
     }
@@ -55,7 +54,11 @@
     }
 
     &__contact-info-container {
-        margin-bottom: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__contact-info-text {
+        line-height: normal;
     }
 
     &__link {
@@ -72,6 +75,10 @@
 
     &__lets-get-connected {
         margin-bottom: 1.6rem;
+    }
+
+    &__social-img {
+        margin-right: 1.6rem;
     }
 
     &__get-ten-percent-off {
@@ -106,10 +113,19 @@
 
     &__link-item-text {
         text-decoration: underline;
+        line-height: normal;
+    }
+
+    &__link-item-policy {
+        margin-right: 5rem;
     }
     
     &__copyright-container {
         color: var(--color-gray);
+    }
+
+    &__copyright-text {
+        line-height: normal;
     }
 }
 
@@ -129,12 +145,17 @@
             padding: 5rem 3rem;
             grid-template-areas:
                             "footer-top-left"
-                            "footer-top-middle"
-                            "footer-top-right"
                             "footer-bottom-left"
+                            "footer-top-middle"
                             "footer-bottom-middle"
+                            "footer-top-right"
                             "footer-bottom-right";
             grid-template-columns: 1fr;
+            row-gap: 1rem;
+        }
+
+        &__contact-info-container {
+            margin-bottom: 1rem;
         }
 
         &__footer-legal-inner-container {

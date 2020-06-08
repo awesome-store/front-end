@@ -15,9 +15,9 @@ function Footer() {
                 </div>
                 <div className="footer__bottom-left">
                     <div className="footer__contact-info-container">
-                        <p>12345 Valley Ave 1, Seattle, WA</p>
-                        <p>(800) 123-45-67</p>
-                        <p>(800) 123-45-67</p>
+                        <p className="footer__contact-info-text">12345 Valley Ave 1, Seattle, WA</p>
+                        <p className="footer__contact-info-text">(800) 123-45-67</p>
+                        <p className="footer__contact-info-text">(800) 123-45-67</p>
                     </div>
                     <ExternalLink className="footer__link" href="mailto:mail@mail.com">
                         <p>mail@mail.com</p>
@@ -28,13 +28,13 @@ function Footer() {
                     <p className="footer__lets-get-connected">Let’s get connected!</p>
                     <div>
                         <Link to="/">
-                            <img src={facebook} alt="facebook"/>
+                            <img className="footer__social-img" src={facebook} alt="facebook"/>
                         </Link>
                         <Link to="/">
-                            <img src={twitter} alt="twitter"/>
+                            <img className="footer__social-img" src={twitter} alt="twitter"/>
                         </Link>
                         <Link to="/">
-                            <img src={instagram} alt="instagram"/>
+                            <img className="footer__social-img" src={instagram} alt="instagram"/>
                         </Link>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ function Footer() {
                 <div className="footer__footer-legal-inner-container">
                     <div className="footer-legal-container__links-container">
                         <Link className="footer-legal-container__link-item" to="/policy">
-                            <p className="footer-legal-container__link-item-text">Policy statement</p>
+                            <p className="footer-legal-container__link-item-text footer-legal-container__link-item-policy">Policy statement</p>
                         </Link>
                         <Link className="footer-legal-container__link-item" to="/cookies-usage">
                             <p className="footer-legal-container__link-item-text">Cookie usage</p>
@@ -56,7 +56,7 @@ function Footer() {
                     </div>
                     <div></div>
                     <div className="footer-legal-container__copyright-container">
-                        <p>© 2020 Copyright</p>
+                        <p className="footer-legal-container__copyright-text">© 2020 Copyright</p>
                     </div>
                 </div>
             </div>

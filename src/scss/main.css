@@ -85,7 +85,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.5rem; }
   .footer__main-container {
     max-width: 1180px;
     padding: 6rem 0;
@@ -93,7 +94,7 @@ a {
     display: grid;
     grid-template-areas: "footer-top-left footer-top-middle footer-top-right" "footer-bottom-left footer-bottom-middle footer-bottom-right";
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 2.5rem;
+    row-gap: 1.5rem;
     justify-content: space-between;
     color: var(--color-primary); }
   .footer__top-left {
@@ -114,7 +115,9 @@ a {
     width: 100%;
     height: auto; }
   .footer__contact-info-container {
-    margin-bottom: 2.5rem; }
+    margin-bottom: 1.5rem; }
+  .footer__contact-info-text {
+    line-height: normal; }
   .footer__link {
     color: var(--color-secondary); }
   .footer__header {
@@ -123,6 +126,8 @@ a {
     margin-bottom: 1.6rem; }
   .footer__lets-get-connected {
     margin-bottom: 1.6rem; }
+  .footer__social-img {
+    margin-right: 1.6rem; }
   .footer__get-ten-percent-off {
     margin-bottom: 1.6rem; }
   .footer__footer-legal-container {
@@ -143,9 +148,14 @@ a {
 .footer-legal-container__link-item {
   color: var(--color-gray); }
 .footer-legal-container__link-item-text {
-  text-decoration: underline; }
+  text-decoration: underline;
+  line-height: normal; }
+.footer-legal-container__link-item-policy {
+  margin-right: 5rem; }
 .footer-legal-container__copyright-container {
   color: var(--color-gray); }
+.footer-legal-container__copyright-text {
+  line-height: normal; }
 
 .footer-content__column {
   display: flex;
@@ -157,8 +167,11 @@ a {
     grid-template-columns: unset; }
   .footer__main-container {
     padding: 5rem 3rem;
-    grid-template-areas: "footer-top-left" "footer-top-middle" "footer-top-right" "footer-bottom-left" "footer-bottom-middle" "footer-bottom-right";
-    grid-template-columns: 1fr; }
+    grid-template-areas: "footer-top-left" "footer-bottom-left" "footer-top-middle" "footer-bottom-middle" "footer-top-right" "footer-bottom-right";
+    grid-template-columns: 1fr;
+    row-gap: 1rem; }
+  .footer__contact-info-container {
+    margin-bottom: 1rem; }
   .footer__footer-legal-inner-container {
     display: grid;
     grid-template-columns: 1fr;
