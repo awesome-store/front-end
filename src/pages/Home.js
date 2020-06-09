@@ -38,7 +38,7 @@ function Home() {
                     <div className="items-in-store-banner__text-container">
                         <span className="items-in-store-banner__text">More Than 2 Million Items<br/>Available in Store</span>
                     </div>
-                    <div className="items-in-store-banner__button">
+                    <div className="items-in-store-banner__button pointer">
                         <span>Store</span>
                     </div>
                 </div>
