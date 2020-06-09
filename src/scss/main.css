@@ -191,11 +191,12 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     padding: 2rem 3rem; }
-  .footer__subscribe-input {
-    width: 17rem; }
 
   .footer-legal-container__links-container {
     flex-direction: column; } }
+@media only screen and (max-width: 320px) {
+  .footer__subscribe-input {
+    width: 17rem; } }
 .container {
   display: flex;
   justify-content: center;
