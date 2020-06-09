@@ -7,6 +7,9 @@
   --color-light-gray: #CFD7DC;
   --color-gray-stroke: #979797; }
 
+.pointer {
+  cursor: pointer; }
+
 /* selecting each and every element on the page and applying reset to it */
 *,
 *::after,

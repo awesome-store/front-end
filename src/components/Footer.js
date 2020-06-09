@@ -43,7 +43,7 @@ function Footer() {
                     <p className="footer__get-ten-percent-off">Get $10 off your next purchase.</p>
                     <div className="footer__subscribe-input-container">
                         <input className="footer__subscribe-input" placeholder="Your email" type="email"/>
-                        <div className="footer__subscribe-button">
+                        <div className="footer__subscribe-button pointer">
                             <span>Subscribe</span>
                         </div>
                     </div>
