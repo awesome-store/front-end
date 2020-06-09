@@ -20,28 +20,33 @@ function Footer() {
                         <p className="footer__contact-info-text">(800) 123-45-67</p>
                     </div>
                     <ExternalLink className="footer__link" href="mailto:mail@mail.com">
-                        <p>mail@mail.com</p>
+                        <span>mail@mail.com</span>
                     </ExternalLink>
                 </div>
                 <h3 className="footer__header footer__top-middle">Follow us</h3>
                 <div className="footer__bottom-middle">
                     <p className="footer__lets-get-connected">Let’s get connected!</p>
                     <div>
-                        <Link to="/">
-                            <img className="footer__social-img" src={facebook} alt="facebook"/>
-                        </Link>
-                        <Link to="/">
-                            <img className="footer__social-img" src={twitter} alt="twitter"/>
-                        </Link>
-                        <Link to="/">
-                            <img className="footer__social-img" src={instagram} alt="instagram"/>
-                        </Link>
+                        <ExternalLink className="footer__social-img-link" href="https://facebook.com/">
+                            <img src={facebook} alt="facebook"/>
+                        </ExternalLink>
+                        <ExternalLink className="footer__social-img-link" href="https://twitter.com/">
+                            <img src={twitter} alt="twitter"/>
+                        </ExternalLink>
+                        <ExternalLink className="footer__social-img-link" href="https://instagram.com/">
+                            <img src={instagram} alt="instagram"/>
+                        </ExternalLink>
                     </div>
                 </div>
                 <h3 className="footer__top-right">Sign up for our newsletter</h3>
                 <div className="footer__bottom-right">
                     <p className="footer__get-ten-percent-off">Get $10 off your next purchase.</p>
-                    <input type="email"/>
+                    <div className="footer__subscribe-input-container">
+                        <input className="footer__subscribe-input" placeholder="Your email" type="email"/>
+                        <div className="footer__subscribe-button">
+                            <span>Subscribe</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="footer__footer-legal-container">
