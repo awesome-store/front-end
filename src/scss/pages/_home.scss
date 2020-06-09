@@ -1,0 +1,26 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+
+    &__tag-item {
+        padding: .8rem 1.5rem;
+        margin: 0 .75rem;
+        border-radius: 30px;
+        background-color: var(--color-light-gray);
+        color: var(--color-dark-gray);
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .search-bar {
+        &__tag-item {
+            font-size: 1.2rem;
+        }
+    }
+}

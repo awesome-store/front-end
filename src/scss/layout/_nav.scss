@@ -7,7 +7,7 @@
 }
 
 .nav {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     list-style: none;
     display: flex;
 
@@ -23,6 +23,7 @@
         // }
     }
 
+    &__link,
     &__link:link,
     &__link:visited {
         color: var(--color-primary);
@@ -30,7 +31,6 @@
         // text-transform: uppercase;
         display: block;
         padding: 2.4rem;
-
     }
 
     &__link:hover {
@@ -40,6 +40,12 @@
 
 .navigation-mobile {
     display: none;
+}
+
+@media only screen and (max-width: 1440px) {
+    .nav {
+        font-size: 1.4rem;
+    }
 }
 
 @media only screen and (max-width: 768px) {
