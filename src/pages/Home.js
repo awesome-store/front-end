@@ -30,6 +30,19 @@ function Home() {
                 </div>
                 <input placeholder="Search"/>
             </div>
+            <div className="top-banner">
+                <span>top banner</span>
+            </div>
+            <div className="items-in-store-banner">
+                <div className="items-in-store-banner__inner-container">
+                    <div className="items-in-store-banner__text-container">
+                        <span className="items-in-store-banner__text">More Than 2 Million Items<br/>Available in Store</span>
+                    </div>
+                    <div className="items-in-store-banner__button">
+                        <span>Store</span>
+                    </div>
+                </div>
+            </div>
             <section className="section-categories">
                 <h2 className="heading-secondary">
                     Categories

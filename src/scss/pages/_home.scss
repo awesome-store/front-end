@@ -6,6 +6,7 @@
 
 .search-bar {
     display: flex;
+    margin: 1.5rem 0;
 
     &__tag-item {
         padding: .8rem 1.5rem;
@@ -17,10 +18,57 @@
     }
 }
 
+.top-banner {
+    height: 70vh;
+    width: 100%;
+    background-color: #89AFC2;
+}
+
+.items-in-store-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    background-color: var(--color-secondary);
+
+    &__inner-container {
+        width: 100%;
+        max-width: 1180px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // &__text-container {
+    //     margin-right: 20rem;
+    // }
+
+    &__text {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 10rem;
+        background-color: var(--color-black);
+        color: var(--color-primary);
+        font-size: 1.5rem;
+    }
+}
+
 @media only screen and (max-width: 1440px) {
     .search-bar {
         &__tag-item {
             font-size: 1.2rem;
+        }
+    }
+
+    .items-in-store-banner {
+        &__inner-container {
+            max-width: 780px;
         }
     }
 }
