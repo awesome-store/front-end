@@ -454,6 +454,9 @@ a {
     color: var(--color-primary);
     font-size: 1.5rem; }
 
+.home-page__banners-container {
+  display: flex; }
+
 .small-banner {
   display: flex; }
   .small-banner__text-container {

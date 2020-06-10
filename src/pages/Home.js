@@ -61,14 +61,23 @@ function Home() {
                     <Product img={drill}/>
                 </div>
             </section>
-            <div>
+            <div className="home-page__banners-container">
                 <div className="small-banner">
                     <div className="small-banner__text-container">
                         <span className="small-banner__header">50% Off Select Dyson Vacuums</span>
                         <span className="small-banner__description">Free delivery. Today only</span>
                     </div>
                     <div className="small-banner__img-container">
-                        <img className="small-banner__img" src={drill}/>
+                        <img className="small-banner__img" src={drill} alt="drill"/>
+                    </div>
+                </div>
+                <div className="small-banner">
+                    <div className="small-banner__text-container">
+                        <span className="small-banner__header">Financing Available</span>
+                        <span className="small-banner__description">Up to 24 month financing. Terms & conditions apply</span>
+                    </div>
+                    <div className="small-banner__img-container">
+                        <img className="small-banner__img" src={drill} alt="drill"/>
                     </div>
                 </div>
             </div>
