@@ -7,7 +7,7 @@ import toolkit from "../img/toolkit.png";
 
 function Home() {
     return (
-        <main className="main">
+        <main className="home-page">
             <div className="search-bar-container">
                 <div className="search-bar-container__tag-item pointer">
                     <span>Doors</span>
@@ -35,15 +35,15 @@ function Home() {
                 </div>
                 <input className="search-bar-container__search-bar" placeholder="Search"/>
             </div>
-            <div className="top-banner">
+            <div className="top-slider">
                 <span>top banner</span>
             </div>
-            <div className="top-slider">
-                <div className="top-slider__inner-container">
-                    <div className="top-slider__text-container">
-                        <span className="top-slider__text">More Than 2 Million Items<br/>Available in Store</span>
+            <div className="top-banner">
+                <div className="top-banner__inner-container">
+                    <div className="top-banner__text-container">
+                        <span className="top-banner__text">More Than 2 Million Items<br/>Available in Store</span>
                     </div>
-                    <div className="top-slider__button pointer">
+                    <div className="top-banner__button pointer">
                         <span>Store</span>
                     </div>
                 </div>
@@ -61,6 +61,17 @@ function Home() {
                     <Product img={drill}/>
                 </div>
             </section>
+            <div>
+                <div className="small-banner">
+                    <div className="small-banner__text-container">
+                        <span className="small-banner__header">50% Off Select Dyson Vacuums</span>
+                        <span className="small-banner__description">Free delivery. Today only</span>
+                    </div>
+                    <div className="small-banner__img-container">
+                        <img className="small-banner__img" src={drill}/>
+                    </div>
+                </div>
+            </div>
         </main>
     );
 }
