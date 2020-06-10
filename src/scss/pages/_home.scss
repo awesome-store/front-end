@@ -24,7 +24,7 @@
     background-color: #89AFC2;
 }
 
-.items-in-store-banner {
+.top-slider {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -66,7 +66,7 @@
         }
     }
 
-    .items-in-store-banner {
+    .top-slider {
         &__inner-container {
             max-width: 780px;
             padding: 1rem;
@@ -79,7 +79,7 @@
         display: none;
     }
 
-    .items-in-store-banner {
+    .top-slider {
         &__inner-container {
             flex-direction: column;
         }

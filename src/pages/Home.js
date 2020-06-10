@@ -38,12 +38,12 @@ function Home() {
             <div className="top-banner">
                 <span>top banner</span>
             </div>
-            <div className="items-in-store-banner">
-                <div className="items-in-store-banner__inner-container">
-                    <div className="items-in-store-banner__text-container">
-                        <span className="items-in-store-banner__text">More Than 2 Million Items<br/>Available in Store</span>
+            <div className="top-slider">
+                <div className="top-slider__inner-container">
+                    <div className="top-slider__text-container">
+                        <span className="top-slider__text">More Than 2 Million Items<br/>Available in Store</span>
                     </div>
-                    <div className="items-in-store-banner__button pointer">
+                    <div className="top-slider__button pointer">
                         <span>Store</span>
                     </div>
                 </div>
