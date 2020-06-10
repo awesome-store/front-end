@@ -1,4 +1,6 @@
 import React from "react";
+import goldstar from "../img/icons/gold-star.svg";
+import star from "../img/icons/star.svg";
 
 function Product(props) {
     return (
@@ -7,7 +9,11 @@ function Product(props) {
                 <img className="products-container__item-img" src={props.img} alt={props.img}/>
             </div>
             <div className="products-container__item-stars">
-                <span>Star</span>
+                <img src={goldstar} alt="goldstar"/>
+                <img src={goldstar} alt="goldstar"/>
+                <img src={goldstar} alt="goldstar"/>
+                <img src={goldstar} alt="goldstar"/>
+                <img src={star} alt="star"/>
             </div>
             <span className="products-container__item-heading">Ryobi Lithium-Ion<br/>Cordless Drill + Charger</span>
             <div className="products-container__item-price-container">

@@ -46,6 +46,7 @@
     grid-template-columns: repeat(4, 1fr);
     row-gap: 2rem;
     column-gap: 2rem;
+    margin: 5rem 0;
 
     &__item {
         display: flex;
@@ -98,6 +99,7 @@
             align-items: center;
             width: 100%;
             padding: 1rem 0;
+            margin-top: 1rem;
             background-color: var(--color-secondary);
         }
     }
