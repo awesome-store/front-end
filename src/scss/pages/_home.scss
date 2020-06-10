@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-.search-bar {
+.search-bar-container {
     display: flex;
     margin: 1.5rem 0;
 
@@ -68,7 +68,15 @@
 
     .items-in-store-banner {
         &__inner-container {
+            flex-direction: column;
             max-width: 780px;
+            padding: 1rem;
         }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .search-bar-container {
+        display: none;
     }
 }
