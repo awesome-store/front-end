@@ -48,9 +48,17 @@ function Home() {
                 <h2 className="heading-secondary">Popular Products</h2>
                 <div className="products-container">
                     <Product/>
-                </div>
-                <div className="wrapper">
-                    <div className="btn-store">Click</div>
+                    <Product/>
+                    <Product/>
+                    <Product/>
+                    <Product/>
+                    <Product/>
+                    <Product/>
+                    <Product/>
+                    <Product/>
+                    <Product/>
+                    <Product/>
+                    <Product/>
                 </div>
             </section>
         </main>
