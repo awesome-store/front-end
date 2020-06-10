@@ -1,5 +1,9 @@
 import React from "react";
 import Product from "../components/Product";
+import drill from "../img/drill.png";
+import paint from "../img/paint.png";
+import screwdrivers from "../img/screwdrivers.jpg";
+import toolkit from "../img/toolkit.png";
 
 function Home() {
     return (
@@ -47,18 +51,14 @@ function Home() {
             <section className="section-popular-products">
                 <h2 className="heading-secondary">Popular Products</h2>
                 <div className="products-container">
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
+                    <Product img={drill}/>
+                    <Product img={paint}/>
+                    <Product img={toolkit}/>
+                    <Product img={screwdrivers}/>
+                    <Product img={paint}/>
+                    <Product img={screwdrivers}/>
+                    <Product img={toolkit}/>
+                    <Product img={drill}/>
                 </div>
             </section>
         </main>

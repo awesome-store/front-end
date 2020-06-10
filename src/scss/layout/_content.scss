@@ -50,11 +50,12 @@
     &__item {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
         // margin: 2rem;
         // height: 25rem;
         width: 24rem;
-        background-color: slateblue;
+        // background-color: slateblue;
         font-size: 2rem;
 
         &-img-container {
@@ -74,8 +75,21 @@
             margin-top: 1rem;
         }
 
-        &-price {
+        &-price-container {
             margin-top: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        &-price {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-right: .5rem;
+        }
+
+        &-price-unit {
+            color: var(--color-gray);
+            font-size: 1.2rem;
         }
 
         &-button {
