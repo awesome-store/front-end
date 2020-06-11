@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import Product from "../components/Product";
 import drill from "../img/drill.png";
 import paint from "../img/paint.png";
@@ -137,6 +138,53 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <section className="home-page__categories-container">
+                <Link>
+                    <p>Bath & Faucets</p>
+                </Link>
+                <Link>
+                    <p>Doors & Windows</p>
+                </Link>
+                <Link>
+                    <p>Hardware</p>
+                </Link>
+                <Link>
+                    <p>Ceiling Fans</p>
+                </Link>
+                <Link>
+                    <p>Kitchenware</p>
+                </Link>
+                <Link>
+                    <p>Decor & Furniture</p>
+                </Link>
+                <Link>
+                    <p>Electrical</p>
+                </Link>
+                <Link>
+                    <p>Heating & Cooling</p>
+                </Link>
+                <Link>
+                    <p>Plumbing</p>
+                </Link>
+                <Link>
+                    <p>Appliances</p>
+                </Link>
+                <Link>
+                    <p>Paint & Building materials</p>
+                </Link>
+                <Link>
+                    <p>Flooring</p>
+                </Link>
+                <Link>
+                    <p>Lawn & Garden</p>
+                </Link>
+                <Link>
+                    <p>Seasonal & Outdoor living</p>
+                </Link>
+                <Link>
+                    <p>Storage</p>
+                </Link>
+            </section>
         </main>
     );
 }
