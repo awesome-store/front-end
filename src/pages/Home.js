@@ -4,6 +4,8 @@ import drill from "../img/drill.png";
 import paint from "../img/paint.png";
 import screwdrivers from "../img/screwdrivers.jpg";
 import toolkit from "../img/toolkit.png";
+import vacuum from "../img/vacuum.png";
+import card from "../img/card.png";
 
 function Home() {
     return (
@@ -63,21 +65,21 @@ function Home() {
             </section>
             <div className="home-page__banners-container">
                 <div className="small-banner">
-                    <div className="small-banner__text-container">
+                    <div  className="small-banner__text-container small-banner__text-container--purple">
                         <span className="small-banner__header">50% Off Select Dyson Vacuums</span>
                         <span className="small-banner__description">Free delivery. Today only</span>
                     </div>
                     <div className="small-banner__img-container">
-                        <img className="small-banner__img" src={drill} alt="drill"/>
+                        <img className="small-banner__img" src={vacuum} alt="vacuum"/>
                     </div>
                 </div>
                 <div className="small-banner">
-                    <div className="small-banner__text-container">
+                    <div className="small-banner__text-container small-banner__text-container--blue">
                         <span className="small-banner__header">Financing Available</span>
                         <span className="small-banner__description">Up to 24 month financing. Terms & conditions apply</span>
                     </div>
                     <div className="small-banner__img-container">
-                        <img className="small-banner__img" src={drill} alt="drill"/>
+                        <img className="small-banner__img" src={card} alt="card"/>
                     </div>
                 </div>
             </div>

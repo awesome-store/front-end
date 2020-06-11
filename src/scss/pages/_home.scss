@@ -60,40 +60,9 @@
 }
 
 .home-page__banners-container {
-    display: flex;
-}
-
-.small-banner {
-    display: flex;
-
-    &__text-container {
-        width: 35rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: rgb(173, 62, 224);
-        padding: 2rem;
-    }
-
-    &__header {
-        font-size: 3rem;
-        font-weight: bold;
-    }
-
-    &__description {
-        color: var(--color-primary);
-        font-size: 2rem;
-        margin-top: 1rem;
-    }
-
-    &__img-container {
-        width: 12rem;
-    }
-
-    &__img {
-        width: 100%;
-        height: auto;
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -120,5 +89,10 @@
         &__inner-container {
             flex-direction: column;
         }
+    }
+
+    .home-page__banners-container {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
     }
 }

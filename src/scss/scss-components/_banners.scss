@@ -1,0 +1,39 @@
+.small-banner {
+    display: flex;
+
+    &__text-container {
+        width: 35rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem;
+
+        &--purple {
+            background-color: #BF90FB;
+        }
+
+        &--blue {
+            background-color: #739AFF;
+        }
+    }
+
+    &__header {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    &__description {
+        color: var(--color-primary);
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    &__img-container {
+        width: 22rem;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+}
