@@ -413,6 +413,17 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .home-page__promotionnal-banner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem; }
+
+.tutorial-banner-container__inner-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin-top: 2rem; }
 
 .search-bar-container {
   display: flex;
@@ -454,11 +465,6 @@ a {
     color: var(--color-primary);
     font-size: 1.5rem; }
 
-.home-page__banners-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 2rem; }
-
 @media only screen and (max-width: 1440px) {
   .search-bar__tag-item {
     font-size: 1.2rem; }
@@ -476,7 +482,7 @@ a {
   .top-slider__inner-container {
     flex-direction: column; }
 
-  .home-page__banners-container {
+  .home-page__promotionnal-banner-container {
     grid-template-columns: 1fr;
     row-gap: 2rem; } }
 .wrapper {
@@ -521,24 +527,50 @@ a {
 
 .tutorial-banner {
   width: 30rem;
-  height: 20rem;
+  height: 17rem;
   position: relative; }
+  .tutorial-banner--text-white {
+    color: var(--color-primary); }
+  .tutorial-banner--text-black {
+    color: var(--color-black); }
   .tutorial-banner__image {
     width: 100%;
     height: auto; }
   .tutorial-banner__header {
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: 1.5rem;
+    left: 1.5rem;
     font-size: 2rem;
-    font-weight: bold;
-    color: var(--color-primary); }
+    font-weight: bold; }
   .tutorial-banner__description {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 1.5rem;
+    right: 1.5rem; }
+
+.tutorial-banner-small {
+  width: 30rem;
+  height: 11rem;
+  position: relative; }
+  .tutorial-banner-small--text-white {
     color: var(--color-primary); }
+  .tutorial-banner-small--text-black {
+    color: var(--color-black); }
+  .tutorial-banner-small__image {
+    width: 100%;
+    height: auto; }
+  .tutorial-banner-small__header {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold; }
+  .tutorial-banner-small__description {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem; }
 
 /*# sourceMappingURL=main.css.map */

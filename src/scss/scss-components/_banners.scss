@@ -40,8 +40,18 @@
 
 .tutorial-banner {
     width: 30rem;
-    height: 20rem;
+    height: 17rem;
     position: relative;
+
+    &--text-white {
+        color: var(--color-primary);
+    }
+
+    &--text-black {
+        color: var(--color-black);
+    }
+    // grid-area: banner;
+
     // padding: 1rem;
     // background-image: url('../img/flowers.png');
 
@@ -52,19 +62,56 @@
 
     &__header {
         position: absolute;
-        top: 1rem;
-        left: 1rem;
+        top: 1.5rem;
+        left: 1.5rem;
         font-size: 2rem;
         font-weight: bold;
-        color: var(--color-primary);
     }
 
     &__description {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 1rem;
-        right: 1rem;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+}
+
+.tutorial-banner-small {
+    width: 30rem;
+    height: 11rem;
+    position: relative;
+
+    &--text-white {
         color: var(--color-primary);
+    }
+
+    &--text-black {
+        color: var(--color-black);
+    }
+    // grid-area: banner;
+
+    // padding: 1rem;
+    // background-image: url('../img/flowers.png');
+
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__header {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 1.5rem;
+        left: 1.5rem;
     }
 }

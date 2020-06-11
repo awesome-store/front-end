@@ -2,6 +2,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &__promotionnal-banner-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+.tutorial-banner-container {
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-areas:
+    //                     "header header"
+    //                     "banner banner"
+    //                     "banner banner";
+    
+    &__inner-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        margin-top: 2rem;
+    }
+    
+    // &__header {
+    //     grid-area: header;
+    // }
 }
 
 .search-bar-container {
@@ -59,11 +86,7 @@
     }
 }
 
-.home-page__banners-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-}
+
 
 @media only screen and (max-width: 1440px) {
     .search-bar {
@@ -97,8 +120,10 @@
         }
     }
 
-    .home-page__banners-container {
-        grid-template-columns: 1fr;
-        row-gap: 2rem;
+    .home-page {
+        &__promotionnal-banner-container {
+            grid-template-columns: 1fr;
+            row-gap: 2rem; 
+        }
     }
 }

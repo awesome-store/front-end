@@ -7,6 +7,9 @@ import toolkit from "../img/toolkit.png";
 import vacuum from "../img/vacuum.png";
 import card from "../img/card.png";
 import flowers from "../img/flowers.png";
+import vases from "../img/vases.png";
+import paint1 from "../img/paint1.png";
+import paint2 from "../img/paint2.png";
 
 function Home() {
     return (
@@ -64,7 +67,7 @@ function Home() {
                     <Product img={drill}/>
                 </div>
             </section>
-            <section className="home-page__banners-container">
+            <section className="home-page__promotionnal-banner-container">
                 <div className="promotionnal-banner-small">
                     <div  className="promotionnal-banner-small__text-container promotionnal-banner-small__text-container--purple">
                         <span className="promotionnal-banner-small__header">50% Off Select Dyson Vacuums</span>
@@ -84,16 +87,43 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section>
-                <h2 className="heading-secondary">Inspire Yourself with Tutorials</h2>
-                <div className="tutorial-banner">
-                    <img className="tutorial-banner__image" src={flowers} alt="flowers"/>
-                    <span className="tutorial-banner__header">Gardening<br/>tips & tricks</span>
-                    <div className="tutorial-banner__description">
-                        <p>6 promoted product</p>
-                        <p>2 min read</p>
+            <section className="home-page__tutorial-banner-container">
+                <h2 className="heading-secondary tutorial-banner-container__header">Inspire Yourself with Tutorials</h2>
+                <div className="tutorial-banner-container__inner-container">
+                    <div className="tutorial-banner tutorial-banner--text-white">
+                        <img className="tutorial-banner__image" src={flowers} alt="flowers"/>
+                        <span className="tutorial-banner__header">Gardening<br/>tips & tricks</span>
+                        <div className="tutorial-banner__description">
+                            <p><b>6</b> promoted product</p>
+                            <p><b>2</b> min read</p>
+                        </div>
+                    </div>
+                    <div className="tutorial-banner tutorial-banner--text-black">
+                        <img className="tutorial-banner__image" src={vases} alt="flowers"/>
+                        <span className="tutorial-banner__header">DIY<br/>Furniture<br/>Renovation</span>
+                        <div className="tutorial-banner__description">
+                            <p><b>6</b> promoted product</p>
+                            <p><b>2</b> min read</p>
+                        </div>
+                    </div>
+                    <div className="tutorial-banner-small tutorial-banner-small--text-white">
+                        <img className="tutorial-banner-small__image" src={paint1} alt="flowers"/>
+                        <span className="tutorial-banner-small__header">Picking<br/>perfect paint</span>
+                        <div className="tutorial-banner-small__description">
+                            <p><b>6</b> promoted product</p>
+                            <p><b>2</b> min read</p>
+                        </div>
+                    </div>
+                    <div className="tutorial-banner-small tutorial-banner-small--text-black">
+                        <img className="tutorial-banner-small__image" src={paint2} alt="flowers"/>
+                        <span className="tutorial-banner-small__header">Painting 101</span>
+                        <div className="tutorial-banner-small__description">
+                            <p><b>6</b> promoted product</p>
+                            <p><b>2</b> min read</p>
+                        </div>
                     </div>
                 </div>
+                
             </section>
         </main>
     );
