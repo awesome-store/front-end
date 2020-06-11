@@ -49,7 +49,7 @@ function Home() {
                     <div className="top-banner__text-container">
                         <span className="top-banner__text">More Than 2 Million Items<br/>Available in Store</span>
                     </div>
-                    <div className="top-banner__button pointer">
+                    <div className="btn-store pointer">
                         <span>Store</span>
                     </div>
                 </div>
@@ -123,7 +123,11 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                
+                <div className="home-page__button-container">
+                    <div className="btn-store pointer">
+                        <span>Store</span>
+                    </div>
+                </div>
             </section>
         </main>
     );

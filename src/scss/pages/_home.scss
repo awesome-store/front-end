@@ -8,6 +8,12 @@
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
     }
+
+    &__button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+    }
 }
 
 .tutorial-banner-container {
@@ -74,19 +80,7 @@
         font-size: 3rem;
         font-weight: bold;
     }
-
-    &__button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem 10rem;
-        background-color: var(--color-black);
-        color: var(--color-primary);
-        font-size: 1.5rem;
-    }
 }
-
-
 
 @media only screen and (max-width: 1440px) {
     .search-bar {

@@ -417,6 +417,10 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem; }
+  .home-page__button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem; }
 
 .tutorial-banner-container__inner-container {
   display: grid;
@@ -456,14 +460,6 @@ a {
   .top-banner__text {
     font-size: 3rem;
     font-weight: bold; }
-  .top-banner__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 10rem;
-    background-color: var(--color-black);
-    color: var(--color-primary);
-    font-size: 1.5rem; }
 
 @media only screen and (max-width: 1440px) {
   .search-bar__tag-item {
@@ -490,15 +486,14 @@ a {
   justify-content: center; }
 
 .btn-store {
-  background-color: var(--color-secondary);
-  height: 5rem;
-  width: 20rem;
-  border-radius: 0.5rem;
-  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 24rem;
+  padding: 2rem 10rem;
+  background-color: var(--color-black);
   color: var(--color-primary);
-  font-size: 2rem;
-  text-align: center;
-  line-height: 2.5; }
+  font-size: 1.5rem; }
 
 .promotionnal-banner-small {
   display: flex; }

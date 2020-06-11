@@ -5,17 +5,13 @@
     justify-content: center;
 }
 
-
 .btn-store {
-    background-color: var(--color-secondary);
-    height: 5rem;
-    width: 20rem;
-    border-radius: 0.5rem;
-    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 24rem;
+    padding: 2rem 10rem;
+    background-color: var(--color-black);
     color: var(--color-primary);
-
-    //text inside of the button
-    font-size: 2rem;
-    text-align: center;
-    line-height: 2.5;
+    font-size: 1.5rem;
 }
