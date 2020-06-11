@@ -34,7 +34,7 @@
 
     &__inner-container {
         width: 100%;
-        max-width: 1180px;
+        max-width: 980px;
         display: flex;
         justify-content: space-between;
     }
@@ -76,6 +76,12 @@
         &__inner-container {
             max-width: 780px;
             padding: 1rem;
+        }
+    }
+
+    .top-banner {
+        &__inner-container {
+            max-width: 800px;
         }
     }
 }

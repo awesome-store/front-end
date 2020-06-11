@@ -1,4 +1,4 @@
-.small-banner {
+.promotionnal-banner-small {
     display: flex;
 
     &__text-container {
@@ -35,5 +35,36 @@
     &__img {
         width: 100%;
         height: auto;
+    }
+}
+
+.tutorial-banner {
+    width: 30rem;
+    height: 20rem;
+    position: relative;
+    // padding: 1rem;
+    // background-image: url('../img/flowers.png');
+
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__header {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--color-primary);
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: var(--color-primary);
     }
 }

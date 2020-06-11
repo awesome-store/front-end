@@ -439,7 +439,7 @@ a {
   background-color: var(--color-secondary); }
   .top-banner__inner-container {
     width: 100%;
-    max-width: 1180px;
+    max-width: 980px;
     display: flex;
     justify-content: space-between; }
   .top-banner__text {
@@ -465,7 +465,10 @@ a {
 
   .top-slider__inner-container {
     max-width: 780px;
-    padding: 1rem; } }
+    padding: 1rem; }
+
+  .top-banner__inner-container {
+    max-width: 800px; } }
 @media only screen and (max-width: 1024px) {
   .search-bar-container {
     display: none; }
@@ -491,29 +494,51 @@ a {
   text-align: center;
   line-height: 2.5; }
 
-.small-banner {
+.promotionnal-banner-small {
   display: flex; }
-  .small-banner__text-container {
+  .promotionnal-banner-small__text-container {
     width: 35rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 2rem; }
-    .small-banner__text-container--purple {
+    .promotionnal-banner-small__text-container--purple {
       background-color: #BF90FB; }
-    .small-banner__text-container--blue {
+    .promotionnal-banner-small__text-container--blue {
       background-color: #739AFF; }
-  .small-banner__header {
+  .promotionnal-banner-small__header {
     font-size: 3rem;
     font-weight: bold; }
-  .small-banner__description {
+  .promotionnal-banner-small__description {
     color: var(--color-primary);
     font-size: 2rem;
     margin-top: 1rem; }
-  .small-banner__img-container {
+  .promotionnal-banner-small__img-container {
     width: 22rem; }
-  .small-banner__img {
+  .promotionnal-banner-small__img {
     width: 100%;
     height: auto; }
+
+.tutorial-banner {
+  width: 30rem;
+  height: 20rem;
+  position: relative; }
+  .tutorial-banner__image {
+    width: 100%;
+    height: auto; }
+  .tutorial-banner__header {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-primary); }
+  .tutorial-banner__description {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--color-primary); }
 
 /*# sourceMappingURL=main.css.map */
