@@ -129,6 +129,14 @@ function Home() {
                     </div>
                 </div>
             </section>
+            <div className="we-deliver-banner">
+                <p className="we-deliver-banner__text">WE DELIVER</p>
+                <div className="home-page__button-container">
+                    <div className="btn-store pointer">
+                        <span>Find out more</span>
+                    </div>
+                </div>
+            </div>
         </main>
     );
 }

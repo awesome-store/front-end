@@ -493,7 +493,8 @@ a {
   padding: 2rem 10rem;
   background-color: var(--color-black);
   color: var(--color-primary);
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  white-space: nowrap; }
 
 .promotionnal-banner-small {
   display: flex; }
@@ -567,5 +568,18 @@ a {
     position: absolute;
     bottom: 1.5rem;
     left: 1.5rem; }
+
+.we-deliver-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 7rem 1rem 4rem 1rem;
+  background-color: var(--color-secondary);
+  color: var(--color-primary); }
+  .we-deliver-banner__text {
+    font-size: 16rem;
+    font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */
