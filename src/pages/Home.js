@@ -125,7 +125,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="home-page__button-container">
+                <div className="tutorial-banner-small__button-container">
                     <div className="btn-store pointer">
                         <span>Store</span>
                     </div>

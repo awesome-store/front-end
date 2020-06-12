@@ -114,6 +114,10 @@
         bottom: 1.5rem;
         left: 1.5rem;
     }
+
+    &__button-container {
+        margin-top: 3rem;
+    }
 }
 
 .we-deliver-banner {
@@ -148,7 +152,7 @@
     &__button-container {
         display: flex;
         justify-content: center;
-        margin-top: 5rem;
+        margin-top: 9rem;
     }
 }
 

@@ -18,6 +18,14 @@
         padding: 5rem 0;
         text-decoration: underline;
     }
+
+    &__tutorial-banner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
 }
 
 .tutorial-banner-container {
@@ -27,6 +35,9 @@
     //                     "header header"
     //                     "banner banner"
     //                     "banner banner";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
     &__inner-container {
         display: grid;

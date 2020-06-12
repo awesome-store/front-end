@@ -80,8 +80,7 @@ a {
 .heading-secondary {
   font-weight: 800;
   font-size: 4rem;
-  color: var(--color-dark-gray);
-  margin-top: 5rem; }
+  color: var(--color-dark-gray); }
 
 .footer {
   background-color: var(--color-dark-gray);
@@ -425,13 +424,23 @@ a {
     row-gap: 1.5rem;
     padding: 5rem 0;
     text-decoration: underline; }
+  .home-page__tutorial-banner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem; }
 
-.tutorial-banner-container__inner-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 2rem;
-  row-gap: 2rem;
-  margin-top: 2rem; }
+.tutorial-banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .tutorial-banner-container__inner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-top: 2rem; }
 
 .search-bar-container {
   display: flex;
@@ -572,6 +581,8 @@ a {
     position: absolute;
     bottom: 1.5rem;
     left: 1.5rem; }
+  .tutorial-banner-small__button-container {
+    margin-top: 3rem; }
 
 .we-deliver-banner {
   display: flex;
@@ -598,7 +609,7 @@ a {
   .we-deliver-banner__button-container {
     display: flex;
     justify-content: center;
-    margin-top: 5rem; }
+    margin-top: 9rem; }
 
 @media only screen and (max-width: 1024px) {
   .we-deliver-banner__text {
