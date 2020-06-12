@@ -9,7 +9,15 @@
         column-gap: 2rem;
     }
 
-    &__categories-container {
+    &__categories-links-home-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: var(--color-light-gray);
+    }
+
+    &__categories-links-home-inner-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -94,6 +102,16 @@
     &__text {
         font-size: 3rem;
         font-weight: bold;
+    }
+}
+
+.categories-links-home-container{
+    &__categories-link {
+        color: var(--color-dark-gray);
+
+        &-text {
+            color: var(--color-dark-gray);
+        }
     }
 }
 

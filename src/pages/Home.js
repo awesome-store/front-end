@@ -142,52 +142,54 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <section className="home-page__categories-container">
-                <Link>
-                    <p>Bath & Faucets</p>
-                </Link>
-                <Link>
-                    <p>Doors & Windows</p>
-                </Link>
-                <Link>
-                    <p>Hardware</p>
-                </Link>
-                <Link>
-                    <p>Ceiling Fans</p>
-                </Link>
-                <Link>
-                    <p>Kitchenware</p>
-                </Link>
-                <Link>
-                    <p>Decor & Furniture</p>
-                </Link>
-                <Link>
-                    <p>Electrical</p>
-                </Link>
-                <Link>
-                    <p>Heating & Cooling</p>
-                </Link>
-                <Link>
-                    <p>Plumbing</p>
-                </Link>
-                <Link>
-                    <p>Appliances</p>
-                </Link>
-                <Link>
-                    <p>Paint & Building materials</p>
-                </Link>
-                <Link>
-                    <p>Flooring</p>
-                </Link>
-                <Link>
-                    <p>Lawn & Garden</p>
-                </Link>
-                <Link>
-                    <p>Seasonal & Outdoor living</p>
-                </Link>
-                <Link>
-                    <p>Storage</p>
-                </Link>
+            <section className="home-page__categories-links-home-container">
+                <div className="home-page__categories-links-home-inner-container">
+                    <Link className="categories-links-home-container__categories-link">
+                        <p className="categories-links-home-container__categories-link-text">Bath & Faucets</p>
+                    </Link>
+                    <Link className="categories-links-home-container__categories-link">
+                        <p className="categories-links-home-container__categories-link-text">Doors & Windows</p>
+                    </Link>
+                    <Link className="categories-links-home-container__categories-link">
+                        <p className="categories-links-home-container__categories-link-text">Hardware</p>
+                    </Link>
+                    <Link className="categories-links-home-container__categories-link">
+                        <p className="categories-links-home-container__categories-link-text">Ceiling Fans</p>
+                    </Link>
+                    <Link className="categories-links-home-container__categories-link">
+                        <p className="categories-links-home-container__categories-link-text">Kitchenware</p>
+                    </Link>
+                    <Link className="categories-links-home-container__categories-link">
+                        <p className="categories-links-home-container__categories-link-text">Decor & Furniture</p>
+                    </Link>
+                    <Link className="categories-links-home-container__categories-link">
+                        <p className="categories-links-home-container__categories-link-text">Electrical</p>
+                    </Link>
+                    <Link className="categories-links-home-container__categories-link">
+                        <p className="categories-links-home-container__categories-link-text">Heating & Cooling</p>
+                    </Link>
+                    <Link className="categories-links-home-container__categories-link">
+                        <p className="categories-links-home-container__categories-link-text">Plumbing</p>
+                    </Link>
+                    <Link className="categories-links-home-container__categories-link">
+                        <p className="categories-links-home-container__categories-link-text">Appliances</p>
+                    </Link>
+                    <Link className="categories-links-home-container__categories-link">
+                        <p className="categories-links-home-container__categories-link-text">Paint & Building materials</p>
+                    </Link>
+                    <Link className="categories-links-home-container__categories-link">
+                        <p className="categories-links-home-container__categories-link-text">Flooring</p>
+                    </Link>
+                    <Link className="categories-links-home-container__categories-link">
+                        <p className="categories-links-home-container__categories-link-text">Lawn & Garden</p>
+                    </Link>
+                    <Link className="categories-links-home-container__categories-link">
+                        <p className="categories-links-home-container__categories-link-text">Seasonal & Outdoor living</p>
+                    </Link>
+                    <Link className="categories-links-home-container__categories-link">
+                        <p className="categories-links-home-container__categories-link-text">Storage</p>
+                    </Link>
+                </div>
             </section>
         </main>
     );

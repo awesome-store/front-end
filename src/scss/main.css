@@ -416,7 +416,13 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem; }
-  .home-page__categories-container {
+  .home-page__categories-links-home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-light-gray); }
+  .home-page__categories-links-home-inner-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -473,6 +479,11 @@ a {
   .top-banner__text {
     font-size: 3rem;
     font-weight: bold; }
+
+.categories-links-home-container__categories-link {
+  color: var(--color-dark-gray); }
+  .categories-links-home-container__categories-link-text {
+    color: var(--color-dark-gray); }
 
 @media only screen and (max-width: 1440px) {
   .search-bar__tag-item {
