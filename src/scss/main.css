@@ -366,6 +366,8 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 24rem;
+    padding: 2rem;
+    background-color: var(--color-light-gray);
     font-size: 2rem; }
     .products-container__item-img-container {
       width: 100%; }
