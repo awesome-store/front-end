@@ -9,12 +9,6 @@
         column-gap: 2rem;
     }
 
-    &__button-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 4rem;
-    }
-
     &__categories-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

@@ -11,6 +11,7 @@ import flowers from "../img/flowers.png";
 import vases from "../img/vases.png";
 import paint1 from "../img/paint1.png";
 import paint2 from "../img/paint2.png";
+import wedelivercar from "../img/we-deliver-car.png";
 
 function Home() {
     return (
@@ -131,8 +132,11 @@ function Home() {
                 </div>
             </section>
             <div className="we-deliver-banner">
-                <p className="we-deliver-banner__text">WE DELIVER</p>
-                <div className="home-page__button-container">
+                <div className="we-deliver-banner__content">
+                    <p className="we-deliver-banner__text">WE DELIVER</p>
+                    <img className="we-deliver-banner__image" src={wedelivercar} alt="We Deliver. Fast. Efficient. Free."/>
+                </div>
+                <div className="we-deliver-banner__button-container">
                     <div className="btn-store pointer">
                         <span>Find out more</span>
                     </div>
