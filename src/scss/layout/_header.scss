@@ -81,7 +81,7 @@
 
 @media only screen and (max-width: 1024px) {
     .cart {
-        margin-left: 12rem;
+        margin-left: 8rem;
 
         &__text-number {
             display: none;
@@ -90,6 +90,18 @@
         &__text-items {
             display: none;
         }
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .cart {
+        margin-left: 4rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .cart {
+        margin-left: 2rem;
     }
 }
 

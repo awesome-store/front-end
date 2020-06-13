@@ -97,48 +97,52 @@ function Home() {
                     </section>
                 </div>
             </div>
-            <section className="home-page__tutorial-banner-container">
-                <h2 className="heading-secondary tutorial-banner-container__header">Inspire Yourself with Tutorials</h2>
-                <div className="tutorial-banner-container__inner-container">
-                    <div className="tutorial-banner tutorial-banner--text-white">
-                        <img className="tutorial-banner__image" src={flowers} alt="flowers"/>
-                        <span className="tutorial-banner__header">Gardening<br/>tips & tricks</span>
-                        <div className="tutorial-banner__description">
-                            <p><b>6</b> promoted product</p>
-                            <p><b>2</b> min read</p>
+            <div className="wrapper">
+                <div className="wrapper__inside-container">
+                    <section className="home-page__tutorial-banner-container">
+                        <h2 className="heading-secondary tutorial-banner-container__header">Inspire Yourself with Tutorials</h2>
+                        <div className="tutorial-banner-container__inner-container">
+                            <div className="tutorial-banner tutorial-banner--text-white">
+                                <img className="tutorial-banner__image" src={flowers} alt="flowers"/>
+                                <span className="tutorial-banner__header">Gardening<br/>tips & tricks</span>
+                                <div className="tutorial-banner__description">
+                                    <p><b>6</b> promoted product</p>
+                                    <p><b>2</b> min read</p>
+                                </div>
+                            </div>
+                            <div className="tutorial-banner tutorial-banner--text-black">
+                                <img className="tutorial-banner__image" src={vases} alt="flowers"/>
+                                <span className="tutorial-banner__header">DIY<br/>Furniture<br/>Renovation</span>
+                                <div className="tutorial-banner__description">
+                                    <p><b>6</b> promoted product</p>
+                                    <p><b>2</b> min read</p>
+                                </div>
+                            </div>
+                            <div className="tutorial-banner-small tutorial-banner-small--text-white">
+                                <img className="tutorial-banner-small__image" src={paint1} alt="flowers"/>
+                                <span className="tutorial-banner-small__header">Picking<br/>perfect paint</span>
+                                <div className="tutorial-banner-small__description">
+                                    <p><b>6</b> promoted product</p>
+                                    <p><b>2</b> min read</p>
+                                </div>
+                            </div>
+                            <div className="tutorial-banner-small tutorial-banner-small--text-black">
+                                <img className="tutorial-banner-small__image" src={paint2} alt="flowers"/>
+                                <span className="tutorial-banner-small__header">Painting 101</span>
+                                <div className="tutorial-banner-small__description">
+                                    <p><b>6</b> promoted product</p>
+                                    <p><b>2</b> min read</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div className="tutorial-banner tutorial-banner--text-black">
-                        <img className="tutorial-banner__image" src={vases} alt="flowers"/>
-                        <span className="tutorial-banner__header">DIY<br/>Furniture<br/>Renovation</span>
-                        <div className="tutorial-banner__description">
-                            <p><b>6</b> promoted product</p>
-                            <p><b>2</b> min read</p>
+                        <div className="tutorial-banner-small__button-container">
+                            <div className="btn-store pointer">
+                                <span>Store</span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="tutorial-banner-small tutorial-banner-small--text-white">
-                        <img className="tutorial-banner-small__image" src={paint1} alt="flowers"/>
-                        <span className="tutorial-banner-small__header">Picking<br/>perfect paint</span>
-                        <div className="tutorial-banner-small__description">
-                            <p><b>6</b> promoted product</p>
-                            <p><b>2</b> min read</p>
-                        </div>
-                    </div>
-                    <div className="tutorial-banner-small tutorial-banner-small--text-black">
-                        <img className="tutorial-banner-small__image" src={paint2} alt="flowers"/>
-                        <span className="tutorial-banner-small__header">Painting 101</span>
-                        <div className="tutorial-banner-small__description">
-                            <p><b>6</b> promoted product</p>
-                            <p><b>2</b> min read</p>
-                        </div>
-                    </div>
+                    </section>
                 </div>
-                <div className="tutorial-banner-small__button-container">
-                    <div className="btn-store pointer">
-                        <span>Store</span>
-                    </div>
-                </div>
-            </section>
+            </div>
             <div className="we-deliver-banner">
                 <div className="we-deliver-banner__content">
                     <p className="we-deliver-banner__text">WE DELIVER</p>

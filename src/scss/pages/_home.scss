@@ -62,6 +62,7 @@
 
 .search-bar-container {
     display: flex;
+    flex-wrap: wrap;
     margin: 1.5rem 0;
 
     &__tag-item {
@@ -71,6 +72,7 @@
         background-color: var(--color-light-gray);
         color: var(--color-dark-gray);
         font-size: 1.5rem;
+        white-space: nowrap;
     }
 }
 
@@ -137,9 +139,9 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    .search-bar-container {
-        display: none;
-    }
+    // .search-bar-container {
+    //     display: none;
+    // }
 
     .top-slider {
         &__inner-container {

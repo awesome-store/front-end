@@ -32,16 +32,15 @@
 //     align-items: center;
 // }
 
-// .section-popular-products {
-//     margin: 10rem 5rem;
-//     background-color: greenyellow;
-//     height: 90vh;
-// }
+.section-popular-products {
+    width: 100%;
+    margin: 10rem 0;
+}
 
 .products-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
+    // justify-items: center;s
     row-gap: 2rem;
     column-gap: 2rem;
     margin: 5rem 0;
