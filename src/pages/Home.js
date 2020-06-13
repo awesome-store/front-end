@@ -56,39 +56,47 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <section className="section-popular-products">
-                <h2 className="heading-secondary">Popular Products</h2>
-                <div className="products-container">
-                    <Product img={drill}/>
-                    <Product img={paint}/>
-                    <Product img={toolkit}/>
-                    <Product img={screwdrivers}/>
-                    <Product img={paint}/>
-                    <Product img={screwdrivers}/>
-                    <Product img={toolkit}/>
-                    <Product img={drill}/>
+            <div className="wrapper">
+                <div className="wrapper__inside-container">
+                    <section className="section-popular-products">
+                        <h2 className="heading-secondary">Popular Products</h2>
+                        <div className="products-container">
+                            <Product img={drill}/>
+                            <Product img={paint}/>
+                            <Product img={toolkit}/>
+                            <Product img={screwdrivers}/>
+                            <Product img={paint}/>
+                            <Product img={screwdrivers}/>
+                            <Product img={toolkit}/>
+                            <Product img={drill}/>
+                        </div>
+                    </section>
                 </div>
-            </section>
-            <section className="home-page__promotionnal-banner-container">
-                <div className="promotionnal-banner-small">
-                    <div  className="promotionnal-banner-small__text-container promotionnal-banner-small__text-container--purple">
-                        <span className="promotionnal-banner-small__header">50% Off Select Dyson Vacuums</span>
-                        <span className="promotionnal-banner-small__description">Free delivery. Today only</span>
-                    </div>
-                    <div className="promotionnal-banner-small__img-container">
-                        <img className="promotionnal-banner-small__img" src={vacuum} alt="vacuum"/>
-                    </div>
+            </div>
+            <div className="wrapper">
+                <div className="wrapper__inside-container">
+                    <section className="home-page__promotionnal-banner-container">
+                        <div className="promotionnal-banner-small">
+                            <div  className="promotionnal-banner-small__text-container promotionnal-banner-small__text-container--purple">
+                                <span className="promotionnal-banner-small__header">50% Off Select Dyson Vacuums</span>
+                                <span className="promotionnal-banner-small__description">Free delivery. Today only</span>
+                            </div>
+                            <div className="promotionnal-banner-small__img-container">
+                                <img className="promotionnal-banner-small__img" src={vacuum} alt="vacuum"/>
+                            </div>
+                        </div>
+                        <div className="promotionnal-banner-small">
+                            <div className="promotionnal-banner-small__text-container promotionnal-banner-small__text-container--blue">
+                                <span className="promotionnal-banner-small__header">Financing Available</span>
+                                <span className="promotionnal-banner-small__description">Up to 24 month financing. Terms & conditions apply</span>
+                            </div>
+                            <div className="promotionnal-banner-small__img-container">
+                                <img className="promotionnal-banner-small__img" src={card} alt="card"/>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-                <div className="promotionnal-banner-small">
-                    <div className="promotionnal-banner-small__text-container promotionnal-banner-small__text-container--blue">
-                        <span className="promotionnal-banner-small__header">Financing Available</span>
-                        <span className="promotionnal-banner-small__description">Up to 24 month financing. Terms & conditions apply</span>
-                    </div>
-                    <div className="promotionnal-banner-small__img-container">
-                        <img className="promotionnal-banner-small__img" src={card} alt="card"/>
-                    </div>
-                </div>
-            </section>
+            </div>
             <section className="home-page__tutorial-banner-container">
                 <h2 className="heading-secondary tutorial-banner-container__header">Inspire Yourself with Tutorials</h2>
                 <div className="tutorial-banner-container__inner-container">

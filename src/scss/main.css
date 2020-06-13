@@ -507,10 +507,6 @@ a {
   .home-page__promotionnal-banner-container {
     grid-template-columns: 1fr;
     row-gap: 2rem; } }
-.wrapper {
-  display: flex;
-  justify-content: center; }
-
 .btn-store {
   display: flex;
   justify-content: center;
@@ -645,5 +641,16 @@ a {
     font-size: 4rem; }
   .we-deliver-banner__image {
     bottom: -1.85rem; } }
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.wrapper__inside-container {
+  width: 100%;
+  max-width: 1180px;
+  display: flex;
+  justify-content: center; }
 
 /*# sourceMappingURL=main.css.map */
