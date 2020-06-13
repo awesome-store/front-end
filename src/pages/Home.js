@@ -51,7 +51,7 @@ function Home() {
                     <div className="top-banner__text-container">
                         <span className="top-banner__text">More Than 2 Million Items<br/>Available in Store</span>
                     </div>
-                    <div className="btn-store pointer">
+                    <div className="top-banner__btn btn-store pointer">
                         <span>Store</span>
                     </div>
                 </div>
@@ -99,7 +99,7 @@ function Home() {
             </div>
             <div className="wrapper">
                 <div className="wrapper__inside-container">
-                    <section className="home-page__tutorial-banner-container">
+                    <section className="tutorial-banner-container">
                         <h2 className="heading-secondary tutorial-banner-container__header">Inspire Yourself with Tutorials</h2>
                         <div className="tutorial-banner-container__inner-container">
                             <div className="tutorial-banner tutorial-banner--text-white">

@@ -46,6 +46,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10rem 0;
     
     &__inner-container {
         display: grid;
@@ -95,6 +96,7 @@
         max-width: 980px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     // &__text-container {
@@ -153,6 +155,25 @@
         &__promotionnal-banner-container {
             grid-template-columns: 1fr;
             row-gap: 2rem; 
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .top-banner {
+        &__inner-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__btn {
+            margin-top: 2rem;
+        }
+    }
+
+    .tutorial-banner-container {
+        &__inner-container {
+            grid-template-columns: 1fr;
         }
     }
 }
