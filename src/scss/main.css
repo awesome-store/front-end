@@ -638,7 +638,8 @@ a {
     position: relative; }
   .we-deliver-banner__text {
     font-size: 16rem;
-    font-weight: bold; }
+    font-weight: bold;
+    text-align: center; }
   .we-deliver-banner__image {
     width: 80%;
     position: absolute;
@@ -654,7 +655,9 @@ a {
 
 @media only screen and (max-width: 1024px) {
   .we-deliver-banner__text {
-    font-size: 12rem; } }
+    font-size: 12rem; }
+  .we-deliver-banner__image {
+    bottom: -4.5rem; } }
 @media only screen and (max-width: 900px) {
   .we-deliver-banner__text {
     font-size: 9rem; }
@@ -669,10 +672,24 @@ a {
   .we-deliver-banner__text {
     font-size: 6rem; } }
 @media only screen and (max-width: 480px) {
+  .we-deliver-banner__content {
+    width: 100%; }
   .we-deliver-banner__text {
-    font-size: 4rem; }
+    font-size: 6rem; }
   .we-deliver-banner__image {
-    bottom: -1.85rem; } }
+    bottom: -3.5rem; } }
+@media only screen and (max-width: 410px) {
+  .we-deliver-banner__text {
+    font-size: 5rem; }
+  .we-deliver-banner__image {
+    width: 80%;
+    bottom: -2.5rem; } }
+@media only screen and (max-width: 350px) {
+  .we-deliver-banner__text {
+    font-size: 4.5rem; }
+  .we-deliver-banner__image {
+    width: 80%;
+    bottom: -2.5rem; } }
 .wrapper {
   width: 100%;
   display: flex;

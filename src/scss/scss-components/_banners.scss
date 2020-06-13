@@ -137,6 +137,7 @@
     &__text {
         font-size: 16rem;
         font-weight: bold;
+        text-align: center;
     }
 
     &__image {
@@ -160,6 +161,10 @@
     .we-deliver-banner {
         &__text {
             font-size: 12rem;
+        }
+
+        &__image {
+            bottom: -4.5rem;
         }
     }
 }
@@ -198,12 +203,42 @@
 
 @media only screen and (max-width: 480px) {
     .we-deliver-banner {
+        &__content {
+            width: 100%;
+        }
+
         &__text {
-            font-size: 4rem;
+            font-size: 6rem;
         }
 
         &__image {
-            bottom: -1.85rem;
+            bottom: -3.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .we-deliver-banner {
+        &__text {
+            font-size: 5rem;
+        }
+
+        &__image {
+            width: 80%;
+            bottom: -2.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .we-deliver-banner {
+        &__text {
+            font-size: 4.5rem;
+        }
+
+        &__image {
+            width: 80%;
+            bottom: -2.5rem;
         }
     }
 }
