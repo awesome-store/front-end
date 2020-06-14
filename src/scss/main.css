@@ -576,8 +576,6 @@ a {
     height: auto; }
 
 .tutorial-banner {
-  width: 30rem;
-  height: 17rem;
   position: relative; }
   .tutorial-banner--text-white {
     color: var(--color-primary); }
@@ -600,8 +598,6 @@ a {
     right: 1.5rem; }
 
 .tutorial-banner-small {
-  width: 30rem;
-  height: 11rem;
   position: relative; }
   .tutorial-banner-small--text-white {
     color: var(--color-primary); }
@@ -701,5 +697,9 @@ a {
   max-width: 1180px;
   display: flex;
   justify-content: center; }
+
+@media only screen and (max-width: 1200px) {
+  .wrapper__inside-container {
+    width: 90%; } }
 
 /*# sourceMappingURL=main.css.map */
