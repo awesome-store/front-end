@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Product from "../components/Product";
 import drill from "../img/drill.png";
 import paint from "../img/paint.png";
-import screwdrivers from "../img/screwdrivers.jpg";
+import screwdrivers from "../img/screwdrivers.png";
 import toolkit from "../img/toolkit.png";
 // import vacuum from "../img/vacuum.png";
 // import card from "../img/card.png";
