@@ -536,6 +536,8 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2rem;
     padding: 5rem 2rem; }
+  .home-page__promotional-banner-container {
+    margin-bottom: 5rem; }
 
   .top-banner__inner-container {
     display: flex;
@@ -543,8 +545,10 @@ a {
   .top-banner__btn {
     margin-top: 2rem; }
 
-  .tutorial-banner-container__inner-container {
-    grid-template-columns: 1fr; } }
+  .tutorial-banner-container {
+    margin: 5rem 0; }
+    .tutorial-banner-container__inner-container {
+      grid-template-columns: 1fr; } }
 .btn-store {
   display: flex;
   justify-content: center;

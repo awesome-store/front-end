@@ -163,6 +163,10 @@
             column-gap: 2rem;
             padding: 5rem 2rem;
         }
+
+        &__promotional-banner-container {
+            margin-bottom: 5rem;
+        }
     }
 
     .top-banner {
@@ -177,6 +181,8 @@
     }
 
     .tutorial-banner-container {
+        margin: 5rem 0;
+
         &__inner-container {
             grid-template-columns: 1fr;
         }
