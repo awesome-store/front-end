@@ -59,7 +59,7 @@ function Home() {
             <div className="wrapper">
                 <div className="wrapper__inside-container">
                     <section className="section-popular-products">
-                        <h2 className="heading-secondary">Popular Products</h2>
+                        <h2 className="section-popular-products__heading heading-secondary">Popular Products</h2>
                         <div className="products-container">
                             <Product img={drill}/>
                             <Product img={paint}/>

@@ -35,6 +35,10 @@
 .section-popular-products {
     width: 100%;
     margin: 10rem 0;
+
+    &__heading {
+        margin-bottom: 5rem;
+    }
 }
 
 .products-container {
@@ -43,7 +47,7 @@
     justify-content: space-between;
     row-gap: 2rem;
     column-gap: 2rem;
-    margin: 5rem 0;
+    // margin: 5rem 0;
 
     &__item {
         display: flex;
