@@ -5,8 +5,8 @@ import drill from "../img/drill.png";
 import paint from "../img/paint.png";
 import screwdrivers from "../img/screwdrivers.jpg";
 import toolkit from "../img/toolkit.png";
-import vacuum from "../img/vacuum.png";
-import card from "../img/card.png";
+// import vacuum from "../img/vacuum.png";
+// import card from "../img/card.png";
 import flowers from "../img/flowers.png";
 import vases from "../img/vases.png";
 import paint1 from "../img/paint1.png";
@@ -75,29 +75,29 @@ function Home() {
             </div>
             <div className="wrapper">
                 <div className="wrapper__inside-container">
-                    <section className="home-page__promotionnal-banner-container">
-                        <div className="promotionnal-banner-small">
-                            <div  className="promotionnal-banner-small__text-container promotionnal-banner-small__text-container--purple">
-                                <span className="promotionnal-banner-small__header">50% Off Select Dyson Vacuums</span>
-                                <span className="promotionnal-banner-small__description">Free delivery. Today only</span>
+                    <section className="home-page__promotional-banner-container">
+                        <div className="promotional-banner-small">
+                            <div  className="promotional-banner-small__text-container promotional-banner-small__text-container--purple">
+                                <span className="promotional-banner-small__header">50% Off Select<br/>Dyson Vacuums</span>
+                                <span className="promotional-banner-small__description">Free delivery. Today only</span>
                             </div>
-                            <div className="promotionnal-banner-small__img-container">
-                                <img className="promotionnal-banner-small__img" src={vacuum} alt="vacuum"/>
+                            <div className="promotional-banner-small__img-container">
+                                {/* <img className="promotional-banner-small__img" src={vacuum} alt="vacuum"/> */}
                             </div>
                         </div>
-                        <div className="promotionnal-banner-small">
-                            <div className="promotionnal-banner-small__text-container promotionnal-banner-small__text-container--blue">
-                                <span className="promotionnal-banner-small__header">Financing Available</span>
-                                <span className="promotionnal-banner-small__description">Up to 24 month financing. Terms & conditions apply</span>
+                        <div className="promotional-banner-small">
+                            <div className="promotional-banner-small__text-container promotional-banner-small__text-container--blue">
+                                <span className="promotional-banner-small__header">Financing Available</span>
+                                <span className="promotional-banner-small__description">Up to 24 month financing. Terms & conditions apply</span>
                             </div>
-                            <div className="promotionnal-banner-small__img-container">
-                                <img className="promotionnal-banner-small__img" src={card} alt="card"/>
+                            <div className="promotional-banner-small__img-container">
+                                {/* <img className="promotional-banner-small__img" src={card} alt="card"/> */}
                             </div>
                         </div>
                     </section>
                 </div>
             </div>
-            <div className="wrapper">
+            <div className="wrapper home-page__tutorial-banner-wrapper">
                 <div className="wrapper__inside-container">
                     <section className="tutorial-banner-container">
                         <h2 className="heading-secondary tutorial-banner-container__header">Inspire Yourself with Tutorials</h2>

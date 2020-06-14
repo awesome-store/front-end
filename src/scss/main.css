@@ -375,6 +375,7 @@ a {
 .products-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
   row-gap: 2rem;
   column-gap: 2rem;
   margin: 5rem 0; }
@@ -427,15 +428,17 @@ a {
 @media only screen and (max-width: 500px) {
   .products-container {
     display: grid;
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr;
+    justify-items: center; } }
 .home-page {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .home-page__promotionnal-banner-container {
+  .home-page__promotional-banner-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 2rem; }
+    column-gap: 2rem;
+    margin-bottom: 10rem; }
   .home-page__categories-links-home-container {
     display: flex;
     justify-content: center;
@@ -450,12 +453,8 @@ a {
     row-gap: 1.5rem;
     padding: 5rem 0;
     text-decoration: underline; }
-  .home-page__tutorial-banner-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5rem;
-    margin-bottom: 5rem; }
+  .home-page__tutorial-banner-wrapper {
+    background-color: var(--color-light-gray); }
 
 .tutorial-banner-container {
   display: flex;
@@ -523,7 +522,7 @@ a {
   .top-slider__inner-container {
     flex-direction: column; }
 
-  .home-page__promotionnal-banner-container {
+  .home-page__promotional-banner-container {
     grid-template-columns: 1fr;
     row-gap: 2rem; } }
 @media only screen and (max-width: 768px) {
@@ -550,28 +549,31 @@ a {
   font-size: 1.5rem;
   white-space: nowrap; }
 
-.promotionnal-banner-small {
-  display: flex; }
-  .promotionnal-banner-small__text-container {
-    width: 35rem;
+.promotional-banner-small {
+  display: grid;
+  grid-template-columns: 7fr 4fr; }
+  .promotional-banner-small__text-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 2rem; }
-    .promotionnal-banner-small__text-container--purple {
+    .promotional-banner-small__text-container--purple {
       background-color: #BF90FB; }
-    .promotionnal-banner-small__text-container--blue {
+    .promotional-banner-small__text-container--blue {
       background-color: #739AFF; }
-  .promotionnal-banner-small__header {
+  .promotional-banner-small__header {
     font-size: 3rem;
     font-weight: bold; }
-  .promotionnal-banner-small__description {
+  .promotional-banner-small__description {
     color: var(--color-primary);
     font-size: 2rem;
     margin-top: 1rem; }
-  .promotionnal-banner-small__img-container {
-    width: 22rem; }
-  .promotionnal-banner-small__img {
+  .promotional-banner-small__img-container {
+    background: url("../img/vacuum.png") center/cover;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: Arial; }
+  .promotional-banner-small__img {
     width: 100%;
     height: auto; }
 
@@ -666,7 +668,12 @@ a {
     bottom: -3rem; } }
 @media only screen and (max-width: 600px) {
   .we-deliver-banner__text {
-    font-size: 6rem; } }
+    font-size: 6rem; }
+
+  .promotional-banner-small__header {
+    font-size: 2rem; }
+  .promotional-banner-small__description {
+    font-size: 1.5rem; } }
 @media only screen and (max-width: 480px) {
   .we-deliver-banner__content {
     width: 100%; }

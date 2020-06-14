@@ -3,10 +3,11 @@
     flex-direction: column;
     align-items: center;
 
-    &__promotionnal-banner-container {
+    &__promotional-banner-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
+        margin-bottom: 10rem;
     }
 
     &__categories-links-home-container {
@@ -27,12 +28,8 @@
         text-decoration: underline;
     }
 
-    &__tutorial-banner-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
+    &__tutorial-banner-wrapper {
+        background-color: var(--color-light-gray);
     }
 }
 
@@ -152,7 +149,7 @@
     }
 
     .home-page {
-        &__promotionnal-banner-container {
+        &__promotional-banner-container {
             grid-template-columns: 1fr;
             row-gap: 2rem; 
         }

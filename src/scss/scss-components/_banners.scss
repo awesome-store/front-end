@@ -1,12 +1,15 @@
-.promotionnal-banner-small {
-    display: flex;
+.promotional-banner-small {
+    // display: flex;
+    display: grid;
+    grid-template-columns: 7fr 4fr;
 
     &__text-container {
-        width: 35rem;
+        // width: 35rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 2rem;
+        // flex: 4;
 
         &--purple {
             background-color: #BF90FB;
@@ -29,7 +32,17 @@
     }
 
     &__img-container {
-        width: 22rem;
+        // flex: 3;
+        // width: 22rem;
+        // width: 30%;
+        background: url("../img/vacuum.png") center/cover;
+        font-size: 12px;
+        line-height: 18px;
+        font-family: Arial;
+        // font: Arial 12px/18px;
+        // background-image: url("../img/vacuum.png");
+        // background-position: center;
+        // background-size: cover;
     }
 
     &__img {
@@ -197,6 +210,16 @@
     .we-deliver-banner {
         &__text {
             font-size: 6rem;
+        }
+    }
+
+    .promotional-banner-small {
+        &__header {
+            font-size: 2rem;
+        }
+    
+        &__description {
+            font-size: 1.5rem;
         }
     }
 }

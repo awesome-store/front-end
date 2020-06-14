@@ -40,7 +40,7 @@
 .products-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    // justify-items: center;s
+    justify-content: space-between;
     row-gap: 2rem;
     column-gap: 2rem;
     margin: 5rem 0;
@@ -121,5 +121,6 @@
     .products-container {
         display: grid;
         grid-template-columns: 1fr;
+        justify-items: center;
     }
 }
