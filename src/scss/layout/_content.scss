@@ -111,6 +111,10 @@
     .products-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+
+        &__item {
+            width: 22rem;
+        }
     }
 }
 

@@ -94,11 +94,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 0 3rem;
     }
-
-    // &__text-container {
-    //     margin-right: 20rem;
-    // }
 
     &__text {
         font-size: 3rem;
@@ -138,10 +135,6 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    // .search-bar-container {
-    //     display: none;
-    // }
-
     .top-slider {
         &__inner-container {
             flex-direction: column;
@@ -167,6 +160,10 @@
         &__promotional-banner-container {
             margin-bottom: 5rem;
         }
+    }
+
+    .search-bar-container {
+        display: none;
     }
 
     .top-banner {
