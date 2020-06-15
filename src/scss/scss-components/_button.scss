@@ -9,4 +9,8 @@
     color: var(--color-primary);
     font-size: 1.5rem;
     white-space: nowrap;
+
+    &--small {
+        padding: 1rem 2rem;
+    }
 }

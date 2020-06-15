@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import Slider from "../components/Slider";
 import Product from "../components/Product";
 import drill from "../img/drill.png";
 import paint from "../img/paint.png";
@@ -44,7 +45,7 @@ function Home() {
                 <input className="search-bar-container__search-bar" placeholder="Search"/>
             </div>
             <div className="top-slider">
-                <span>top banner</span>
+                <Slider/>
             </div>
             <div className="top-banner">
                 <div className="top-banner__inner-container">

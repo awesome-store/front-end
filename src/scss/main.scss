@@ -6,12 +6,13 @@
 @import "base/reset";
 @import "base/typography";
 
+@import "layout/content";
 @import "layout/footer";
 @import "layout/grid";
 @import "layout/header";
 @import "layout/nav";
 @import "layout/search";
-@import "layout/content";
+@import "layout/top-slider";
 
 @import "pages/about";
 @import "pages/faq";
