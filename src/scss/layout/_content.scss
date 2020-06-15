@@ -124,7 +124,18 @@
 @media only screen and (max-width: 500px) {
     .products-container {
         display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
+        
+        &__item {
+            width: 16rem;
+            font-size: 1.3rem;
+
+            &-price {
+                font-size: 1.5rem;
+            }
+
+            &-price-unit {
+                font-size: .9rem;
+            }
+        }
     }
 }
