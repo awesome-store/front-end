@@ -1,11 +1,11 @@
 import React from 'react';
-import toolkit from '../img/toolkit.png';
+import sliderChair from '../img/slider-chair.png';
 
 function Slider() {
     return (
         <div className="top-slider__top-slider-content-container">
             <div className="top-slider__image-container">
-                <img className="top-slider__image" src={toolkit} alt="toolkit"/>
+                <img className="top-slider__image" src={sliderChair} alt="toolkit"/>
             </div>
             <div className="top-slider__text-container">
                 <h1 className="top-slider__heading">Furniture<br/>week</h1>

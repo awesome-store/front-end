@@ -638,11 +638,12 @@ a {
   display: flex;
   justify-content: center; }
   .top-slider__top-slider-content-container {
-    width: 60%;
+    width: 70%;
     display: flex;
     align-items: center; }
   .top-slider__image-container {
-    width: 50%;
+    width: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end; }
