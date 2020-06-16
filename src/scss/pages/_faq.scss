@@ -40,7 +40,29 @@
     &__leave-message-container {
         display: flex;
         flex-direction: column;
-        // align-items: center;
+    }
+
+    &__contacts-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__image-container {
+        width: 4rem;
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__contact-person {
+        color: var(--color-dark-gray);
+    }
+
+    &__contact-info {
+        color: var(--color-dark-gray);
+        margin-top: 2rem;
     }
 
     &__submit-btn {

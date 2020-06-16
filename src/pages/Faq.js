@@ -1,4 +1,5 @@
 import React from 'react';
+import avatar from '../img/avatar.png';
 
 function Faq() {
     return (
@@ -41,11 +42,13 @@ function Faq() {
                                     <span>Send</span>
                                 </div>
                             </div>
-                            <div>
-                                <h3>Or contact us directly:</h3>
-                                <img alt="avatar"/>
-                                <p>DANA CHITANIS</p>
-                                <p>Customer Service</p>
+                            <div className="faq-contact-form__contacts-container">
+                                <h3 className="faq-contact-form__header">Or contact us directly:</h3>
+                                <div className="faq-contact-form__image-container">
+                                    <img className="faq-contact-form__image" src={avatar} alt="avatar"/>
+                                </div>
+                                <p className="faq-contact-form__contact-person">DANA CHITANIS</p>
+                                <p className="faq-contact-form__contact-info">Customer Service</p>
                                 <p>(800) 123-45-67</p>
                                 <p>(800) 123-45-67</p>
                                 <p>mail@mail.com</p>
