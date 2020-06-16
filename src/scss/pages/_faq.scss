@@ -25,7 +25,7 @@
     &__content {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 2rem;
+        column-gap: 3rem;
         margin-top: 6rem;
     }
 
@@ -48,7 +48,8 @@
     }
 
     &__image-container {
-        width: 4rem;
+        width: 10rem;
+        margin-top: 2rem;
     }
 
     &__image {
@@ -58,11 +59,20 @@
 
     &__contact-person {
         color: var(--color-dark-gray);
+        margin-top: 2rem;
+        font-size: 1.5rem;
     }
 
     &__contact-info {
         color: var(--color-dark-gray);
         margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    &__email-link {
+        color: var(--color-secondary);
+        margin-top: 2rem;
+        font-size: 1.5rem;
     }
 
     &__submit-btn {

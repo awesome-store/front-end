@@ -691,7 +691,7 @@ a {
   .faq-contact-form__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
+    column-gap: 3rem;
     margin-top: 6rem; }
   .faq-contact-form__header {
     font-size: 2rem; }
@@ -704,15 +704,23 @@ a {
     display: flex;
     flex-direction: column; }
   .faq-contact-form__image-container {
-    width: 4rem; }
+    width: 10rem;
+    margin-top: 2rem; }
   .faq-contact-form__image {
     width: 100%;
     height: auto; }
   .faq-contact-form__contact-person {
-    color: var(--color-dark-gray); }
+    color: var(--color-dark-gray);
+    margin-top: 2rem;
+    font-size: 1.5rem; }
   .faq-contact-form__contact-info {
     color: var(--color-dark-gray);
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    font-size: 1.5rem; }
+  .faq-contact-form__email-link {
+    color: var(--color-secondary);
+    margin-top: 2rem;
+    font-size: 1.5rem; }
   .faq-contact-form__submit-btn {
     width: 100%;
     max-width: none;
