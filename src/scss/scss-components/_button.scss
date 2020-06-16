@@ -1,5 +1,5 @@
 //wrapper for a button
-.btn-store {
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,8 +9,12 @@
     color: var(--color-primary);
     font-size: 1.5rem;
     white-space: nowrap;
+}
 
-    &--small {
-        padding: 1rem 2rem;
+@media only screen and (max-width: 768px) {
+    .btn {
+        &--small-screen {
+            padding: 1rem 2rem;
+        }
     }
 }

@@ -52,7 +52,7 @@ function Home() {
                     <div className="top-banner__text-container">
                         <span className="top-banner__text">More Than 2 Million Items<br/>Available in Store</span>
                     </div>
-                    <div className="top-banner__btn btn-store pointer">
+                    <div className="top-banner__btn btn pointer">
                         <span>Store</span>
                     </div>
                 </div>
@@ -137,7 +137,7 @@ function Home() {
                             </div>
                         </div>
                         <div className="tutorial-banner-small__button-container">
-                            <div className="btn-store pointer">
+                            <div className="btn pointer">
                                 <span>Store</span>
                             </div>
                         </div>
@@ -150,7 +150,7 @@ function Home() {
                     <img className="we-deliver-banner__image" src={wedelivercar} alt="We Deliver. Fast. Efficient. Free."/>
                 </div>
                 <div className="we-deliver-banner__button-container">
-                    <div className="btn-store pointer">
+                    <div className="btn pointer">
                         <span>Find out more</span>
                     </div>
                 </div>

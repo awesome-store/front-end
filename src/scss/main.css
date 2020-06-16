@@ -486,6 +486,37 @@ a {
     font-size: 3.2rem; }
   .top-slider__text {
     font-size: 2rem; } }
+.faq {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 10rem 0; }
+  .faq__items {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0; }
+  .faq__item-container {
+    font-size: 2rem;
+    border-top: 1px solid var(--color-light-gray);
+    padding: 2rem 0; }
+
+.faq-contact-form {
+  display: flex;
+  flex-direction: column; }
+  .faq-contact-form__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    margin-top: 6rem; }
+  .faq-contact-form__header {
+    font-size: 2rem; }
+  .faq-contact-form__input {
+    margin-top: 2rem; }
+  .faq-contact-form__leave-message-container {
+    display: flex;
+    flex-direction: column; }
+
 .home-page {
   display: flex;
   flex-direction: column;
@@ -602,19 +633,6 @@ a {
     margin: 5rem 0; }
     .tutorial-banner-container__inner-container {
       grid-template-columns: 1fr; } }
-.btn-store {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 24rem;
-  padding: 2rem 10rem;
-  background-color: var(--color-black);
-  color: var(--color-primary);
-  font-size: 1.5rem;
-  white-space: nowrap; }
-  .btn-store--small {
-    padding: 1rem 2rem; }
-
 .promotional-banner-small {
   display: grid;
   grid-template-columns: 7fr 4fr; }
@@ -761,6 +779,25 @@ a {
   .we-deliver-banner__image {
     width: 80%;
     bottom: -2.5rem; } }
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 24rem;
+  padding: 2rem 10rem;
+  background-color: var(--color-black);
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  white-space: nowrap; }
+
+@media only screen and (max-width: 768px) {
+  .btn--small-screen {
+    padding: 1rem 2rem; } }
+.input {
+  padding: 1.5rem 2.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--color-light-gray); }
+
 .wrapper {
   width: 100%;
   display: flex;

@@ -10,7 +10,7 @@ function Slider() {
             <div className="top-slider__text-container">
                 <h1 className="top-slider__heading">Furniture<br/>week</h1>
                 <p className="top-slider__text">Up to 50% off<br/>select furniture</p>
-                <div className="btn-store btn-store--small">
+                <div className="btn btn--small-screen">
                     <span>Browse in Store</span>
                 </div>
             </div>

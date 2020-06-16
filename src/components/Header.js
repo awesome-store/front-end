@@ -17,22 +17,22 @@ function Header() {
                 <nav className="navigation">
                     <ul className="nav">
                         <li className="nav__item">
-                            <NavLink to="#" className="nav__link">
+                            <NavLink to="/" className="nav__link">
                                 <span>Home</span>
                             </NavLink>
                         </li>
                         <li className="nav__item">
-                            <NavLink to="#" className="nav__link">
+                            <NavLink to="/" className="nav__link">
                                 <span>Store</span>
                             </NavLink>
                         </li>
                         <li className="nav__item">
-                            <NavLink to="#" className="nav__link">
+                            <NavLink to="/" className="nav__link">
                                 <span>Tutorials</span>
                             </NavLink>
                         </li>
                         <li className="nav__item">
-                            <NavLink to="#" className="nav__link">
+                            <NavLink to="/faq" className="nav__link">
                                 <span>Help</span>
                             </NavLink>
                         </li>
