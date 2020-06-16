@@ -6,6 +6,11 @@
 @import "base/reset";
 @import "base/typography";
 
+@import "scss-components/banners";
+@import "scss-components/button";
+@import "scss-components/input";
+@import "scss-components/wrapper";
+
 @import "layout/content";
 @import "layout/footer";
 @import "layout/grid";
@@ -17,8 +22,3 @@
 @import "pages/about";
 @import "pages/faq";
 @import "pages/home";
-
-@import "scss-components/banners";
-@import "scss-components/button";
-@import "scss-components/input";
-@import "scss-components/wrapper";

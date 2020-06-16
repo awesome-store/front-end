@@ -7,13 +7,27 @@ function Faq() {
                 <div className="faq">
                     <h1 className="heading-primary">FAQ</h1>
                     <div className="faq__items">
-                        <p className="faq__item-container">How do I request installation/measurement services?</p>
-                        <p className="faq__item-container">How do I make and verify payments?</p>
-                        <p className="faq__item-container">Where can I find my bill information?</p>
-                        <p className="faq__item-container">How do I check my order status?</p>
-                        <p className="faq__item-container">What's your policy on shipping?</p>
-                        <p className="faq__item-container">Whats' your policy on refunds?</p>
-                        <p className="faq__item-container">What's your policy on donations to charities?</p>
+                        <div>
+                            <p className="faq__item-container pointer">How do I request installation/measurement services?</p>
+                        </div>
+                        <div>
+                            <p className="faq__item-container pointer">How do I make and verify payments?</p>
+                        </div>
+                        <div>
+                            <p className="faq__item-container pointer">Where can I find my bill information?</p>
+                        </div>
+                        <div>
+                            <p className="faq__item-container pointer">How do I check my order status?</p>
+                        </div>
+                        <div>
+                            <p className="faq__item-container pointer">What's your policy on shipping?</p>
+                        </div>
+                        <div>
+                            <p className="faq__item-container pointer">Whats' your policy on refunds?</p><p className="faq__item-container pointer">Whats' your policy on refunds?</p>
+                        </div>
+                        <div>
+                        <p className="faq__item-container pointer">What's your policy on donations to charities?</p>
+                        </div>
                     </div>
                     <div className="faq-contact-form">
                         <h2 className="heading-secondary">Feel free to contact us</h2>
@@ -23,7 +37,7 @@ function Faq() {
                                 <input placeholder="Your name" className="faq-contact-form__input input"/>
                                 <input placeholder="E-mail" className="faq-contact-form__input input"/>
                                 <textarea placeholder="Message" className="faq-contact-form__input input"></textarea>
-                                <div>
+                                <div className="faq-contact-form__submit-btn btn btn--yellow pointer">
                                     <span>Send</span>
                                 </div>
                             </div>

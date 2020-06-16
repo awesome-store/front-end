@@ -82,6 +82,189 @@ a {
   font-size: 4rem;
   color: var(--color-dark-gray); }
 
+.promotional-banner-small {
+  display: grid;
+  grid-template-columns: 7fr 4fr; }
+  .promotional-banner-small__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem; }
+    .promotional-banner-small__text-container--purple {
+      background-color: #BF90FB; }
+    .promotional-banner-small__text-container--blue {
+      background-color: #739AFF; }
+  .promotional-banner-small__header {
+    font-size: 3rem;
+    font-weight: bold; }
+  .promotional-banner-small__description {
+    color: var(--color-primary);
+    font-size: 2rem;
+    margin-top: 1rem; }
+  .promotional-banner-small__img-container {
+    background: url("../img/vacuum.png") center/cover;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: Arial; }
+  .promotional-banner-small__img {
+    width: 100%;
+    height: auto; }
+
+.tutorial-banner {
+  position: relative; }
+  .tutorial-banner--text-white {
+    color: var(--color-primary); }
+  .tutorial-banner--text-black {
+    color: var(--color-black); }
+  .tutorial-banner__image {
+    width: 100%;
+    height: auto; }
+  .tutorial-banner__header {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold; }
+  .tutorial-banner__description {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem; }
+
+.tutorial-banner-small {
+  position: relative; }
+  .tutorial-banner-small--text-white {
+    color: var(--color-primary); }
+  .tutorial-banner-small--text-black {
+    color: var(--color-black); }
+  .tutorial-banner-small__image {
+    width: 100%;
+    height: auto; }
+  .tutorial-banner-small__header {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold; }
+  .tutorial-banner-small__description {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem; }
+  .tutorial-banner-small__button-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center; }
+
+.we-deliver-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 7rem 1rem 4rem 1rem;
+  background-color: var(--color-secondary);
+  color: var(--color-primary); }
+  .we-deliver-banner__content {
+    position: relative; }
+  .we-deliver-banner__text {
+    font-size: 16rem;
+    font-weight: bold;
+    text-align: center; }
+  .we-deliver-banner__image {
+    width: 80%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: -6rem; }
+  .we-deliver-banner__button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 9rem; }
+
+@media only screen and (max-width: 1024px) {
+  .we-deliver-banner__text {
+    font-size: 12rem; }
+  .we-deliver-banner__image {
+    bottom: -4.5rem; } }
+@media only screen and (max-width: 900px) {
+  .we-deliver-banner__text {
+    font-size: 9rem; }
+  .we-deliver-banner__image {
+    width: 90%; } }
+@media only screen and (max-width: 700px) {
+  .we-deliver-banner__text {
+    font-size: 7rem; }
+  .we-deliver-banner__image {
+    bottom: -3rem; } }
+@media only screen and (max-width: 600px) {
+  .we-deliver-banner__text {
+    font-size: 6rem; }
+
+  .promotional-banner-small__header {
+    font-size: 2rem; }
+  .promotional-banner-small__description {
+    font-size: 1.5rem; } }
+@media only screen and (max-width: 480px) {
+  .we-deliver-banner__content {
+    width: 100%; }
+  .we-deliver-banner__text {
+    font-size: 6rem; }
+  .we-deliver-banner__image {
+    bottom: -3.5rem; } }
+@media only screen and (max-width: 410px) {
+  .we-deliver-banner__text {
+    font-size: 5rem; }
+  .we-deliver-banner__image {
+    width: 80%;
+    bottom: -2.5rem; } }
+@media only screen and (max-width: 350px) {
+  .we-deliver-banner__text {
+    font-size: 4.5rem; }
+  .we-deliver-banner__image {
+    width: 80%;
+    bottom: -2.5rem; } }
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 24rem;
+  padding: 2rem 10rem;
+  background-color: var(--color-black);
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  white-space: nowrap; }
+  .btn--yellow {
+    background-color: var(--color-secondary); }
+
+@media only screen and (max-width: 768px) {
+  .btn--small-screen {
+    padding: 1rem 2rem; } }
+.input {
+  width: 100%;
+  padding: 1.5rem 2.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--color-light-gray); }
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.wrapper__inside-container {
+  width: 100%;
+  max-width: 1180px;
+  display: flex;
+  justify-content: center; }
+
+@media only screen and (max-width: 1200px) {
+  .wrapper__inside-container {
+    width: 90%; } }
 .section-categories {
   height: 90vh;
   background-color: silver;
@@ -516,6 +699,10 @@ a {
   .faq-contact-form__leave-message-container {
     display: flex;
     flex-direction: column; }
+  .faq-contact-form__submit-btn {
+    width: 100%;
+    max-width: none;
+    margin-top: 2rem; }
 
 .home-page {
   display: flex;
@@ -633,185 +820,5 @@ a {
     margin: 5rem 0; }
     .tutorial-banner-container__inner-container {
       grid-template-columns: 1fr; } }
-.promotional-banner-small {
-  display: grid;
-  grid-template-columns: 7fr 4fr; }
-  .promotional-banner-small__text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2rem; }
-    .promotional-banner-small__text-container--purple {
-      background-color: #BF90FB; }
-    .promotional-banner-small__text-container--blue {
-      background-color: #739AFF; }
-  .promotional-banner-small__header {
-    font-size: 3rem;
-    font-weight: bold; }
-  .promotional-banner-small__description {
-    color: var(--color-primary);
-    font-size: 2rem;
-    margin-top: 1rem; }
-  .promotional-banner-small__img-container {
-    background: url("../img/vacuum.png") center/cover;
-    font-size: 12px;
-    line-height: 18px;
-    font-family: Arial; }
-  .promotional-banner-small__img {
-    width: 100%;
-    height: auto; }
-
-.tutorial-banner {
-  position: relative; }
-  .tutorial-banner--text-white {
-    color: var(--color-primary); }
-  .tutorial-banner--text-black {
-    color: var(--color-black); }
-  .tutorial-banner__image {
-    width: 100%;
-    height: auto; }
-  .tutorial-banner__header {
-    position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
-    font-size: 2rem;
-    font-weight: bold; }
-  .tutorial-banner__description {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem; }
-
-.tutorial-banner-small {
-  position: relative; }
-  .tutorial-banner-small--text-white {
-    color: var(--color-primary); }
-  .tutorial-banner-small--text-black {
-    color: var(--color-black); }
-  .tutorial-banner-small__image {
-    width: 100%;
-    height: auto; }
-  .tutorial-banner-small__header {
-    position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
-    font-size: 2rem;
-    font-weight: bold; }
-  .tutorial-banner-small__description {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 1.5rem;
-    left: 1.5rem; }
-  .tutorial-banner-small__button-container {
-    margin-top: 3rem;
-    display: flex;
-    justify-content: center; }
-
-.we-deliver-banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 7rem 1rem 4rem 1rem;
-  background-color: var(--color-secondary);
-  color: var(--color-primary); }
-  .we-deliver-banner__content {
-    position: relative; }
-  .we-deliver-banner__text {
-    font-size: 16rem;
-    font-weight: bold;
-    text-align: center; }
-  .we-deliver-banner__image {
-    width: 80%;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    bottom: -6rem; }
-  .we-deliver-banner__button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 9rem; }
-
-@media only screen and (max-width: 1024px) {
-  .we-deliver-banner__text {
-    font-size: 12rem; }
-  .we-deliver-banner__image {
-    bottom: -4.5rem; } }
-@media only screen and (max-width: 900px) {
-  .we-deliver-banner__text {
-    font-size: 9rem; }
-  .we-deliver-banner__image {
-    width: 90%; } }
-@media only screen and (max-width: 700px) {
-  .we-deliver-banner__text {
-    font-size: 7rem; }
-  .we-deliver-banner__image {
-    bottom: -3rem; } }
-@media only screen and (max-width: 600px) {
-  .we-deliver-banner__text {
-    font-size: 6rem; }
-
-  .promotional-banner-small__header {
-    font-size: 2rem; }
-  .promotional-banner-small__description {
-    font-size: 1.5rem; } }
-@media only screen and (max-width: 480px) {
-  .we-deliver-banner__content {
-    width: 100%; }
-  .we-deliver-banner__text {
-    font-size: 6rem; }
-  .we-deliver-banner__image {
-    bottom: -3.5rem; } }
-@media only screen and (max-width: 410px) {
-  .we-deliver-banner__text {
-    font-size: 5rem; }
-  .we-deliver-banner__image {
-    width: 80%;
-    bottom: -2.5rem; } }
-@media only screen and (max-width: 350px) {
-  .we-deliver-banner__text {
-    font-size: 4.5rem; }
-  .we-deliver-banner__image {
-    width: 80%;
-    bottom: -2.5rem; } }
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 24rem;
-  padding: 2rem 10rem;
-  background-color: var(--color-black);
-  color: var(--color-primary);
-  font-size: 1.5rem;
-  white-space: nowrap; }
-
-@media only screen and (max-width: 768px) {
-  .btn--small-screen {
-    padding: 1rem 2rem; } }
-.input {
-  padding: 1.5rem 2.5rem;
-  border-radius: 6px;
-  border: 1px solid var(--color-light-gray); }
-
-.wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.wrapper__inside-container {
-  width: 100%;
-  max-width: 1180px;
-  display: flex;
-  justify-content: center; }
-
-@media only screen and (max-width: 1200px) {
-  .wrapper__inside-container {
-    width: 90%; } }
 
 /*# sourceMappingURL=main.css.map */
