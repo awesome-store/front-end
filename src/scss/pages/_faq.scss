@@ -14,7 +14,22 @@
     &__item-container {
         font-size: 2rem;
         border-top: 1px solid var(--color-light-gray);
-        padding: 2rem 0;
+        padding: 2rem 1rem;
+    }
+
+    &__item-container--last {
+        border-bottom: 1px solid var(--color-light-gray);
+    }
+
+    &__item-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item-bottom {
+        font-size: 1.6rem;
+        line-height: normal;
+        color: var(--color-gray);
     }
 }
 

@@ -2,6 +2,7 @@
   --color-primary: #FFFFFF;
   --color-secondary: #FFCE3A;
   --color-black: #000000;
+  --color-black-header: #1B1E1F;
   --color-gray: #879095;
   --color-dark-gray: #353B3E;
   --color-light-gray: #CFD7DC;
@@ -9,6 +10,10 @@
 
 .pointer {
   cursor: pointer; }
+
+.caret {
+  width: 1rem;
+  height: 1rem; }
 
 /* selecting each and every element on the page and applying reset to it */
 *,
@@ -75,12 +80,12 @@ a {
 .heading-primary {
   font-weight: 800;
   font-size: 3.5rem;
-  color: var(--color-black); }
+  color: var(--color-black-header); }
 
 .heading-secondary {
   font-weight: 800;
   font-size: 4rem;
-  color: var(--color-dark-gray); }
+  color: var(--color-black-header); }
 
 .promotional-banner-small {
   display: grid;
@@ -683,7 +688,16 @@ a {
   .faq__item-container {
     font-size: 2rem;
     border-top: 1px solid var(--color-light-gray);
-    padding: 2rem 0; }
+    padding: 2rem 1rem; }
+  .faq__item-container--last {
+    border-bottom: 1px solid var(--color-light-gray); }
+  .faq__item-top {
+    display: flex;
+    justify-content: space-between; }
+  .faq__item-bottom {
+    font-size: 1.6rem;
+    line-height: normal;
+    color: var(--color-gray); }
 
 .faq-contact-form {
   display: flex;
