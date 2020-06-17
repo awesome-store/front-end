@@ -60,7 +60,7 @@ function Home() {
             <div className="wrapper">
                 <div className="wrapper__inside-container">
                     <section className="section-popular-products">
-                        <h2 className="section-popular-products__heading heading-secondary">Popular Products</h2>
+                        <h2 className="section-popular-products__heading heading-primary">Popular Products</h2>
                         <div className="products-container">
                             <Product img={drill}/>
                             <Product img={paint}/>
@@ -101,7 +101,7 @@ function Home() {
             <div className="wrapper home-page__tutorial-banner-wrapper">
                 <div className="wrapper__inside-container">
                     <section className="tutorial-banner-container">
-                        <h2 className="heading-secondary tutorial-banner-container__header">Inspire Yourself with Tutorials</h2>
+                        <h2 className="heading-primary tutorial-banner-container__header">Inspire Yourself with Tutorials</h2>
                         <div className="tutorial-banner-container__inner-container">
                             <div className="tutorial-banner tutorial-banner--text-white">
                                 <img className="tutorial-banner__image" src={flowers} alt="flowers"/>

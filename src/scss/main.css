@@ -79,12 +79,12 @@ a {
 
 .heading-primary {
   font-weight: 800;
-  font-size: 3.5rem;
+  font-size: 4rem;
   color: var(--color-black-header); }
 
 .heading-secondary {
   font-weight: 800;
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--color-black-header); }
 
 .promotional-banner-small {
