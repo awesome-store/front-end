@@ -1,6 +1,6 @@
 import React from 'react';
-import femaleAvatar from '../img/female-avatar.png';
-import caret from '../img/icons/caret-down.svg';
+import femaleAvatar from '../../img/female-avatar.png';
+import caret from '../../img/icons/caret-down.svg';
 import { ExternalLink } from 'react-external-link';
 
 function Faq() {

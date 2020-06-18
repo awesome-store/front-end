@@ -1,19 +1,19 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import Slider from "../components/Slider";
-import Product from "../components/Product";
-import drill from "../img/drill.png";
-import paint from "../img/paint.png";
-import screwdrivers from "../img/screwdrivers.png";
-import toolkit from "../img/toolkit.png";
-// import vacuum from "../img/vacuum.png";
-// import card from "../img/card.png";
-// import card from "../img/card.png";
-import flowers from "../img/flowers.png";
-import vases from "../img/vases.png";
-import paint1 from "../img/paint1.png";
-import paint2 from "../img/paint2.png";
-import wedelivercar from "../img/we-deliver-car.png";
+import Slider from "../Slider";
+import Product from "../Product";
+import drill from "../../img/drill.png";
+import paint from "../../img/paint.png";
+import screwdrivers from "../../img/screwdrivers.png";
+import toolkit from "../../img/toolkit.png";
+// import vacuum from "../../img/vacuum.png";
+// import card from "../../img/card.png";
+// import card from "../../img/card.png";
+import flowers from "../../img/flowers.png";
+import vases from "../../img/vases.png";
+import paint1 from "../../img/paint1.png";
+import paint2 from "../../img/paint2.png";
+import wedelivercar from "../../img/we-deliver-car.png";
 
 function Home() {
     return (
