@@ -1,4 +1,7 @@
 import React from 'react';
+import Orders from '../account/Orders';
+// import EditAccount from '../account/EditAccount';
+// import ContactSupport from '../account/ContactSupport';
 
 function Account() {
     return (
@@ -14,7 +17,7 @@ function Account() {
                                 <li className="account-sidebar__item pointer">Contact Support</li>
                             </ul>
                         </nav>
-
+                        <Orders/>
                     </div>
                 </div>
             </div>
