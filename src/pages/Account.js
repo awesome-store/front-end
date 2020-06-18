@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function Account() {
     return (
         <div className="wrapper">
@@ -15,7 +14,7 @@ function Account() {
                                 <li className="account-sidebar__item pointer">Contact Support</li>
                             </ul>
                         </nav>
-                        
+
                     </div>
                 </div>
             </div>
