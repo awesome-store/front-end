@@ -866,5 +866,15 @@ a {
   flex-direction: column; }
   .account__account-wrapper {
     display: flex; }
+  .account__account-sidebar {
+    display: flex; }
+
+.account-sidebar__sidebar-list {
+  width: 20rem;
+  display: flex;
+  flex-direction: column; }
+.account-sidebar__item {
+  padding: 1rem;
+  border: 1px solid var(--color-light-gray); }
 
 /*# sourceMappingURL=main.css.map */
