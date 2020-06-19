@@ -1,5 +1,5 @@
 import React from 'react';
-import sliderChair from '../img/slider-chair.png';
+import sliderChair from '../img/banner.png';
 
 function Slider() {
     return (
