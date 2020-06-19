@@ -87,9 +87,22 @@
     }
 }
 
+@media only screen and (max-width: 1150px) {
+    .header {
+        width: 90%;
+
+        &__search {
+            display: block;
+            margin-right: 1.5rem;
+            margin-left: 1.5rem;
+        }
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     .cart {
-        margin-left: 8rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
 
         &__text-number {
             display: none;
@@ -123,7 +136,9 @@
         }
 
         &__search {
+            width: 100%;
             display: block;
+            margin-left: 3rem;
             margin-right: 1.5rem;
         }
     }

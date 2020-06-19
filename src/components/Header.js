@@ -5,7 +5,7 @@ import cart from "../img/icons/cart.svg";
 // import avatar from "../img/avatar.png";
 import avatarDefault from "../img/icons/avatar-default.svg";
 import hamburger from "../img/icons/menu.svg";
-import search from "../img/icons/search.svg";
+// import search from "../img/icons/search.svg";
 
 function Header() {
     return (
@@ -38,17 +38,18 @@ function Header() {
                         </li>
                     </ul>
                 </nav>
-
+                <form action="#" className="header__search">
+                    {/* <img src={search} alt="search"/> */}
+                    <input type="text" className="search__input" placeholder="Search"/>
+                </form>
                 <div className="header__icons-container">
-                    <form action="#" className="header__search">
-                        <img src={search} alt="search"/>
-                        {/* <input type="text" className="search__input" placeholder="Search"/> */}
-                    </form>
-
                     <div className="cart">
                         <img src={cart} alt="Cart" className="cart__img"/>
                         <p className="cart__text cart__text-number">12</p>
                         <p className="cart__text cart__text-items">&nbsp;items</p>
+                    </div>
+                    <div className="navigation-mobile">
+                        <img className="navigation-mobile__hamburger" src={hamburger} alt="Hamburger"/>
                     </div>
                 </div>
 
@@ -66,9 +67,7 @@ function Header() {
                         <img src={avatarDefault} alt="User account" className=" user__avatar user__dropdown"/>
                     </div>
                 </div>
-                <div className="navigation-mobile">
-                    <img className="navigation-mobile__hamburger" src={hamburger} alt="Hamburger"/>
-                </div>
+                
             </header>
         </div>
     );

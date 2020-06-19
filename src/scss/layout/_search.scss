@@ -5,18 +5,18 @@
     justify-content: center;
 
     &__input {
-
         font-family: inherit;
         font-size: inherit;
         color: inherit;
         border: 1px solid grey;
         padding: .7rem 2rem;
         border-radius: 0.5rem;
+        min-width: 20rem;
         width: 50%;
         transition: all .2s;
 
         &:focus {
-            width: 70%;
+            width: 100%;
             outline: none;
             //background-color: darkgray;
         }
@@ -30,4 +30,13 @@
         background-color: lightgrey;
     }
 
+}
+
+@media only screen and (max-width: 600px) {
+    .search {
+        &__input {
+            min-width: initial;
+            width: 100%;
+        }
+    }
 }

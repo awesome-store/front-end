@@ -16,6 +16,7 @@
         display: flex;
         position: absolute;
         z-index: 1;
+        background: url("../img/banner.png") center/cover;
     }
 
     &__image {
@@ -45,10 +46,24 @@
     }
 }
 
+@media only screen and (max-width: 1280px) {
+    .top-slider {
+        &__text-container {
+            right: 10%;
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .top-slider {
-        &__top-slider-content-container {
-            width: 85%;
+        &__image-container {
+            background-repeat: no-repeat;
+            // background-position: 50px 0;
+            background-size: cover;
+        }
+
+        &__text-container {
+            right: 5%;
         }
 
         &__heading {

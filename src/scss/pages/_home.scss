@@ -134,6 +134,12 @@
     }
 }
 
+@media only screen and (max-width: 1150px) {
+    .search-bar-container {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     .top-slider {
         &__inner-container {
@@ -160,10 +166,6 @@
         &__promotional-banner-container {
             margin-bottom: 5rem;
         }
-    }
-
-    .search-bar-container {
-        display: none;
     }
 
     .top-banner {
