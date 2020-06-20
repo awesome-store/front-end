@@ -83,7 +83,7 @@ function Home() {
                                 <span className="promotional-banner-small__header">50% Off Select<br/>Dyson Vacuums</span>
                                 <span className="promotional-banner-small__description">Free delivery. Today only</span>
                             </div>
-                            <div className="promotional-banner-small__img-container">
+                            <div style={{backgroundImage: "url('https://raw.githubusercontent.com/awesome-store/front-end/master/src/img/vacuum.png')"}} className="promotional-banner-small__img-container">
                                 {/* <img className="promotional-banner-small__img" src={vacuum} alt="vacuum"/> */}
                             </div>
                         </div>
@@ -92,7 +92,7 @@ function Home() {
                                 <span className="promotional-banner-small__header">Financing Available</span>
                                 <span className="promotional-banner-small__description">Up to 24 month financing. Terms & conditions apply</span>
                             </div>
-                            <div className="promotional-banner-small__img-container">
+                            <div style={{backgroundImage: "url('https://raw.githubusercontent.com/awesome-store/front-end/master/src/img/card.png')"}}  className="promotional-banner-small__img-container">
                                 {/* <img className="promotional-banner-small__img" src={card} alt="card"/> */}
                             </div>
                         </div>
