@@ -55,9 +55,7 @@
     .navigation {
         display: none;
     }
-}
 
-@media only screen and (max-width: 768px) {
     .navigation-mobile {
         display: block;
 
@@ -67,4 +65,8 @@
             margin: 2rem;
         }
     }
+}
+
+@media only screen and (max-width: 768px) {
+    
 }
