@@ -9,7 +9,6 @@ function Orders() {
                 <div>
                     <h3>Status: Shipped</h3>
                     <h3>Order Number: 235129352</h3>
-                    
                 </div>
             </div>
         </div>

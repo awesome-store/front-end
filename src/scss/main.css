@@ -527,7 +527,10 @@ a {
   .user__user-name {
     color: var(--color-primary);
     white-space: nowrap; }
-  .user__login-link {
+  .user__link {
+    height: 100%;
+    display: flex;
+    align-items: center;
     color: var(--color-primary); }
   .user__login {
     padding: 2.4rem 0; }

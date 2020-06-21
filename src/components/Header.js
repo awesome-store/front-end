@@ -60,12 +60,14 @@ function Header() {
                     </div>
                 </div> */}
                 <div className="user">
-                    <Link to="/" className="user__login-link">
+                    <Link to="/" className="user__link">
                         <p className="user__login">Login</p>
                     </Link>
-                    <div className="user__avatar-container">
-                        <img src={avatarDefault} alt="User account" className=" user__avatar user__dropdown"/>
-                    </div>
+                    <Link to="/account" className="user__link">
+                        <div className="user__avatar-container">
+                            <img src={avatarDefault} alt="User account" className=" user__avatar user__dropdown"/>
+                        </div>
+                    </Link>
                 </div>
                 
             </header>
