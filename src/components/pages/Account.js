@@ -25,7 +25,7 @@ function Account() {
         <div className="wrapper">
             <div className="wrapper__inside-container">
                 <div className="account">
-                    <h1 className="heading-primary">My account</h1>
+                    <h1 className="account__heading-primary heading-primary">My account</h1>
                     <div className="account__account-wrapper">
                         <nav className="account__account-sidebar">
                             <ul className="account-sidebar__sidebar-list">
@@ -34,15 +34,17 @@ function Account() {
                                 <li className="account-sidebar__item pointer" onClick={ () => switchTab("Contact Support" )}>Contact Support</li>
                             </ul>
                         </nav>
-                        {
-                            currentTab.value === "Orders"
-                            ? <Orders/>
-                            : currentTab.value === "Edit Account"
-                            ? <EditAccount/>
-                            : currentTab.value === "Contact Support"
-                            ? <ContactSupport/>
-                            : null
-                        }
+                        <div className="account__content-container">
+                            {
+                                currentTab.value === "Orders"
+                                ? <Orders/>
+                                : currentTab.value === "Edit Account"
+                                ? <EditAccount/>
+                                : currentTab.value === "Contact Support"
+                                ? <ContactSupport/>
+                                : null
+                            }
+                        </div>
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@ import React from 'react';
 function Orders() {
     return (
         <div>
-            <h2>My Orders</h2>
+            <h2 className="account__heading-primary heading-primary">My Orders</h2>
             <div>
                 <h3>Current Orders</h3>
                 <div>
