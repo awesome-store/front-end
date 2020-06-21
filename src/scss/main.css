@@ -253,6 +253,9 @@ a {
   display: flex;
   align-items: center; }
 
+.label {
+  width: 7rem; }
+
 .input {
   width: 100%;
   padding: 1.5rem 2.5rem;
@@ -904,6 +907,8 @@ a {
     display: flex;
     padding: 3rem;
     border: 1px solid var(--color-light-gray); }
+  .account__tab-container {
+    width: 100%; }
 
 .account-sidebar__sidebar-list {
   width: 100%;

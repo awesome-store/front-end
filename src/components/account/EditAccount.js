@@ -2,39 +2,39 @@ import React from 'react';
 
 function EditAccount() {
     return (
-        <div>
+        <div className="account__tab-container">
             <h2 className="heading-primary">Edit My Account</h2>
             <div className="input-container">
-                <label>E-MAIL:</label>
+                <label className="label">E-MAIL:</label>
                 <input className="input"/>
             </div>
             <div className="input-container">
-                <label>PASSWORD:</label>
+                <label className="label">PASSWORD:</label>
                 <input className="input"/>
             </div>
             <h2 className="heading-secondary">Shipping Address</h2>
             <div className="input-container">
-                <label>NAME:</label>
+                <label className="label">NAME:</label>
                 <input className="input"/>
             </div>
             <div className="input-container">
-                <label>STREET:</label>
+                <label className="label">STREET:</label>
                 <input className="input"/>
             </div>
             <div className="input-container">
-                <label>CITY:</label>
+                <label className="label">CITY:</label>
                 <input className="input"/>
             </div>
             <div className="input-container">
-                <label>STATE:</label>
+                <label className="label">STATE:</label>
                 <input className="input"/>
             </div>
             <div className="input-container">
-                <label>ZIP CODE:</label>
+                <label className="label">ZIP CODE:</label>
                 <input className="input"/>
             </div>
             <div className="input-container">
-                <label>COUNTRY:</label>
+                <label className="label">COUNTRY:</label>
                 <input className="input"/>
             </div>
         </div>
