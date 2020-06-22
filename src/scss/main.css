@@ -919,6 +919,15 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem; }
+  .account__street-input-container {
+    grid-column-start: 1;
+    grid-column-end: 3; }
+  .account__change-container {
+    padding: 3.5rem 0; }
+  .account__change-link {
+    width: 4rem;
+    color: var(--color-secondary);
+    text-decoration: underline; }
 
 .account-sidebar__sidebar-list {
   width: 100%;
