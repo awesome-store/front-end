@@ -47,6 +47,14 @@ function EditAccount() {
                     <input className="input"/>
                 </div>
             </div>
+            <div className="account__btn-group">
+                <div className="btn btn--small btn--small-screen">
+                    <p>Cancel</p>
+                </div>
+                <div className="btn btn--small btn--small-screen btn--yellow">
+                    <p>Save</p>
+                </div>
+            </div>
         </div>
     )
 }
