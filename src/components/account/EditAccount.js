@@ -15,7 +15,7 @@ function EditAccount() {
                         <span className="account__change-text">Change</span>
                     </Link>
                 </div>
-                <div className="account__input-container input-container">
+                <div className="account__password-container account__input-container input-container">
                     <label className="label">PASSWORD</label>
                     <input className="input"/>
                 </div>

@@ -915,13 +915,14 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem; }
+  .account__password-container {
+    grid-column: 1 / 3; }
   .account__account-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem; }
   .account__street-input-container {
-    grid-column-start: 1;
-    grid-column-end: 3; }
+    grid-column: 1 / 3; }
   .account__change-container {
     padding: 3.5rem 0; }
   .account__change-link {
@@ -936,5 +937,17 @@ a {
 .account-sidebar__item {
   padding: 1rem;
   border: 1px solid var(--color-light-gray); }
+
+@media only screen and (max-width: 768px) {
+  .account__account-wrapper {
+    grid-template-columns: 1fr; }
+  .account__change-email-container {
+    grid-template-columns: 6fr 1fr;
+    column-gap: 2rem; }
+  .account__account-info {
+    grid-template-columns: 1fr;
+    column-gap: 2rem; }
+  .account__street-input-container {
+    grid-column: auto / auto; } }
 
 /*# sourceMappingURL=main.css.map */
