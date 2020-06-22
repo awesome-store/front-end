@@ -250,11 +250,11 @@ a {
   .btn--small-screen {
     padding: 1rem 2rem; } }
 .input-container {
-  display: flex;
-  align-items: center; }
+  display: grid;
+  row-gap: 1rem; }
 
 .label {
-  width: 7rem; }
+  font-size: .9rem; }
 
 .input {
   width: 100%;
@@ -911,6 +911,14 @@ a {
     margin-bottom: 5rem; }
   .account__input-container {
     margin-bottom: 2rem; }
+  .account__change-email-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem; }
+  .account__account-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem; }
 
 .account-sidebar__sidebar-list {
   width: 100%;

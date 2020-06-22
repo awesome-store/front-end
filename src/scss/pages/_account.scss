@@ -32,6 +32,18 @@
     &__input-container {
         margin-bottom: 2rem;
     }
+
+    &__change-email-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    &__account-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
 }
 
 .account-sidebar {
