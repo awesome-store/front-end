@@ -731,51 +731,6 @@ a {
     line-height: normal;
     color: var(--color-gray); }
 
-.faq-contact-form {
-  display: flex;
-  flex-direction: column; }
-  .faq-contact-form__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3rem;
-    margin-top: 6rem; }
-  .faq-contact-form__header {
-    font-size: 2rem; }
-  .faq-contact-form__input {
-    margin-top: 2rem; }
-  .faq-contact-form__leave-message-container {
-    display: flex;
-    flex-direction: column; }
-  .faq-contact-form__contacts-container {
-    display: flex;
-    flex-direction: column; }
-  .faq-contact-form__image-container {
-    width: 10rem;
-    margin-top: 2rem; }
-  .faq-contact-form__image {
-    width: 100%;
-    height: auto; }
-  .faq-contact-form__contact-person {
-    color: var(--color-dark-gray);
-    margin-top: 2rem;
-    font-size: 1.5rem; }
-  .faq-contact-form__contact-info {
-    color: var(--color-dark-gray);
-    margin-top: 2rem;
-    font-size: 1.5rem; }
-  .faq-contact-form__email-link {
-    color: var(--color-secondary);
-    margin-top: 2rem;
-    font-size: 1.5rem; }
-  .faq-contact-form__submit-btn {
-    width: 100%;
-    max-width: none;
-    margin-top: 2rem; }
-
-@media only screen and (max-width: 768px) {
-  .faq-contact-form__content {
-    grid-template-columns: 1fr;
-    row-gap: 3rem; } }
 .home-page {
   display: flex;
   flex-direction: column;
@@ -933,6 +888,9 @@ a {
     display: inline-grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem; }
+  .account__orders-container {
+    display: flex;
+    flex-direction: column; }
 
 .account-sidebar__sidebar-list {
   width: 100%;
