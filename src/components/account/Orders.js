@@ -12,8 +12,8 @@ function Orders() {
                     <div className="order__order-wizard">
                         <div className="order-wizard__connecting-line"></div>
                         <div className="order-wizard__step-container">
-                            <p className="order-wizard__step-circle">1</p>
-                            <p className="order-wizard__step-circle">2</p>
+                            <p className="order-wizard__step-circle">&#10003;</p>
+                            <p className="order-wizard__step-circle">&#10003;</p>
                             <p className="order-wizard__step-circle">3</p>
                         </div>
                     </div>
