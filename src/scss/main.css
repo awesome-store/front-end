@@ -15,6 +15,10 @@
   width: 1rem;
   height: 1rem; }
 
+.img-fluid {
+  width: 100%;
+  height: auto; }
+
 /* selecting each and every element on the page and applying reset to it */
 *,
 *::after,
@@ -891,6 +895,74 @@ a {
   .account__orders-container {
     display: flex;
     flex-direction: column; }
+  .account__order {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-light-gray);
+    padding: 2rem; }
+
+.order__status {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem; }
+.order__order-number {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 2rem; }
+.order__order-step-wizard {
+  display: flex;
+  flex-direction: column; }
+.order__order-column-names {
+  display: grid;
+  grid-template-columns: 4fr 2fr 1fr;
+  font-size: 1.2rem;
+  padding: 2rem 1rem;
+  color: var(--color-dark-gray);
+  border-bottom: 1px solid var(--color-light-gray); }
+.order__products-list {
+  display: flex;
+  flex-direction: column; }
+.order__product-item {
+  display: grid;
+  grid-template-columns: 4fr 2fr 1fr;
+  border-bottom: 1px solid var(--color-light-gray); }
+.order__total-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem 0;
+  font-size: 1.6rem; }
+  .order__total-container--tax {
+    border-bottom: 1px solid var(--color-light-gray); }
+  .order__total-container--shipping {
+    border-bottom: 3px solid var(--color-light-gray); }
+.order__total-dollar-text {
+  display: inline;
+  font-weight: bold; }
+.order__total-text {
+  display: inline; }
+
+.product-item__img-and-name {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center; }
+.product-item__name {
+  padding: .5rem; }
+.product-item__price-container {
+  display: flex;
+  align-items: center; }
+.product-item__price-inner-container {
+  display: flex;
+  align-items: center; }
+.product-item__dollar-amount {
+  font-size: 2rem;
+  font-weight: bold; }
+.product-item__price-unit {
+  color: var(--color-gray); }
+.product-item__quantity-container {
+  display: flex;
+  align-items: center; }
+.product-item__quantity {
+  font-size: 1.2rem; }
 
 .account-sidebar__sidebar-list {
   width: 100%;
