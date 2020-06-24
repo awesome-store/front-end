@@ -82,6 +82,21 @@
     }
 }
 
+
+.account-sidebar {
+    &__sidebar-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        padding: 1.6rem 1rem;
+        font-size: 1.6rem;
+        border: 1px solid var(--color-light-gray);
+    }
+}
+
 .order {
     &__status {
         font-size: 2rem;
@@ -106,7 +121,7 @@
         grid-template-columns: 4fr 2fr 1fr;
         font-size: 1.2rem;
         padding: 2rem 1rem;
-        color: var(--color-dark-gray);
+        color: var(--color-gray);
         border-bottom: 1px solid var(--color-light-gray);
     }
 
@@ -210,19 +225,6 @@
 
     &__quantity {
         font-size: 1.2rem;
-    }
-}
-
-.account-sidebar {
-    &__sidebar-list {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__item {
-        padding: 1rem;
-        border: 1px solid var(--color-light-gray);
     }
 }
 
