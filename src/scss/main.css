@@ -711,6 +711,51 @@ a {
     font-size: 3.2rem; }
   .top-slider__text {
     font-size: 2rem; } }
+.contact-form {
+  display: flex;
+  flex-direction: column; }
+  .contact-form__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    margin-top: 6rem; }
+  .contact-form__header {
+    font-size: 2rem; }
+  .contact-form__input {
+    margin-top: 2rem; }
+  .contact-form__leave-message-container {
+    display: flex;
+    flex-direction: column; }
+  .contact-form__contacts-container {
+    display: flex;
+    flex-direction: column; }
+  .contact-form__image-container {
+    width: 10rem;
+    margin-top: 2rem; }
+  .contact-form__image {
+    width: 100%;
+    height: auto; }
+  .contact-form__contact-person {
+    color: var(--color-dark-gray);
+    margin-top: 2rem;
+    font-size: 1.5rem; }
+  .contact-form__contact-info {
+    color: var(--color-dark-gray);
+    margin-top: 2rem;
+    font-size: 1.5rem; }
+  .contact-form__email-link {
+    color: var(--color-secondary);
+    margin-top: 2rem;
+    font-size: 1.5rem; }
+  .contact-form__submit-btn {
+    width: 100%;
+    max-width: none;
+    margin-top: 2rem; }
+
+@media only screen and (max-width: 768px) {
+  .contact-form__content {
+    grid-template-columns: 1fr;
+    row-gap: 3rem; } }
 .faq {
   width: 100%;
   max-width: 800px;
@@ -909,9 +954,10 @@ a {
   font-size: 1.6rem;
   font-weight: bold;
   margin-bottom: 2rem; }
-.order__order-step-wizard {
+.order__order-wizard {
   display: flex;
-  flex-direction: column; }
+  position: relative;
+  height: 3.2rem; }
 .order__order-column-names {
   display: grid;
   grid-template-columns: 4fr 2fr 1fr;
@@ -940,6 +986,26 @@ a {
   font-weight: bold; }
 .order__total-text {
   display: inline; }
+
+.order-wizard__connecting-line {
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 1.5rem;
+  left: 0;
+  background-color: var(--color-light-gray); }
+.order-wizard__step-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  z-index: 2; }
+.order-wizard__step-circle {
+  border: 1px solid var(--color-light-gray);
+  border-radius: 50%;
+  padding: 1rem 1.2rem;
+  background-color: var(--color-primary); }
 
 .product-item__img-and-name {
   display: grid;

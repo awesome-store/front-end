@@ -9,8 +9,13 @@ function Orders() {
                 <div className="account__order">
                     <p className="order__status">Status: Shipped</p>
                     <p className="order__order-number">ORDER NUMBER: 235129352</p>
-                    <div className="order__order-step-wizard">
-                        <p>1</p>
+                    <div className="order__order-wizard">
+                        <div className="order-wizard__connecting-line"></div>
+                        <div className="order-wizard__step-container">
+                            <p className="order-wizard__step-circle">1</p>
+                            <p className="order-wizard__step-circle">2</p>
+                            <p className="order-wizard__step-circle">3</p>
+                        </div>
                     </div>
                     <div className="order__order-column-names">
                         <p>Product</p>
