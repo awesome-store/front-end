@@ -43,7 +43,7 @@ function Orders() {
                         <li className="order__product-item">
                             <div className="product-item__img-and-name">
                                 <div>
-                                    <img className="img-fluid" src={toolkit}/>
+                                    <img className="img-fluid" src={toolkit} alt="toolkit"/>
                                 </div>
                                 <p className="product-item__name">10 INCH SPRING AND GEL MEMORY FOAM HYBRID MATTRESS</p>
                             </div>
@@ -60,7 +60,7 @@ function Orders() {
                         <li className="order__product-item">
                             <div className="product-item__img-and-name">
                                 <div>
-                                    <img className="img-fluid" src={toolkit}/>
+                                    <img className="img-fluid" src={toolkit} alt="toolkit"/>
                                 </div>
                                 <p className="product-item__name">10 INCH SPRING AND GEL MEMORY FOAM HYBRID MATTRESS</p>
                             </div>
