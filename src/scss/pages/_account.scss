@@ -186,6 +186,15 @@
         padding: 1rem 1.2rem;
         background-color: var(--color-primary);
     }
+
+    &__dates-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        line-height: normal;
+        color: var(--color-gray);
+    }
 }
 
 .product-item {

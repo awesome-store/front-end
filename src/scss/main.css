@@ -19,6 +19,18 @@
   width: 100%;
   height: auto; }
 
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.link {
+  color: var(--color-secondary); }
+
 /* selecting each and every element on the page and applying reset to it */
 *,
 *::after,
@@ -1015,6 +1027,13 @@ a {
   border-radius: 50%;
   padding: 1rem 1.2rem;
   background-color: var(--color-primary); }
+.order-wizard__dates-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  line-height: normal;
+  color: var(--color-gray); }
 
 .product-item__img-and-name {
   display: grid;
