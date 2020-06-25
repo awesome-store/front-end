@@ -60,7 +60,7 @@ function Header() {
                     </div>
                 </div> */}
                 <div className="user">
-                    <Link to="/" className="user__link">
+                    <Link to="/login" className="user__link">
                         <p className="user__login">Login</p>
                     </Link>
                     <Link to="/account" className="user__link">
