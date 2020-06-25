@@ -1078,26 +1078,28 @@ a {
   background-color: gray; }
 
 .login {
-  width: 40rem;
+  width: 35rem;
   position: absolute;
-  right: 2rem;
+  right: 5rem;
   top: 50%;
-  padding: 4rem 1rem;
-  background-color: var(--color-primary); }
-  .login__login-with-fb {
+  padding: 4rem 2rem;
+  background-color: var(--color-primary);
+  border-radius: 3px; }
+  .login__heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem; }
+  .login__facebook-btn {
     display: flex;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: blue; }
-  .login__facebook-btn {
-    width: 2rem;
-    height: 2rem; }
-
-.login-with-fb__facebook-btn {
-  width: 2rem;
-  height: 2rem;
-  color: var(--color-primary); }
-.login-with-fb__text {
-  color: white; }
+    padding: 1rem;
+    background-color: blue;
+    color: var(--color-primary);
+    border-radius: 3px; }
+  .login__facebook-img {
+    width: 3rem;
+    height: 3rem;
+    color: var(--color-primary);
+    margin-right: .5rem; }
 
 /*# sourceMappingURL=main.css.map */
