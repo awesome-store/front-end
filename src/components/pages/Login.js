@@ -1,5 +1,5 @@
 import React from 'react';
-import fb from '../../img/icons/facebook.svg';
+import fb from '../../img/icons/fb.svg';
 
 function Login() {
     return (
@@ -7,10 +7,12 @@ function Login() {
             <div className="login">
                 <h1>Login</h1>
                 <div className="login__login-with-fb">
-                    <img src={fb} alt="facebook"/>
-                    <p>Log in with Facebook</p>
+                    <img className="login-with-fb__facebook-btn" src={fb} alt="facebook"/>
+                    <p className="login-with-fb__text">Log in with Facebook</p>
                 </div>
             </div>
         </div>
     )
 }
+
+export default Login;
