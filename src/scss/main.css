@@ -1091,7 +1091,7 @@ a {
   .login__facebook-btn {
     display: flex;
     align-items: center;
-    padding: 1rem;
+    padding: 1.25rem;
     background-color: blue;
     color: var(--color-primary);
     font-size: 1.2rem; }
@@ -1118,5 +1118,11 @@ a {
     margin-bottom: 2rem; }
   .login__log-in-btn {
     max-width: none; }
+  .login__terms-container {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    column-gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem; }
 
 /*# sourceMappingURL=main.css.map */

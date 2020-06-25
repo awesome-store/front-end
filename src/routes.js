@@ -4,6 +4,7 @@ import Home from './components/pages/Home';
 import Faq from './components/pages/Faq';
 import Account from './components/pages/Account';
 import Login from './components/pages/Login';
+import Signup from './components/pages/Signup';
 import NotFound from './components/pages/NotFound';
 
 export default (
@@ -12,6 +13,7 @@ export default (
         <Route path="/faq" component={ Faq }/>
         <Route path="/account" component={ Account }/>
         <Route path="/login" component={ Login }/>
+        <Route path="/signup" component={ Signup }/>
         <Route path="*" component={ NotFound }/>
     </Switch>
 )
