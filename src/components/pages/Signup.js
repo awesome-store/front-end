@@ -13,8 +13,8 @@ function Signup() {
                     <input className="" type="checkbox"/>
                     <p>I agree with <Link className="link" to="/">Terms & Conditions</Link></p>
                 </div>
-                <div className="login__log-in-btn btn btn--yellow pointer">
-                    <p>Log in</p>
+                <div className="login__log-in-btn btn pointer">
+                    <p>Sign up</p>
                 </div>
             </div>
         </div>
