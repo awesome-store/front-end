@@ -11,13 +11,17 @@ function Login() {
                     <img className="login__facebook-img" src={fb} alt="facebook"/>
                     <p>Log in with Facebook</p>                    
                 </div>
-                <p>OR</p>
-                <input className="input"/>
-                <input className="input"/>
-                <Link>
+                <div className="login__or-container">
+                    <div className="login__horizontal-line"></div>
+                    <p>OR</p>
+                    <div className="login__horizontal-line"></div>
+                </div>
+                <input className="login__input input" placeholder="Email"/>
+                <input className="login__input input" placeholder="Password"/>
+                <Link className="login__restore-link link">
                     <p>Restore password</p>
                 </Link>
-                <div>
+                <div className="login__log-in-btn btn btn--yellow pointer">
                     <p>Log in</p>
                 </div>
             </div>
