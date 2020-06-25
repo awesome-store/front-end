@@ -1,0 +1,16 @@
+.login-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.login {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    padding: 2rem 1rem;
+
+    &__login-with-fb {
+        padding: 1rem 2rem;
+    }
+}

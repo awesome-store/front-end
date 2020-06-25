@@ -1,7 +1,7 @@
+@import "abstracts/common";
 @import "abstracts/functions";
 @import "abstracts/mixings";
 @import "abstracts/variables";
-@import "abstracts/common";
 
 @import "base/reset";
 @import "base/typography";
@@ -11,6 +11,7 @@
 @import "scss-components/input";
 @import "scss-components/wrapper";
 
+@import "layout/contact-form";
 @import "layout/content";
 @import "layout/footer";
 @import "layout/grid";
@@ -18,9 +19,9 @@
 @import "layout/nav";
 @import "layout/search";
 @import "layout/top-slider";
-@import "layout/contact-form";
 
 @import "pages/about";
+@import "pages/account";
 @import "pages/faq";
 @import "pages/home";
-@import "pages/account";
+@import "pages/login";
