@@ -1,0 +1,36 @@
+.tutorials {
+    display: flex;
+    flex-direction: column;
+
+    &__top-screen {
+        height: 100vh;
+        display: flex;
+        // flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../img/tutorials-bg.png");
+        // background-image: url("../img/tutorials-bg.png");
+        mix-blend-mode: darken;
+        color: var(--color-primary);
+    }
+
+    &__top-screen {
+        &-text-container {
+            width: 55rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &-text {
+            font-size: 1.3rem;
+            line-height: normal;
+        }
+    }
+
+    &__heading {
+        font-size: 5.5rem;
+        font-weight: bold;
+        margin-bottom: 3rem;
+    }
+}
