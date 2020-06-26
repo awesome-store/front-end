@@ -1,4 +1,5 @@
 import React from 'react';
+import build from '../../img/build.jpg';
 
 function Tutorials() {
     return (
@@ -11,7 +12,34 @@ function Tutorials() {
             </div>
             <div className="wrapper">
                 <div className="wrapper__inside-container">
-                    <p>Tutorials</p>
+                    <div className="tutorials__tutorials-container">
+                        <div className="tutorials-container__tutorials-categories-container">
+                            <div className="tutorials-container__tutorials-categories-item">
+                                <img className="img-fluid" src={ build } alt="build"/>
+                                <p className="tutorials-container__tutorials-categories-item-header">Build</p>
+                            </div>
+                            <div className="tutorials-container__tutorials-categories-item">
+                                <img className="img-fluid" src={ build } alt="build"/>
+                                <p className="tutorials-container__tutorials-categories-item-header">Build</p>
+                            </div>
+                            <div className="tutorials-container__tutorials-categories-item">
+                                <img className="img-fluid" src={ build } alt="build"/>
+                                <p className="tutorials-container__tutorials-categories-item-header">Build</p>
+                            </div>
+                            <div className="tutorials-container__tutorials-categories-item">
+                                <img className="img-fluid" src={ build } alt="build"/>
+                                <p className="tutorials-container__tutorials-categories-item-header">Build</p>
+                            </div>
+                            <div className="tutorials-container__tutorials-categories-item">
+                                <img className="img-fluid" src={ build } alt="build"/>
+                                <p className="tutorials-container__tutorials-categories-item-header">Build</p>
+                            </div>
+                            <div className="tutorials-container__tutorials-categories-item">
+                                <img className="img-fluid" src={ build } alt="build"/>
+                                <p className="tutorials-container__tutorials-categories-item-header">Build</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

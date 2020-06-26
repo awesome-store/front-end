@@ -1150,5 +1150,19 @@ a {
     font-size: 5.5rem;
     font-weight: bold;
     margin-bottom: 3rem; }
+  .tutorials__tutorials-container {
+    display: flex;
+    flex-direction: column; }
+
+.tutorials-container__tutorials-categories-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 4rem; }
+.tutorials-container__tutorials-categories-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+.tutorials-container__tutorials-categories-item-header {
+  font-size: 2rem; }
 
 /*# sourceMappingURL=main.css.map */
