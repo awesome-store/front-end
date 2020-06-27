@@ -1170,5 +1170,15 @@ a {
   background: url("../img/build.jpg") center/cover; }
 .tutorials-container__tutorials-categories-item-header {
   font-size: 2rem; }
+.tutorials-container__tutorials-grid-container {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+.tutorials-container__tutorials-grid-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2rem; }
 
 /*# sourceMappingURL=main.css.map */

@@ -54,6 +54,21 @@ function Tutorials() {
                                 <p className="tutorials-container__tutorials-categories-item-header">Decorate</p>
                             </div>
                         </div>
+                        <hr/>
+                        <div className="tutorials-container__tutorials-grid-container">
+                            <h1 className="heading-primary">Build</h1>
+                            <div className="tutorials-container__tutorials-grid-item">
+                                <div className="tutorials-grid-item__">
+                                    <div>
+                                        <p>1</p>
+                                    </div>
+                                    <p>TITLE</p>
+                                </div>
+                            </div>
+                            <div className="btn btn--yellow">
+                                <p>More</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
