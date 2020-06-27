@@ -1157,11 +1157,17 @@ a {
 .tutorials-container__tutorials-categories-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  column-gap: 4rem; }
+  column-gap: 4rem;
+  margin: 5rem 0; }
 .tutorials-container__tutorials-categories-item {
   display: flex;
   flex-direction: column;
   align-items: center; }
+.tutorials-container__tutorials-categories-item-img {
+  width: 15rem;
+  height: 15rem;
+  margin-bottom: 2rem;
+  background: url("../img/build.jpg") center/cover; }
 .tutorials-container__tutorials-categories-item-header {
   font-size: 2rem; }
 

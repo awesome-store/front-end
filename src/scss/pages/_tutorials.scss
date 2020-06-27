@@ -45,12 +45,23 @@
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         column-gap: 4rem;
+        margin: 5rem 0;
     }
 
     &__tutorials-categories-item {
         display: flex;
         flex-direction: column;
         align-items: center;
+        // width: 15rem;
+        // height: 15rem;
+    }
+
+    &__tutorials-categories-item-img {
+        width: 15rem;
+        height: 15rem;
+        margin-bottom: 2rem;
+        background: url("../img/build.jpg") center/cover;
+
     }
 
     &__tutorials-categories-item-header {
