@@ -7,8 +7,6 @@ import clean from '../../img/clean.jpg';
 import decorate from '../../img/decorate.jpeg';
 
 function Tutorials() {
-    // let bg = "../../img/flowers.png";
-    let bg = "./paint.png";
     return (
         <div className="tutorials">
             <div className="tutorials__top-screen">
@@ -22,35 +20,27 @@ function Tutorials() {
                     <div className="tutorials__tutorials-container">
                         <div className="tutorials-container__tutorials-categories-container">
                             <div className="tutorials-container__tutorials-categories-item">
-                                <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: `url(${bg})`}}>
-                                    <p>1</p>
-                                </div>
-                                {/* <img className="tutorials-container__tutorials-categories-item-img img-fluid" src={ build } alt="build"/> */}
+                                <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: `url(${build})`}}></div>
                                 <p className="tutorials-container__tutorials-categories-item-header">Build</p>
                             </div>
                             <div className="tutorials-container__tutorials-categories-item">
-                                <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: build}}></div>
-                                {/* <img className="tutorials-container__tutorials-categories-item-img img-fluid" src={ paint } alt="paint"/> */}
+                                <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: `url(${paint})`}}></div>
                                 <p className="tutorials-container__tutorials-categories-item-header">Paint</p>
                             </div>
                             <div className="tutorials-container__tutorials-categories-item">
-                                <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: build}}></div>
-                                {/* <img className="tutorials-container__tutorials-categories-item-img img-fluid" src={ grow } alt="grow"/> */}
+                                <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: `url(${grow})`}}></div>
                                 <p className="tutorials-container__tutorials-categories-item-header">Grow</p>
                             </div>
                             <div className="tutorials-container__tutorials-categories-item">
-                                <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: build}}></div>
-                                {/* <img className="tutorials-container__tutorials-categories-item-img img-fluid" src={ organize } alt="organize"/> */}
+                                <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: `url(${organize})`}}></div>
                                 <p className="tutorials-container__tutorials-categories-item-header">Organize</p>
                             </div>
                             <div className="tutorials-container__tutorials-categories-item">
-                                <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: build}}></div>
-                                {/* <img className="tutorials-container__tutorials-categories-item-img img-fluid" src={ clean } alt="clean"/> */}
+                                <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: `url(${clean})`}}></div>
                                 <p className="tutorials-container__tutorials-categories-item-header">Clean</p>
                             </div>
                             <div className="tutorials-container__tutorials-categories-item">
-                                <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: build}}></div>
-                                {/* <img className="tutorials-container__tutorials-categories-item-img img-fluid" src={ decorate } alt="decorate"/> */}
+                                <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: `url(${decorate})`}}></div>
                                 <p className="tutorials-container__tutorials-categories-item-header">Decorate</p>
                             </div>
                         </div>
@@ -58,14 +48,20 @@ function Tutorials() {
                         <div className="tutorials-container__tutorials-grid-container">
                             <h1 className="heading-primary">Build</h1>
                             <div className="tutorials-container__tutorials-grid-item">
-                                <div className="tutorials-grid-item__">
-                                    <div>
-                                        <p>1</p>
-                                    </div>
+                                <div className="tutorials-grid-item__block tutorials-grid-item__top-left-big-block">
+                                    <img className="img-fluid" src={decorate} alt="decorate"/>
+                                    <p>TITLE</p>
+                                </div>
+                                <div className="tutorials-grid-item__block tutorials-grid-item__top-middle-small-block">
+                                    <img className="img-fluid" src={decorate} alt="decorate"/>
+                                    <p>TITLE</p>
+                                </div>
+                                <div className="tutorials-grid-item__block tutorials-grid-item__top-right-small-block">
+                                    <img className="img-fluid" src={decorate} alt="build"/>
                                     <p>TITLE</p>
                                 </div>
                             </div>
-                            <div className="btn btn--yellow">
+                            <div className="btn btn--yellow pointer">
                                 <p>More</p>
                             </div>
                         </div>
