@@ -60,6 +60,18 @@ function Tutorials() {
                                     <img className="img-fluid" src={decorate} alt="build"/>
                                     <p>TITLE</p>
                                 </div>
+                                <div className="tutorials-grid-item__block tutorials-grid-item__bottom-left-small-block">
+                                    <img className="img-fluid" src={decorate} alt="build"/>
+                                    <p>TITLE</p>
+                                </div>
+                                <div className="tutorials-grid-item__block tutorials-grid-item__bottom-middle-small-block">
+                                    <img className="img-fluid" src={decorate} alt="build"/>
+                                    <p>TITLE</p>
+                                </div>
+                                <div className="tutorials-grid-item__block tutorials-grid-item__bottom-right-small-block">
+                                    <img className="img-fluid" src={decorate} alt="build"/>
+                                    <p>TITLE</p>
+                                </div>
                             </div>
                             <div className="btn btn--yellow pointer">
                                 <p>More</p>
