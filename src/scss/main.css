@@ -1172,8 +1172,8 @@ a {
   font-size: 2rem; }
 .tutorials-container__tutorials-grid-container {
   margin: 5rem 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  row-gap: 2rem;
   align-items: center; }
 .tutorials-container__tutorials-grid-item {
   width: 100%;
@@ -1206,12 +1206,33 @@ a {
 .tutorials-grid-item__bottom-right-small-block {
   grid-column: 3 / 5;
   grid-row: 2 / 4; }
+.tutorials-grid-item__more-btn {
+  justify-self: center; }
 
 @media only screen and (max-width: 768px) {
   .tutorials-container__tutorials-categories-container {
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem; }
   .tutorials-container__tutorials-grid-item {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+
+  .tutorials-grid-item__top-left-big-block {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2; }
+  .tutorials-grid-item__top-middle-small-block {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2; }
+  .tutorials-grid-item__top-right-small-block {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3; }
+  .tutorials-grid-item__bottom-left-small-block {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3; }
+  .tutorials-grid-item__bottom-middle-small-block {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4; }
+  .tutorials-grid-item__bottom-right-small-block {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4; } }
 
 /*# sourceMappingURL=main.css.map */

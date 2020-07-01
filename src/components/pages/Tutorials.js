@@ -73,7 +73,7 @@ function Tutorials() {
                                     <p>TITLE</p>
                                 </div>
                             </div>
-                            <div className="btn btn--yellow pointer">
+                            <div className="tutorials-grid-item__more-btn btn btn--yellow pointer">
                                 <p>More</p>
                             </div>
                         </div>
