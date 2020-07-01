@@ -113,10 +113,6 @@ a {
     flex-direction: column;
     justify-content: space-between;
     padding: 2rem; }
-    .promotional-banner-small__text-container--purple {
-      background-color: #BF90FB; }
-    .promotional-banner-small__text-container--blue {
-      background-color: #739AFF; }
   .promotional-banner-small__header {
     font-size: 3rem;
     font-weight: bold; }

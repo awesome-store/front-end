@@ -6,8 +6,8 @@ import card from '../../img/card.png';
 function PromotionalBanners() {
     return (
         <div className="home-page__promotional-banner-container">
-            <PromotionalBanner topText={["50% Off Select", <br />, "Dyson Vacuums"]} bottomText="Free delivery. Today only" img={vacuum}/>
-            <PromotionalBanner topText="Financing Available" bottomText="Up to 24 month financing. Terms & conditions apply" img={card}/>
+            <PromotionalBanner topText={["50% Off Select", <br />, "Dyson Vacuums"]} bottomText="Free delivery. Today only" img={vacuum} bgColor="#BF90FB"/>
+            <PromotionalBanner topText="Financing Available" bottomText="Up to 24 month financing. Terms & conditions apply" img={card} bgColor="#739AFF"/>
         </div>
     )
 }
