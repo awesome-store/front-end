@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "../Slider";
 import Product from "../Product";
+import SearchBar from "../SearchBar";
 import TwoMillionItemsBanner from '../banners/TwoMillionItemsBanner';
 import PromotionalBanners from '../banners/PromotionalBanners';
 import TutorialBanners from '../banners/TutorialBanners';
@@ -14,33 +15,7 @@ import CategoriesLinksHome from "../CategoriesLinksHome";
 function Home() {
     return (
         <main className="home-page">
-            <div className="search-bar-container">
-                <div className="search-bar-container__tag-item pointer">
-                    <span>Doors</span>
-                </div>
-                <div className="search-bar-container__tag-item pointer">
-                    <span>Furniture</span>
-                </div>
-                <div className="search-bar-container__tag-item pointer">
-                    <span>Decore</span>
-                </div>
-                <div className="search-bar-container__tag-item pointer">
-                    <span>Building material</span>
-                </div>
-                <div className="search-bar-container__tag-item pointer">
-                    <span>Lawn</span>
-                </div>
-                <div className="search-bar-container__tag-item pointer">
-                    <span>Ceiling Fans</span>
-                </div>
-                <div className="search-bar-container__tag-item pointer">
-                    <span>Garden</span>
-                </div>
-                <div className="search-bar-container__tag-item pointer">
-                    <span>Bath & Faucets</span>
-                </div>
-                <input className="search-bar-container__search-bar" placeholder="Search"/>
-            </div>
+            <SearchBar/>
             <div className="top-slider">
                 <Slider/>
             </div>
