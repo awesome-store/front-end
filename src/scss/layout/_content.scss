@@ -35,10 +35,12 @@
 .section-popular-products {
     width: 100%;
     margin: 10rem 0;
+    display: grid;
+    row-gap: 5rem;
 
-    &__heading {
-        margin-bottom: 5rem;
-    }
+    // &__heading {
+    //     margin-bottom: 5rem;
+    // }
 }
 
 .products-container {

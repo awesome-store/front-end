@@ -1,16 +1,16 @@
 import React from "react";
+import SearchBar from "../SearchBar";
 import Slider from "../Slider";
 import Product from "../Product";
-import SearchBar from "../SearchBar";
-import TwoMillionItemsBanner from '../banners/TwoMillionItemsBanner';
-import PromotionalBanners from '../banners/PromotionalBanners';
-import TutorialBanners from '../banners/TutorialBanners';
-import WeDeliverBanner from '../banners/WeDeliverBanner';
+import TwoMillionItemsBanner from "../banners/TwoMillionItemsBanner";
+import PromotionalBanners from "../banners/PromotionalBanners";
+import TutorialBanners from "../banners/TutorialBanners";
+import WeDeliverBanner from "../banners/WeDeliverBanner";
+import CategoriesLinksHome from "../CategoriesLinksHome";
 import drill from "../../img/drill.png";
 import paint from "../../img/paint.png";
 import screwdrivers from "../../img/screwdrivers.png";
 import toolkit from "../../img/toolkit.png";
-import CategoriesLinksHome from "../CategoriesLinksHome";
 
 function Home() {
     return (
@@ -23,7 +23,7 @@ function Home() {
             <div className="wrapper">
                 <div className="wrapper__inside-container">
                     <section className="section-popular-products">
-                        <h2 className="section-popular-products__heading heading-primary">Popular Products</h2>
+                        <h2 className="heading-primary">Popular Products</h2>
                         <div className="products-container">
                             <Product img={drill}/>
                             <Product img={paint}/>

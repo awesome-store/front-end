@@ -1,5 +1,4 @@
 import React from 'react';
-import TutorialBanners from './TutorialBanners';
 
 function TwoMillionItemsBanner() {
     return (

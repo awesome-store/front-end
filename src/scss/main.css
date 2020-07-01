@@ -355,9 +355,9 @@ a {
 
 .section-popular-products {
   width: 100%;
-  margin: 10rem 0; }
-  .section-popular-products__heading {
-    margin-bottom: 5rem; }
+  margin: 10rem 0;
+  display: grid;
+  row-gap: 5rem; }
 
 .products-container {
   display: grid;

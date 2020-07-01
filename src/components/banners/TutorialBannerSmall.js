@@ -1,5 +1,4 @@
 import React from 'react';
-import TutorialBanner from './TutorialBanner';
 
 function TutorialBannerSmall(props) {
     return (
