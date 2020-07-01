@@ -125,13 +125,9 @@ a {
     font-size: 2rem;
     margin-top: 1rem; }
   .promotional-banner-small__img-container {
-    background: url("../img/vacuum.png") center/cover;
     font-size: 12px;
     line-height: 18px;
     font-family: Arial; }
-  .promotional-banner-small__img {
-    width: 100%;
-    height: auto; }
 
 .tutorial-banner {
   position: relative; }

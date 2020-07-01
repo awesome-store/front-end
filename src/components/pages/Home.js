@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import Slider from "../Slider";
 import Product from "../Product";
+import PromotionalBanners from '../PromotionalBanners';
 import drill from "../../img/drill.png";
 import paint from "../../img/paint.png";
 import screwdrivers from "../../img/screwdrivers.png";
@@ -77,26 +78,7 @@ function Home() {
             </div>
             <div className="wrapper">
                 <div className="wrapper__inside-container">
-                    <section className="home-page__promotional-banner-container">
-                        <div className="promotional-banner-small">
-                            <div  className="promotional-banner-small__text-container promotional-banner-small__text-container--purple">
-                                <span className="promotional-banner-small__header">50% Off Select<br/>Dyson Vacuums</span>
-                                <span className="promotional-banner-small__description">Free delivery. Today only</span>
-                            </div>
-                            <div className="promotional-banner-small__img-container">
-                                {/* <img className="promotional-banner-small__img" src={vacuum} alt="vacuum"/> */}
-                            </div>
-                        </div>
-                        <div className="promotional-banner-small">
-                            <div className="promotional-banner-small__text-container promotional-banner-small__text-container--blue">
-                                <span className="promotional-banner-small__header">Financing Available</span>
-                                <span className="promotional-banner-small__description">Up to 24 month financing. Terms & conditions apply</span>
-                            </div>
-                            <div className="promotional-banner-small__img-container">
-                                {/* <img className="promotional-banner-small__img" src={card} alt="card"/> */}
-                            </div>
-                        </div>
-                    </section>
+                    <PromotionalBanners/>
                 </div>
             </div>
             <div className="wrapper home-page__tutorial-banner-wrapper">
