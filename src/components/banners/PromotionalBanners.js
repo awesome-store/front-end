@@ -1,7 +1,7 @@
 import React from 'react';
 import PromotionalBanner from './PromotionalBanner';
-import vacuum from '../img/vacuum.png';
-import card from '../img/card.png';
+import vacuum from '../../img/vacuum.png';
+import card from '../../img/card.png';
 
 function PromotionalBanners() {
     return (

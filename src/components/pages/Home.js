@@ -2,19 +2,16 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import Slider from "../Slider";
 import Product from "../Product";
-import PromotionalBanners from '../PromotionalBanners';
+import PromotionalBanners from '../banners/PromotionalBanners';
+import WeDeliverBanner from '../banners/WeDeliverBanner';
 import drill from "../../img/drill.png";
 import paint from "../../img/paint.png";
 import screwdrivers from "../../img/screwdrivers.png";
 import toolkit from "../../img/toolkit.png";
-// import vacuum from "../../img/vacuum.png";
-// import card from "../../img/card.png";
-// import card from "../../img/card.png";
 import flowers from "../../img/flowers.png";
 import vases from "../../img/vases.png";
 import paint1 from "../../img/paint1.png";
 import paint2 from "../../img/paint2.png";
-import wedelivercar from "../../img/we-deliver-car.png";
 
 function Home() {
     return (
@@ -127,17 +124,7 @@ function Home() {
                     </section>
                 </div>
             </div>
-            <div className="we-deliver-banner">
-                <div className="we-deliver-banner__content">
-                    <p className="we-deliver-banner__text">WE DELIVER</p>
-                    <img className="we-deliver-banner__image" src={wedelivercar} alt="We Deliver. Fast. Efficient. Free."/>
-                </div>
-                <div className="we-deliver-banner__button-container">
-                    <div className="btn pointer">
-                        <span>Find out more</span>
-                    </div>
-                </div>
-            </div>
+            <WeDeliverBanner/>
             <section className="home-page__categories-links-home-container">
                 <div className="home-page__categories-links-home-inner-container">
                     <Link className="categories-links-home-container__categories-link">
