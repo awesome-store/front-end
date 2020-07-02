@@ -284,11 +284,26 @@ a {
   width: 100%;
   max-width: 1180px;
   display: flex;
-  justify-content: center; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 @media only screen and (max-width: 1200px) {
   .wrapper__inside-container {
     width: 90%; } }
+.categories-container {
+  display: grid;
+  row-gap: 2rem;
+  margin-top: 5rem; }
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); }
+  .categories__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
 .contact-form {
   display: flex;
   flex-direction: column; }

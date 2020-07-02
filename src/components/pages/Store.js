@@ -1,4 +1,6 @@
 import React from 'react';
+import Categories from '../Categories';
+import PopularProducts from "../PopularProducts";
 import PromotionalBanners from "../banners/PromotionalBanners";
 import TutorialBanners from "../banners/TutorialBanners";
 import WeDeliverBanner from "../banners/WeDeliverBanner";
@@ -9,11 +11,8 @@ function Store() {
         <div>
             <div className="wrapper">
                 <div className="wrapper__inside-container">
-                    
-                </div>
-            </div>
-            <div className="wrapper">
-                <div className="wrapper__inside-container">
+                    <Categories/>
+                    <PopularProducts/>
                     <PromotionalBanners/>
                 </div>
             </div>
