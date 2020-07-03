@@ -1,9 +1,10 @@
 import React from 'react';
 
-function Category() {
+function Category(props) {
     return (
-        <div>
-            <span>1</span>
+        <div className="categories__item">
+            <img className="img-fluid" src={props.img} alt={props.img}/>
+            <p>{props.title}</p>
         </div>
     )
 }
