@@ -5,7 +5,7 @@ import TwoMillionItemsBanner from "../banners/TwoMillionItemsBanner";
 import PromotionalBanners from "../banners/PromotionalBanners";
 import TutorialBanners from "../banners/TutorialBanners";
 import WeDeliverBanner from "../banners/WeDeliverBanner";
-import PopularProducts from "../PopularProducts";
+import PopularProducts from "../products/PopularProducts";
 import CategoriesLinksHome from "../CategoriesLinksHome";
 
 function Home() {

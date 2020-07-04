@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import build from '../../img/build.jpg';
 import paint from '../../img/paint.jpg';
 import grow from '../../img/grow.jpg';
@@ -19,30 +20,42 @@ function Tutorials() {
                 <div className="wrapper__inside-container">
                     <div className="tutorials__tutorials-container">
                         <div className="tutorials-container__tutorials-categories-container">
-                            <div className="tutorials-container__tutorials-categories-item">
-                                <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: `url(${build})`}}></div>
-                                <p className="tutorials-container__tutorials-categories-item-header">Build</p>
-                            </div>
-                            <div className="tutorials-container__tutorials-categories-item">
-                                <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: `url(${paint})`}}></div>
-                                <p className="tutorials-container__tutorials-categories-item-header">Paint</p>
-                            </div>
-                            <div className="tutorials-container__tutorials-categories-item">
-                                <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: `url(${grow})`}}></div>
-                                <p className="tutorials-container__tutorials-categories-item-header">Grow</p>
-                            </div>
-                            <div className="tutorials-container__tutorials-categories-item">
-                                <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: `url(${organize})`}}></div>
-                                <p className="tutorials-container__tutorials-categories-item-header">Organize</p>
-                            </div>
-                            <div className="tutorials-container__tutorials-categories-item">
-                                <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: `url(${clean})`}}></div>
-                                <p className="tutorials-container__tutorials-categories-item-header">Clean</p>
-                            </div>
-                            <div className="tutorials-container__tutorials-categories-item">
-                                <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: `url(${decorate})`}}></div>
-                                <p className="tutorials-container__tutorials-categories-item-header">Decorate</p>
-                            </div>
+                            <Link to="/tutorials/build">
+                                <div className="tutorials-container__tutorials-categories-item">
+                                    <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: `url(${build})`}}></div>
+                                    <p className="tutorials-container__tutorials-categories-item-header">Build</p>
+                                </div>
+                            </Link>
+                            <Link to="/tutorials/paint">
+                                <div className="tutorials-container__tutorials-categories-item">
+                                    <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: `url(${paint})`}}></div>
+                                    <p className="tutorials-container__tutorials-categories-item-header">Paint</p>
+                                </div>
+                            </Link>
+                            <Link to="/tutorials/grow">
+                                <div className="tutorials-container__tutorials-categories-item">
+                                    <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: `url(${grow})`}}></div>
+                                    <p className="tutorials-container__tutorials-categories-item-header">Grow</p>
+                                </div>
+                            </Link>
+                            <Link to="/tutorials/organize">
+                                <div className="tutorials-container__tutorials-categories-item">
+                                    <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: `url(${organize})`}}></div>
+                                    <p className="tutorials-container__tutorials-categories-item-header">Organize</p>
+                                </div>
+                            </Link>
+                            <Link to="/tutorials/clean">
+                                <div className="tutorials-container__tutorials-categories-item">
+                                    <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: `url(${clean})`}}></div>
+                                    <p className="tutorials-container__tutorials-categories-item-header">Clean</p>
+                                </div>
+                            </Link>
+                            <Link to="/tutorials/decorate">
+                                <div className="tutorials-container__tutorials-categories-item">
+                                    <div className="tutorials-container__tutorials-categories-item-img" style={{backgroundImage: `url(${decorate})`}}></div>
+                                    <p className="tutorials-container__tutorials-categories-item-header">Decorate</p>
+                                </div>
+                            </Link>
                         </div>
                         <hr/>
                         <div className="tutorials-container__tutorials-grid-container">

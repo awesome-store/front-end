@@ -292,13 +292,15 @@ a {
   .wrapper__inside-container {
     width: 90%; } }
 .categories-container {
+  width: 100%;
   display: grid;
   row-gap: 2rem;
   margin-top: 5rem; }
 
 .categories {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); }
+  grid-template-columns: repeat(6, 1fr);
+  justify-self: center; }
   .categories__item {
     display: flex;
     flex-direction: column;
@@ -1180,7 +1182,8 @@ a {
   margin-bottom: 2rem;
   background-size: cover; }
 .tutorials-container__tutorials-categories-item-header {
-  font-size: 2rem; }
+  font-size: 2rem;
+  color: var(--color-black); }
 .tutorials-container__tutorials-grid-container {
   margin: 5rem 0;
   display: grid;

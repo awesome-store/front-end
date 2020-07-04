@@ -1,6 +1,6 @@
 import React from "react";
-import goldstar from "../img/icons/gold-star.svg";
-import star from "../img/icons/star.svg";
+import goldstar from "../../img/icons/gold-star.svg";
+import star from "../../img/icons/star.svg";
 
 function Product(props) {
     return (
