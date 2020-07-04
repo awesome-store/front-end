@@ -22,12 +22,12 @@ function Header() {
                             </NavLink>
                         </li>
                         <li className="nav__item">
-                            <NavLink to="/" className="nav__link">
+                            <NavLink to="/store" className="nav__link">
                                 <span>Store</span>
                             </NavLink>
                         </li>
                         <li className="nav__item">
-                            <NavLink to="/" className="nav__link">
+                            <NavLink to="/turorials" className="nav__link">
                                 <span>Tutorials</span>
                             </NavLink>
                         </li>
