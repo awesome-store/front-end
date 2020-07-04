@@ -294,8 +294,7 @@ a {
 .categories-container {
   width: 100%;
   display: grid;
-  row-gap: 2rem;
-  margin-top: 5rem; }
+  row-gap: 2rem; }
 
 .categories {
   display: grid;
@@ -374,9 +373,8 @@ a {
     align-self: flex-end;
     font-size: 2.5rem; }
 
-.section-popular-products {
+.section-products {
   width: 100%;
-  margin: 10rem 0;
   display: grid;
   row-gap: 5rem; }
 

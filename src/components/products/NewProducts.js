@@ -5,10 +5,10 @@ import paint from "../../img/paint.png";
 import screwdrivers from "../../img/screwdrivers.png";
 import toolkit from "../../img/toolkit.png";
 
-function PopularProducts() {
+function NewProducts() {
     return (
         <section className="section-products">
-            <h2 className="heading-primary">Popular Products</h2>
+            <h2 className="heading-primary">New Products</h2>
             <div className="products-container">
                 <Product img={drill}/>
                 <Product img={paint}/>
@@ -23,4 +23,4 @@ function PopularProducts() {
     )
 }
 
-export default PopularProducts;
+export default NewProducts;
