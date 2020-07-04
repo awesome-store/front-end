@@ -12,5 +12,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        color: var(--color-black);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .categories {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

@@ -302,8 +302,12 @@ a {
   .categories__item {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    color: var(--color-black); }
 
+@media only screen and (max-width: 768px) {
+  .categories {
+    grid-template-columns: repeat(3, 1fr); } }
 .contact-form {
   display: flex;
   flex-direction: column; }
