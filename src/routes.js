@@ -1,18 +1,20 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Home from './components/pages/Home';
+import Store from './components/pages/Store';
+import Category from './components/pages/Category';
+import Tutorials from './components/pages/Tutorials';
 import Faq from './components/pages/Faq';
 import Account from './components/pages/Account';
 import Login from './components/pages/Login';
 import Signup from './components/pages/Signup';
-import Tutorials from './components/pages/Tutorials';
-import Store from './components/pages/Store';
 import NotFound from './components/pages/NotFound';
 
 export default (
     <Switch>
         <Route exact path="/" component={ Home }/>
         <Route path="/store" component={ Store }/>
+        <Route path="/category" component={ Category } />
         <Route path="/tutorials" component={ Tutorials }/>
         <Route path="/faq" component={ Faq }/>
         <Route path="/account" component={ Account }/>
