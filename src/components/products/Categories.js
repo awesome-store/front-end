@@ -18,9 +18,9 @@ import appliances from '../../img/categories/appliances.svg';
 import outdoor from '../../img/categories/outdoor-living.svg';
 import kitchenware from '../../img/categories/kitchenware.svg';
 
-function Categories() {
+function Categories(props) {
     return (
-        <div className="categories-container">
+        <div className={"categories-container " + props.className}>
             <h1 className="heading-primary">Categories</h1>
             <div className="categories">
                 <Category url="bath" img={bath} title="BATH & FAUCETS"/>

@@ -5,9 +5,9 @@ import paint from "../../img/paint.png";
 import screwdrivers from "../../img/screwdrivers.png";
 import toolkit from "../../img/toolkit.png";
 
-function NewProducts() {
+function NewProducts(props) {
     return (
-        <section className="section-products">
+        <section className={"section-products " + props.className}>
             <h2 className="heading-primary">New Products</h2>
             <div className="products-container">
                 <Product img={drill}/>
