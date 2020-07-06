@@ -12,9 +12,9 @@ function Store() {
         <div>
             <div className="wrapper">
                 <div className="wrapper__inside-container">
-                    <Categories className="store__categories"/>
-                    <PopularProducts className="store__products-container"/>
-                    <NewProducts className="store__products-container"/>
+                    <Categories className="store__category-cards-container"/>
+                    <PopularProducts className="store__product-cards-container"/>
+                    <NewProducts className="store__product-cards-container"/>
                     <PromotionalBanners className="store__promotional-banners"/>
                 </div>
             </div>

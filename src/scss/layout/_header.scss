@@ -33,6 +33,40 @@
     }
 }
 
+.search {
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        border: 1px solid grey;
+        padding: .7rem 2rem;
+        border-radius: 0.5rem;
+        min-width: 20rem;
+        width: 50%;
+        transition: all .2s;
+
+        &:focus {
+            width: 100%;
+            outline: none;
+            //background-color: darkgray;
+        }
+
+        &::-webkit-input-placeholder {
+            font-weight: 900;
+        }
+    }
+
+    &__input:focus {
+        background-color: lightgrey;
+    }
+
+}
+
 //ICONS
 .logo {
     height: 3.3rem;
@@ -152,5 +186,14 @@
 
     .user {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .search {
+        &__input {
+            min-width: initial;
+            width: 100%;
+        }
     }
 }

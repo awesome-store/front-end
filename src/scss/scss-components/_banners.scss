@@ -1,3 +1,26 @@
+.top-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    background-color: var(--color-secondary);
+
+    &__inner-container {
+        width: 100%;
+        max-width: 980px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 3rem;
+    }
+
+    &__text {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+}
+
 .promotional-banner-small {
     // display: flex;
     display: grid;
@@ -44,6 +67,31 @@
         // background-position: center;
         // background-size: cover;
     }
+}
+
+.tutorial-banner-container {
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-areas:
+    //                     "header header"
+    //                     "banner banner"
+    //                     "banner banner";
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    margin: 10rem 0;
+    
+    &__inner-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        margin-top: 5rem;
+    }
+    
+    // &__header {
+    //     grid-area: header;
+    // }
 }
 
 .tutorial-banner {
@@ -187,6 +235,27 @@
 
         &__image {
             width: 90%;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .top-banner {
+        &__inner-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__btn {
+            margin-top: 2rem;
+        }
+    }
+
+    .tutorial-banner-container {
+        margin: 5rem 0;
+
+        &__inner-container {
+            grid-template-columns: 1fr;
         }
     }
 }

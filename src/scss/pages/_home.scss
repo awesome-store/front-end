@@ -31,46 +31,13 @@
     &__tutorial-banner-wrapper {
         background-color: var(--color-light-gray);
     }
-}
 
-.tutorial-banner-container {
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
-    // grid-template-areas:
-    //                     "header header"
-    //                     "banner banner"
-    //                     "banner banner";
-    display: flex;
-    flex-direction: column;
-    // align-items: center;
-    margin: 10rem 0;
-    
-    &__inner-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 2rem;
-        row-gap: 2rem;
+    &__popular-products {
         margin-top: 5rem;
     }
-    
-    // &__header {
-    //     grid-area: header;
-    // }
-}
 
-.search-bar-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1.5rem 0;
-
-    &__tag-item {
-        padding: .8rem 1.5rem;
-        margin: 0 .75rem;
-        border-radius: 30px;
-        background-color: var(--color-light-gray);
-        color: var(--color-dark-gray);
-        font-size: 1.5rem;
-        white-space: nowrap;
+    &__promotional-banners {
+        margin-top: 5rem;
     }
 }
 
@@ -78,29 +45,6 @@
     height: 70vh;
     width: 100%;
     background-color: #89AFC2;
-}
-
-.top-banner {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem 0;
-    background-color: var(--color-secondary);
-
-    &__inner-container {
-        width: 100%;
-        max-width: 980px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 3rem;
-    }
-
-    &__text {
-        font-size: 3rem;
-        font-weight: bold;
-    }
 }
 
 .categories-links-home-container{
@@ -114,12 +58,6 @@
 }
 
 @media only screen and (max-width: 1440px) {
-    .search-bar {
-        &__tag-item {
-            font-size: 1.2rem;
-        }
-    }
-
     .top-slider {
         &__inner-container {
             max-width: 780px;
@@ -131,12 +69,6 @@
         &__inner-container {
             max-width: 800px;
         }
-    }
-}
-
-@media only screen and (max-width: 1150px) {
-    .search-bar-container {
-        display: none;
     }
 }
 
@@ -165,25 +97,6 @@
 
         &__promotional-banner-container {
             margin-bottom: 5rem;
-        }
-    }
-
-    .top-banner {
-        &__inner-container {
-            display: flex;
-            flex-direction: column;
-        }
-
-        &__btn {
-            margin-top: 2rem;
-        }
-    }
-
-    .tutorial-banner-container {
-        margin: 5rem 0;
-
-        &__inner-container {
-            grid-template-columns: 1fr;
         }
     }
 }

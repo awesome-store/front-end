@@ -7,9 +7,9 @@ import toolkit from "../../img/toolkit.png";
 
 function NewProducts(props) {
     return (
-        <section className={"section-products " + props.className}>
+        <section className={"product-cards-container " + props.className}>
             <h2 className="heading-primary">New Products</h2>
-            <div className="products-container">
+            <div className="product-cards">
                 <Product img={drill}/>
                 <Product img={paint}/>
                 <Product img={toolkit}/>

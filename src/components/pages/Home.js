@@ -18,12 +18,12 @@ function Home() {
             <TwoMillionItemsBanner/>
             <div className="wrapper">
                 <div className="wrapper__inside-container">
-                    <PopularProducts/>
+                    <PopularProducts className="home-page__popular-products"/>
                 </div>
             </div>
             <div className="wrapper">
                 <div className="wrapper__inside-container">
-                    <PromotionalBanners/>
+                    <PromotionalBanners className="home-page__promotional-banners"/>
                 </div>
             </div>
             <div className="wrapper home-page__tutorial-banner-wrapper">
