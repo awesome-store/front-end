@@ -1,0 +1,25 @@
+.category-cards-container {
+    width: 100%;
+    display: grid;
+    row-gap: 2rem;
+    // margin-top: 5rem;
+}
+
+.category-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-self: center;
+
+    &__category-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--color-black);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .category-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

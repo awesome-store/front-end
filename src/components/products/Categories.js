@@ -20,9 +20,9 @@ import kitchenware from '../../img/categories/kitchenware.svg';
 
 function Categories(props) {
     return (
-        <div className={"categories-container " + props.className}>
+        <div className={"category-cards-container " + props.className}>
             <h1 className="heading-primary">Categories</h1>
-            <div className="categories">
+            <div className="category-cards">
                 <Category url="bath" img={bath} title="BATH & FAUCETS"/>
                 <Category url="decor" img={decor} title="DECOR"/>
                 <Category url="paint" img={paint} title="PAINT"/>
