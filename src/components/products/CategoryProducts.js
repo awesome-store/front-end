@@ -105,6 +105,28 @@ function CategoryProducts(props) {
                             <img className="category-products-sidebar__property-item-cross pointer" src={cross} />
                         </div>
                     </div>
+                    <div className="category-products-sidebar__property-group">
+                        <p className="category-products-sidebar__property-heading">SORT BY PRICE</p>
+                        <div className="category-products-sidebar__property-item-container">
+                            <p className="category-products-sidebar__property-item pointer">Low to high</p>
+                            <img className="category-products-sidebar__property-item-cross pointer" src={cross} />  
+                        </div>
+                        <div className="category-products-sidebar__property-item-container category-products-sidebar__property-item-container--active">
+                            <p className="category-products-sidebar__property-item pointer category-products-sidebar__property-item--active">High to low</p> 
+                            <img className="category-products-sidebar__property-item-cross category-products-sidebar__property-item-cross--active pointer" src={cross} />   
+                        </div>
+                    </div>
+                    <div className="category-products-sidebar__property-group">
+                        <p className="category-products-sidebar__property-heading">SORT BY RATING</p>
+                        <div className="category-products-sidebar__property-item-container">
+                            <p className="category-products-sidebar__property-item pointer">Low to high</p>
+                            <img className="category-products-sidebar__property-item-cross pointer" src={cross} />  
+                        </div>
+                        <div className="category-products-sidebar__property-item-container category-products-sidebar__property-item-container--active">
+                            <p className="category-products-sidebar__property-item pointer category-products-sidebar__property-item--active">High to low</p> 
+                            <img className="category-products-sidebar__property-item-cross category-products-sidebar__property-item-cross--active pointer" src={cross} />   
+                        </div>
+                    </div>
                 </div>
                 <Product img={drill}/>
                 <Product img={paint}/>
