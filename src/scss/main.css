@@ -302,6 +302,18 @@ a {
   .we-deliver-banner__image {
     width: 80%;
     bottom: -2.5rem; } }
+.breadcrumbs-container {
+  display: flex;
+  align-items: center;
+  grid-template-rows: 1fr; }
+  .breadcrumbs-container__item {
+    font-size: 1.6rem; }
+    .breadcrumbs-container__item--parent {
+      color: var(--color-secondary);
+      text-decoration: underline; }
+  .breadcrumbs-container__arrow {
+    margin: 0 1rem; }
+
 .btn {
   display: flex;
   justify-content: center;
