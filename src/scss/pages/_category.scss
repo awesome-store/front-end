@@ -38,11 +38,25 @@
         margin-bottom: 1.5rem;
     }
 
+    &__property-item-container {
+        display: flex;
+        align-items: center;
+    }
+
     &__property-item {
         font-size: 1.6rem;
 
         &--active {
             font-weight: bold;
+        }
+    }
+
+    &__property-item-cross {
+        display: none;
+        margin-left: 1rem;
+
+        &--active {
+            display: block;
         }
     }
 }
