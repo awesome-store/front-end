@@ -1,5 +1,5 @@
 import React from 'react';
-import Categories from "../products/Categories";
+import CategoryCards from "../products/CategoryCards";
 import PopularProducts from "../products/PopularProducts";
 import NewProducts from "../products/NewProducts";
 import PromotionalBanners from "../banners/PromotionalBanners";
@@ -12,7 +12,7 @@ function Store() {
         <div>
             <div className="wrapper">
                 <div className="wrapper__inside-container">
-                    <Categories className="store__category-cards-container"/>
+                    <CategoryCards className="store__category-cards-container"/>
                     <PopularProducts className="store__product-cards-container"/>
                     <NewProducts className="store__product-cards-container"/>
                     <PromotionalBanners className="store__promotional-banners"/>
