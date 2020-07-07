@@ -1,0 +1,34 @@
+.category {
+    &__category-products {
+        margin-top: 5rem;
+    }
+
+    &__promotional-banners {
+        margin-top: 5rem;
+    }
+}
+
+.category-products {
+    &__header-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__category-products-sidebar {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.category-products-sidebar {
+    &__property-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    &__property-heading {
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+}
