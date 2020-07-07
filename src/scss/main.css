@@ -12,6 +12,13 @@
   width: 100%;
   height: auto; }
 
+.search-input {
+  width: 50%;
+  max-width: 60rem;
+  border: none;
+  border-bottom: 1px solid var(--color-gray);
+  padding: 1rem 1.5rem; }
+
 .text-left {
   text-align: left; }
 

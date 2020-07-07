@@ -11,7 +11,7 @@ function CategoryProducts(props) {
         <section className={"product-cards-container " + props.className}>
             <div className="category-products__header-container">
                 <h2 className="heading-primary">{props.categoryName}</h2>
-                <input placeholder="Search"/>
+                <input className="search-input" placeholder="Search"/>
             </div>
             <div className="product-cards">
                 <div className="category-products__category-products-sidebar">
