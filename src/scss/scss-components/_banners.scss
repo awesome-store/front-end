@@ -21,6 +21,13 @@
     }
 }
 
+.promotional-banner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    // margin-bottom: 10rem;
+}
+
 .promotional-banner-small {
     // display: flex;
     display: grid;
@@ -228,6 +235,11 @@
 }
 
 @media only screen and (max-width: 900px) {
+    .promotional-banner-container {
+        grid-template-columns: 1fr;
+        row-gap: 2rem; 
+    }
+
     .we-deliver-banner {
         &__text {
             font-size: 9rem;
