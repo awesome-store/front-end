@@ -7,7 +7,6 @@
 .product-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-content: space-between;
     row-gap: 2rem;
     column-gap: 2rem;
 
@@ -16,7 +15,6 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        width: 24rem;
         padding: 2rem;
         background-color: var(--color-light-gray);
         font-size: 2rem;

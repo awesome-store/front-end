@@ -705,7 +705,6 @@ a {
 .product-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  justify-content: space-between;
   row-gap: 2rem;
   column-gap: 2rem; }
   .product-cards__product-card {
@@ -713,7 +712,6 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 24rem;
     padding: 2rem;
     background-color: var(--color-light-gray);
     font-size: 2rem; }
@@ -1003,7 +1001,6 @@ a {
   display: flex;
   flex-direction: column;
   background-color: var(--color-light-gray);
-  width: 24rem;
   padding: 3rem 2.5rem;
   grid-row: 1 / 3; }
 
