@@ -12,35 +12,36 @@ function CategoryProducts(props) {
                 <h2 className="heading-primary">{props.categoryName}</h2>
                 <input placeholder="Search"/>
             </div>
-            <div className="category-products__category-products-sidebar">
-                <div className="category-products-sidebar__property-group">
-                    <p className="category-products-sidebar__property-heading">BRAND</p>
-                    <p>Behr</p>
-                    <p>PPG</p>
-                    <p>Glidden</p>
-                    <p>Rust-Oleum</p>
-                    <p>Kitz</p>
-                    <p>Wagner</p>
-                    <p>Graco</p>
-                    <p>Plastidip</p>
-                    <p>3M</p>
-                    <p>Wooster Pro</p>
-                    <p>Varathane</p>
-                </div>
-                <div className="category-products-sidebar__property-group">
-                    <p className="category-products-sidebar__property-heading">TYPE</p>
-                    <p>Any</p>
-                    <p>Interior Paint</p>
-                    <p>Exterior Paint</p>
-                    <p>Primer</p>
-                    <p>Ceiling Paint</p>
-                    <p>Spray</p>
-                    <p>Concrete & Garage Floor</p>
-                    <p>Masonry & Brick</p>
-                    <p>Roof Paint</p>
-                </div>
-            </div>
             <div className="product-cards">
+                <div className="category-products__category-products-sidebar">
+                    <div className="category-products-sidebar__property-group">
+                        <p className="category-products-sidebar__property-heading pointer">BRAND</p>
+                        <p className="category-products-sidebar__property-item pointer">Any</p>
+                        <p className="category-products-sidebar__property-item category-products-sidebar__property-item--active pointer">Behr x</p>
+                        <p className="category-products-sidebar__property-item pointer">PPG</p>
+                        <p className="category-products-sidebar__property-item pointer">Glidden</p>
+                        <p className="category-products-sidebar__property-item pointer">Rust-Oleum</p>
+                        <p className="category-products-sidebar__property-item pointer">Kitz</p>
+                        <p className="category-products-sidebar__property-item pointer">Wagner</p>
+                        <p className="category-products-sidebar__property-item pointer">Graco</p>
+                        <p className="category-products-sidebar__property-item pointer">Plastidip</p>
+                        <p className="category-products-sidebar__property-item pointer">3M</p>
+                        <p className="category-products-sidebar__property-item pointer">Wooster Pro</p>
+                        <p className="category-products-sidebar__property-item pointer">Varathane</p>
+                    </div>
+                    <div className="category-products-sidebar__property-group">
+                        <p className="category-products-sidebar__property-heading">TYPE</p>
+                        <p className="category-products-sidebar__property-item pointer">Any</p>
+                        <p className="category-products-sidebar__property-item pointer">Interior Paint</p>
+                        <p className="category-products-sidebar__property-item pointer">Exterior Paint</p>
+                        <p className="category-products-sidebar__property-item pointer">Primer</p>
+                        <p className="category-products-sidebar__property-item pointer category-products-sidebar__property-item--active">Ceiling Paint x</p>
+                        <p className="category-products-sidebar__property-item pointer">Spray</p>
+                        <p className="category-products-sidebar__property-item pointer">Concrete & Garage Floor</p>
+                        <p className="category-products-sidebar__property-item pointer">Masonry & Brick</p>
+                        <p className="category-products-sidebar__property-item pointer">Roof Paint</p>
+                    </div>
+                </div>
                 <Product img={drill}/>
                 <Product img={paint}/>
                 <Product img={toolkit}/>
@@ -49,6 +50,11 @@ function CategoryProducts(props) {
                 <Product img={screwdrivers}/>
                 <Product img={toolkit}/>
                 <Product img={drill}/>
+                <Product img={toolkit}/>
+                <Product img={drill}/>
+            </div>
+            <div className="btn pointer justify-self-center">
+                <span>Show More</span>
             </div>
         </section>
     )

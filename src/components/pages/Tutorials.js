@@ -86,7 +86,7 @@ function Tutorials() {
                                     <p>TITLE</p>
                                 </div>
                             </div>
-                            <div className="tutorials-grid-item__more-btn btn btn--yellow pointer">
+                            <div className="btn btn--yellow justify-self-center pointer">
                                 <p>More</p>
                             </div>
                         </div>
