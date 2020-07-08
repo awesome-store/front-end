@@ -70,10 +70,6 @@
 @media only screen and (max-width: 1024px) {
     .product-cards {
         grid-template-columns: repeat(3, 1fr);
-
-        &__product-card {
-            width: 22rem;
-        }
     }
 }
 
@@ -81,18 +77,13 @@
     .product-cards {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
-
-        &__product-card {
-            width: 22rem;
-        }
     }
 }
 
 @media only screen and (max-width: 500px) {
     .product-cards {
         &__product-card {
-            width: 22rem;
-    
+            
             &__price {
                 font-size: 1.5rem;
             }

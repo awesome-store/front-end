@@ -12,6 +12,11 @@ function Store() {
         <div>
             <div className="wrapper">
                 <div className="wrapper__inside-container">
+                    <div className="breadcrumbs-container store__breadcrumbs-container align-self-start">
+                        <p className="breadcrumbs-container__item breadcrumbs-container__item--parent pointer">Home</p>
+                        <p className="breadcrumbs-container__arrow">→</p>
+                        <p className="breadcrumbs-container__item pointer">Store</p>
+                    </div>
                     <CategoryCards className="store__category-cards-container"/>
                     <PopularProducts className="store__product-cards-container"/>
                     <NewProducts className="store__product-cards-container"/>
