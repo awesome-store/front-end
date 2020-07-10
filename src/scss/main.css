@@ -1005,6 +1005,8 @@ a {
     grid-column: auto / auto; }
   .account__password-container {
     grid-column: 1 / 3; } }
+.category__breadcrumbs-container {
+  margin-top: 5rem; }
 .category__category-products {
   margin-top: 5rem; }
 .category__promotional-banners {

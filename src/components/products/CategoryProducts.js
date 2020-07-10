@@ -9,13 +9,6 @@ import cross from "../../img/icons/cross.svg";
 function CategoryProducts(props) {
     return (
         <section className={"product-cards-container " + props.className}>
-            <div className="breadcrumbs-container">
-                <p className="breadcrumbs-container__item breadcrumbs-container__item--parent pointer">Home</p>
-                <p className="breadcrumbs-container__arrow">→</p>
-                <p className="breadcrumbs-container__item breadcrumbs-container__item--parent pointer">Store</p>
-                <p className="breadcrumbs-container__arrow">→</p>
-                <p className="breadcrumbs-container__item">Paint</p>
-            </div>
             <div className="category-products__header-container">
                 <h2 className="heading-primary">{props.categoryName}</h2>
                 <input className="search-input" placeholder="Search"/>
