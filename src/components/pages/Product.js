@@ -1,4 +1,5 @@
 import React from 'react';
+import YouMightNeedProducts from "../products/YouMightNeedProducts"
 import WeDeliverBanner from '../banners/WeDeliverBanner';
 import CategoriesLinksHome from '../CategoriesLinksHome';
 
@@ -14,6 +15,7 @@ function Product() {
                         <p className="breadcrumbs-container__arrow">→</p>
                         <p className="breadcrumbs-container__item">Paint</p>
                     </div>
+                    <YouMightNeedProducts/>
                 </div>
             </div>
             <CategoriesLinksHome/>
