@@ -15,6 +15,7 @@ function Product() {
                         <p className="breadcrumbs-container__arrow">→</p>
                         <p className="breadcrumbs-container__item">Paint</p>
                     </div>
+                    <div className="product"></div>
                     <YouMightNeedProducts/>
                 </div>
             </div>
