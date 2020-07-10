@@ -5,5 +5,12 @@
 }
 
 .review {
+    &__top {
+        display: flex;
+    }
 
+    &__review-author-container {
+        display: flex;
+        flex-direction: column;
+    }
 }

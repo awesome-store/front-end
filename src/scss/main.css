@@ -779,6 +779,17 @@ a {
     font-size: 1.5rem; }
   .product-cards__product-card__price-unit {
     font-size: .9rem; } }
+.reviews {
+  display: grid;
+  row-gap: 3rem;
+  grid-auto-flow: column; }
+
+.review__top {
+  display: flex; }
+.review__review-author-container {
+  display: flex;
+  flex-direction: column; }
+
 .search-bar-container {
   display: flex;
   flex-wrap: wrap;

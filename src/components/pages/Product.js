@@ -2,6 +2,7 @@ import React from 'react';
 import YouMightNeedProducts from "../products/YouMightNeedProducts"
 import WeDeliverBanner from '../banners/WeDeliverBanner';
 import CategoriesLinksHome from '../CategoriesLinksHome';
+import Reviews from '../Reviews';
 
 function Product() {
     return (
@@ -16,6 +17,7 @@ function Product() {
                         <p className="breadcrumbs-container__item">Paint</p>
                     </div>
                     <div className="product"></div>
+                    <Reviews/>
                     <YouMightNeedProducts/>
                 </div>
             </div>
