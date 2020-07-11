@@ -782,7 +782,7 @@ a {
 .reviews-container {
   display: flex;
   flex-direction: column;
-  row-gap: 3rem; }
+  row-gap: 5rem; }
 
 .reviews {
   display: grid;
