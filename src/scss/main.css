@@ -779,16 +779,33 @@ a {
     font-size: 1.5rem; }
   .product-cards__product-card__price-unit {
     font-size: .9rem; } }
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem; }
+
 .reviews {
   display: grid;
-  row-gap: 3rem;
-  grid-auto-flow: column; }
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  row-gap: 3rem; }
 
-.review__top {
-  display: flex; }
-.review__review-author-container {
-  display: flex;
-  flex-direction: column; }
+.review {
+  display: grid;
+  row-gap: 2rem; }
+  .review__top {
+    display: flex; }
+  .review__content {
+    display: flex;
+    flex-direction: column; }
+  .review__heading {
+    font-size: 2rem; }
+  .review__review-author-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    line-height: normal; }
 
 .search-bar-container {
   display: flex;
