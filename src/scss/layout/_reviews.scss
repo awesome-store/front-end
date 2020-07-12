@@ -7,8 +7,7 @@
 .reviews {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-    row-gap: 3rem;
+    gap: 5rem;
 }
 
 .review {
