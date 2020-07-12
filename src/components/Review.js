@@ -4,9 +4,9 @@ import goldstar from "../img/icons/gold-star.svg";
 import star from "../img/icons/star.svg";
 
 function Review(props) {
-    let test = () => {
-        console.log(props.name.first);
-    }
+    // let test = () => {
+    //     console.log(props.name.first);
+    // }
 
     return (
         <div className="review">
@@ -30,11 +30,11 @@ function Review(props) {
                     <img src={goldstar} alt="goldstar"/>
                     <img src={star} alt="star"/>
                 </div>
-                <p>Cheddar parmesan cream cheese. Babybel boursin chalk and cheese cottage cheese croque monsieur pepper jack hard cheese cheese and biscuits. Red leicester cheddar macaroni cheese goat lancashire croque monsieur boursin cream cheese. When the cheese comes out everybody's happy cheesy grin stilton mascarpone cheese strings boursin.</p>
+                <p className="review__review-container">Cheddar parmesan cream cheese. Babybel boursin chalk and cheese cottage cheese croque monsieur pepper jack hard cheese cheese and biscuits. Red leicester cheddar macaroni cheese goat lancashire croque monsieur boursin cream cheese. When the cheese comes out everybody's happy cheesy grin stilton mascarpone cheese strings boursin.</p>
             </div>
-            <div onClick={test}>
+            {/* <div onClick={test}>
                 <p>Click</p>
-            </div>
+            </div> */}
         </div>
     )
 }

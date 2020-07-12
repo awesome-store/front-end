@@ -7,13 +7,13 @@
 .reviews {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 3rem;
+    gap: 3rem;
     row-gap: 3rem;
 }
 
 .review {
     display: grid;
-    row-gap: 2rem;
+    row-gap: 1rem;
 
     &__top {
         display: flex;
@@ -34,6 +34,12 @@
         margin-left: 1rem;
         font-size: 1.6rem;
         line-height: normal;
+    }
+
+    &__review-container {
+        margin-top: 1rem;
+        line-height: normal;
+        color: var(--color-dark-gray);
     }
 }
 

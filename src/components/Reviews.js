@@ -13,7 +13,6 @@ function Reviews(props) {
                 <Review/>
                 <Review/>
                 <Review/>
-                <Review/>
             </div>
         </div>
     )

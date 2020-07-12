@@ -1,4 +1,4 @@
-.home-page {
+.home {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,6 +31,7 @@
 
     &__promotional-banners {
         margin-top: 5rem;
+        margin-bottom: 5rem;
     }
 }
 
@@ -74,7 +75,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .home-page {
+    .home {
         &__categories-links-home-inner-container {
             grid-template-columns: 1fr 1fr 1fr;
             column-gap: 2rem;

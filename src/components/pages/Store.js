@@ -23,7 +23,7 @@ function Store() {
                     <PromotionalBanners className="store__promotional-banners"/>
                 </div>
             </div>
-            <div className="wrapper home-page__tutorial-banner-wrapper">
+            <div className="wrapper home__tutorial-banner-wrapper">
                 <div className="wrapper__inside-container">
                     <TutorialBanners/>
                 </div>

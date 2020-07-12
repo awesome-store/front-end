@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 function CategoriesLinksHome() {
     return (
-        <section className="home-page__categories-links-home-container">
-            <div className="home-page__categories-links-home-inner-container">
+        <section className="home__categories-links-home-container">
+            <div className="home__categories-links-home-inner-container">
                 <Link className="categories-links-home-container__categories-link">
                     <p className="categories-links-home-container__categories-link-text">Bath & Faucets</p>
                 </Link>

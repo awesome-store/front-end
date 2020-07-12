@@ -787,12 +787,12 @@ a {
 .reviews {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 3rem;
+  gap: 3rem;
   row-gap: 3rem; }
 
 .review {
   display: grid;
-  row-gap: 2rem; }
+  row-gap: 1rem; }
   .review__top {
     display: flex; }
   .review__content {
@@ -806,6 +806,10 @@ a {
     margin-left: 1rem;
     font-size: 1.6rem;
     line-height: normal; }
+  .review__review-container {
+    margin-top: 1rem;
+    line-height: normal;
+    color: var(--color-dark-gray); }
 
 .search-bar-container {
   display: flex;
@@ -1118,17 +1122,17 @@ a {
     line-height: normal;
     color: var(--color-gray); }
 
-.home-page {
+.home {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .home-page__categories-links-home-container {
+  .home__categories-links-home-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     background-color: var(--color-light-gray); }
-  .home-page__categories-links-home-inner-container {
+  .home__categories-links-home-inner-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -1136,12 +1140,13 @@ a {
     row-gap: 1.5rem;
     padding: 5rem 0;
     text-decoration: underline; }
-  .home-page__tutorial-banner-wrapper {
+  .home__tutorial-banner-wrapper {
     background-color: var(--color-light-gray); }
-  .home-page__popular-products {
+  .home__popular-products {
     margin-top: 5rem; }
-  .home-page__promotional-banners {
-    margin-top: 5rem; }
+  .home__promotional-banners {
+    margin-top: 5rem;
+    margin-bottom: 5rem; }
 
 .top-slider {
   height: 70vh;
@@ -1164,11 +1169,11 @@ a {
   .top-slider__inner-container {
     flex-direction: column; } }
 @media only screen and (max-width: 768px) {
-  .home-page__categories-links-home-inner-container {
+  .home__categories-links-home-inner-container {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2rem;
     padding: 5rem 2rem; }
-  .home-page__promotional-banner-container {
+  .home__promotional-banner-container {
     margin-bottom: 5rem; } }
 .login-wrapper {
   display: flex;
@@ -1223,6 +1228,9 @@ a {
     column-gap: 1rem;
     align-items: center;
     margin-bottom: 2rem; }
+
+.product__you-might-need-product {
+  margin-top: 5rem; }
 
 .store__breadcrumbs-container {
   margin-top: 5rem; }

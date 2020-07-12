@@ -18,11 +18,11 @@ function Product() {
                     </div>
                     <div className="product"></div>
                     <Reviews/>
-                    <YouMightNeedProducts/>
+                    <YouMightNeedProducts className="product__you-might-need-products"/>
                 </div>
             </div>
-            <CategoriesLinksHome/>
             <WeDeliverBanner/>
+            <CategoriesLinksHome/>
         </div>
     )
 }

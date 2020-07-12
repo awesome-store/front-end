@@ -10,7 +10,7 @@ import CategoriesLinksHome from "../CategoriesLinksHome";
 
 function Home() {
     return (
-        <main className="home-page">
+        <main className="home">
             <SearchBar/>
             <div className="top-slider">
                 <Slider/>
@@ -18,15 +18,15 @@ function Home() {
             <TwoMillionItemsBanner/>
             <div className="wrapper">
                 <div className="wrapper__inside-container">
-                    <PopularProducts className="home-page__popular-products"/>
+                    <PopularProducts className="home__popular-products"/>
                 </div>
             </div>
             <div className="wrapper">
                 <div className="wrapper__inside-container">
-                    <PromotionalBanners className="home-page__promotional-banners"/>
+                    <PromotionalBanners className="home__promotional-banners"/>
                 </div>
             </div>
-            <div className="wrapper home-page__tutorial-banner-wrapper">
+            <div className="wrapper home__tutorial-banner-wrapper">
                 <div className="wrapper__inside-container">
                     <TutorialBanners/>
                 </div>
