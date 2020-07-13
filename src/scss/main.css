@@ -719,6 +719,16 @@ a {
       width: 16px;
       height: 16px;
       margin: 2rem; } }
+.product__top {
+  display: flex; }
+.product__title {
+  font-size: 6rem;
+  font-weight: bold; }
+.product__use-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem; }
+
 .product-cards-container {
   width: 100%;
   display: grid;
