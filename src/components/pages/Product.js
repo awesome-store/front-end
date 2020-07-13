@@ -30,20 +30,20 @@ function Product() {
                                 </div>
                                 <div className="product__quantity-info-container">
                                     <div>
-                                        <p>Type</p>
-                                        <p>Interior</p>
+                                        <p className="product__quantity-info-container-title">Type</p>
+                                        <p className="product__quantity-info-container-info">Interior</p>
                                     </div>
                                     <div>
-                                        <p>Sheen</p>
-                                        <p>Semi-Glass</p>
+                                        <p className="product__quantity-info-container-title">Sheen</p>
+                                        <p className="product__quantity-info-container-info">Semi-Glass</p>
                                     </div>
                                     <div>
-                                        <p>Surface use type</p>
-                                        <p>Drywall, Masonry, Plaster</p>
+                                        <p className="product__quantity-info-container-title">Surface use type</p>
+                                        <p className="product__quantity-info-container-info">Drywall, Masonry, Plaster</p>
                                     </div>
                                     <div>
-                                        <p>Quantity</p>
-                                        <p>1</p>
+                                        <p className="product__quantity-info-container-title">Quantity</p>
+                                        <p className="product__quantity-info-container-info">1</p>
                                     </div>
                                     <div className="product__add-to-cart-btn btn pointer">
                                         <p>Add to Cart</p>
@@ -55,8 +55,9 @@ function Product() {
                             </div>
                         </div>
                         <div>
-                            <div>
+                            <div className="product__product-info">
                                 <p>Cheese and wine pecorino roquefort. Cottage cheese cottage cheese st. agur blue cheese paneer macaroni cheese boursin bavarian bergkase caerphilly. Goat cauliflower cheese cheese and biscuits cauliflower cheese emmental cheeseburger macaroni cheese pepper jack. Taleggio st. agur blue cheese cottage cheese.</p>
+                                <br/>
                                 <p>Lancashire stinking bishop caerphilly. Manchego taleggio parmesan cheese and wine roquefort cream cheese emmental danish fontina. Squirty cheese fondue pepper jack cheese and wine cheese slices mascarpone pepper jack emmental. Fromage frais.</p>
                             </div>
                             <div className="product__use-images">
