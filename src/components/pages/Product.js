@@ -24,22 +24,41 @@ function Product() {
                         <div className="product__top">
                             <div>
                                 <p className="product__title">Behr Premium Oak Hans Wegner</p>
-                                <div>
-                                    <p>$29.99</p>
-                                    <p>/ gal</p>
+                                <div className="product__price-container">
+                                    <p className="product__price">$29.99</p>
+                                    <p className="product__price-unit">/ gal</p>
                                 </div>
-                                <div>
-
+                                <div className="product__quantity-info-container">
+                                    <div>
+                                        <p>Type</p>
+                                        <p>Interior</p>
+                                    </div>
+                                    <div>
+                                        <p>Sheen</p>
+                                        <p>Semi-Glass</p>
+                                    </div>
+                                    <div>
+                                        <p>Surface use type</p>
+                                        <p>Drywall, Masonry, Plaster</p>
+                                    </div>
+                                    <div>
+                                        <p>Quantity</p>
+                                        <p>1</p>
+                                    </div>
+                                    <div className="product__add-to-cart-btn btn pointer">
+                                        <p>Add to Cart</p>
+                                    </div>
                                 </div>
                             </div>
                             <div>
-                                <img src={paint} alt="paint"/>
+                                <img className="img-fluid" src={paint} alt="paint"/>
                             </div>
                         </div>
                         <div>
-                            <p>Cheese and wine pecorino roquefort. Cottage cheese cottage cheese st. agur blue cheese paneer macaroni cheese boursin bavarian bergkase caerphilly. Goat cauliflower cheese cheese and biscuits cauliflower cheese emmental cheeseburger macaroni cheese pepper jack. Taleggio st. agur blue cheese cottage cheese.
-
-                            Lancashire stinking bishop caerphilly. Manchego taleggio parmesan cheese and wine roquefort cream cheese emmental danish fontina. Squirty cheese fondue pepper jack cheese and wine cheese slices mascarpone pepper jack emmental. Fromage frais.</p>
+                            <div>
+                                <p>Cheese and wine pecorino roquefort. Cottage cheese cottage cheese st. agur blue cheese paneer macaroni cheese boursin bavarian bergkase caerphilly. Goat cauliflower cheese cheese and biscuits cauliflower cheese emmental cheeseburger macaroni cheese pepper jack. Taleggio st. agur blue cheese cottage cheese.</p>
+                                <p>Lancashire stinking bishop caerphilly. Manchego taleggio parmesan cheese and wine roquefort cream cheese emmental danish fontina. Squirty cheese fondue pepper jack cheese and wine cheese slices mascarpone pepper jack emmental. Fromage frais.</p>
+                            </div>
                             <div className="product__use-images">
                                 <img src={paintInUse1} alt="paint in use 1"/>
                                 <img src={paintInUse2} alt="paint in use 2"/>

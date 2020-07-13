@@ -1,11 +1,38 @@
 .product {
     &__top {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     &__title {
         font-size: 6rem;
         font-weight: bold;
+    }
+
+    &__price-container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__price {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    &__price-unit {
+        font-size: 2rem;
+    }
+
+    &__quantity-info-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    &__add-to-cart-btn {
+        grid-column: 2 / 4;
+        max-width: none;
+
     }
 
     &__use-images {

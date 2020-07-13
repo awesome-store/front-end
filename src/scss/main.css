@@ -720,10 +720,26 @@ a {
       height: 16px;
       margin: 2rem; } }
 .product__top {
-  display: flex; }
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
 .product__title {
   font-size: 6rem;
   font-weight: bold; }
+.product__price-container {
+  display: flex;
+  align-items: center; }
+.product__price {
+  font-size: 3rem;
+  font-weight: bold; }
+.product__price-unit {
+  font-size: 2rem; }
+.product__quantity-info-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr; }
+.product__add-to-cart-btn {
+  grid-column: 2 / 4;
+  max-width: none; }
 .product__use-images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
