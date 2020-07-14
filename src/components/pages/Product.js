@@ -43,7 +43,13 @@ function Product() {
                                     </div>
                                     <div>
                                         <p className="product__quantity-info-container-title">Quantity</p>
-                                        <p className="product__quantity-info-container-info">1</p>
+                                        <div className="product__quantity-container">
+                                            <p className="product__quantity-value">1</p>
+                                            <div className="product__quantity-buttons-container">
+                                                <p>+</p>
+                                                <p>-</p>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div className="product__add-to-cart-btn btn pointer">
                                         <p>Add to Cart</p>
