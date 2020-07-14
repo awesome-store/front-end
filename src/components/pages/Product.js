@@ -54,17 +54,15 @@ function Product() {
                                 <img className="img-fluid" src={paint} alt="paint"/>
                             </div>
                         </div>
-                        <div>
-                            <div className="product__product-info">
-                                <p>Cheese and wine pecorino roquefort. Cottage cheese cottage cheese st. agur blue cheese paneer macaroni cheese boursin bavarian bergkase caerphilly. Goat cauliflower cheese cheese and biscuits cauliflower cheese emmental cheeseburger macaroni cheese pepper jack. Taleggio st. agur blue cheese cottage cheese.</p>
-                                <br/>
-                                <p>Lancashire stinking bishop caerphilly. Manchego taleggio parmesan cheese and wine roquefort cream cheese emmental danish fontina. Squirty cheese fondue pepper jack cheese and wine cheese slices mascarpone pepper jack emmental. Fromage frais.</p>
-                            </div>
-                            <div className="product__use-images">
-                                <img src={paintInUse1} alt="paint in use 1"/>
-                                <img src={paintInUse2} alt="paint in use 2"/>
-                                <img src={paintInUse3} alt="paint in use 3"/>
-                            </div>
+                        <div className="product__product-info">
+                            <p>Cheese and wine pecorino roquefort. Cottage cheese cottage cheese st. agur blue cheese paneer macaroni cheese boursin bavarian bergkase caerphilly. Goat cauliflower cheese cheese and biscuits cauliflower cheese emmental cheeseburger macaroni cheese pepper jack. Taleggio st. agur blue cheese cottage cheese.</p>
+                            <br/>
+                            <p>Lancashire stinking bishop caerphilly. Manchego taleggio parmesan cheese and wine roquefort cream cheese emmental danish fontina. Squirty cheese fondue pepper jack cheese and wine cheese slices mascarpone pepper jack emmental. Fromage frais.</p>
+                        </div>
+                        <div className="product__use-images">
+                            <img className="img-fluid" src={paintInUse1} alt="paint in use 1"/>
+                            <img className="img-fluid" src={paintInUse2} alt="paint in use 2"/>
+                            <img className="img-fluid" src={paintInUse3} alt="paint in use 3"/>
                         </div>
                     </div>
                     <Reviews className="product-page__reviews"/>

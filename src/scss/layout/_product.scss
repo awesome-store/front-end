@@ -29,6 +29,7 @@
         display: grid;
         grid-template-columns: 1fr 2fr 2fr;
         grid-template-rows: 1fr 1fr;
+        gap: 1fr;
         margin-top: 2rem;
         
         &-title {
@@ -51,12 +52,13 @@
         font-size: 2rem;
         color: var(--color-dark-gray);
         line-height: 120%;
+        padding: 3rem;
     }
 
     &__use-images {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 1rem;
+        column-gap: 2rem;
     }
 }
 
@@ -64,14 +66,6 @@
     .product {
         &__top {
             grid-template-columns: 1fr;
-        }
-
-        &__quantity-info-container {
-            grid-template-columns: 1fr;
-        }
-
-        &__add-to-cart-btn {
-            grid-column: none;
         }
     }
 }
