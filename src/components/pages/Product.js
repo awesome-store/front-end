@@ -46,8 +46,8 @@ function Product() {
                                         <div className="product__quantity-container">
                                             <p className="product__quantity-value">1</p>
                                             <div className="product__quantity-buttons-container">
-                                                <p>+</p>
-                                                <p>-</p>
+                                                <p className="product__quantity-buttons-container-buttons pointer">+</p>
+                                                <p className="product__quantity-buttons-container-buttons pointer">-</p>
                                             </div>
                                         </div>
                                     </div>
