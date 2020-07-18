@@ -6,6 +6,7 @@ import Category from './components/pages/Category';
 import Product from './components/pages/Product';
 import Tutorials from './components/pages/Tutorials';
 import Faq from './components/pages/Faq';
+import Cart from './components/pages/Cart';
 import Account from './components/pages/Account';
 import Login from './components/pages/Login';
 import Signup from './components/pages/Signup';
@@ -19,6 +20,7 @@ export default (
         <Route path="/product" component={ Product } />
         <Route path="/tutorials" component={ Tutorials }/>
         <Route path="/faq" component={ Faq }/>
+        <Route path="/cart" component={ Cart }/>
         <Route path="/account" component={ Account }/>
         <Route path="/login" component={ Login }/>
         <Route path="/signup" component={ Signup }/>
