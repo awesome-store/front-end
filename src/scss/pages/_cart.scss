@@ -1,0 +1,23 @@
+// .cart {
+//     display: grid;
+//     grid-template-columns: 3fr 1fr 1fr 1fr;
+// }
+
+.cart {
+    display: flex;
+    flex-direction: column;
+
+    &-row {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+        height: 3rem;
+    }
+}
+
+.cart-row {
+    &__product-info-container {
+        height: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+}
