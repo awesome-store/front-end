@@ -16,7 +16,10 @@ function Cart() {
                     </div>
                     <div className="cart-row">
                         <div className="cart-row__product-info-container">
-                            <img className="img-fluid" src={paint} alt="paint"/>
+                            <div className="cart-row__product-img-container">
+                                <img src={paint} alt="paint"/>
+                            </div>
+                            <div></div>
                         </div>
                     </div>
                 </div>
