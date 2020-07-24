@@ -9,18 +9,26 @@ function Cart() {
                     <h1 className="heading-primary">Shopping Cart</h1>
                     <p className="heading-secondary cart__items-quantity">3 items</p>
                     <div className="cart">
-                        <div className="cart-row">
-                            <p>Name</p>
-                            <p>Price</p>
-                            <p>Quantity</p>
-                            <p></p>
+                        <div className="cart-header">
+                            <p className="cart-header__item">NAME</p>
+                            <p className="cart-header__item">PRICE</p>
+                            <p className="cart-header__item">QUANTITY</p>
+                            <p className="cart-header__item"></p>
                         </div>
                         <div className="cart-row">
                             <div className="cart-row__product-info-container">
-                                <div className="cart-row__product-img-container">
-                                    <img className="img-fluid" src={paint} alt="paint"/>
-                                </div>
-                                <p className="cart-row__product-info-text">10 INCH SPRING 10 INCH SPRING 10 INCH SPRING 10 INCH SPRING</p>
+                                <img className="img-fluid" src={paint} alt="paint"/>
+                                <p className="cart-row__product-info-text">10 INCH SPRING AND GEL MEMORY FOAM HYBRID MATTRESS</p>
+                            </div>
+                            <div className="cart-row__price-container">
+                                <p className="cart-row__price">$49.99</p>
+                                <p className="cart-row__price-unit">/price</p>
+                            </div>
+                            <div>
+                                <p>1</p>
+                            </div>
+                            <div className="cart-row__remove-item-container pointer">
+                                <p>x</p>
                             </div>
                         </div>
                     </div>
