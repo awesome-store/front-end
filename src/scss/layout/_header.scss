@@ -74,7 +74,7 @@
     align-self: center;
 }
 
-.cart {
+.nav-cart {
     display: flex;
     align-items: center;
     margin-left: 16rem;
@@ -137,7 +137,7 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    .cart {
+    .nav-cart {
         margin-left: 1.5rem;
         margin-right: 1.5rem;
 
@@ -152,13 +152,13 @@
 }
 
 @media only screen and (max-width: 910px) {
-    .cart {
+    .nav-cart {
         margin-left: 4rem;
     }
 }
 
 @media only screen and (max-width: 850px) {
-    .cart {
+    .nav-cart {
         margin-left: 2rem;
     }
 }
@@ -180,7 +180,7 @@
         }
     }
 
-    .cart {
+    .nav-cart {
         margin-left: 0;
     }
 

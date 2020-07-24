@@ -43,10 +43,10 @@ function Header() {
                     <input type="text" className="search__input" placeholder="Search"/>
                 </form>
                 <div className="header__icons-container">
-                    <div className="cart">
-                        <img src={cart} alt="Cart" className="cart__img"/>
-                        <p className="cart__text cart__text-number">12</p>
-                        <p className="cart__text cart__text-items">&nbsp;items</p>
+                    <div className="nav-cart">
+                        <img src={cart} alt="Cart" className="nav-cart__img"/>
+                        <p className="nav-cart__text nav-cart__text-number">12</p>
+                        <p className="nav-cart__text nav-cart__text-items">&nbsp;items</p>
                     </div>
                     <div className="navigation-mobile">
                         <img className="navigation-mobile__hamburger" src={hamburger} alt="Hamburger"/>

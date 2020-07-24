@@ -1,11 +1,14 @@
-// .cart {
-//     display: grid;
-//     grid-template-columns: 3fr 1fr 1fr 1fr;
-// }
+.cart-container {
+    width: 100%;
+}
 
 .cart {
     display: flex;
     flex-direction: column;
+
+    &__items-quantity {
+        margin-top: 3rem;
+    }
 
     &-row {
         display: grid;
@@ -16,12 +19,12 @@
 
 .cart-row {
     &__product-info-container {
-        height: 3rem;
+        // height: 3rem;
         display: grid;
         grid-template-columns: 1fr 3fr;
     }
 
     &__product-img-container {
-        width: 3rem;
+        width: 6rem;
     }
 }
