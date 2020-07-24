@@ -20,7 +20,7 @@ function Cart() {
                                 <div className="cart-row__product-img-container">
                                     <img className="img-fluid" src={paint} alt="paint"/>
                                 </div>
-                                <div></div>
+                                <p className="cart-row__product-info-text">10 INCH SPRING 10 INCH SPRING 10 INCH SPRING 10 INCH SPRING</p>
                             </div>
                         </div>
                     </div>

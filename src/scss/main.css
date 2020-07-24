@@ -1168,14 +1168,14 @@ a {
     margin-top: 3rem; }
   .cart-row {
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
-    height: 3rem; }
+    grid-template-columns: 3fr 1fr 1fr 1fr; }
 
 .cart-row__product-info-container {
   display: grid;
-  grid-template-columns: 1fr 3fr; }
-.cart-row__product-img-container {
-  width: 6rem; }
+  grid-template-columns: 1fr 3fr;
+  align-items: center; }
+.cart-row__product-info-text {
+  font-size: 1.2rem; }
 
 .faq {
   width: 100%;
