@@ -43,7 +43,7 @@ function Cart() {
                                 <p className="cart-row__product-info-text">10 INCH SPRING AND GEL MEMORY FOAM HYBRID MATTRESS</p>
                             </div>
                             <div className="cart-row__price-container">
-                                <p className="cart-row__price">$49.99</p>
+                                <p className="cart-row__price">$80.25</p>
                                 <p className="cart-row__price-unit">/price</p>
                             </div>
                             <div className="cart-row__quantity-container">
@@ -65,7 +65,7 @@ function Cart() {
                                 <p className="cart-row__product-info-text">10 INCH SPRING AND GEL MEMORY FOAM HYBRID MATTRESS</p>
                             </div>
                             <div className="cart-row__price-container">
-                                <p className="cart-row__price">$49.99</p>
+                                <p className="cart-row__price">$39.99</p>
                                 <p className="cart-row__price-unit">/price</p>
                             </div>
                             <div className="cart-row__quantity-container">
@@ -79,6 +79,43 @@ function Cart() {
                             </div>
                             <div className="cart-row__remove-item-container pointer">
                                 <p>x</p>
+                            </div>
+                        </div>
+                        <div className="cart-row cart-row--total">
+                            <div className="cart-row__product-info-container">
+                            </div>
+                            <div className="cart-row__quantity-container">
+                            </div>
+                            <div className="cart-row__estimate-amount-container">
+                                <p className="cart-row__estimate-value">$17.02</p>
+                                <p className="cart-row__estimate-description">&nbsp; EST. TAX</p>
+                            </div>
+                            <div className="cart-row__remove-item-container pointer">
+                            </div>
+                        </div>
+                        <div className="cart-row cart-row--total">
+                            <div className="cart-row__product-info-container">
+                            </div>
+                            <div className="cart-row__quantity-container">
+                            </div>
+                            <div className="cart-row__estimate-amount-container">
+                                <p className="cart-row__estimate-value">$187.25</p>
+                                <p className="cart-row__estimate-description">&nbsp; FINAL PRICE</p>
+                            </div>
+                            <div className="cart-row__remove-item-container pointer">
+                            </div>
+                        </div>
+                        <div className="cart-row cart-row--total">
+                            <div className="cart-row__product-info-container">
+                            </div>
+                            <div className="cart-row__estimate-amount-container">
+                            </div>
+                            <div className="cart-row__quantity-container">
+                                <div className="btn btn--yellow pointer">
+                                    <p>Checkout</p>
+                                </div>
+                            </div>
+                            <div className="cart-row__remove-item-container pointer">
                             </div>
                         </div>
                     </div>

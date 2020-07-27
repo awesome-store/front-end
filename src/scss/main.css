@@ -1181,6 +1181,9 @@ a {
     border-top: 1px solid var(--color-gray);
     border-bottom: 1px solid var(--color-gray); }
 
+.cart-row--total {
+  height: 10rem;
+  align-items: center; }
 .cart-row__product-info-container {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -1220,6 +1223,12 @@ a {
   align-items: center;
   font-weight: bold;
   font-size: 2rem; }
+.cart-row__estimate-amount-container {
+  display: flex; }
+.cart-row__estimate-value {
+  font-size: 1.6rem; }
+.cart-row__estimate-description {
+  font-size: 1.6rem; }
 
 .faq {
   width: 100%;

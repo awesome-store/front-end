@@ -32,6 +32,11 @@
 }
 
 .cart-row {
+    &--total {
+        height: 10rem;
+        align-items: center;
+    }
+
     &__product-info-container {
         // height: 3rem;
         display: grid;
@@ -94,5 +99,17 @@
         align-items: center;
         font-weight: bold;
         font-size: 2rem;
+    }
+
+    &__estimate-amount-container {
+        display: flex;
+    }
+
+    &__estimate-value {
+        font-size: 1.6rem;
+    }
+
+    &__estimate-description {
+        font-size: 1.6rem;
     }
 }
