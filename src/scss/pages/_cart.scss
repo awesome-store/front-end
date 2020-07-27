@@ -14,7 +14,7 @@
 
     &-header {
         display: grid;
-        grid-template-columns: 3fr 1fr 1fr 1fr;
+        grid-template-columns: 4fr 2fr 2fr 1fr;
         color: var(--color-gray);
         font-size: 1.2rem;
 
@@ -47,6 +47,7 @@
         display: flex;
         font-size: 1.2rem;
         align-items: center;
+        // justify-content: center;
     }
 
     &__price {
@@ -57,6 +58,35 @@
     &__price-unit {
         color: var(--color-gray);
         margin-left: .3rem;
+    }
+
+    &__quantity-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background-color: var(--color-gray);
+
+        &-value {
+            padding: 1.5rem;
+            border: 1px solid var(--color-gray);
+            background-color: var(--color-primary);
+        }
+    }
+
+    &__quantity-container-actions-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+    }
+
+    &__quantity-inner-container {
+        display: flex;
+        background-color: var(--color-gray);
+    }
+
+    &__quantity-container-action {
+        color: var(--color-black);
+        padding: 0 .5rem;
     }
 
     &__remove-item-container {

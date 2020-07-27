@@ -24,8 +24,14 @@ function Cart() {
                                 <p className="cart-row__price">$49.99</p>
                                 <p className="cart-row__price-unit">/price</p>
                             </div>
-                            <div>
-                                <p>1</p>
+                            <div className="cart-row__quantity-container">
+                                <div className="cart-row__quantity-inner-container">
+                                    <p className="cart-row__quantity-container-value">1</p>
+                                    <div className="cart-row__quantity-container-actions-container">
+                                        <p className="cart-row__quantity-container-action pointer">+</p>
+                                        <p className="cart-row__quantity-container-action pointer">-</p>
+                                    </div>
+                                </div>
                             </div>
                             <div className="cart-row__remove-item-container pointer">
                                 <p>x</p>
