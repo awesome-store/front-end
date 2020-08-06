@@ -562,7 +562,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-self: stretch; }
+  align-self: stretch;
+  padding: 1.1rem 0; }
   .header__logo-container {
     display: flex;
     flex-direction: column;
@@ -714,7 +715,8 @@ a {
     display: none; } }
 @media only screen and (max-width: 768px) {
   .navigation-mobile {
-    display: block; }
+    display: block;
+    position: relative; }
     .navigation-mobile__hamburger {
       width: 16px;
       height: 16px;

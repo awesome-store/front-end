@@ -1,11 +1,53 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import styled from 'styled-components';
 import logo from "../img/logo.png";
 import cart from "../img/icons/cart.svg";
 import avatarDefault from "../img/icons/avatar-default.svg";
-import hamburger from "../img/icons/menu.svg";
+// import hamburger from "../img/icons/menu.svg";
 
-function Header() {
+const StyledBurger = styled.div`
+    width: 2rem;
+    height: 2rem;
+    // position: fixed;
+    // top: 15px;
+    // right: 20px;
+    // z-index: 20;
+    display: none;
+
+    @media (max-width: 768px) {
+        display: flex;
+        justify-conent: space-around;
+        flex-flow: column nowrap;
+    }
+
+    div {
+        width: 2rem;
+        height: 0.25rem;
+        // background-color ${({ open }) => open ? '#ccc' : '#333'};
+        background-color #ccc;
+        border-radius: 10px;
+        transform-origin: 1px;
+        transition: all 0.3s linear;
+
+        &:nth-child(1) {
+            transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+        }
+
+        &:nth-child(2) {
+            transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
+            opacity: ${({ open }) => open ? 0 : 1};
+        }
+
+        &:nth-child(3) {
+            transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
+        }
+    }
+`
+
+const Header = () => {
+    const [open, setOpen] = useState(false);
+
     return (
         <div className="container">
             <header className="header">
@@ -47,12 +89,8 @@ function Header() {
                             <p className="nav-cart__text nav-cart__text-number">12</p>
                             <p className="nav-cart__text nav-cart__text-items">&nbsp;items</p>
                         </div>
-                        <div className="navigation-mobile">
-                            <img className="navigation-mobile__hamburger" src={hamburger} alt="Hamburger"/>
-                        </div>
                     </div>
                 </NavLink>
-
                 {/* <div className="user">
                     <span className="user__user-name">Mike Kainov</span>
                     <div className="user__avatar-container">
@@ -69,7 +107,14 @@ function Header() {
                         </div>
                     </Link>
                 </div>
-                
+                <div className="navigation-mobile">
+                    {/* <img className="navigation-mobile__hamburger pointer" src={hamburger} alt="Hamburger"/> */}
+                    <StyledBurger open={open} onClick={() => setOpen(!open)}>
+                        <div />
+                        <div />
+                        <div />
+                    </StyledBurger>
+                </div>
             </header>
         </div>
     );

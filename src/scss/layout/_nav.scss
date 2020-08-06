@@ -60,6 +60,7 @@
 @media only screen and (max-width: 768px) {
     .navigation-mobile {
         display: block;
+        position: relative;
 
         &__hamburger {
             width: 16px;
