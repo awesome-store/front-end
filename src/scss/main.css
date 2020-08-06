@@ -608,7 +608,7 @@ a {
   margin-left: 16rem; }
   .nav-cart__img {
     display: block;
-    margin-right: 0.5rem; }
+    margin-right: .5rem; }
   .nav-cart__text {
     color: var(--color-secondary);
     white-space: nowrap; }
