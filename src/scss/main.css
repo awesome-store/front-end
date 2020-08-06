@@ -562,8 +562,10 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-self: stretch;
-  padding: 1.1rem 0; }
+  align-self: stretch; }
+  .header__right {
+    display: flex;
+    align-items: center; }
   .header__logo-container {
     display: flex;
     flex-direction: column;
@@ -658,9 +660,8 @@ a {
 @media only screen and (max-width: 768px) {
   .header {
     max-width: initial;
-    width: 100%; }
-    .header__logo-container {
-      margin-left: 2rem; }
+    width: 100%;
+    padding: 1.1rem 2rem; }
     .header__search {
       width: 100%;
       display: block;

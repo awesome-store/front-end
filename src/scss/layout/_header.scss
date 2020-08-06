@@ -17,7 +17,11 @@
     //to align elements along the cross axes
     align-self: stretch;
     // box-shadow: 0 0.2rem 0.1rem grey;
-    padding: 1.1rem 0;
+
+    &__right {
+        display: flex;
+        align-items: center;
+    }
 
     &__logo-container {
         display: flex;
@@ -167,10 +171,11 @@
     .header {
         max-width: initial;
         width: 100%;
+        padding: 1.1rem 2rem;
 
-        &__logo-container {
-            margin-left: 2rem;
-        }
+        // &__logo-container {
+        //     margin-left: 2rem;
+        // }
 
         &__search {
             width: 100%;

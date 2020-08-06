@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from "../img/logo.png";
 import cart from "../img/icons/cart.svg";
+import search from "../img/icons/search.svg";
 import avatarDefault from "../img/icons/avatar-default.svg";
 // import hamburger from "../img/icons/menu.svg";
 
@@ -17,7 +18,7 @@ const StyledBurger = styled.div`
 
     @media (max-width: 768px) {
         display: flex;
-        justify-conent: space-around;
+        justify-content: space-around;
         flex-flow: column nowrap;
     }
 
@@ -78,42 +79,44 @@ const Header = () => {
                         </li>
                     </ul>
                 </nav>
-                <form action="#" className="header__search">
-                    {/* <img src={search} alt="search"/> */}
-                    <input type="text" className="search__input" placeholder="Search"/>
-                </form>
-                <NavLink to="/cart">
-                    <div className="header__icons-container">
-                        <div className="nav-cart">
-                            <img src={cart} alt="Cart" className="nav-cart__img"/>
-                            <p className="nav-cart__text nav-cart__text-number">12</p>
-                            <p className="nav-cart__text nav-cart__text-items">&nbsp;items</p>
+                <div className="header__right">
+                    <form action="#" className="header__search">
+                        <img className="header__search-img" src={search} alt="search"/>
+                        {/* <input type="text" className="search__input" placeholder="Search"/> */}
+                    </form>
+                    <NavLink to="/cart">
+                        <div className="header__icons-container">
+                            <div className="nav-cart">
+                                <img src={cart} alt="Cart" className="nav-cart__img"/>
+                                <p className="nav-cart__text nav-cart__text-number">12</p>
+                                <p className="nav-cart__text nav-cart__text-items">&nbsp;items</p>
+                            </div>
                         </div>
-                    </div>
-                </NavLink>
-                {/* <div className="user">
-                    <span className="user__user-name">Mike Kainov</span>
-                    <div className="user__avatar-container">
-                        <img src={user} alt="User account" className="user__dropdown"/>
-                    </div>
-                </div> */}
-                <div className="user">
-                    <Link to="/login" className="user__link">
-                        <p className="user__login">Login</p>
-                    </Link>
-                    <Link to="/account" className="user__link">
+                    </NavLink>
+                    {/* <div className="user">
+                        <span className="user__user-name">Mike Kainov</span>
                         <div className="user__avatar-container">
-                            <img src={avatarDefault} alt="User account" className=" user__avatar user__dropdown"/>
+                            <img src={user} alt="User account" className="user__dropdown"/>
                         </div>
-                    </Link>
-                </div>
-                <div className="navigation-mobile">
-                    {/* <img className="navigation-mobile__hamburger pointer" src={hamburger} alt="Hamburger"/> */}
-                    <StyledBurger open={open} onClick={() => setOpen(!open)}>
-                        <div />
-                        <div />
-                        <div />
-                    </StyledBurger>
+                    </div> */}
+                    <div className="user">
+                        <Link to="/login" className="user__link">
+                            <p className="user__login">Login</p>
+                        </Link>
+                        <Link to="/account" className="user__link">
+                            <div className="user__avatar-container">
+                                <img src={avatarDefault} alt="User account" className=" user__avatar user__dropdown"/>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className="navigation-mobile">
+                        {/* <img className="navigation-mobile__hamburger pointer" src={hamburger} alt="Hamburger"/> */}
+                        <StyledBurger open={open} onClick={() => setOpen(!open)}>
+                            <div />
+                            <div />
+                            <div />
+                        </StyledBurger>
+                    </div>
                 </div>
             </header>
         </div>
