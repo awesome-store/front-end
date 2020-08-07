@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import MobileMenu from './MobileMenu';
 import styled from 'styled-components';
 import logo from "../img/logo.png";
 import cart from "../img/icons/cart.svg";
@@ -10,10 +11,10 @@ import avatarDefault from "../img/icons/avatar-default.svg";
 const StyledBurger = styled.div`
     width: 2rem;
     height: 2rem;
-    // position: fixed;
-    // top: 1.7rem;
-    // right: 2rem;
-    // z-index: 20;
+    position: ${({ open }) => open ? 'fixed' : 'static'};
+    top: 1.7rem;
+    right: 2rem;
+    z-index: 20;
     display: none;
 
     @media (max-width: 768px) {
@@ -25,7 +26,7 @@ const StyledBurger = styled.div`
     div {
         width: 2rem;
         height: 0.25rem;
-        // background-color ${({ open }) => open ? '#ccc' : '#333'};
+        // background-color: ${({ open }) => open ? '#ccc' : '#333'};
         background-color #ccc;
         border-radius: 10px;
         transform-origin: 1px;
@@ -44,7 +45,7 @@ const StyledBurger = styled.div`
             transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
         }
     }
-`
+`;
 
 const Header = () => {
     const [open, setOpen] = useState(false);
@@ -111,11 +112,12 @@ const Header = () => {
                     </div>
                     <div className="navigation-mobile">
                         {/* <img className="navigation-mobile__hamburger pointer" src={hamburger} alt="Hamburger"/> */}
-                        <StyledBurger open={open} onClick={() => setOpen(!open)}>
+                        <StyledBurger className="pointer" open={open} onClick={() => setOpen(!open)}>
                             <div />
                             <div />
                             <div />
                         </StyledBurger>
+                        <MobileMenu open={open} setOpen={setOpen}/>
                     </div>
                 </div>
             </header>
