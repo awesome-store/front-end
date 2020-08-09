@@ -7,8 +7,6 @@ const Ul = styled.ul`
     display: flex;
     flex-direction: column;
     background-color: white;
-    // color: 
-    // background-color: red;
     position: fixed;
     z-index: 10;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
@@ -19,25 +17,26 @@ const Ul = styled.ul`
     max-width: 50rem;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
+    border-left: 1px solid var(--color-light-gray);
 
     li {
         padding: 2rem 3.5rem;
-        color: black;
+        color: var(--color-black);
     }
 
     .mobile-menu__mobile-menu-login-signup-container {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
         padding: 2rem 3.5rem;
     }
 
     .mobile-menu-login-signup-container__login-btn {
-        border: 1px solid black;
+        border: 1px solid var(--color-black);
         border-radius: 6px;
         padding: 1rem;
-        width: 10rem;
         text-align: center;
-        color: black;
+        color: var(--color-black);
     }
 `;
 
