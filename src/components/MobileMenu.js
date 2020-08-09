@@ -24,16 +24,34 @@ const Ul = styled.ul`
         padding: 2rem 3.5rem;
         color: black;
     }
+
+    .mobile-menu__mobile-menu-login-signup-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 3.5rem;
+    }
+
+    .mobile-menu-login-signup-container__login-btn {
+        border: 1px solid black;
+        border-radius: 6px;
+        padding: 1rem;
+        width: 10rem;
+        text-align: center;
+        color: black;
+    }
 `;
 
 const MobileMenu = ({ open, setOpen }) => {
-    // const [open, setOpen] = useState(false);
-
     return (
         <Ul open={open}>
-            <Link onClick={() => setOpen(!open)} to="/login">
-                <li>Login</li>
-            </Link>
+            <div className="mobile-menu__mobile-menu-login-signup-container">
+                <Link onClick={() => setOpen(!open)}  to="/login">
+                    <p className="mobile-menu-login-signup-container__login-btn">Login</p>
+                </Link>
+                <Link onClick={() => setOpen(!open)}  to="/signup">
+                    <p className="mobile-menu-login-signup-container__login-btn">Sign up</p>
+                </Link>
+            </div>
             <Link onClick={() => setOpen(!open)} to="/">
                 <li>Home</li>
             </Link>
