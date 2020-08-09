@@ -6,7 +6,7 @@ const Ul = styled.ul`
     list-style: none;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--color-primary);
     position: fixed;
     z-index: 10;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
@@ -38,6 +38,10 @@ const Ul = styled.ul`
         text-align: center;
         color: var(--color-black);
     }
+
+    .mobile-menu-login-signup-container__login-btn--color-white {
+        color: var(--color-primary);
+    }
 `;
 
 const MobileMenu = ({ open, setOpen }) => {
@@ -48,7 +52,7 @@ const MobileMenu = ({ open, setOpen }) => {
                     <p className="mobile-menu-login-signup-container__login-btn">Login</p>
                 </Link>
                 <Link onClick={() => setOpen(!open)}  to="/signup">
-                    <p className="mobile-menu-login-signup-container__login-btn">Sign up</p>
+                    <p className="mobile-menu-login-signup-container__login-btn mobile-menu-login-signup-container__login-btn--color-white btn">Sign up</p>
                 </Link>
             </div>
             <Link onClick={() => setOpen(!open)} to="/">
