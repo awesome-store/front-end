@@ -9,7 +9,7 @@ const Ul = styled.ul`
     background-color: var(--color-primary);
     position: fixed;
     z-index: 10;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+    transform: ${({ openMobileMenu }) => openMobileMenu ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
     right: 0;
     height: 100vh;
@@ -44,27 +44,27 @@ const Ul = styled.ul`
     }
 `;
 
-const MobileMenu = ({ open, setOpen }) => {
+const MobileMenu = ({ openMobileMenu, setOpenMobileMenu }) => {
     return (
-        <Ul open={open}>
+        <Ul openMobileMenu={openMobileMenu}>
             <div className="mobile-menu__mobile-menu-login-signup-container">
-                <Link onClick={() => setOpen(!open)}  to="/login">
+                <Link onClick={() => setOpenMobileMenu(!openMobileMenu)}  to="/login">
                     <p className="mobile-menu-login-signup-container__login-btn">Login</p>
                 </Link>
-                <Link onClick={() => setOpen(!open)}  to="/signup">
+                <Link onClick={() => setOpenMobileMenu(!openMobileMenu)}  to="/signup">
                     <p className="mobile-menu-login-signup-container__login-btn mobile-menu-login-signup-container__login-btn--color-white btn">Sign up</p>
                 </Link>
             </div>
-            <Link onClick={() => setOpen(!open)} to="/">
+            <Link onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
                 <li>Home</li>
             </Link>
-            <Link  onClick={() => setOpen(!open)} to="/store">
+            <Link  onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/store">
                 <li>Store</li>
             </Link>
-            <Link onClick={() => setOpen(!open)}  to="/tutorials">
+            <Link onClick={() => setOpenMobileMenu(!openMobileMenu)}  to="/tutorials">
                 <li>Tutorials</li>
             </Link>
-            <Link onClick={() => setOpen(!open)}  to="/faq">
+            <Link onClick={() => setOpenMobileMenu(!openMobileMenu)}  to="/faq">
                 <li>Help</li>
             </Link>
         </Ul>

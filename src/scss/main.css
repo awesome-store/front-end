@@ -551,8 +551,9 @@ a {
 @media only screen and (max-width: 320px) {
   .footer__subscribe-input {
     width: 17rem; } }
-.container {
+.header-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: var(--color-dark-gray); }
 

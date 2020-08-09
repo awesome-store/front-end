@@ -6,12 +6,25 @@ import logo from "../img/logo.png";
 import cart from "../img/icons/cart.svg";
 import search from "../img/icons/search.svg";
 import avatarDefault from "../img/icons/avatar-default.svg";
-// import hamburger from "../img/icons/menu.svg";
+
+const MobileSearch = styled.div`
+    position: absolute;
+    top: 5.5rem;
+    width: 100%;
+    display: ${({ openMobileSearch }) => openMobileSearch ? 'flex' : 'none'};
+    background-color: var(--color-dark-gray);
+
+    .mobile-menu__search-input {
+        width: 100%;
+        padding: 1rem;
+        margin: 1rem;
+    }
+`;
 
 const StyledBurger = styled.div`
     width: 2rem;
     height: 2rem;
-    position: ${({ open }) => open ? 'fixed' : 'static'};
+    position: ${({ openMobileMenu }) => openMobileMenu ? 'fixed' : 'static'};
     top: 1.7rem;
     right: 2rem;
     z-index: 20;
@@ -26,32 +39,33 @@ const StyledBurger = styled.div`
     div {
         width: 2rem;
         height: 0.25rem;
-        background-color: ${({ open }) => open ? '#333' : '#ccc'};
+        background-color: ${({ openMobileMenu }) => openMobileMenu ? '#333' : '#ccc'};
         // background-color #ccc;
         border-radius: 10px;
         transform-origin: 1px;
         transition: all 0.3s linear;
 
         &:nth-child(1) {
-            transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+            transform: ${({ openMobileMenu }) => openMobileMenu ? 'rotate(45deg)' : 'rotate(0)'};
         }
 
         &:nth-child(2) {
-            transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
-            opacity: ${({ open }) => open ? 0 : 1};
+            transform: ${({ openMobileMenu }) => openMobileMenu ? 'translateX(100%)' : 'translateX(0)'};
+            opacity: ${({ openMobileMenu }) => openMobileMenu ? 0 : 1};
         }
 
         &:nth-child(3) {
-            transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
+            transform: ${({ openMobileMenu }) => openMobileMenu ? 'rotate(-45deg)' : 'rotate(0)'};
         }
     }
 `;
 
 const Header = () => {
-    const [open, setOpen] = useState(false);
+    const [openMobileMenu, setOpenMobileMenu] = useState(false);
+    const [openMobileSearch, setOpenMobileSearch] = useState(false);
 
     return (
-        <div className="container">
+        <div className="header-container">
             <header className="header">
                 <NavLink className="header__logo-container" to="/">
                     <img src={logo} alt="Awesome Store logo" className="logo"/>
@@ -82,7 +96,7 @@ const Header = () => {
                 </nav>
                 <div className="header__right">
                     <form action="#" className="header__search">
-                        <img className="header__search-img" src={search} alt="search"/>
+                        <img className="header__search-img pointer" src={search} alt="search" onClick={() => setOpenMobileSearch(!openMobileSearch)}/>
                         {/* <input type="text" className="search__input" placeholder="Search"/> */}
                     </form>
                     <NavLink to="/cart">
@@ -112,15 +126,19 @@ const Header = () => {
                     </div>
                     <div className="navigation-mobile">
                         {/* <img className="navigation-mobile__hamburger pointer" src={hamburger} alt="Hamburger"/> */}
-                        <StyledBurger className="pointer" open={open} onClick={() => setOpen(!open)}>
+                        <StyledBurger className="pointer" openMobileMenu={openMobileMenu} onClick={() => setOpenMobileMenu(!openMobileMenu)}>
                             <div />
                             <div />
                             <div />
                         </StyledBurger>
-                        <MobileMenu open={open} setOpen={setOpen}/>
+                        <MobileMenu openMobileMenu={openMobileMenu} setOpenMobileMenu={setOpenMobileMenu}/>
                     </div>
                 </div>
             </header>
+            <MobileSearch openMobileSearch={openMobileSearch}>
+                {/* <p>test</p> */}
+                <input className="mobile-menu__search-input"/>
+            </MobileSearch>
         </div>
     );
 }

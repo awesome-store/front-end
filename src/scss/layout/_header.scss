@@ -1,5 +1,6 @@
-.container {
+.header-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     //if not enough space, then 100% of the viewport width
     background-color: var(--color-dark-gray);
