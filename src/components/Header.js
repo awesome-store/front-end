@@ -9,6 +9,7 @@ import avatarDefault from "../img/icons/avatar-default.svg";
 
 const MobileSearch = styled.div`
     position: absolute;
+    z-index: 2;
     top: 5.5rem;
     width: 100%;
     display: ${({ openMobileSearch }) => openMobileSearch ? 'flex' : 'none'};
