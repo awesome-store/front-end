@@ -26,8 +26,10 @@ const StyledBurger = styled.div`
     width: 2rem;
     height: 2rem;
     position: ${({ openMobileMenu }) => openMobileMenu ? 'fixed' : 'static'};
-    top: 1.7rem;
-    right: 2rem;
+    top: ${({ openMobileMenu }) => openMobileMenu ? '1.7rem' : 'auto'};
+    right: ${({ openMobileMenu }) => openMobileMenu ? '2rem' : 'auto'};
+    // top: 1.7rem;
+    // right: 2rem;
     z-index: 20;
     display: flex;
     justify-content: space-around;

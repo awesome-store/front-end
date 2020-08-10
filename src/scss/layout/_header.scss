@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     //if not enough space, then 100% of the viewport width
     background-color: var(--color-dark-gray);
     // box-shadow: black;
@@ -16,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
     //to align elements along the cross axes
-    align-self: stretch;
+    // align-self: stretch;
     // box-shadow: 0 0.2rem 0.1rem grey;
 
     &__right {
