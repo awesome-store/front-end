@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Home from './components/pages/Home';
 import Store from './components/pages/Store';
@@ -11,6 +11,14 @@ import Account from './components/pages/Account';
 import Login from './components/pages/Login';
 import Signup from './components/pages/Signup';
 import NotFound from './components/pages/NotFound';
+
+const PrivateRoute = ({ component: Component, ...rest }) => (
+    <Route {...rest} render={(props) => (
+        fakeAuth.isAuthenticated === true
+        ? <Component {...props} />
+        : <Redirect to ='/login' />
+    )} />
+)
 
 export default (
     <Switch>
