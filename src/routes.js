@@ -7,18 +7,11 @@ import Product from './components/pages/Product';
 import Tutorials from './components/pages/Tutorials';
 import Faq from './components/pages/Faq';
 import Cart from './components/pages/Cart';
-import Account from './components/pages/Account';
 import Login from './components/pages/Login';
 import Signup from './components/pages/Signup';
 import NotFound from './components/pages/NotFound';
-
-// const PrivateRoute = ({ component: Component, ...rest }) => (
-//     <Route {...rest} render={(props) => (
-//         fakeAuth.isAuthenticated === true
-//         ? <Component {...props} />
-//         : <Redirect to ='/login' />
-//     )} />
-// )
+import PrivateRoute from './components/PrivateRoute';
+import Account from './components/pages/Account';
 
 export default (
     <Switch>
@@ -29,7 +22,7 @@ export default (
         <Route path="/tutorials" component={ Tutorials }/>
         <Route path="/faq" component={ Faq }/>
         <Route path="/cart" component={ Cart }/>
-        <Route path="/account" component={ Account }/>
+        <PrivateRoute exact path="/account" component={ Account }/>
         <Route path="/login" component={ Login }/>
         <Route path="/signup" component={ Signup }/>
         <Route path="*" component={ NotFound }/>
