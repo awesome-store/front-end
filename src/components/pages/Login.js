@@ -2,6 +2,7 @@ import React from 'react';
 import fb from '../../img/icons/fb-white.svg';
 import { Link } from 'react-router-dom';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
+import LoginButton from '../LoginButton';
 
 class Login extends React.Component {
     state = {
@@ -55,9 +56,7 @@ class Login extends React.Component {
                     <Link className="login__restore-link link">
                         <p>Restore password</p>
                     </Link>
-                    <div className="login__log-in-btn btn btn--yellow pointer" onClick={this.login}>
-                        <p>Log in</p>
-                    </div>
+                    <LoginButton />
                 </div>
             </div>
         )
