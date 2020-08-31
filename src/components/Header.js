@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import MobileMenu from './MobileMenu';
 import styled from 'styled-components';
-import logo from "../img/logo-black.svg";
+import logo from "../img/logo.png";
 import cart from "../img/icons/cart.svg";
 import search from "../img/icons/search.svg";
 import avatarDefault from "../img/icons/avatar-default.svg";
