@@ -3,6 +3,8 @@ import fb from '../../img/icons/fb-white.svg';
 import { Link } from 'react-router-dom';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import LoginButton from '../LoginButton';
+// import FacebookLogin from 'react-facebook-login';
+import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 
 class Login extends React.Component {
     state = {
@@ -12,6 +14,15 @@ class Login extends React.Component {
             password: ''
         }
     };
+
+    componentClicked = () => {
+        console.log("clicked");
+        alert("lol");
+    }
+
+    responseFacebook = (response) => {
+        console.log(response);
+    }
 
     handleChange = e => {
         this.setState({
@@ -42,10 +53,23 @@ class Login extends React.Component {
             <div className="login-wrapper">
                 <div className="login">
                     <h1 className="login__heading">Login</h1>
-                    <div className="login__facebook-btn pointer">
+                    <FacebookLogin
+                        appId="791454958258166"
+                        autoLoad={true}
+                        fields="name,email,picture"
+                        onClick={this.componentClicked}
+                        callback={this.responseFacebook}
+                        render={renderProps => (
+                            <div onClick={renderProps.onClick} className="login__facebook-btn pointer">
+                                <img className="login__facebook-img" src={fb} alt="facebook"/>
+                                <p>Log in with Facebook</p>                    
+                            </div>
+                        )}
+                    />
+                    {/* <div className="login__facebook-btn pointer">
                         <img className="login__facebook-img" src={fb} alt="facebook"/>
                         <p>Log in with Facebook</p>                    
-                    </div>
+                    </div> */}
                     <div className="login__or-container">
                         <div className="login__horizontal-line"></div>
                         <p>OR</p>
