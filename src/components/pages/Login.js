@@ -2,8 +2,6 @@ import React from 'react';
 import fb from '../../img/icons/fb-white.svg';
 import { Link } from 'react-router-dom';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
-import LoginButton from '../LoginButton';
-// import FacebookLogin from 'react-facebook-login';
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 
 class Login extends React.Component {
@@ -17,7 +15,7 @@ class Login extends React.Component {
 
     componentClicked = () => {
         console.log("clicked");
-        alert("lol");
+        // alert("lol");
     }
 
     responseFacebook = (response) => {
@@ -36,7 +34,8 @@ class Login extends React.Component {
     };
 
     login = e => {
-        e.preventDefault(); 
+        // alert('lol')
+        e.preventDefault();
         axiosWithAuth()
             .post('/login', this.state.credentials)
             .then(res => {
@@ -46,6 +45,20 @@ class Login extends React.Component {
                 this.props.history.push('/account');
             })
             .catch(err => console.log(err));
+        // if (!this.state.credentials.email && !this.state.credentials.password)
+        // {
+        //     alert('lol');
+        // } else {
+        //     axiosWithAuth()
+        //     .post('/login', this.state.credentials)
+        //     .then(res => {
+        //         console.log(res);
+        //         localStorage.setItem('token', res.data.token);
+        //         console.log('token =>>>', localStorage.getItem('token'));
+        //         this.props.history.push('/account');
+        //     })
+        //     .catch(err => console.log(err));
+        // }
     }
 
     render() {
@@ -80,7 +93,10 @@ class Login extends React.Component {
                     <Link className="login__restore-link link">
                         <p>Restore password</p>
                     </Link>
-                    <LoginButton />
+                    <div className="login__log-in-btn btn btn--yellow pointer" onClick={ this.login }>
+                        <p>Log in</p>
+                    </div>
+                    <p className="login__missing-credentials">Enter email and password</p>
                 </div>
             </div>
         )

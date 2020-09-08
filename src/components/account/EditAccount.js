@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 function EditAccount() {
+    useEffect(() => {
+        const token = localStorage.getItem('token');
+        const options = {
+            headers: {
+                authorization: token
+            }
+        };
+
+        axios.get('https://aw-store.herokuapp.com/auth/users', options)
+            .then(res => { console.log(res) })
+            .catch(err => { console.log(err) })
+    }, []);
+
     return (
         <div className="account__tab-container">
             <h2 className="account__heading-primary heading-primary">Edit My Account</h2>
+            <p>in43sh@gmail.com</p>
             <div className="account__change-email-container">
                 <div className="account__input-container input-container">
                     <label className="label">E-MAIL</label>
