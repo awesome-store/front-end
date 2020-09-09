@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useHistory } from "react-router-dom";
+import axios from 'axios';
 import Orders from '../account/Orders';
 import EditAccount from '../account/EditAccount';
 import ContactSupport from '../account/ContactSupport';
@@ -6,6 +8,29 @@ import PrivatePage from '../account/PrivatePage';
 
 function Account() {
     const [currentTab, setCurrentTab] = useState({value: "Orders"});
+    const history = useHistory();
+
+    useEffect(() => {
+        const token = localStorage.getItem('token');
+        const options = {
+            headers: {
+                authorization: token
+            }
+        };
+
+        axios.get('https://aw-store.herokuapp.com/auth/users', options)
+            .then(res => {
+                console.log(res.data);
+                // setUsers(res.data);
+            })
+            .catch(err => {
+                if (err.response.status === 401) {
+                    history.push("/login");
+                }
+                // console.log(err)
+                // console.log(err.response);
+            })
+    }, [history]);
 
     const switchTab = (str) => {
         switch (str) {

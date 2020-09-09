@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import axios from 'axios';
 
 function PrivatePage() {
     const [users, setUsers] = useState([]);
-    const history = useHistory();
-
-    // useEffect(() => {
-    //     console.log('Ololo', namekek)
-    // }, [namekek]);
 
     useEffect(() => {
         const token = localStorage.getItem('token');
@@ -20,19 +15,14 @@ function PrivatePage() {
 
         axios.get('https://aw-store.herokuapp.com/auth/users', options)
             .then(res => {
-                console.log(res.data);
+                // console.log(res.data);
                 setUsers(res.data);
             })
             .catch(err => {
-                if (err.response.status === 401) {
-                    history.push("/login");
-                }
-                // console.log(err)
+                console.log(err)
                 // console.log(err.response);
             })
     }, []);
-
-    
 
     return (
         <div>
