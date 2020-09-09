@@ -4,21 +4,21 @@ const initialState = {
     url: null
   }
   // action type 
-  const LOGIN = 'LOGIN';
-  const URLSEND = 'URLSEND';
+  const ADDTOCART = 'ADDTOCART';
+  const REMOVEFROMCART = 'REMOVEFROMCART';
   
   // action creators
-  export const login = (user) => {
+  export const addtocart = (productinfo) => {
     return {
-      type: LOGIN,
-      payload: user
+      type: ADDTOCART,
+      payload: productinfo
     };
   };
   
-  export const urlsend = (url) => {
+  export const removefromcart = (productinfo) => {
     return {
-      type: URLSEND,
-      payload: url
+      type: REMOVEFROMCART,
+      payload: productinfo
     };
   };
   
@@ -26,11 +26,11 @@ const initialState = {
   const reducer = (state = initialState, action) => {
     // const { type, payload } = action
     switch (action.type) {
-      case LOGIN:
-        return { ...state, user: action.payload };
+      case ADDTOCART:
+        return { ...state, productinfo: action.payload };
   
-      case URLSEND:
-        return { ...state, url: action.payload };
+      case REMOVEFROMCART:
+        return { ...state, productinfo: action.payload };
   
       default: return state;
     }
