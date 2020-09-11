@@ -1,24 +1,23 @@
 // initial state
 const initialState = {
-    user: null,
-    url: null
+    cart: null
   }
   // action type 
   const ADDTOCART = 'ADDTOCART';
   const REMOVEFROMCART = 'REMOVEFROMCART';
   
   // action creators
-  export const addtocart = (productinfo) => {
+  export const addtocart = (cart) => {
     return {
       type: ADDTOCART,
-      payload: productinfo
+      payload: cart
     };
   };
   
-  export const removefromcart = (productinfo) => {
+  export const removefromcart = (cart) => {
     return {
       type: REMOVEFROMCART,
-      payload: productinfo
+      payload: cart
     };
   };
   
@@ -27,13 +26,13 @@ const initialState = {
     // const { type, payload } = action
     switch (action.type) {
       case ADDTOCART:
-        return { ...state, productinfo: action.payload };
+        return { ...state, cart: action.payload };
   
       case REMOVEFROMCART:
-        return { ...state, productinfo: action.payload };
+        return { ...state, cart: action.payload };
   
       default: return state;
     }
   }
   
-  export default reducer;
+export default reducer;
