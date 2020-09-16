@@ -12,7 +12,8 @@ class Product extends Component {
             productTitle: "Ryobi Lithium-Ion Cordless Drill + Charger",
             price: "49.99",
             unit: "piece",
-            rating: "4"
+            rating: "4",
+            id: "5"
         }
     }
     // state = {
@@ -30,9 +31,9 @@ class Product extends Component {
         // rating: "4"
     // })
 
-    addToCart = () => {
-        console.log(this.state.price);
-        this.props.addtocart(this.state.price);
+    addToCart = (id) => {
+        console.log(id);
+        this.props.addtocart(id);
     }
 
     test = () => {
@@ -56,8 +57,9 @@ class Product extends Component {
                 <div className="product-card__price-container">
                     <span className="product-card__price">${this.state.price}</span>
                     <span className="product-card__price-unit">/ {this.state.unit}</span>
+                    <span>{this.state.id}</span>
                 </div>
-                <div className="product-card__button pointer" onClick={() => this.addToCart()}>
+                <div className="product-card__button pointer" onClick={() => this.addToCart(this.state.id)}>
                     <span>Add to Cart</span>
                 </div>
                 <div className="product-card__button pointer" onClick={() => this.test()}>
@@ -68,14 +70,16 @@ class Product extends Component {
     }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
     return {
         cart: state.cart
     };
 };
 
-const mapDispatchToProps = {
-    addtocart: addtocart
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addtocart: (id) => {dispatch(addtocart(id))}
+    }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Product);
