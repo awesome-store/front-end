@@ -8,6 +8,7 @@ const initialState = {
       {id:5,title:'Cropped-sho', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:160},
       {id:6,title:'Blues', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:90}
     ],
+    addedItems: [],
     total: 0
   }
   // action type 
@@ -22,24 +23,34 @@ const initialState = {
     };
   };
   
-  export const removefromcart = (cart) => {
-    return {
-      type: REMOVEFROMCART,
-      payload: cart
-    };
-  };
+  // export const removefromcart = (cart) => {
+  //   return {
+  //     type: REMOVEFROMCART,
+  //     payload: cart
+  //   };
+  // };
   
   // reducer
   const reducer = (state = initialState, action) => {
+    // const { type, payload } = action
+    // switch (action.type) {
+    //   case ADDTOCART:
+    //     return { ...state, cart: action.payload };
+  
+    //   case REMOVEFROMCART:
+    //     return { ...state, cart: action.payload };
+  
+    //   default: return state;
+    // }
     if (action.type === ADDTOCART) {
       console.log("here======>")
       console.log("state.cart ", state.cart);
       console.log("state.cart[0]", state.cart[0]);
       console.log("action ", action)
-      if(state.cart.keys(x).length > 0) {
-        let addedItem = state.cart.find(item => item.id === action.payload.id)
-        console.log(addedItem);
-      }
+      // if(Object.keys(x).length > 0){
+      // if(state.cart)
+      let addedItem = state.cart.find(item => item.id === action.payload.id)
+      console.log(addedItem);
       let existedItem = state.addedItems.find(item => action.id === item.id)
       if (existedItem) {
         addedItem.quantity += 1
