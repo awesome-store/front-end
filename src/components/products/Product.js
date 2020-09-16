@@ -13,7 +13,7 @@ class Product extends Component {
             price: "49.99",
             unit: "piece",
             rating: "4",
-            id: "5"
+            id: 5
         }
     }
     // state = {
@@ -31,9 +31,9 @@ class Product extends Component {
         // rating: "4"
     // })
 
-    addToCart = (id) => {
-        console.log(id);
-        this.props.addtocart(id);
+    addToCart = (item) => {
+        console.log(item);
+        this.props.addtocart(item);
     }
 
     test = () => {
@@ -59,7 +59,7 @@ class Product extends Component {
                     <span className="product-card__price-unit">/ {this.state.unit}</span>
                     <span>{this.state.id}</span>
                 </div>
-                <div className="product-card__button pointer" onClick={() => this.addToCart(this.state.id)}>
+                <div className="product-card__button pointer" onClick={() => this.addToCart(this.state)}>
                     <span>Add to Cart</span>
                 </div>
                 <div className="product-card__button pointer" onClick={() => this.test()}>
@@ -78,7 +78,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        addtocart: (id) => {dispatch(addtocart(id))}
+        addtocart: (cartItem) => {dispatch(addtocart(cartItem))}
     }
 }
 
