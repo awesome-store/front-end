@@ -1,6 +1,14 @@
 // initial state
 let initialState = {
-  cart: {},
+  // cart: {
+  //   "image": "https://source.unsplash.com/random",
+  //   "productTitle": "Ryobi Lithium-Ion Cordless Drill + Charger",
+  //   "price": "49.99",
+  //   "unit": "piece",
+  //   "rating": "4",
+  //   "id": 5
+  // },
+  cart: [],
   total: 0
 }
 
@@ -36,42 +44,41 @@ const reducer = (state = initialState, action) => {
   //   default: return state;
   // }
   if (type === ADD_TO_CART) {
-    console.log("here======>")
-    console.log("state.cart ", state.cart);
-    console.log("state.cart[0]", state.cart[0]);
-    console.log("action ", action)
-    state.cart[action.payload.id] = {
-      "value": action.payload,
-      "quantity": 0
+    console.log("HERE");
+    const product = state.cart.find(item => item.id === action.payload.id);
+    if (product) {
+      const tempProduct = {...product, quantity: product.quantity + 1}
+      return {...state, cart: [...state.cart.filter(item => item.id != product.id), tempProduct]}
+    } else {
+      const tempProduct = {...action.payload, quantity: 1}
+      return {...state, cart: [...state.cart, tempProduct]}
     }
-    console.log("action.payload.id", action.payload.id);
-    console.log("state.cart['test']", state.cart);
-    return state;
-    // if(Object.keys(x).length > 0){
-    // if(state.cart)
-    //   let addedItem = state.cart.find(item => item.id === payload.id)
-    //   console.log(addedItem);
-    //   let existedItem = state.addedItems.find(item => id === item.id)
-    //   if (existedItem) {
-    //     addedItem.quantity += 1
-    //     return {
-    //       ...state,
-    //       total: state.total + addedItem.price
-    //     }
+    // for (let key in state.cart) {
+    //   console.log("key ", key);
+    //   if (key === "id" && state.cart[key] === action.payload.id) {
+    //     console.log("here quantity ", state.cart[action.payload.id]["quantity"]);
+    //     // console.log("----key === action.payload.id----");
+    //     state.cart[action.payload.id]["quantity"] += 1
     //   } else {
-    //     console.log(addedItem);
-    //     addedItem.quantity = 1;
-    //     let newTotal = state.total + addedItem.price
-
-    //     return {
-    //       ...state,
-    //       addedItems: [...state.addedItems, addedItem],
-    //       total: newTotal
+    //     state.cart[action.payload.id] = {
+    //       "value": action.payload,
+    //       "quantity": 0
     //     }
     //   }
-    // } else {
-    //   return state;
     // }
+    // console.log("here======>")
+    // console.log("state.cart ", state.cart);
+    // console.log("state.cart[0]", state.cart[0]);
+    // console.log("action ", action)
+
+    // state.cart[action.payload.id] = {
+    //   "value": action.payload,
+    //   "quantity": 0
+    // }
+    
+    // console.log("action.payload.id", action.payload.id);
+    // console.log("state.cart['test']", state.cart);
+    return state;
   }
   return state;
 }

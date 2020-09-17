@@ -31,9 +31,9 @@ class Product extends Component {
         // rating: "4"
     // })
 
-    addToCart = (item) => {
-        console.log(item);
-        this.props.addtocart(item);
+    addToCart = () => {
+        console.log();
+        this.props.addtocart(this.state);
     }
 
     test = () => {
@@ -59,7 +59,7 @@ class Product extends Component {
                     <span className="product-card__price-unit">/ {this.state.unit}</span>
                     <span>{this.state.id}</span>
                 </div>
-                <div className="product-card__button pointer" onClick={() => this.addToCart(this.state)}>
+                <div className="product-card__button pointer" onClick={() => this.addToCart()}>
                     <span>Add to Cart</span>
                 </div>
                 <div className="product-card__button pointer" onClick={() => this.test()}>
