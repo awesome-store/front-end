@@ -1,11 +1,6 @@
 // initial state
 let initialState = {
-  cart: {
-    "0": {
-      value: "null",
-      quantity: "null"
-    }
-  },
+  cart: {},
   total: 0
 }
 
@@ -45,7 +40,10 @@ const reducer = (state = initialState, action) => {
     console.log("state.cart ", state.cart);
     console.log("state.cart[0]", state.cart[0]);
     console.log("action ", action)
-    // state.cart[action.payload.id]["value"] = action.payload;
+    state.cart[action.payload.id] = {
+      "value": action.payload,
+      "quantity": 0
+    }
     console.log("action.payload.id", action.payload.id);
     console.log("state.cart['test']", state.cart);
     return state;
