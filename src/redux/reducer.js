@@ -45,8 +45,9 @@ const reducer = (state = initialState, action) => {
     console.log("state.cart ", state.cart);
     console.log("state.cart[0]", state.cart[0]);
     console.log("action ", action)
-    state.cart["test"] = action.payload;
-    console.log("state.cart['test']", state.cart["test"]);
+    state.cart[action.payload.id]["value"] = action.payload;
+    console.log("action.payload.id", action.payload.id);
+    console.log("state.cart['test']", state.cart);
     return state;
     // if(Object.keys(x).length > 0){
     // if(state.cart)
