@@ -1,10 +1,36 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useHistory } from "react-router-dom";
+import axios from 'axios';
 import Orders from '../account/Orders';
 import EditAccount from '../account/EditAccount';
 import ContactSupport from '../account/ContactSupport';
+import PrivatePage from '../account/PrivatePage';
 
 function Account() {
     const [currentTab, setCurrentTab] = useState({value: "Orders"});
+    const history = useHistory();
+
+    useEffect(() => {
+        const token = localStorage.getItem('token');
+        const options = {
+            headers: {
+                authorization: token
+            }
+        };
+
+        axios.get('https://aw-store.herokuapp.com/auth/users', options)
+            .then(res => {
+                console.log(res.data);
+                // setUsers(res.data);
+            })
+            .catch(err => {
+                if (err.response.status === 401) {
+                    history.push("/login");
+                }
+                // console.log(err)
+                // console.log(err.response);
+            })
+    }, [history]);
 
     const switchTab = (str) => {
         switch (str) {
@@ -15,10 +41,18 @@ function Account() {
             case "Contact Support":
                 setCurrentTab({ value: "Contact Support"});
                 break;
-        
-            default:
-                setCurrentTab({ value: "Orders"});
+
+            case "Orders":
+                setCurrentTab({ value: "Orders" });
                 break;
+
+            default:
+                setCurrentTab({ value: "Private Page" });
+                break;
+        
+            // default:
+            //     setCurrentTab({ value: "Orders"});
+            //     break;
         }
     }
     return (
@@ -32,6 +66,7 @@ function Account() {
                                 <li className="account-sidebar__item pointer" onClick={ () => switchTab("Orders" )}>Orders</li>
                                 <li className="account-sidebar__item pointer" onClick={ () => switchTab("Edit Account" )}>Edit Profile</li>
                                 <li className="account-sidebar__item pointer" onClick={ () => switchTab("Contact Support" )}>Contact Support</li>
+                                <li className="account-sidebar__item pointer" onClick={ () => switchTab("Private Page" )}>Private Page</li>
                             </ul>
                         </nav>
                         <div className="account__content-container">
@@ -42,6 +77,8 @@ function Account() {
                                 ? <EditAccount/>
                                 : currentTab.value === "Contact Support"
                                 ? <ContactSupport/>
+                                : currentTab.value === "Private Page"
+                                ? <PrivatePage/>
                                 : null
                             }
                         </div>

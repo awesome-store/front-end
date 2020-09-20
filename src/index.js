@@ -4,19 +4,16 @@ import { HashRouter as Router } from 'react-router-dom';
 // import { BrowserRouter as Router } from 'react-router-dom';
 import './scss/main.css';
 import App from './App';
-import { Auth0Provider } from '@auth0/auth0-react';
+import store from './redux/store';
+import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-    <Auth0Provider
-        domain="sergeysherstobitov.auth0.com"
-        clientId="UU6gcTsi8hulFOcU3cXqx42JD30km1fU"
-        redirectUri="http://localhost:3000/#/account"
-    >
+    <Provider store={store}>
         <Router>
             <App />
         </Router>
-    </Auth0Provider>
+    </Provider>
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
