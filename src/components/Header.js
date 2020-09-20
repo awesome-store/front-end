@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import MobileMenu from './MobileMenu';
 import styled from 'styled-components';
 import logo from "../img/logo.png";
-import cart from "../img/icons/cart.svg";
+import cartImg from "../img/icons/cart.svg";
 import search from "../img/icons/search.svg";
 import avatarDefault from "../img/icons/avatar-default.svg";
 
@@ -60,6 +62,9 @@ const StyledBurger = styled.div`
 `;
 
 const Header = () => {
+    const cart = useSelector(state => state.cart);
+    const dispatch = useDispatch();
+
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
     const [openMobileSearch, setOpenMobileSearch] = useState(false);
 
@@ -101,9 +106,20 @@ const Header = () => {
                     <NavLink to="/cart">
                         <div className="header__icons-container">
                             <div className="nav-cart">
-                                <img src={cart} alt="Cart" className="nav-cart__img"/>
-                                <p className="nav-cart__text nav-cart__text-number">12</p>
-                                <p className="nav-cart__text nav-cart__text-items">&nbsp;items</p>
+                                <img src={cartImg} alt="Cart" className="nav-cart__img"/>
+                                {cart.length === 0 ? (
+                                    <p className="nav-cart__text nav-cart__text-number"></p>
+                                ) : (
+                                    <p className="nav-cart__text nav-cart__text-number">{cart.length}</p>
+                                )}
+                                
+                                
+                                {cart.length === 0 ? (
+                                <p className="nav-cart__text nav-cart__text-items"></p>
+                                ) : (
+                                    <p className="nav-cart__text nav-cart__text-items">&nbsp;items</p>
+                                )}
+                                
                             </div>
                         </div>
                     </NavLink>
