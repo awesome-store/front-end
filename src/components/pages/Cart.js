@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import paint from '../../img/paint.png';
+import { useSelector, useDispatch } from 'react-redux';
 
 function Cart() {
+    const cart = useSelector(state => state.cart);
+    const dispatch = useDispatch();
+
+    const [cartProduct, setCartProducts] = useState([])
+
     return (
         <div className="wrapper">
             <div className="wrapper__inside-container">
@@ -37,7 +43,7 @@ function Cart() {
                                 <p>x</p>
                             </div>
                         </div>
-                        <div className="cart-row">
+                        {/* <div className="cart-row">
                             <div className="cart-row__product-info-container">
                                 <img className="img-fluid" src={paint} alt="paint"/>
                                 <p className="cart-row__product-info-text">10 INCH SPRING AND GEL MEMORY FOAM HYBRID MATTRESS</p>
@@ -58,8 +64,8 @@ function Cart() {
                             <div className="cart-row__remove-item-container pointer">
                                 <p>x</p>
                             </div>
-                        </div>
-                        <div className="cart-row">
+                        </div> */}
+                        {/* <div className="cart-row">
                             <div className="cart-row__product-info-container">
                                 <img className="img-fluid" src={paint} alt="paint"/>
                                 <p className="cart-row__product-info-text">10 INCH SPRING AND GEL MEMORY FOAM HYBRID MATTRESS</p>
@@ -80,7 +86,7 @@ function Cart() {
                             <div className="cart-row__remove-item-container pointer">
                                 <p>x</p>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="cart-row cart-row--total">
                             <div className="cart-row__product-info-container">
                             </div>

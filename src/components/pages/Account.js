@@ -7,7 +7,7 @@ import ContactSupport from '../account/ContactSupport';
 import PrivatePage from '../account/PrivatePage';
 
 function Account() {
-    const [currentTab, setCurrentTab] = useState({value: "Orders"});
+    const [currentTab, setCurrentTab] = useState({ value: "Orders" });
     const history = useHistory();
 
     useEffect(() => {
