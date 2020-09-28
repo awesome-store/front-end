@@ -62,9 +62,9 @@ class Product extends Component {
                 <div className="product-card__button pointer" onClick={() => this.addToCart()}>
                     <span>Add to Cart</span>
                 </div>
-                <div className="product-card__button pointer" onClick={() => this.test()}>
+                {/* <div className="product-card__button pointer" onClick={() => this.test()}>
                     <span>Test</span>
-                </div>
+                </div> */}
             </div>
         )
     }
