@@ -110,7 +110,7 @@ const Header = () => {
                                 {cart.length === 0 ? (
                                     <p className="nav-cart__text nav-cart__text-number"></p>
                                 ) : (
-                                    <p className="nav-cart__text nav-cart__text-number">{cart.length}</p>
+                                    <p className="nav-cart__text nav-cart__text-number">{cart[0].quantity}</p>
                                 )}
                                 
                                 
