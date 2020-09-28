@@ -146,7 +146,7 @@ function Cart() {
                                 <div className="cart-row__quantity-container">
                                 </div>
                                 <div className="cart-row__estimate-amount-container">
-                                    <p className="cart-row__estimate-value">$187.25</p>
+                                    <p className="cart-row__estimate-value">$ {cart[0].quantity * cart[0].price}</p>
                                     <p className="cart-row__estimate-description">&nbsp; FINAL PRICE</p>
                                 </div>
                                 <div className="cart-row__remove-item-container pointer">
