@@ -38,7 +38,7 @@ function Cart() {
                                     return (
                                         <div className="cart-row">
                                             <div className="cart-row__product-info-container">
-                                                <img className="img-fluid" src={paint} alt="paint"/>
+                                                <img className="img-fluid" src={item.image} alt="paint"/>
                                                 <p className="cart-row__product-info-text">{item.productTitle}</p>
                                             </div>
                                             <div className="cart-row__price-container">

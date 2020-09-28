@@ -41,7 +41,7 @@ class Product extends Component {
             rating: this.props.rating,
             id: this.props.id
         };
-        this.props.addtocart(this.state);
+        this.props.addtocart(item);
     }
 
     test = () => {
@@ -70,9 +70,9 @@ class Product extends Component {
                 <div className="product-card__button pointer" onClick={() => this.addToCart()}>
                     <span>Add to Cart</span>
                 </div>
-                {/* <div className="product-card__button pointer" onClick={() => this.test()}>
+                <div className="product-card__button pointer" onClick={() => this.test()}>
                     <span>Test</span>
-                </div> */}
+                </div>
             </div>
         )
     }
