@@ -34,7 +34,35 @@ function Cart() {
                                 <p className="cart-header__item">QUANTITY</p>
                                 <p className="cart-header__item"></p>
                             </div>
-                            <div className="cart-row">
+                            {
+                                cart.map((item, index) => {
+                                    return (
+                                        <div className="cart-row">
+                                            <div className="cart-row__product-info-container">
+                                                <img className="img-fluid" src={paint} alt="paint"/>
+                                                <p className="cart-row__product-info-text">{item.productTitle}</p>
+                                            </div>
+                                            <div className="cart-row__price-container">
+                                                <p className="cart-row__price">${item.price}</p>
+                                                <p className="cart-row__price-unit">/price</p>
+                                            </div>
+                                            <div className="cart-row__quantity-container">
+                                                <div className="cart-row__quantity-inner-container">
+                                                    <p className="cart-row__quantity-container-value">{item.quantity}</p>
+                                                    <div className="cart-row__quantity-container-actions-container pointer">
+                                                        <p className="cart-row__quantity-container-action">+</p>
+                                                        <p className="cart-row__quantity-container-action">-</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="cart-row__remove-item-container pointer">
+                                                <p>x</p>
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            }
+                            {/* <div className="cart-row">
                                 <div className="cart-row__product-info-container">
                                     <img className="img-fluid" src={paint} alt="paint"/>
                                     <p className="cart-row__product-info-text">10 INCH SPRING AND GEL MEMORY FOAM HYBRID MATTRESS</p>
@@ -55,7 +83,7 @@ function Cart() {
                                 <div className="cart-row__remove-item-container pointer">
                                     <p>x</p>
                                 </div>
-                            </div>
+                            </div> */}
                             {/* <div className="cart-row">
                                 <div className="cart-row__product-info-container">
                                     <img className="img-fluid" src={paint} alt="paint"/>
