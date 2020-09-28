@@ -13,7 +13,7 @@ function PopularProducts(props) {
             price: "49.99",
             unit: "piece",
             rating: "4",
-            id: 5
+            id: 1
         },
         {
             image: paint,
@@ -21,7 +21,7 @@ function PopularProducts(props) {
             price: "29.99",
             unit: "piece",
             rating: "4",
-            id: 5
+            id: 2
         },
         {
             image: toolkit,
@@ -29,7 +29,7 @@ function PopularProducts(props) {
             price: "29.99",
             unit: "piece",
             rating: "4",
-            id: 5
+            id: 3
         },
         {
             image: screwdrivers,
@@ -37,12 +37,41 @@ function PopularProducts(props) {
             price: "29.99",
             unit: "piece",
             rating: "4",
-            id: 5
+            id: 4
+        },
+        {
+            image: paint,
+            productTitle: "Glidden Fur Interior Antique Matte Finish",
+            price: "29.99",
+            unit: "piece",
+            rating: "4",
+            id: 2
+        },
+        {
+            image: screwdrivers,
+            productTitle: "Stanley Screwdriver Set Philips 6pcs",
+            price: "29.99",
+            unit: "piece",
+            rating: "4",
+            id: 4
+        },
+        {
+            image: toolkit,
+            productTitle: "DeWalt 20v Cordless Super Drill Kit",
+            price: "29.99",
+            unit: "piece",
+            rating: "4",
+            id: 3
+        },
+        {
+            image: drill,
+            productTitle: "Ryobi Lithium-Ion Cordless Drill + Charger",
+            price: "49.99",
+            unit: "piece",
+            rating: "4",
+            id: 1
         }
     ];
-    // useEffect(() => {
-    //     console.log("lol");
-    // }, []);
 
     return (
         <section className={"product-cards-container " + props.className}>
