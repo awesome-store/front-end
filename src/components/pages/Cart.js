@@ -19,7 +19,7 @@ function Cart() {
                 <div className="cart-container">
                     <h1 className="heading-primary">Shopping Cart</h1>
                     {cart.length === 0 ? (
-                        <p className="heading-secondary cart__items-quantity">There are no items in the cart</p>
+                        <p style={{paddingBottom: "8rem"}} className="heading-secondary cart__items-quantity">There are no items in the cart</p>
                     ) : (
                         <p className="heading-secondary cart__items-quantity">{cart[0].quantity} items</p>
                     )}
