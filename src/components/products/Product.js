@@ -33,6 +33,14 @@ class Product extends Component {
 
     addToCart = () => {
         console.log();
+        const item = {
+            image: this.props.img,
+            productTitle: this.props.productTitle,
+            price: this.props.price,
+            unit: this.props.unit,
+            rating: this.props.rating,
+            id: this.props.id
+        };
         this.props.addtocart(this.state);
     }
 
