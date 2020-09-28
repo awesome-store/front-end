@@ -53,11 +53,11 @@ class Product extends Component {
                     <img src={goldstar} alt="goldstar"/>
                     <img src={star} alt="star"/>
                 </div>
-                <span className="product-card__heading">{this.state.productTitle}</span>
+                <span className="product-card__heading">{this.props.productTitle}</span>
                 <div className="product-card__price-container">
-                    <span className="product-card__price">${this.state.price}</span>
-                    <span className="product-card__price-unit">/ {this.state.unit}</span>
-                    <span>{this.state.id}</span>
+                    <span className="product-card__price">${this.props.price}</span>
+                    <span className="product-card__price-unit">/ {this.props.unit}</span>
+                    <span style={{display: "none"}}>{this.props.id}</span>
                 </div>
                 <div className="product-card__button pointer" onClick={() => this.addToCart()}>
                     <span>Add to Cart</span>

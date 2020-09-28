@@ -4,14 +4,13 @@ import { useSelector, useDispatch } from 'react-redux';
 
 function Cart() {
     const cart = useSelector(state => state.cart);
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
 
-    const [cartProduct, setCartProducts] = useState([]);
+    // const [cartProduct, setCartProducts] = useState([]);
 
-    useEffect(() => {
-        // alert("lol");
-        console.log("cart => ", cart);
-    }, []);
+    // useEffect(() => {
+    //     console.log("cart => ", cart);
+    // }, []);
 
     return (
         <div className="wrapper">
