@@ -4,16 +4,18 @@ import { useSelector, useDispatch } from 'react-redux';
 
 function Cart() {
     // let cart = [1, 2, 3];
-    let cart = useSelector(state => state.cart);
+    const cart = useSelector(state => state.cart);
 
-    const finalPrice = cart.reduce((total, current) => total + current.quantity, 0);
+    const estimate = cart.reduce((total, current) => total + current.quantity * current.price, 0);
+    const tax = estimate / 100 * 10.1;
+    const finalPrice = estimate + tax;
     // const dispatch = useDispatch();
 
     // const [cartProduct, setCartProducts] = useState([]);
 
-    useEffect(() => {
-        console.log("cart => ", cart);
-    }, []);
+    // useEffect(() => {
+    //     console.log("cart => ", cart);
+    // }, []);
 
     return (
         <div className="wrapper">
@@ -136,7 +138,7 @@ function Cart() {
                                 <div className="cart-row__quantity-container">
                                 </div>
                                 <div className="cart-row__estimate-amount-container">
-                                    <p className="cart-row__estimate-value">$17.02</p>
+                                    <p className="cart-row__estimate-value">${tax.toFixed(2)}</p>
                                     <p className="cart-row__estimate-description">&nbsp; EST. TAX</p>
                                 </div>
                                 <div className="cart-row__remove-item-container pointer">
@@ -148,8 +150,8 @@ function Cart() {
                                 <div className="cart-row__quantity-container">
                                 </div>
                                 <div className="cart-row__estimate-amount-container">
-                                    <p className="cart-row__estimate-value">$ {cart[0].quantity * cart[0].price}</p>
-                                    {/* <p className="cart-row__estimate-value">$ {finalPrice}</p> */}
+                                    {/* <p className="cart-row__estimate-value">$ {cart.reduce((total, current) => total + current.quantity * current.price, 0)}</p> */}
+                                    <p className="cart-row__estimate-value">$ {finalPrice.toFixed(2)}</p>
                                     <p className="cart-row__estimate-description">&nbsp; FINAL PRICE</p>
                                 </div>
                                 <div className="cart-row__remove-item-container pointer">
