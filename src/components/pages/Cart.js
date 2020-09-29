@@ -3,11 +3,10 @@ import paint from '../../img/paint.png';
 import { useSelector, useDispatch } from 'react-redux';
 
 function Cart() {
-    let cart = [1, 2, 3];
-    cart = useSelector(state => state.cart);
+    // let cart = [1, 2, 3];
+    let cart = useSelector(state => state.cart);
 
-
-    // const finalPrice = cart.reduce((total, curVal, curIndex, cart) => total + curVal);
+    const finalPrice = cart.reduce((total, current) => total + current.quantity, 0);
     // const dispatch = useDispatch();
 
     // const [cartProduct, setCartProducts] = useState([]);
@@ -24,7 +23,7 @@ function Cart() {
                     {cart.length === 0 ? (
                         <p style={{paddingBottom: "8rem"}} className="heading-secondary cart__items-quantity">There are no items in the cart</p>
                     ) : (
-                        <p className="heading-secondary cart__items-quantity">{cart[0].quantity} items</p>
+                        <p className="heading-secondary cart__items-quantity">{cart.reduce((total, current) => total + current.quantity, 0)} items</p>
                     )}
                 
                     {cart.length === 0 ? (
