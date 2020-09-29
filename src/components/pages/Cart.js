@@ -3,14 +3,18 @@ import paint from '../../img/paint.png';
 import { useSelector, useDispatch } from 'react-redux';
 
 function Cart() {
-    const cart = useSelector(state => state.cart);
+    let cart = [1, 2, 3];
+    cart = useSelector(state => state.cart);
+
+
+    // const finalPrice = cart.reduce((total, curVal, curIndex, cart) => total + curVal);
     // const dispatch = useDispatch();
 
     // const [cartProduct, setCartProducts] = useState([]);
 
-    // useEffect(() => {
-    //     console.log("cart => ", cart);
-    // }, []);
+    useEffect(() => {
+        console.log("cart => ", cart);
+    }, []);
 
     return (
         <div className="wrapper">
@@ -146,6 +150,7 @@ function Cart() {
                                 </div>
                                 <div className="cart-row__estimate-amount-container">
                                     <p className="cart-row__estimate-value">$ {cart[0].quantity * cart[0].price}</p>
+                                    {/* <p className="cart-row__estimate-value">$ {finalPrice}</p> */}
                                     <p className="cart-row__estimate-description">&nbsp; FINAL PRICE</p>
                                 </div>
                                 <div className="cart-row__remove-item-container pointer">
