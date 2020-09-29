@@ -16,20 +16,6 @@ class Product extends Component {
             id: 5
         }
     }
-    // state = {
-    //     image: "https://source.unsplash.com/random",
-    //     productTitle: "Ryobi Lithium-Ion Cordless Drill + Charger",
-    //     price: "49.99",
-    //     unit: "piece",
-    //     rating: "4"
-    // }
-    // const [productInfo, setProductInfo] = useState({
-        // image: "https://source.unsplash.com/random",
-        // productTitle: "Ryobi Lithium-Ion Cordless Drill + Charger",
-        // price: "49.99",
-        // unit: "piece",
-        // rating: "4"
-    // })
 
     addToCart = () => {
         console.log();
@@ -70,9 +56,9 @@ class Product extends Component {
                 <div className="product-card__button pointer" onClick={() => this.addToCart()}>
                     <span>Add to Cart</span>
                 </div>
-                <div className="product-card__button pointer" onClick={() => this.test()}>
+                {/* <div className="product-card__button pointer" onClick={() => this.test()}>
                     <span>Test</span>
-                </div>
+                </div> */}
             </div>
         )
     }

@@ -3,19 +3,12 @@ import paint from '../../img/paint.png';
 import { useSelector, useDispatch } from 'react-redux';
 
 function Cart() {
-    // let cart = [1, 2, 3];
     const cart = useSelector(state => state.cart);
 
     const estimate = cart.reduce((total, current) => total + current.quantity * current.price, 0);
     const tax = estimate / 100 * 10.1;
     const finalPrice = estimate + tax;
     // const dispatch = useDispatch();
-
-    // const [cartProduct, setCartProducts] = useState([]);
-
-    // useEffect(() => {
-    //     console.log("cart => ", cart);
-    // }, []);
 
     return (
         <div className="wrapper">
@@ -66,72 +59,6 @@ function Cart() {
                                     )
                                 })
                             }
-                            {/* <div className="cart-row">
-                                <div className="cart-row__product-info-container">
-                                    <img className="img-fluid" src={paint} alt="paint"/>
-                                    <p className="cart-row__product-info-text">10 INCH SPRING AND GEL MEMORY FOAM HYBRID MATTRESS</p>
-                                </div>
-                                <div className="cart-row__price-container">
-                                    <p className="cart-row__price">$49.99</p>
-                                    <p className="cart-row__price-unit">/price</p>
-                                </div>
-                                <div className="cart-row__quantity-container">
-                                    <div className="cart-row__quantity-inner-container">
-                                        <p className="cart-row__quantity-container-value">1</p>
-                                        <div className="cart-row__quantity-container-actions-container pointer">
-                                            <p className="cart-row__quantity-container-action">+</p>
-                                            <p className="cart-row__quantity-container-action">-</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="cart-row__remove-item-container pointer">
-                                    <p>x</p>
-                                </div>
-                            </div> */}
-                            {/* <div className="cart-row">
-                                <div className="cart-row__product-info-container">
-                                    <img className="img-fluid" src={paint} alt="paint"/>
-                                    <p className="cart-row__product-info-text">10 INCH SPRING AND GEL MEMORY FOAM HYBRID MATTRESS</p>
-                                </div>
-                                <div className="cart-row__price-container">
-                                    <p className="cart-row__price">$80.25</p>
-                                    <p className="cart-row__price-unit">/price</p>
-                                </div>
-                                <div className="cart-row__quantity-container">
-                                    <div className="cart-row__quantity-inner-container">
-                                        <p className="cart-row__quantity-container-value">1</p>
-                                        <div className="cart-row__quantity-container-actions-container pointer">
-                                            <p className="cart-row__quantity-container-action">+</p>
-                                            <p className="cart-row__quantity-container-action">-</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="cart-row__remove-item-container pointer">
-                                    <p>x</p>
-                                </div>
-                            </div> */}
-                            {/* <div className="cart-row">
-                                <div className="cart-row__product-info-container">
-                                    <img className="img-fluid" src={paint} alt="paint"/>
-                                    <p className="cart-row__product-info-text">10 INCH SPRING AND GEL MEMORY FOAM HYBRID MATTRESS</p>
-                                </div>
-                                <div className="cart-row__price-container">
-                                    <p className="cart-row__price">$39.99</p>
-                                    <p className="cart-row__price-unit">/price</p>
-                                </div>
-                                <div className="cart-row__quantity-container">
-                                    <div className="cart-row__quantity-inner-container">
-                                        <p className="cart-row__quantity-container-value">1</p>
-                                        <div className="cart-row__quantity-container-actions-container pointer">
-                                            <p className="cart-row__quantity-container-action">+</p>
-                                            <p className="cart-row__quantity-container-action">-</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="cart-row__remove-item-container pointer">
-                                    <p>x</p>
-                                </div>
-                            </div> */}
                             <div className="cart-row cart-row--total">
                                 <div className="cart-row__product-info-container">
                                 </div>
