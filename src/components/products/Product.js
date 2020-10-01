@@ -1,34 +1,33 @@
-import React, { useState } from "react";
+import React from "react";
 import goldstar from "../../img/icons/gold-star.svg";
 import star from "../../img/icons/star.svg";
-import { connect, useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addtocart } from "../../redux/reducer";
 
-function Product () {
-    const cart = useSelector(state => state.cart);
+function Product (props) {
+    // const cart = useSelector(state => state.cart);
     const dispatch = useDispatch();
 
     const addToCart = () => {
         const item = {
-            image: this.props.img,
-            productTitle: this.props.productTitle,
-            price: this.props.price,
-            unit: this.props.unit,
-            rating: this.props.rating,
-            id: this.props.id
+            image: props.img,
+            productTitle: props.productTitle,
+            price: props.price,
+            unit: props.unit,
+            rating: props.rating,
+            id: props.id
         };
-        this.props.addtocart(item);
+        dispatch(addtocart(item));
     }
 
-    const test = () => {
-        console.log(this.props.cart);
-    }
-
+    // const test = () => {
+    //     console.log(props.cart);
+    // }
     
     return (
         <div className="product-cards__product-card">
             <div className="product-card__img-container">
-                <img className="product-card__img" src={this.props.img} alt={this.props.img}/>
+                <img className="product-card__img" src={props.img} alt={props.img}/>
             </div>
             <div className="product-card__stars">
                 <img src={goldstar} alt="goldstar"/>
@@ -37,16 +36,16 @@ function Product () {
                 <img src={goldstar} alt="goldstar"/>
                 <img src={star} alt="star"/>
             </div>
-            <span className="product-card__heading">{this.props.productTitle}</span>
+            <span className="product-card__heading">{props.productTitle}</span>
             <div className="product-card__price-container">
-                <span className="product-card__price">${this.props.price}</span>
-                <span className="product-card__price-unit">/ {this.props.unit}</span>
-                <span style={{display: "none"}}>{this.props.id}</span>
+                <span className="product-card__price">${props.price}</span>
+                <span className="product-card__price-unit">/ {props.unit}</span>
+                <span style={{display: "none"}}>{props.id}</span>
             </div>
-            <div className="product-card__button pointer" onClick={() => this.addToCart()}>
+            <div className="product-card__button pointer" onClick={() => addToCart()}>
                 <span>Add to Cart</span>
             </div>
-            {/* <div className="product-card__button pointer" onClick={() => this.test()}>
+            {/* <div className="product-card__button pointer" onClick={() => test()}>
                 <span>Test</span>
             </div> */}
         </div>
@@ -60,10 +59,10 @@ function Product () {
 //     };
 // };
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        addtocart: (cartItem) => {dispatch(addtocart(cartItem))}
-    }
-}
+// const mapDispatchToProps = (dispatch) => {
+//     return {
+//         addtocart: (cartItem) => {dispatch(addtocart(cartItem))}
+//     }
+// }
 
 export default Product;
