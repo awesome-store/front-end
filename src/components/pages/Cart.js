@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import paint from '../../img/paint.png';
-import { useSelector, useDispatch } from 'react-redux';
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 function Cart() {
     const cart = useSelector(state => state.cart);
