@@ -9,6 +9,10 @@ function Cart() {
     const finalPrice = estimate + tax;
     // const dispatch = useDispatch();
 
+    const addQuantity = (id) => {
+        
+    }
+
     return (
         <div className="wrapper">
             <div className="wrapper__inside-container">
@@ -46,7 +50,7 @@ function Cart() {
                                                 <div className="cart-row__quantity-inner-container">
                                                     <p className="cart-row__quantity-container-value">{item.quantity}</p>
                                                     <div className="cart-row__quantity-container-actions-container pointer">
-                                                        <p className="cart-row__quantity-container-action">+</p>
+                                                        <p className="cart-row__quantity-container-action" onClick={addQuantity(index)}>+</p>
                                                         <p className="cart-row__quantity-container-action">-</p>
                                                     </div>
                                                 </div>

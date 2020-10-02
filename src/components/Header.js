@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { useDispatch } from 'react-redux';
+// import { useDispatch } from 'react-redux';
 import MobileMenu from './MobileMenu';
 import styled from 'styled-components';
 import logo from "../img/logo.png";
@@ -63,7 +63,7 @@ const StyledBurger = styled.div`
 
 const Header = () => {
     const cart = useSelector(state => state.cart);
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
 
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
     const [openMobileSearch, setOpenMobileSearch] = useState(false);
