@@ -13,6 +13,10 @@ function Cart() {
         
     }
 
+    const removeFromCart = (id) => {
+        
+    }
+
     return (
         <div className="wrapper">
             <div className="wrapper__inside-container">
@@ -55,7 +59,7 @@ function Cart() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="cart-row__remove-item-container pointer">
+                                            <div className="cart-row__remove-item-container pointer" onClick={removeFromCart(index)}>
                                                 <p>x</p>
                                             </div>
                                         </div>
