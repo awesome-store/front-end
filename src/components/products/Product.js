@@ -20,9 +20,9 @@ function Product (props) {
         dispatch(addtocart(item));
     }
 
-    const test = () => {
-        console.log(cart);
-    }
+    // const test = () => {
+    //     console.log(cart);
+    // }
     
     return (
         <div className="product-cards__product-card">
@@ -45,9 +45,9 @@ function Product (props) {
             <div className="product-card__button pointer" onClick={() => addToCart()}>
                 <span>Add to Cart</span>
             </div>
-            <div className="product-card__button pointer" onClick={() => test()}>
+            {/* <div className="product-card__button pointer" onClick={() => test()}>
                 <span>Test</span>
-            </div>
+            </div> */}
         </div>
     )
 }
