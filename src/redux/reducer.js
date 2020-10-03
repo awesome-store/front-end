@@ -47,12 +47,7 @@ const reducer = (state = initialState, action) => {
   }
   else if (type === REMOVE_FROM_CART) {
     if (payload) {
-      // console.log("type ", type);
-      // console.log("payload ", payload);
       state.cart = state.cart.filter(item => item.id !== payload)
-      // console.log(newArr);
-      // return {...state, newArr};
-      // console.log(state);
       return state;
     }
   }

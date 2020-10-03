@@ -17,7 +17,6 @@ function Cart() {
 
     const removeFromCart = (id) => {
         dispatch(removefromcart(id));
-        console.log("id ", id);
     }
 
     return (

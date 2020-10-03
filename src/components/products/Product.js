@@ -50,7 +50,6 @@ function Product (props) {
             </div>
         </div>
     )
-    
 }
 
 export default Product;
