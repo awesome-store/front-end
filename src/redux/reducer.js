@@ -7,6 +7,7 @@ let initialState = {
 const ADD_TO_CART = 'ADDTOCART';
 const REMOVE_FROM_CART = 'REMOVEFROMCART';
 const ADD_QUANTITY = 'ADDQUANTITY';
+const SUBSTRACT_QUANTITY = 'SUBSTRACTQUANTITY';
 
 // action creators
 export const addtocart = (cart) => {
@@ -29,6 +30,13 @@ export const addquantity = (id) => {
     payload: id
   };
 };
+
+export const substractquantity = (id) => {
+  return {
+    type: SUBSTRACT_QUANTITY,
+    payload: id
+  }
+}
 
 // reducer
 const reducer = (state = initialState, action) => {
@@ -56,6 +64,17 @@ const reducer = (state = initialState, action) => {
         state.cart = state.cart.map(item => {
           if (item.id === payload) {
             item.quantity++;
+          }
+          return item;
+        })
+      }
+      return state;
+    
+    case SUBSTRACT_QUANTITY:
+      if (payload) {
+        state.cart = state.cart.map(item => {
+          if (item.id === payload) {
+            item.quantity--;
           }
           return item;
         })

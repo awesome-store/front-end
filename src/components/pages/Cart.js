@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { addquantity, removefromcart } from '../../redux/reducer';
+import { addquantity, substractquantity, removefromcart } from '../../redux/reducer';
 
 function Cart() {
     const cart = useSelector(state => state.cart);
@@ -13,6 +13,10 @@ function Cart() {
 
     const addQuantity = (id) => {
         dispatch(addquantity(id));
+    }
+
+    const substractQuantity = (id) => {
+        dispatch(substractquantity(id));
     }
 
     const removeFromCart = (id) => {
@@ -57,7 +61,7 @@ function Cart() {
                                                     <p className="cart-row__quantity-container-value">{item.quantity}</p>
                                                     <div className="cart-row__quantity-container-actions-container pointer">
                                                         <p className="cart-row__quantity-container-action" onClick={() => addQuantity(item.id)}>+</p>
-                                                        <p className="cart-row__quantity-container-action">-</p>
+                                                        <p className="cart-row__quantity-container-action" onClick={() => substractQuantity(item.id)}>-</p>
                                                     </div>
                                                 </div>
                                             </div>
