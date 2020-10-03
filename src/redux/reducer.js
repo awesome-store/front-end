@@ -1,12 +1,11 @@
 // initial state
 let initialState = {
-  cart: [],
-  total: 0
+  cart: []
 }
 
 // action type 
 const ADD_TO_CART = 'ADDTOCART';
-// const REMOVEFROMCART = 'REMOVEFROMCART';
+const REMOVE_FROM_CART = 'REMOVEFROMCART';
 
 // action creators
 export const addtocart = (cart) => {
@@ -16,12 +15,12 @@ export const addtocart = (cart) => {
   };
 };
 
-// export const removefromcart = (cart) => {
-//   return {
-//     type: REMOVEFROMCART,
-//     payload: cart
-//   };
-// };
+export const removefromcart = (id) => {
+  return {
+    type: REMOVE_FROM_CART,
+    payload: id
+  };
+};
 
 // reducer
 const reducer = (state = initialState, action) => {
@@ -36,15 +35,26 @@ const reducer = (state = initialState, action) => {
   //   default: return state;
   // }
   if (type === ADD_TO_CART) {
-    const product = state.cart.find(item => item.id === action.payload.id);
+    const product = state.cart.find(item => item.id === payload.id);
     if (product) {
       const tempProduct = {...product, quantity: product.quantity + 1}
-      return {...state, cart: [...state.cart.filter(item => item.id != product.id), tempProduct]}
+      return {...state, cart: [...state.cart.filter(item => item.id !== product.id), tempProduct]}
     } else {
       const tempProduct = {...action.payload, quantity: 1}
       return {...state, cart: [...state.cart, tempProduct]}
     }
     // return state;
+  }
+  else if (type === REMOVE_FROM_CART) {
+    if (payload) {
+      // console.log("type ", type);
+      // console.log("payload ", payload);
+      state.cart = state.cart.filter(item => item.id !== payload)
+      // console.log(newArr);
+      // return {...state, newArr};
+      // console.log(state);
+      return state;
+    }
   }
   return state;
 }

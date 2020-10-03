@@ -1,20 +1,23 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { removefromcart } from '../../redux/reducer';
 
 function Cart() {
     const cart = useSelector(state => state.cart);
+    console.log(cart);
 
     const estimate = cart.reduce((total, current) => total + current.quantity * current.price, 0);
     const tax = estimate / 100 * 10.1;
     const finalPrice = estimate + tax;
-    // const dispatch = useDispatch();
+    const dispatch = useDispatch();
 
     const addQuantity = (id) => {
         
     }
 
     const removeFromCart = (id) => {
-        
+        dispatch(removefromcart(id));
+        console.log("id ", id);
     }
 
     return (
@@ -54,12 +57,12 @@ function Cart() {
                                                 <div className="cart-row__quantity-inner-container">
                                                     <p className="cart-row__quantity-container-value">{item.quantity}</p>
                                                     <div className="cart-row__quantity-container-actions-container pointer">
-                                                        <p className="cart-row__quantity-container-action" onClick={addQuantity(index)}>+</p>
+                                                        <p className="cart-row__quantity-container-action" onClick={() => addQuantity(index)}>+</p>
                                                         <p className="cart-row__quantity-container-action">-</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="cart-row__remove-item-container pointer" onClick={removeFromCart(index)}>
+                                            <div className="cart-row__remove-item-container pointer" onClick={() => removeFromCart(item.id)}>
                                                 <p>x</p>
                                             </div>
                                         </div>

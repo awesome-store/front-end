@@ -1,10 +1,11 @@
 import React from "react";
 import goldstar from "../../img/icons/gold-star.svg";
 import star from "../../img/icons/star.svg";
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addtocart } from "../../redux/reducer";
 
 function Product (props) {
+    const cart = useSelector(state => state.cart);
     const dispatch = useDispatch();
 
     const addToCart = () => {
@@ -17,6 +18,10 @@ function Product (props) {
             id: props.id
         };
         dispatch(addtocart(item));
+    }
+
+    const test = () => {
+        console.log(cart);
     }
     
     return (
@@ -40,9 +45,9 @@ function Product (props) {
             <div className="product-card__button pointer" onClick={() => addToCart()}>
                 <span>Add to Cart</span>
             </div>
-            {/* <div className="product-card__button pointer" onClick={() => test()}>
+            <div className="product-card__button pointer" onClick={() => test()}>
                 <span>Test</span>
-            </div> */}
+            </div>
         </div>
     )
     
