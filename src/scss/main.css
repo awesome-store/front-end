@@ -842,10 +842,15 @@ a {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center; } }
 @media only screen and (max-width: 500px) {
-  .product-cards__product-card__price {
-    font-size: 1.5rem; }
-  .product-cards__product-card__price-unit {
-    font-size: .9rem; } }
+  .product-cards__product-card {
+    padding: 1.1rem; }
+    .product-cards__product-card__price {
+      font-size: 1.5rem; }
+    .product-cards__product-card__price-unit {
+      font-size: .9rem; }
+
+  .product-card__button {
+    font-size: 1.6rem; } }
 .reviews-container {
   display: flex;
   flex-direction: column;

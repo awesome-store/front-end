@@ -80,8 +80,7 @@ function Login(props) {
                 <p className="login__missing-credentials">Enter email and password</p>
             </div>
         </div>
-    )
-    
+    ) 
 }
 
 export default Login;

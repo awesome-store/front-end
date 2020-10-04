@@ -87,6 +87,7 @@
 @media only screen and (max-width: 500px) {
     .product-cards {
         &__product-card {
+            padding: 1.1rem;
             
             &__price {
                 font-size: 1.5rem;
@@ -95,6 +96,12 @@
             &__price-unit {
                 font-size: .9rem;
             }
+        }
+    }
+
+    .product-card {
+        &__button {
+            font-size: 1.6rem;
         }
     }
 }
