@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-// import { useDispatch } from 'react-redux';
+import axios from 'axios';
 import MobileMenu from './MobileMenu';
 import styled from 'styled-components';
 import logo from "../img/logo.png";
@@ -62,11 +62,27 @@ const StyledBurger = styled.div`
 `;
 
 const Header = () => {
-    const cart = useSelector(state => state.cart);
-    // const dispatch = useDispatch();
-
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
     const [openMobileSearch, setOpenMobileSearch] = useState(false);
+    const cart = useSelector(state => state.cart);
+
+    useEffect(() => {
+        alert("lol")
+        const token = localStorage.getItem('token');
+        const options = {
+            header: {
+                authorization: token
+            }
+        };
+
+        axios.get('https://aw-store.herokuapp.com/auth/user', options)
+        .then(res => {
+            console.log("res.data ========> ", res.data);
+        })
+        .catch(err => {
+            console.log(err);
+        })
+    }, []);
 
     return (
         <div className="header-container">
