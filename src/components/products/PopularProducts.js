@@ -81,6 +81,7 @@ function PopularProducts(props) {
                     products.map((product, index) => {
                         return (
                             <Product
+                            key={index}
                             img={products[index].image}
                             productTitle={products[index].productTitle}
                             price={products[index].price}

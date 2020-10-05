@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import { useHistory } from "react-router-dom";
 import axios from 'axios';
 import MobileMenu from './MobileMenu';
 import styled from 'styled-components';
@@ -65,9 +66,11 @@ const Header = () => {
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
     const [openMobileSearch, setOpenMobileSearch] = useState(false);
     const cart = useSelector(state => state.cart);
+    const history = useHistory();
 
     useEffect(() => {
-        alert("lol")
+        // alert("lol");
+        // console.log("123")
         const token = localStorage.getItem('token');
         const options = {
             header: {
@@ -82,7 +85,7 @@ const Header = () => {
         .catch(err => {
             console.log(err);
         })
-    }, []);
+    }, [history]);
 
     return (
         <div className="header-container">

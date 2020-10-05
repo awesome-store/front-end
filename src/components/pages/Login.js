@@ -42,14 +42,13 @@ function Login(props) {
             .catch(err => console.log(err));
     }
 
-    
     return (
         <div className="login-wrapper">
             <div className="login">
                 <h1 className="login__heading">Login</h1>
                 <FacebookLogin
                     appId="791454958258166"
-                    autoLoad={true}
+                    autoLoad={false}
                     fields="name,email,picture"
                     onClick={componentClicked}
                     callback={responseFacebook}
