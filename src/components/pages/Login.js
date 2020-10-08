@@ -36,6 +36,7 @@ function Login(props) {
             .then(res => {
                 console.log(res);
                 localStorage.setItem('token', res.data.token);
+                localStorage.setItem('user', res.data.message);
                 console.log('token =>>>', localStorage.getItem('token'));
                 props.history.push('/account');
             })
@@ -55,13 +56,13 @@ function Login(props) {
                     render={renderProps => (
                         <div onClick={renderProps.onClick} className="login__facebook-btn pointer">
                             <img className="login__facebook-img" src={fb} alt="facebook"/>
-                            <p>Log in with Facebook</p>                    
+                            <p>Log in with Facebook</p>
                         </div>
                     )}
                 />
                 {/* <div className="login__facebook-btn pointer">
                     <img className="login__facebook-img" src={fb} alt="facebook"/>
-                    <p>Log in with Facebook</p>                    
+                    <p>Log in with Facebook</p>
                 </div> */}
                 <div className="login__or-container">
                     <div className="login__horizontal-line"></div>

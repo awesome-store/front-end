@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { useHistory } from "react-router-dom";
-import axios from 'axios';
 import MobileMenu from './MobileMenu';
 import styled from 'styled-components';
 import logo from "../img/logo.png";
@@ -66,26 +64,8 @@ const Header = () => {
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
     const [openMobileSearch, setOpenMobileSearch] = useState(false);
     const cart = useSelector(state => state.cart);
-    const history = useHistory();
-
-    useEffect(() => {
-        // alert("lol");
-        // console.log("123")
-        const token = localStorage.getItem('token');
-        const options = {
-            header: {
-                authorization: token
-            }
-        };
-
-        axios.get('https://aw-store.herokuapp.com/auth/user', options)
-        .then(res => {
-            console.log("res.data ========> ", res.data);
-        })
-        .catch(err => {
-            console.log(err);
-        })
-    }, [history]);
+    const token = localStorage.getItem('token');
+    const user = localStorage.getItem('user');
 
     return (
         <div className="header-container">
@@ -132,33 +112,35 @@ const Header = () => {
                                     // <p className="nav-cart__text nav-cart__text-number">{cart[0].quantity}</p>
                                     <p className="nav-cart__text nav-cart__text-number">{cart.reduce((total, current) => total + current.quantity, 0)}</p>
                                 )}
-                                
-                                
                                 {cart.length === 0 ? (
                                 <p className="nav-cart__text nav-cart__text-items"></p>
                                 ) : (
                                     <p className="nav-cart__text nav-cart__text-items">&nbsp;items</p>
                                 )}
-                                
                             </div>
                         </div>
                     </NavLink>
-                    {/* <div className="user">
-                        <span className="user__user-name">Mike Kainov</span>
-                        <div className="user__avatar-container">
-                            <img src={user} alt="User account" className="user__dropdown"/>
+                    {user ? (
+                        <div className="user">
+                            <span className="user__user-name">{user}</span>
+                            <Link to="/account" className="user__link">
+                                <div className="user__avatar-container">
+                                    <img src={avatarDefault} alt="User account" className="user__dropdown"/>
+                                </div>
+                            </Link>
                         </div>
-                    </div> */}
-                    <div className="user">
-                        <Link to="/login" className="user__link">
-                            <p className="user__login">Login</p>
-                        </Link>
-                        <Link to="/account" className="user__link">
-                            <div className="user__avatar-container">
-                                <img src={avatarDefault} alt="User account" className=" user__avatar user__dropdown"/>
-                            </div>
-                        </Link>
-                    </div>
+                        ) : (
+                        <div className="user">
+                            <Link to="/login" className="user__link">
+                                <p className="user__login">Login</p>
+                            </Link>
+                            <Link to="/login" className="user__link">
+                                <div className="user__avatar-container">
+                                    <img src={avatarDefault} alt="User account" className=" user__avatar user__dropdown"/>
+                                </div>
+                            </Link>
+                        </div>
+                    )}
                     <div className="navigation-mobile">
                         {/* <img className="navigation-mobile__hamburger pointer" src={hamburger} alt="Hamburger"/> */}
                         <StyledBurger className="pointer" openMobileMenu={openMobileMenu} onClick={() => setOpenMobileMenu(!openMobileMenu)}>
