@@ -35,9 +35,9 @@
         display: flex;
     }
 
-    &__search {
-        display: none;
-    }
+    // &__search {
+    //     display: none;
+    // }
 }
 
 .search {
@@ -47,6 +47,7 @@
     justify-content: center;
 
     &__input {
+        display: none;
         font-family: inherit;
         font-size: inherit;
         color: inherit;

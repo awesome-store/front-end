@@ -77,10 +77,10 @@ function Login(props) {
                 <div className="login__log-in-btn btn btn--yellow pointer" onClick={ login }>
                     <p>Log in</p>
                 </div>
-                <p className="login__missing-credentials">Enter email and password</p>
+                {/* <p className="login__missing-credentials">Enter email and password</p> */}
             </div>
         </div>
-    ) 
+    )
 }
 
 export default Login;

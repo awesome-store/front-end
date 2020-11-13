@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+// import { useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import MobileMenu from './MobileMenu';
@@ -7,6 +8,7 @@ import logo from "../img/logo.png";
 import cartImg from "../img/icons/cart.svg";
 import search from "../img/icons/search.svg";
 import avatarDefault from "../img/icons/avatar-default.svg";
+import avatar from "../img/avatar.png";
 
 const MobileSearch = styled.div`
     position: absolute;
@@ -64,7 +66,7 @@ const Header = () => {
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
     const [openMobileSearch, setOpenMobileSearch] = useState(false);
     const cart = useSelector(state => state.cart);
-    const token = localStorage.getItem('token');
+    // const token = localStorage.getItem('token');
     const user = localStorage.getItem('user');
 
     return (
@@ -100,7 +102,7 @@ const Header = () => {
                 <div className="header__right">
                     <form action="#" className="header__search">
                         <img className="header__search-img pointer" src={search} alt="search" onClick={() => setOpenMobileSearch(!openMobileSearch)}/>
-                        {/* <input type="text" className="search__input" placeholder="Search"/> */}
+                        <input type="text" className="search__input" placeholder="Search"/>
                     </form>
                     <NavLink to="/cart">
                         <div className="header__icons-container">
@@ -122,10 +124,10 @@ const Header = () => {
                     </NavLink>
                     {user ? (
                         <div className="user">
-                            <span className="user__user-name">{user}</span>
+                            {/* <span className="user__user-name">{user}</span> */}
                             <Link to="/account" className="user__link">
                                 <div className="user__avatar-container">
-                                    <img src={avatarDefault} alt="User account" className="user__dropdown"/>
+                                    <img src={avatar} alt="User account" className="user__dropdown"/>
                                 </div>
                             </Link>
                         </div>

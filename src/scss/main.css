@@ -573,8 +573,6 @@ a {
     justify-content: center; }
   .header__icons-container {
     display: flex; }
-  .header__search {
-    display: none; }
 
 .search {
   flex: 0 0 40%;
@@ -582,6 +580,7 @@ a {
   align-items: center;
   justify-content: center; }
   .search__input {
+    display: none;
     font-family: inherit;
     font-size: inherit;
     color: inherit;
