@@ -10,7 +10,6 @@ function PromotionalBanner(props) {
             <div className="promotional-banner-small__img-container" style={{background: `url(${props.img}) center/cover`}}></div>
         </section>
     )
-    
 }
 
 export default PromotionalBanner;
