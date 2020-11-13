@@ -33,7 +33,7 @@ function Cart() {
                     ) : (
                         <p className="heading-secondary cart__items-quantity">{cart.reduce((total, current) => total + current.quantity, 0)} items</p>
                     )}
-                
+
                     {cart.length === 0 ? (
                         <p></p>
                     ) : (
