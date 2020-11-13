@@ -7,8 +7,7 @@ function Review(props) {
     return (
         <div className="review">
             <div className="review__top">
-                <img src={avatar} alt="avatar"/>
-                {/* <img src={props.avatar} alt="avatar"/> */}
+                <img src={props.img} alt="avatar"/>
                 <div className="review__review-author-container">
                     <p>{props.name && props.name.first}</p>
                     <p>{props.name && props.name.last}</p>
