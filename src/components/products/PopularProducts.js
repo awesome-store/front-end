@@ -81,24 +81,16 @@ function PopularProducts(props) {
                     products.map((product, index) => {
                         return (
                             <Product
-                            key={index}
-                            img={products[index].image}
-                            productTitle={products[index].productTitle}
-                            price={products[index].price}
-                            unit={products[index].unit}
-                            rating={products[index].rating}
-                            id={products[index].id}/>
+                                key={index}
+                                img={product.image}
+                                productTitle={product.productTitle}
+                                price={product.price}
+                                unit={product.unit}
+                                rating={product.rating}
+                                id={product.id}/>
                         )
                     })
                 }
-                {/* <Product img={drill}/>
-                <Product img={paint}/>
-                <Product img={toolkit}/>
-                <Product img={screwdrivers}/>
-                <Product img={paint}/>
-                <Product img={screwdrivers}/>
-                <Product img={toolkit}/>
-                <Product img={drill}/> */}
             </div>
         </section>
     )

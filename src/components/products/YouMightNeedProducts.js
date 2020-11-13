@@ -49,12 +49,12 @@ function YouMightNeedProducts(props) {
                     products.map((product, index) => {
                         return (
                             <Product
-                            img={products[index].image}
-                            productTitle={products[index].productTitle}
-                            price={products[index].price}
-                            unit={products[index].unit}
-                            rating={products[index].rating}
-                            id={products[index].id}/>
+                            img={product.image}
+                            productTitle={product.productTitle}
+                            price={product.price}
+                            unit={product.unit}
+                            rating={product.rating}
+                            id={product.id}/>
                         )
                     })
                 }

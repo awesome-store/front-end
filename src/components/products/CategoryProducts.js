@@ -117,27 +117,27 @@ function CategoryProducts(props) {
                         <p className="category-products-sidebar__property-heading">TYPE</p>
                         <div className="category-products-sidebar__property-item-container">
                             <p className="category-products-sidebar__property-item pointer">Any</p>
-                            <img className="category-products-sidebar__property-item-cross pointer" src={cross} alt="cross" />  
+                            <img className="category-products-sidebar__property-item-cross pointer" src={cross} alt="cross" />
                         </div>
                         <div className="category-products-sidebar__property-item-container">
                             <p className="category-products-sidebar__property-item pointer">Interior Paint</p>
-                            <img className="category-products-sidebar__property-item-cross pointer" src={cross} alt="cross" />   
+                            <img className="category-products-sidebar__property-item-cross pointer" src={cross} alt="cross" />
                         </div>
                         <div className="category-products-sidebar__property-item-container">
                             <p className="category-products-sidebar__property-item pointer">Exterior Paint</p>
-                            <img className="category-products-sidebar__property-item-cross pointer" src={cross} alt="cross" />  
+                            <img className="category-products-sidebar__property-item-cross pointer" src={cross} alt="cross" />
                         </div>
                         <div className="category-products-sidebar__property-item-container">
                             <p className="category-products-sidebar__property-item pointer">Primer</p>
                             <img className="category-products-sidebar__property-item-cross pointer" src={cross} alt="cross" />
                         </div>
                         <div className="category-products-sidebar__property-item-container category-products-sidebar__property-item-container--active">
-                            <p className="category-products-sidebar__property-item pointer category-products-sidebar__property-item--active">Ceiling Paint</p> 
-                            <img className="category-products-sidebar__property-item-cross category-products-sidebar__property-item-cross--active pointer" src={cross} alt="cross" />   
+                            <p className="category-products-sidebar__property-item pointer category-products-sidebar__property-item--active">Ceiling Paint</p>
+                            <img className="category-products-sidebar__property-item-cross category-products-sidebar__property-item-cross--active pointer" src={cross} alt="cross" />
                         </div>
                         <div className="category-products-sidebar__property-item-container">
                             <p className="category-products-sidebar__property-item pointer">Spray</p>
-                            <img className="category-products-sidebar__property-item-cross pointer" src={cross} alt="cross" /> 
+                            <img className="category-products-sidebar__property-item-cross pointer" src={cross} alt="cross" />
                         </div>
                         <div className="category-products-sidebar__property-item-container">
                             <p className="category-products-sidebar__property-item pointer">Concrete & Garage Floor</p>
@@ -156,22 +156,22 @@ function CategoryProducts(props) {
                         <p className="category-products-sidebar__property-heading">SORT BY PRICE</p>
                         <div className="category-products-sidebar__property-item-container">
                             <p className="category-products-sidebar__property-item pointer">Low to high</p>
-                            <img className="category-products-sidebar__property-item-cross pointer" src={cross} alt="cross" />  
+                            <img className="category-products-sidebar__property-item-cross pointer" src={cross} alt="cross" />
                         </div>
                         <div className="category-products-sidebar__property-item-container category-products-sidebar__property-item-container--active">
-                            <p className="category-products-sidebar__property-item pointer category-products-sidebar__property-item--active">High to low</p> 
-                            <img className="category-products-sidebar__property-item-cross category-products-sidebar__property-item-cross--active pointer" src={cross} alt="cross" />   
+                            <p className="category-products-sidebar__property-item pointer category-products-sidebar__property-item--active">High to low</p>
+                            <img className="category-products-sidebar__property-item-cross category-products-sidebar__property-item-cross--active pointer" src={cross} alt="cross" />
                         </div>
                     </div>
                     <div className="category-products-sidebar__property-group">
                         <p className="category-products-sidebar__property-heading">SORT BY RATING</p>
                         <div className="category-products-sidebar__property-item-container">
                             <p className="category-products-sidebar__property-item pointer">Low to high</p>
-                            <img className="category-products-sidebar__property-item-cross pointer" src={cross} alt="cross" />  
+                            <img className="category-products-sidebar__property-item-cross pointer" src={cross} alt="cross" />
                         </div>
                         <div className="category-products-sidebar__property-item-container category-products-sidebar__property-item-container--active">
-                            <p className="category-products-sidebar__property-item pointer category-products-sidebar__property-item--active">High to low</p> 
-                            <img className="category-products-sidebar__property-item-cross category-products-sidebar__property-item-cross--active pointer" src={cross} alt="cross" />   
+                            <p className="category-products-sidebar__property-item pointer category-products-sidebar__property-item--active">High to low</p>
+                            <img className="category-products-sidebar__property-item-cross category-products-sidebar__property-item-cross--active pointer" src={cross} alt="cross" />
                         </div>
                     </div>
                 </div>
