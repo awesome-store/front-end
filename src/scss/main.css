@@ -879,6 +879,7 @@ a {
     line-height: normal; }
   .review__review-container {
     margin-top: 1rem;
+    font-size: 1.6rem;
     line-height: normal;
     color: var(--color-dark-gray); }
 
