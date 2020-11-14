@@ -28,8 +28,8 @@
     &__link:visited {
         color: var(--color-primary);
         text-decoration: none;
-        display: block;
-        padding: 2.4rem;
+        display: flex;
+        padding: 0 2.4rem;
     }
 
     &__link:hover {

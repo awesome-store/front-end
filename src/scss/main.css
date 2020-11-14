@@ -556,23 +556,31 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 60px;
   background-color: var(--color-dark-gray); }
 
 .header {
   max-width: 1180px;
+  height: 100%;
   font-size: 1.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center; }
   .header__right {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    height: 100%;
+    margin-left: 15rem; }
   .header__logo-container {
     display: flex;
     flex-direction: column;
     justify-content: center; }
   .header__icons-container {
     display: flex; }
+  .header__search {
+    display: flex;
+    height: 100%;
+    padding: 0 14px; }
 
 .search {
   flex: 0 0 40%;
@@ -605,7 +613,10 @@ a {
 .nav-cart {
   display: flex;
   align-items: center;
-  margin-left: 16rem; }
+  padding: 0 14px; }
+  .nav-cart__link {
+    height: 100%;
+    display: flex; }
   .nav-cart__img {
     display: block;
     margin-right: .5rem; }
@@ -615,9 +626,8 @@ a {
 
 .user {
   display: flex;
-  height: 100%;
   align-items: center;
-  margin-left: 6rem; }
+  padding: 0 14px; }
   .user__user-name {
     color: var(--color-primary);
     white-space: nowrap; }
@@ -630,19 +640,15 @@ a {
     padding: 2.4rem 0; }
   .user__avatar-container {
     height: 42px;
-    width: 42px;
-    margin-left: 1rem; }
+    width: 42px; }
   .user__avatar {
-    width: 100%;
-    height: 100%; }
+    width: 100%; }
 
 @media only screen and (max-width: 1150px) {
   .header {
     width: 90%; }
     .header__search {
-      display: block;
-      margin-right: 1.5rem;
-      margin-left: 1.5rem; } }
+      display: block; } }
 @media only screen and (max-width: 1024px) {
   .nav-cart {
     margin-left: 1.5rem;
@@ -664,9 +670,7 @@ a {
     padding: 1.1rem 2rem; }
     .header__search {
       width: 100%;
-      display: block;
-      margin-left: 3rem;
-      margin-right: 1.5rem; }
+      display: block; }
 
   .nav-cart {
     margin-left: 0; }
@@ -697,8 +701,8 @@ a {
   .nav__link, .nav__link:link, .nav__link:visited {
     color: var(--color-primary);
     text-decoration: none;
-    display: block;
-    padding: 2.4rem; }
+    display: flex;
+    padding: 0 2.4rem; }
   .nav__link:hover {
     color: silver; }
 

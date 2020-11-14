@@ -77,34 +77,26 @@ const Header = () => {
                 </NavLink>
                 <nav className="navigation">
                     <ul className="nav">
-                        <li className="nav__item">
-                            <NavLink to="/" className="nav__link">
-                                <span>Home</span>
-                            </NavLink>
-                        </li>
-                        <li className="nav__item">
-                            <NavLink to="/store" className="nav__link">
-                                <span>Store</span>
-                            </NavLink>
-                        </li>
-                        <li className="nav__item">
-                            <NavLink to="/tutorials" className="nav__link">
-                                <span>Tutorials</span>
-                            </NavLink>
-                        </li>
-                        <li className="nav__item">
-                            <NavLink to="/faq" className="nav__link">
-                                <span>Help</span>
-                            </NavLink>
-                        </li>
+                        <NavLink to="/" className="nav__link">
+                            <li className="nav__item">Home</li>
+                        </NavLink>
+                        <NavLink to="/store" className="nav__link">
+                            <li className="nav__item">Store</li>
+                        </NavLink>
+                        <NavLink to="/tutorials" className="nav__link">
+                            <li className="nav__item">Tutorials</li>
+                        </NavLink>
+                        <NavLink to="/faq" className="nav__link">
+                            <li className="nav__item">Help</li>
+                        </NavLink>
                     </ul>
                 </nav>
                 <div className="header__right">
-                    <form action="#" className="header__search">
-                        <img className="header__search-img pointer" src={search} alt="search" onClick={() => setOpenMobileSearch(!openMobileSearch)}/>
+                    <form action="#" className="header__search pointer">
+                        <img className="header__search-img" src={search} alt="search" onClick={() => setOpenMobileSearch(!openMobileSearch)}/>
                         <input type="text" className="search__input" placeholder="Search"/>
                     </form>
-                    <NavLink to="/cart">
+                    <NavLink className="nav-cart__link" to="/cart">
                         <div className="header__icons-container">
                             <div className="nav-cart">
                                 <img src={cartImg} alt="Cart" className="nav-cart__img"/>
@@ -123,14 +115,14 @@ const Header = () => {
                         </div>
                     </NavLink>
                     {user ? (
-                        <div className="user">
-                            {/* <span className="user__user-name">{user}</span> */}
-                            <Link to="/account" className="user__link">
+                        <Link to="/account" className="user__link">
+                            <div className="user">
+                                {/* <span className="user__user-name">{user}</span> */}
                                 <div className="user__avatar-container">
                                     <img src={avatar} alt="User account" className="user__dropdown"/>
                                 </div>
-                            </Link>
-                        </div>
+                            </div>
+                        </Link>
                         ) : (
                         <div className="user">
                             <Link to="/login" className="user__link">
