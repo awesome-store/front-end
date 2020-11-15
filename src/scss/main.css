@@ -1,6 +1,9 @@
 .pointer {
   cursor: pointer; }
 
+.arrow {
+  cursor: default; }
+
 .justify-self-center {
   justify-self: center; }
 
@@ -626,16 +629,15 @@ a {
 
 .user {
   display: flex;
+  height: 100%;
   align-items: center;
-  padding: 0 14px; }
-  .user__user-name {
-    color: var(--color-primary);
-    white-space: nowrap; }
+  position: relative; }
   .user__link {
     height: 100%;
     display: flex;
     align-items: center;
-    color: var(--color-primary); }
+    color: var(--color-primary);
+    padding-left: 14px; }
   .user__login {
     padding: 2.4rem 0; }
   .user__avatar-container {
@@ -643,26 +645,42 @@ a {
     width: 42px; }
   .user__avatar {
     width: 100%; }
+  .user__caret-container {
+    margin-left: .5rem; }
+  .user__user-bubble-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 999999;
+    top: 6rem;
+    background-color: var(--color-primary);
+    color: var(--color-black);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.07), 0 4px 8px 0 rgba(0, 0, 0, 0.07);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.07), 0 4px 8px 0 rgba(0, 0, 0, 0.07); }
+
+.user-bubble-container__title {
+  color: var(--color-gray);
+  padding: .5rem 0 .5rem 1.2rem; }
+.user-bubble-container__user-name {
+  font-weight: bold;
+  padding: .5rem 0 .5rem 1.2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.07); }
+.user-bubble-container__log-out-container {
+  display: flex;
+  padding: .5rem 0 .5rem 1.2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.07); }
+.user-bubble-container__log-out-container:hover {
+  background-color: #f4f5f6; }
 
 @media only screen and (max-width: 1150px) {
   .header {
-    width: 90%; }
-    .header__search {
-      display: block; } }
+    width: 90%; } }
 @media only screen and (max-width: 1024px) {
-  .nav-cart {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem; }
-    .nav-cart__text-number {
-      display: none; }
-    .nav-cart__text-items {
-      display: none; } }
-@media only screen and (max-width: 910px) {
-  .nav-cart {
-    margin-left: 4rem; } }
-@media only screen and (max-width: 850px) {
-  .nav-cart {
-    margin-left: 2rem; } }
+  .nav-cart__text-number {
+    display: none; }
+  .nav-cart__text-items {
+    display: none; } }
 @media only screen and (max-width: 768px) {
   .header {
     max-width: initial;
@@ -671,9 +689,6 @@ a {
     .header__search {
       width: 100%;
       display: block; }
-
-  .nav-cart {
-    margin-left: 0; }
 
   .user {
     display: none; } }

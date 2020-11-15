@@ -9,6 +9,7 @@ import cartImg from "../img/icons/cart.svg";
 import search from "../img/icons/search.svg";
 import avatarDefault from "../img/icons/avatar-default.svg";
 import avatar from "../img/avatar.png";
+import caret from "../img/icons/caret-down.svg";
 
 const MobileSearch = styled.div`
     position: absolute;
@@ -69,6 +70,10 @@ const Header = () => {
     // const token = localStorage.getItem('token');
     const user = localStorage.getItem('user');
 
+    let test = () => {
+        console.log("here!!!!!!");
+    }
+
     return (
         <div className="header-container">
             <header className="header">
@@ -115,14 +120,24 @@ const Header = () => {
                         </div>
                     </NavLink>
                     {user ? (
-                        <Link to="/account" className="user__link">
-                            <div className="user">
-                                {/* <span className="user__user-name">{user}</span> */}
+                        <div className="user">
+                            <Link to="/account" className="user__link">
                                 <div className="user__avatar-container">
                                     <img src={avatar} alt="User account" className="user__dropdown"/>
                                 </div>
+                            </Link>
+                            
+                            <div className="user__caret-container pointer" onClick={() => test()}>
+                                <img src={caret} alt="caret down"/>
                             </div>
-                        </Link>
+                            <div className="user__user-bubble-container">
+                                <p className="user-bubble-container__title arrow">Profile</p>
+                                <p className="user-bubble-container__user-name pointer">{user}</p>
+                                <div className="user-bubble-container__log-out-container pointer">
+                                    <p>Log out</p>
+                                </div>
+                            </div>
+                        </div>
                         ) : (
                         <div className="user">
                             <Link to="/login" className="user__link">
