@@ -99,10 +99,6 @@ const Header = () => {
     // const token = localStorage.getItem('token');
     const user = localStorage.getItem('user');
 
-    let test = () => {
-        console.log("here!!!!!!");
-    }
-
     return (
         <div className="header-container">
             <header className="header">

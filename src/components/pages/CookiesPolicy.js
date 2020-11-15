@@ -1,7 +1,7 @@
 import React from 'react';
 const CookiesPolicy = () => {
     return (
-        <div>
+        <div className="cookies">
             <h1>Cookies Policy</h1>
             <h2>INTRODUCTION</h2>
             <p>[Business Entity Name] (“we” or “us” or “our”) may use cookies, web beacons, tracking pixels, and other tracking technologies when you visit our website [Name of Website.com], including any other media form, media channel, mobile website, or mobile application related or connected thereto (collectively, the “Site”) to help customize the Site and improve your experience.  </p>

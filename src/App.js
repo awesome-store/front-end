@@ -5,7 +5,7 @@ import routes from './routes';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header/>
       { routes }
       <Footer/>
