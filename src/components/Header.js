@@ -85,6 +85,7 @@ const Bubble = styled.div`
             font-weight: bold;
             padding: .5rem 0 .5rem 1.2rem;
             border-top: 1px solid rgba(0,0,0,0.07);
+            background-color: #f4f5f6;
         }
 
         &__log-out-container {
