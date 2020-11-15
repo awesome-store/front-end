@@ -63,9 +63,49 @@ const StyledBurger = styled.div`
     }
 `;
 
+const Bubble = styled.div`
+    display: ${({ openBubble }) => openBubble ? 'flex' : 'none'};
+    flex-direction: column;
+    position: absolute;
+    z-index: 999999;
+    top: 6rem;
+    background-color: var(--color-primary);
+    color: var(--color-black);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.07), 0 4px 8px 0 rgba(0,0,0,0.07);
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.07), 0 4px 8px 0 rgba(0,0,0,0.07);
+
+    .user-bubble-container {
+        &__title {
+            color: var(--color-gray);
+            padding: .5rem 0 .5rem 1.2rem;
+        }
+
+        &__user-name {
+            font-weight: bold;
+            padding: .5rem 0 .5rem 1.2rem;
+            border-top: 1px solid rgba(0,0,0,0.07);
+        }
+
+        &__log-out-container {
+            display: flex;
+            padding: .5rem 0 .5rem 1.2rem;
+            border-top: 1px solid rgba(0,0,0,0.07);
+        }
+
+        &__log-out-container:hover {
+            // background: #f4f5f6;
+            background-color: #f4f5f6;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+    }
+`
+
 const Header = () => {
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
     const [openMobileSearch, setOpenMobileSearch] = useState(false);
+    const [openBubble, setOpenBubble] = useState(false);
     const cart = useSelector(state => state.cart);
     // const token = localStorage.getItem('token');
     const user = localStorage.getItem('user');
@@ -126,17 +166,23 @@ const Header = () => {
                                     <img src={avatar} alt="User account" className="user__dropdown"/>
                                 </div>
                             </Link>
-                            
-                            <div className="user__caret-container pointer" onClick={() => test()}>
+                            <div className="user__caret-container pointer"  onClick={() => setOpenBubble(!openBubble)}>
                                 <img src={caret} alt="caret down"/>
                             </div>
-                            <div className="user__user-bubble-container">
+                            <Bubble openBubble={openBubble}>
                                 <p className="user-bubble-container__title arrow">Profile</p>
                                 <p className="user-bubble-container__user-name pointer">{user}</p>
                                 <div className="user-bubble-container__log-out-container pointer">
                                     <p>Log out</p>
                                 </div>
-                            </div>
+                            </Bubble>
+                            {/* <div className="user__user-bubble-container" >
+                                <p className="user-bubble-container__title arrow">Profile</p>
+                                <p className="user-bubble-container__user-name pointer">{user}</p>
+                                <div className="user-bubble-container__log-out-container pointer">
+                                    <p>Log out</p>
+                                </div>
+                            </div> */}
                         </div>
                         ) : (
                         <div className="user">
