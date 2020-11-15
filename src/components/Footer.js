@@ -52,7 +52,7 @@ function Footer() {
             <div className="footer__footer-legal-container">
                 <div className="footer__footer-legal-inner-container">
                     <div className="footer-legal-container__links-container">
-                        <Link className="footer-legal-container__link-item" to="/policy">
+                        <Link className="footer-legal-container__link-item" to="/privacy-policy">
                             <p className="footer-legal-container__link-item-text footer-legal-container__link-item-policy">Policy statement</p>
                         </Link>
                         <Link className="footer-legal-container__link-item" to="/cookies-usage">

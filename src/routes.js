@@ -12,6 +12,7 @@ import Signup from './components/pages/Signup';
 import NotFound from './components/pages/NotFound';
 import PrivateRoute from './components/PrivateRoute';
 import Account from './components/pages/Account';
+import PrivacyPolicy from './components/pages/PrivacyPolicy';
 import CookiesPolicy from './components/pages/CookiesPolicy';
 
 export default (
@@ -26,6 +27,7 @@ export default (
         <PrivateRoute exact path="/account" component={ Account }/>
         <Route path="/login" component={ Login }/>
         <Route path="/signup" component={ Signup }/>
+        <Route path="/privacy-policy" component={ PrivacyPolicy } />
         <Route path="/cookies-usage" component={ CookiesPolicy } />
         <Route path="*" component={ NotFound }/>
     </Switch>
