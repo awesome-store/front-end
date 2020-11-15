@@ -69,37 +69,25 @@ const Bubble = styled.div`
     position: absolute;
     z-index: 999999;
     top: 6rem;
+    right: -10px;
     background-color: var(--color-primary);
     color: var(--color-black);
     border-radius: 4px;
     -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.07), 0 4px 8px 0 rgba(0,0,0,0.07);
     box-shadow: 0 0 0 1px rgba(0,0,0,0.07), 0 4px 8px 0 rgba(0,0,0,0.07);
 
-    .user-bubble-container {
-        &__title {
-            color: var(--color-gray);
-            padding: .5rem 0 .5rem 1.2rem;
-        }
-
-        &__user-name {
-            font-weight: bold;
-            padding: .5rem 0 .5rem 1.2rem;
-            border-top: 1px solid rgba(0,0,0,0.07);
-            background-color: #f4f5f6;
-        }
-
-        &__log-out-container {
-            display: flex;
-            padding: .5rem 0 .5rem 1.2rem;
-            border-top: 1px solid rgba(0,0,0,0.07);
-        }
-
-        &__log-out-container:hover {
-            // background: #f4f5f6;
-            background-color: #f4f5f6;
-            border-bottom-left-radius: 4px;
-            border-bottom-right-radius: 4px;
-        }
+    &:before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: -5px;
+        right: 17px;
+        background: #fff;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-box-shadow: -1px -1px 0 0 rgba(0,0,0,0.07);
+        box-shadow: -1px -1px 0 0 rgba(0,0,0,0.07);
     }
 `
 
@@ -172,7 +160,9 @@ const Header = () => {
                             </div>
                             <Bubble openBubble={openBubble}>
                                 <p className="user-bubble-container__title arrow">Profile</p>
-                                <p className="user-bubble-container__user-name pointer">{user}</p>
+                                <Link className="user-bubble-container__link" to="/account">
+                                    <p className="user-bubble-container__user-name pointer">{user}</p>
+                                </Link>
                                 <div className="user-bubble-container__log-out-container pointer">
                                     <p>Log out</p>
                                 </div>
