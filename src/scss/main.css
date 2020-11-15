@@ -1288,7 +1288,8 @@ a {
 .home {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  width: 100%; }
   .home__categories-links-home-container {
     display: flex;
     justify-content: center;
