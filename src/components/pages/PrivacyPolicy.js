@@ -37,6 +37,22 @@ const PrivacyPolicy = () => {
             </ul>
             <h2>USE OF YOUR INFORMATION</h2>
             <p>Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience.  Specifically, we may use information collected about you via the Site [or our mobile application] to:</p>
+            <ul>
+                <p>Administer sweepstakes, promotions, and contests.</p>
+                <p>Assist law enforcement and respond to subpoena.</p>
+                <p>Compile anonymous statistical data and analysis for use internally or with third parties.</p>
+                <p>Create and manage your account.</p>
+                <p>Deliver targeted advertising, coupons, newsletters, and other information regarding promotions and the Site [and our mobile application] to you.</p>
+                <p>Email you regarding your account or order.</p>
+                <p>Enable user-to-user communications.</p>
+                <p>Fulfill and manage purchases, orders, payments, and other transactions related to the Site [and our mobile application].</p>
+                <p>Generate a personal profile about you to make future visits to the Site [and our mobile application] more personalized.</p>
+                <p>Increase the efficiency and operation of the Site [and our mobile application].</p>
+                <p>Monitor and analyze usage and trends to improve your experience with the Site [and our mobile application]. </p>
+                <p>Notify you of updates to the Site [and our mobile application]s.</p>
+                <p>Offer new products, services, [mobile applications,] and/or recommendations to you.</p>
+                <p>Perform other business activities as needed.</p>
+            </ul>
         </div>
     )
 }
