@@ -96,8 +96,16 @@ const Header = () => {
     const [openMobileSearch, setOpenMobileSearch] = useState(false);
     const [openBubble, setOpenBubble] = useState(false);
     const cart = useSelector(state => state.cart);
-    // const token = localStorage.getItem('token');
+    const token = localStorage.getItem('token');
     const user = localStorage.getItem('user');
+
+    const logOut = () => {
+        // (token) ? do : do
+        if (token || user) {
+            localStorage.removeItem('token');
+            localStorage.removeItem('user');
+        }
+    }
 
     return (
         <div className="header-container">
@@ -151,7 +159,7 @@ const Header = () => {
                                     <img src={avatar} alt="User account" className="user__dropdown"/>
                                 </div>
                             </Link>
-                            <div className="user__caret-container pointer"  onClick={() => setOpenBubble(!openBubble)}>
+                            <div className="user__caret-container pointer" onClick={() => setOpenBubble(!openBubble)}>
                                 <img src={caret} alt="caret down"/>
                             </div>
                             <Bubble openBubble={openBubble}>
@@ -159,7 +167,7 @@ const Header = () => {
                                 <Link className="user-bubble-container__link" to="/account">
                                     <p className="user-bubble-container__user-name pointer">{user}</p>
                                 </Link>
-                                <div className="user-bubble-container__log-out-container pointer">
+                                <div className="user-bubble-container__log-out-container pointer" onClick={() => logOut()}>
                                     <p>Log out</p>
                                 </div>
                             </Bubble>
