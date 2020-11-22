@@ -49,7 +49,7 @@ function Account() {
             default:
                 setCurrentTab({ value: "Private Page" });
                 break;
-        
+
             // default:
             //     setCurrentTab({ value: "Orders"});
             //     break;

@@ -2,16 +2,16 @@ import React from 'react';
 
 const CookiesPolicy = () => {
     return (
-        <div className="cookies">
-            <h1>Cookies Policy</h1>
-            <h2>INTRODUCTION</h2>
+        <div className="policy-container">
+            <h1 className="heading-primary">Cookies Policy</h1>
+            <h2 className="heading-secondary">INTRODUCTION</h2>
             <p>[Business Entity Name] (“we” or “us” or “our”) may use cookies, web beacons, tracking pixels, and other tracking technologies when you visit our website [Name of Website.com], including any other media form, media channel, mobile website, or mobile application related or connected thereto (collectively, the “Site”) to help customize the Site and improve your experience.  </p>
             <p>We reserve the right to make changes to this Cookie Policy at any time and for any reason. We will alert you about any changes by updating the “Last Updated” date of this Cookie Policy. Any changes or modifications will be effective immediately upon posting the updated Cookie Policy on the Site, and you waive the right to receive specific notice of each such change or modification.  </p>
             <p>You are encouraged to periodically review this Cookie Policy to stay informed of updates. You will be deemed to have been made aware of, will be subject to, and will be deemed to have accepted the changes in any revised Cookie Policy by your continued use of the Site after the date such revised Cookie Policy is posted.</p>
             <p>This <a href="https://termly.io/resources/templates/cookie-policy-template/">cookie policy</a> was created using Termly.</p>
-            <h2>USE OF COOKIES</h2>
+            <h2 className="heading-secondary">USE OF COOKIES</h2>
             <p>A “cookie” is a string of information which assigns you a unique identifier that we store on your computer. Your browser then provides that unique identifier to use each time you submit a query to the Site. We use cookies on the Site to, among other things, keep track of services you have used, record registration information, record your user preferences, keep you logged into the Site, facilitate purchase procedures, and track the pages you visit. Cookies help us understand how the Site is being used and improve your user experience.</p>
-            <h2>TYPES OF COOKIES</h2>
+            <h2 className="heading-secondary">TYPES OF COOKIES</h2>
             <p>The following types of cookies may be used when you visit the Site:</p>
             <h3>Advertising Cookies</h3>
             <p>Advertising cookies are placed on your computer by advertisers and ad servers in order to display advertisements that are most likely to be of interest to you. These cookies allow advertisers and ad servers to gather information about your visits to the Site and other websites, alternate the ads sent to a specific computer, and track how often an ad has been viewed and by whom. These cookies are linked to a computer and do not gather any personal information about you.</p>
@@ -27,7 +27,7 @@ const CookiesPolicy = () => {
             <p>Site management cookies are used to maintain your identity or session on the Site so that you are not logged off unexpectedly, and any information you enter is retained from page to page. These cookies cannot be turned off individually, but you can disable all cookies in your browser.</p>
             <h3>Third-Party Cookies</h3>
             <p>Third-party cookies may be place on your computer when you visit the Site by companies that run certain services we offer. These cookies allow the third parties to gather and track certain information about you. These cookies can be manually disabled in your browser.</p>
-            <h2>CONTROL OF COOKIES</h2>
+            <h2 className="heading-secondary">CONTROL OF COOKIES</h2>
             <p>Most browsers are set to accept cookies by default. However, you can remove or reject cookies in your browser’s settings. Please be aware that such action could affect the availability and functionality of the Site.</p>
             <p>For more information on how to control cookies, check your browser or device’s settings for how you can control or reject cookies, or visit the following links:</p>
             <a href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac">Apple Safari</a>
