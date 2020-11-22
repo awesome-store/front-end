@@ -123,8 +123,14 @@ a {
 
 .heading-tertiary {
   font-weight: 800;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--color-black-header); }
+
+.text {
+  font-size: 1.6rem; }
+
+.pb-10 {
+  padding-bottom: 10px; }
 
 .top-banner {
   width: 100%;
