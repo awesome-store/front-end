@@ -3,6 +3,7 @@ import goldstar from "../img/icons/gold-star.svg";
 import star from "../img/icons/star.svg";
 
 function Review(props) {
+    // console.log("review props", props);
     return (
         <div className="review">
             <div className="review__top">

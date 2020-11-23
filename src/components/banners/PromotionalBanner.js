@@ -1,6 +1,7 @@
 import React from 'react';
 
 function PromotionalBanner(props) {
+    // console.log(props);
     return (
         <section className="promotional-banner-small">
             <div className="promotional-banner-small__text-container promotional-banner-small__text-container" style={{backgroundColor: props.bgColor}}>
