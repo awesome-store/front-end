@@ -27,9 +27,9 @@ function PrivatePage() {
     return (
         <div>
             {
-                users.map((user) => {
+                users.map((user, index) => {
                     return (
-                        <div style={{
+                        <div key={index} style={{
                             border: "1px solid black", marginBottom: "1rem",
                             padding: "1rem",
                             fontSize: "2rem"
