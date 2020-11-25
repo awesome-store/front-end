@@ -81,6 +81,7 @@ function NewProducts(props) {
                 products.map((product, index) => {
                     return (
                         <Product
+                        key={index}
                         img={product.image}
                         productTitle={product.productTitle}
                         price={product.price}
