@@ -43,7 +43,7 @@
     &__search {
         display: flex;
         height: 100%;
-        padding: 0 14px;
+        padding-right: 14px;
     }
 }
 
@@ -91,7 +91,7 @@
 .nav-cart {
     display: flex;
     align-items: center;
-    padding: 0 14px;
+    padding-right: 14px;
     // margin-left: 16rem;
 
     &__link {
@@ -205,7 +205,7 @@
 
         &__search {
             width: 100%;
-            display: block;
+            // display: block;
         }
     }
 
