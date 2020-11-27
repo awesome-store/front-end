@@ -182,6 +182,10 @@
 @media only screen and (max-width: 1150px) {
     .header {
         width: 90%;
+
+        &__right {
+            margin-left: 0;
+        }
     }
 }
 

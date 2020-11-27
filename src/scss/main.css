@@ -688,7 +688,9 @@ a {
 
 @media only screen and (max-width: 1150px) {
   .header {
-    width: 90%; } }
+    width: 90%; }
+    .header__right {
+      margin-left: 0; } }
 @media only screen and (max-width: 1024px) {
   .nav-cart__text-number {
     display: none; }

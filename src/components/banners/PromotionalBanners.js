@@ -22,7 +22,7 @@ function PromotionalBanners(props) {
         }
     ];
 
-    console.log(bannersData);
+    // console.log(bannersData);
     const banners = bannersData.map((banner, index) =>
         <PromotionalBanner key={index} id={index} topText={banner.topText} bottomText={banner.bottomText} img={banner.img} bgColor={banner.bgColor} />
     )
