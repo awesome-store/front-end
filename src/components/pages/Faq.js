@@ -1,5 +1,6 @@
 import React from 'react';
 import caret from '../../img/icons/caret-down.svg';
+import Accordion from '../accordion/Accordion';
 import ContactForm from '../ContactForm';
 
 function Faq() {
@@ -48,16 +49,19 @@ function Faq() {
                         <div className="faq__item-container pointer">
                             <div className="faq__item-top">
                                 <p>Whats' your policy on refunds?</p>
-                                <img className="caret" src={caret} alt="caret down"/>                                  
+                                <img className="caret" src={caret} alt="caret down"/>
                             </div>
                         </div>
                         <div className="faq__item-container faq__item-container--last pointer">
                             <div className="faq__item-top">
                                 <p>What's your policy on donations to charities?</p>
-                                <img className="caret" src={caret} alt="caret down"/>       
+                                <img className="caret" src={caret} alt="caret down"/>
                             </div>
                         </div>
                     </div>
+                    <Accordion title="title" content="content" />
+                    <Accordion title="title" content="content" />
+                    <Accordion title="title" content="content" />
                     <h2 className="heading-secondary">Feel free to contact us</h2>
                     <ContactForm/>
                 </div>
