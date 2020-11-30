@@ -19,27 +19,103 @@ import outdoor from '../../img/categories/outdoor-living.svg';
 import kitchenware from '../../img/categories/kitchenware.svg';
 
 function CategoryCards(props) {
+    const cardsData = [
+        {
+            url: "bath",
+            img: bath,
+            title: "BATH & FAUCETS"
+        },
+        {
+            url: "decor",
+            img: decor,
+            title: "DECOR"
+        },
+        {
+            url: "paint",
+            img: paint,
+            title: "PAINT"
+        },
+        {
+            url: "building",
+            img: building,
+            title: "BUILDING MATERIALS"
+        },
+        {
+            url: "doors",
+            img: doors,
+            title: "DOORS & WINDOWS"
+        },
+        {
+            url: "electrical",
+            img: electrical,
+            title: "ELECTRICAL"
+        },
+        {
+            url: "flooring",
+            img: flooring,
+            title: "FLOORING"
+        },
+        {
+            url: "hardware",
+            img: hardware,
+            title: "HARDWARE"
+        },
+        {
+            url: "heating",
+            img: heating,
+            title: "HEATING & COOLING"
+        },
+        {
+            url: "seasonal",
+            img: seasonal,
+            title: "SEASONAL"
+        },
+        {
+            url: "lawn",
+            img: lawn,
+            title: "LAWN & GARDEN"
+        },
+        {
+            url: "fans",
+            img: fans,
+            title: "CEILING FANS"
+        },
+        {
+            url: "plumbing",
+            img: plumbing,
+            title: "PLUMBING"
+        },
+        {
+            url: "storage",
+            img: storage,
+            title: "STORAGE"
+        },
+        {
+            url: "appliances",
+            img: appliances,
+            title: "APPLIANCES"
+        },
+        {
+            url: "outdoor",
+            img: outdoor,
+            title: "OUTDOOR LIVING"
+        },
+        {
+            url: "kitchenware",
+            img: kitchenware,
+            title: "KITCHENWARE"
+        }
+    ]
+
+    const cards = cardsData.map((card, index) =>
+        <CategoryCard key={index} url={card.url} img={card.img} title={card.title}/>
+    )
+
     return (
         <div className={"category-cards-container " + props.className}>
             <h1 className="heading-primary">Categories</h1>
             <div className="category-cards">
-                <CategoryCard url="bath" img={bath} title="BATH & FAUCETS"/>
-                <CategoryCard url="decor" img={decor} title="DECOR"/>
-                <CategoryCard url="paint" img={paint} title="PAINT"/>
-                <CategoryCard url="building" img={building} title="BUILDING MATERIALS"/>
-                <CategoryCard url="doors" img={doors} title="DOORS & WINDOWS"/>
-                <CategoryCard url="electrical" img={electrical} title="ELECTRICAL"/>
-                <CategoryCard url="flooring" img={flooring} title="FLOORING"/>
-                <CategoryCard url="hardware" img={hardware} title="HARDWARE"/>
-                <CategoryCard url="heating" img={heating} title="HEATING & COOLING"/>
-                <CategoryCard url="seasonal" img={seasonal} title="SEASONAL"/>
-                <CategoryCard url="lawn" img={lawn} title="LAWN & GARDEN"/>
-                <CategoryCard url="fans" img={fans} title="CEILING FANS"/>
-                <CategoryCard url="plumbing" img={plumbing} title="PLUMBING"/>
-                <CategoryCard url="storage" img={storage} title="STORAGE"/>
-                <CategoryCard url="appliances" img={appliances} title="APPLIANCES"/>
-                <CategoryCard url="outdoor" img={outdoor} title="OUTDOOR LIVING"/>
-                <CategoryCard url="kitchenware" img={kitchenware} title="KITCHENWARE"/>
+                { cards }
             </div>
         </div>
     )
