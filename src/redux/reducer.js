@@ -3,7 +3,7 @@ let initialState = {
   cart: []
 }
 
-// action type 
+// action type
 const ADD_TO_CART = 'ADDTOCART';
 const REMOVE_FROM_CART = 'REMOVEFROMCART';
 const ADD_QUANTITY = 'ADDQUANTITY';
@@ -69,7 +69,7 @@ const reducer = (state = initialState, action) => {
         })
       }
       return state;
-    
+
     case SUBSTRACT_QUANTITY:
       if (payload) {
         state.cart = state.cart.map(item => {
@@ -86,5 +86,5 @@ const reducer = (state = initialState, action) => {
     default: return state;
   }
 }
-  
+
 export default reducer;
