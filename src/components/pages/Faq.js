@@ -9,31 +9,43 @@ function Faq() {
                 <div className="faq">
                     <h1 className="heading-primary">FAQ</h1>
                     <div className="faq__items">
-                        <Accordion title="How do I request installation/measurement services?" content="<br/>
+                        <Accordion
+                            title="How do I request installation/measurement services?"
+                            content="<br/>
+                            <p>Cauliflower cheese pecorino cheese on toast. Rubber cheese queso danish fontina red leicester macaroni cheese lancashire who moved my cheese cheese on toast. Port-salut bavarian bergkase hard cheese cow hard cheese parmesan swiss lancashire. Manchego emmental cheesy feet.</p>" />
+                        <Accordion
+                            title="How do I make and verify payments?"
+                            content="<br/>
                                     <p>Cauliflower cheese pecorino cheese on toast. Rubber cheese queso danish fontina red leicester macaroni cheese lancashire who moved my cheese cheese on toast. Port-salut bavarian bergkase hard cheese cow hard cheese parmesan swiss lancashire. Manchego emmental cheesy feet.</p>
                                     <br/>
                                     <p>Babybel fondue stilton. Cheesy grin cheese slices chalk and cheese boursin mascarpone roquefort dolcelatte blue castello. Airedale say cheese camembert de normandie babybel boursin danish fontina babybel who moved my cheese. Queso say cheese.</p>" />
-                        <Accordion title="How do I make and verify payments?" content="<br/>
+                        <Accordion
+                            title="Where can I find my bill information?"
+                            content="<br/>
                                     <p>Cauliflower cheese pecorino cheese on toast. Rubber cheese queso danish fontina red leicester macaroni cheese lancashire who moved my cheese cheese on toast. Port-salut bavarian bergkase hard cheese cow hard cheese parmesan swiss lancashire. Manchego emmental cheesy feet.</p>
                                     <br/>
                                     <p>Babybel fondue stilton. Cheesy grin cheese slices chalk and cheese boursin mascarpone roquefort dolcelatte blue castello. Airedale say cheese camembert de normandie babybel boursin danish fontina babybel who moved my cheese. Queso say cheese.</p>" />
-                        <Accordion title="Where can I find my bill information?" content="<br/>
+                        <Accordion
+                            title="How do I check my order status?"
+                            content="<br/>
                                     <p>Cauliflower cheese pecorino cheese on toast. Rubber cheese queso danish fontina red leicester macaroni cheese lancashire who moved my cheese cheese on toast. Port-salut bavarian bergkase hard cheese cow hard cheese parmesan swiss lancashire. Manchego emmental cheesy feet.</p>
                                     <br/>
                                     <p>Babybel fondue stilton. Cheesy grin cheese slices chalk and cheese boursin mascarpone roquefort dolcelatte blue castello. Airedale say cheese camembert de normandie babybel boursin danish fontina babybel who moved my cheese. Queso say cheese.</p>" />
-                        <Accordion title="How do I check my order status?" content="<br/>
+                        <Accordion
+                            title="What is your policy on shipping?"
+                            content="<br/>
                                     <p>Cauliflower cheese pecorino cheese on toast. Rubber cheese queso danish fontina red leicester macaroni cheese lancashire who moved my cheese cheese on toast. Port-salut bavarian bergkase hard cheese cow hard cheese parmesan swiss lancashire. Manchego emmental cheesy feet.</p>
                                     <br/>
                                     <p>Babybel fondue stilton. Cheesy grin cheese slices chalk and cheese boursin mascarpone roquefort dolcelatte blue castello. Airedale say cheese camembert de normandie babybel boursin danish fontina babybel who moved my cheese. Queso say cheese.</p>" />
-                        <Accordion title="What is your policy on shipping?" content="<br/>
+                        <Accordion
+                            title="What is your policy on refunds?"
+                            content="<br/>
                                     <p>Cauliflower cheese pecorino cheese on toast. Rubber cheese queso danish fontina red leicester macaroni cheese lancashire who moved my cheese cheese on toast. Port-salut bavarian bergkase hard cheese cow hard cheese parmesan swiss lancashire. Manchego emmental cheesy feet.</p>
                                     <br/>
                                     <p>Babybel fondue stilton. Cheesy grin cheese slices chalk and cheese boursin mascarpone roquefort dolcelatte blue castello. Airedale say cheese camembert de normandie babybel boursin danish fontina babybel who moved my cheese. Queso say cheese.</p>" />
-                        <Accordion title="What is your policy on refunds?" content="<br/>
-                                    <p>Cauliflower cheese pecorino cheese on toast. Rubber cheese queso danish fontina red leicester macaroni cheese lancashire who moved my cheese cheese on toast. Port-salut bavarian bergkase hard cheese cow hard cheese parmesan swiss lancashire. Manchego emmental cheesy feet.</p>
-                                    <br/>
-                                    <p>Babybel fondue stilton. Cheesy grin cheese slices chalk and cheese boursin mascarpone roquefort dolcelatte blue castello. Airedale say cheese camembert de normandie babybel boursin danish fontina babybel who moved my cheese. Queso say cheese.</p>" />
-                        <Accordion title="What is your policy on donations to charities?" content="<br/>
+                        <Accordion
+                            title="What is your policy on donations to charities?"
+                            content="<br/>
                                     <p>Cauliflower cheese pecorino cheese on toast. Rubber cheese queso danish fontina red leicester macaroni cheese lancashire who moved my cheese cheese on toast. Port-salut bavarian bergkase hard cheese cow hard cheese parmesan swiss lancashire. Manchego emmental cheesy feet.</p>
                                     <br/>
                                     <p>Babybel fondue stilton. Cheesy grin cheese slices chalk and cheese boursin mascarpone roquefort dolcelatte blue castello. Airedale say cheese camembert de normandie babybel boursin danish fontina babybel who moved my cheese. Queso say cheese.</p>" />
