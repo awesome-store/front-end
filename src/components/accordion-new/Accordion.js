@@ -19,7 +19,7 @@ const Accordion = props => {
 
     return (
         <div className="accordion-section">
-            <button className="accordion-title" onClick={toggleActive}>
+            <button className="accordion accordion-title" onClick={toggleActive}>
                 <p style={titleStyle}>{props.title}</p>
                 <span className={active ? 'accordion-icon rotate' : 'accordion-icon'}></span>
             </button>

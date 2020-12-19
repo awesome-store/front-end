@@ -140,14 +140,14 @@ a {
   background-color: #eee;
   color: #444;
   cursor: pointer;
+  padding: 18px;
   display: flex;
   align-items: center;
   border: none;
   outline: none;
   transition: background-color 0.6s ease; }
 
-.accordion-title:hover,
-.active {
+.accordion-title:hover {
   background-color: #ccc; }
 
 .accordion-icon {
