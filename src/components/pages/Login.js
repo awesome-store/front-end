@@ -31,7 +31,7 @@ function Login(props) {
     const login = e => {
         // alert('lol')
         e.preventDefault();
-        axiosWithAuth()
+        axiosWithAuth(false)
             .post('/login', credentials)
             .then(res => {
                 console.log(res);
