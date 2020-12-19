@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function PromotionalBanner(props) {
     // console.log(props);
     return (

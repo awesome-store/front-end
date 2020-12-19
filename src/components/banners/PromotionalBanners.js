@@ -8,7 +8,7 @@ function PromotionalBanners(props) {
     const bannersData = [
         {
             id: "11111",
-            topText: ["50% Off Select", <br />, "Dyson Vacuums"],
+            topText: <>50% Off Select<br />Dyson Vacuums</>,
             bottomText: "Free delivery. Today only",
             img: vacuum,
             bgColor: "#BF90FB"
