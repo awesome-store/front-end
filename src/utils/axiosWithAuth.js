@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const axiosWithAuth = (auth=true) => {
+export const axiosWithAuth = (auth = true) => {
     let headers = {};
     if (auth) {
         const token = localStorage.getItem('token');

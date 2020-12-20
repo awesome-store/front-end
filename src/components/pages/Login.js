@@ -71,7 +71,7 @@ function Login(props) {
                 </div>
                 <input className="login__input input" type="text" name="email" placeholder="Email" value={credentials.email} onChange={handleChange}/>
                 <input className="login__input input" type="password" name="password" placeholder="Password" value={credentials.password} onChange={handleChange}/>
-                <Link className="login__restore-link link">
+                <Link to="/" className="login__restore-link link">
                     <p>Restore password</p>
                 </Link>
                 <div className="login__log-in-btn btn btn--yellow pointer" onClick={ login }>
