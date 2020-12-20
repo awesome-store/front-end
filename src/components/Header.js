@@ -167,9 +167,11 @@ const Header = () => {
                                 <Link className="user-bubble-container__link" to="/account">
                                     <p className="user-bubble-container__user-name pointer">{user}</p>
                                 </Link>
-                                <div className="user-bubble-container__log-out-container pointer" onClick={() => logOut()}>
-                                    <p>Log out</p>
-                                </div>
+                                <Link to="/login">
+                                    <div className="user-bubble-container__log-out-container pointer" onClick={() => logOut()}>
+                                        <p>Log out</p>
+                                    </div>
+                                </Link>
                             </Bubble>
                             {/* <div className="user__user-bubble-container" >
                                 <p className="user-bubble-container__title arrow">Profile</p>

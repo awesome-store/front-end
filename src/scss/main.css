@@ -714,6 +714,7 @@ a {
   background-color: #f4f5f6; }
 .user-bubble-container__log-out-container {
   display: flex;
+  color: var(--color-black);
   padding: .5rem 0 .5rem 1.2rem;
   border-top: 1px solid rgba(0, 0, 0, 0.07); }
 .user-bubble-container__log-out-container:hover {
