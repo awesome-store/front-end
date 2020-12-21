@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import TutorialBanner from './TutorialBanner';
 import TutorialBannerSmall from './TutorialBannerSmall';
 import flowers from "../../img/flowers.png";
@@ -17,9 +18,11 @@ function TutorialBanners() {
                 <TutorialBannerSmall products="6" minutes="2" header="Painting 101" img={paint2} textColor="#000000"/>
             </div>
             <div className="tutorial-banner-small__button-container">
-                <div className="btn pointer">
-                    <span>Store</span>
-                </div>
+                <Link to="/store">
+                    <div className="btn pointer">
+                        <span>Store</span>
+                    </div>
+                </Link>
             </div>
         </section>
     )
