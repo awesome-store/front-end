@@ -1,28 +1,31 @@
-import React, {useState, useRef} from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Chevron from './Chevron';
 
-function Accordion(props) {
-    const [active, setActive] = useState("");
-    const [height, setHeight] = useState("0px");
-    const [rotate, setRotate] = useState("accordion__icon");
+const Accordion = props => {
+    const [active, setActive] = useState(false);
+    const contentRef = useRef(null);
 
-    const content = useRef(null);
+    useEffect(() => {
+        contentRef.current.style.maxHeight = active ? `${contentRef.current.scrollHeight}px` : '0px'
+    }, [contentRef, active])
 
-    function toggleAccordion () {
-        setActive(active === "" ? "active-accordion" : "");
-        setHeight(active === "active-accordion" ? "0px" : `${content.current.scrollHeight}px`);
-        setRotate(active === "active-accordion" ? "accordion__icon" : "accordion__icon rotate");
-        console.log(content.current.scrollHeight);
+    const toggleActive = () => {
+        setActive(!active)
     }
 
     return (
-        <div className="accordion__section">
-            <button className={`accordion ${active}`} onClick={() => toggleAccordion()}>
+        <div className="accordion-section">
+            <button className={active ? "accordion accordion--active pointer" : "accordion pointer"} onClick={toggleActive}>
                 <p className="accordion__title">{props.title}</p>
-                <Chevron className={`${rotate}`} width={10} fill={"#777"} />
+                <Chevron className={active ? "accordion__icon accordion__icon--rotate" : "accordion__icon"} width={10} fill={"#777"}/>
             </button>
-            <div ref={content} style={{maxHeight: `${height}`}} className="accordion__content">
-                <div className="accordion__text" dangerouslySetInnerHTML={{ __html: props.content }}></div>
+            <div
+                ref={contentRef}
+                className="accordion__content"
+            >
+                <div className="accordion__text">
+                    {props.children}
+                </div>
             </div>
         </div>
     )

@@ -1,5 +1,5 @@
 import React from 'react';
-import Accordion from '../accordion-new/Accordion';
+import Accordion from '../accordion/Accordion';
 import ContactForm from '../ContactForm';
 
 function Faq() {
