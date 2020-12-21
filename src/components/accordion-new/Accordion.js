@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import Chevron from '../accordion/Chevron';
 
 const Accordion = props => {
     const [active, setActive] = useState(false);
@@ -12,16 +13,16 @@ const Accordion = props => {
         setActive(!active)
     }
 
-    const titleStyle = {
-        fontWeight: 600,
-        fontSize: '14px'
-    }
+    // const titleStyle = {
+    //     fontWeight: 600,
+    //     fontSize: '14px'
+    // }
 
     return (
         <div className="accordion-section">
-            <button className="accordion accordion-title" onClick={toggleActive}>
-                <p style={titleStyle}>{props.title}</p>
-                <span className={active ? 'accordion-icon rotate' : 'accordion-icon'}></span>
+            <button className="accordion pointer" onClick={toggleActive}>
+                <p className="accordion__title">{props.title}</p>
+                <Chevron className={active ? 'accordion-icon rotate' : 'accordion-icon'} width={10} fill={"#777"}/>
             </button>
             <div
                 ref={contentRef}

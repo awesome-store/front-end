@@ -1,23 +1,27 @@
 // // https://medium.com/skillthrive/build-a-react-accordion-component-from-scratch-using-react-hooks-a71d3d91324b
 
 // /* Style the accordion section */
-// .accordion__section {
-//     display: flex;
-//     flex-direction: column;
-// }
+.accordion__section {
+  display: flex;
+  flex-direction: column;
+}
 
-// /* Style the buttons that are used to open and close the accordion panel */
-// .accordion {
-//     background-color: #eee;
-//     color: #444;
-//     cursor: pointer;
-//     padding: 18px;
-//     display: flex;
-//     align-items: center;
-//     border: none;
-//     outline: none;
-//     transition: background-color 0.6s ease;
-// }
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  width: 100%;
+  background-color: #eee;
+  color: #444;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: background-color 0.6s ease;
+
+  &:hover {
+    background-color: #ccc;
+  }
+}
 
 // /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 // .accordion:hover,
@@ -25,13 +29,13 @@
 //     background-color: #ccc;
 // }
 
-// /* Style the accordion content title */
-// .accordion__title {
-//     /* font-family: "Open Sans", sans-serif; */
-//     font-weight: 600;
-//     font-size: 14px;
-//     text-align: left;
-// }
+/* Style the accordion content title */
+.accordion__title {
+  /* font-family: "Open Sans", sans-serif; */
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+}
 
 // /* Style the accordion chevron icon */
 // .accordion__icon {
@@ -51,46 +55,6 @@
 //     transition: max-height 0.6s ease;
 // }
 
-// /* Style the accordion content text */
-// .accordion__text {
-//     /* font-family: "Open Sans", sans-serif; */
-//     font-weight: 400;
-//     font-size: 14px;
-//     padding: 18px;
-// }
-
-.accordion-section {
-  display: flex;
-  flex-direction: column;
-}
-
-// .accordion {
-//   background-color: #eee;
-//   color: #444;
-//   cursor: pointer;
-//   display: flex;
-//   align-items: center;
-//   border: none;
-//   outline: none;
-//   transition: background-color 0.6s ease;
-// }
-
-.accordion-title {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  display: flex;
-  align-items: center;
-  border: none;
-  outline: none;
-  transition: background-color 0.6s ease;
-}
-
-.accordion-title:hover {
-  background-color: #ccc;
-}
-
 .accordion-icon {
   margin-left: auto;
   transition: transform 0.6s ease;
@@ -106,8 +70,8 @@
   transition: max-height 0.6s ease;
 }
 
-.accordion-text {
-  font-weight: 400;
-  font-size: 14px;
-  padding: 18px;
-}
+// .accordion-text {
+//   font-weight: 400;
+//   font-size: 14px;
+//   padding: 18px;
+// }
