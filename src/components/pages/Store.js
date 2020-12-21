@@ -9,7 +9,7 @@ import CategoriesLinksHome from "../CategoriesLinksHome";
 
 function Store() {
     return (
-        <div>
+        <>
             <div className="wrapper">
                 <div className="wrapper__inside-container">
                     <div className="breadcrumbs-container store__breadcrumbs-container align-self-start">
@@ -30,7 +30,7 @@ function Store() {
             </div>
             <WeDeliverBanner/>
             <CategoriesLinksHome/>
-        </div>
+        </>
     )
 }
 
