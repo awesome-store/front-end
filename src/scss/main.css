@@ -147,6 +147,10 @@ a {
   border: none;
   outline: none;
   transition: background-color 0.6s ease; }
+  .accordion__text {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 18px; }
   .accordion:hover {
     background-color: #ccc; }
 

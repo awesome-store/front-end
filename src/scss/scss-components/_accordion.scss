@@ -18,6 +18,12 @@
   outline: none;
   transition: background-color 0.6s ease;
 
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 18px;
+  }
+
   &:hover {
     background-color: #ccc;
   }
@@ -69,9 +75,3 @@
   overflow: hidden;
   transition: max-height 0.6s ease;
 }
-
-// .accordion-text {
-//   font-weight: 400;
-//   font-size: 14px;
-//   padding: 18px;
-// }

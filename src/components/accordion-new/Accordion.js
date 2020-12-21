@@ -28,7 +28,9 @@ const Accordion = props => {
                 ref={contentRef}
                 className="accordion-content"
             >
-                {props.children}
+                <div className="accordion__text">
+                    {props.children}
+                </div>
             </div>
         </div>
     )
