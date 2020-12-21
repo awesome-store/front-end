@@ -15,9 +15,15 @@ function Footer() {
                 </div>
                 <div className="footer__bottom-left">
                     <div className="footer__contact-info-container">
-                        <p className="footer__contact-info-text">12345 Valley Ave 1, Seattle, WA</p>
-                        <p className="footer__contact-info-text">(800) 123-45-67</p>
-                        <p className="footer__contact-info-text">(800) 123-45-67</p>
+                        <a href="http://maps.google.com/?q=12345 Valley Ave 1, Seattle, WA" target="_blank" rel="noopener">
+                            <p className="footer__contact-info-text">12345 Valley Ave 1, Seattle, WA</p>
+                        </a>
+                        <a className="footer__contact-info-text" href="tel:(800) 123-45-67">
+                            <p>(800) 123-45-67</p>
+                        </a>
+                        <a className="footer__contact-info-text" href="tel:(800) 123-45-68">
+                            <p>(800) 123-45-68</p>
+                        </a>
                     </div>
                     <ExternalLink className="footer__link" href="mailto:mail@mail.com">
                         <span>mail@mail.com</span>

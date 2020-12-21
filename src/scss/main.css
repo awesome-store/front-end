@@ -525,6 +525,7 @@ a {
   .footer__contact-info-container {
     margin-bottom: 1.5rem; }
   .footer__contact-info-text {
+    color: var(--color-primary);
     line-height: normal; }
   .footer__link {
     color: var(--color-secondary); }
