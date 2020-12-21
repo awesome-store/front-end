@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
@@ -45,16 +45,24 @@ const Ul = styled.ul`
 `;
 
 const MobileMenu = ({ openMobileMenu, setOpenMobileMenu }) => {
+    const user = localStorage.getItem('user');
+
     return (
         <Ul openMobileMenu={openMobileMenu}>
-            <div className="mobile-menu__mobile-menu-login-signup-container">
-                <Link onClick={() => setOpenMobileMenu(!openMobileMenu)}  to="/login">
-                    <p className="mobile-menu-login-signup-container__login-btn">Login</p>
+            {user ? (
+                <Link onClick={() => setOpenMobileMenu(!openMobileMenu)}  to="/account">
+                    <li>Account</li>
                 </Link>
-                <Link onClick={() => setOpenMobileMenu(!openMobileMenu)}  to="/signup">
-                    <p className="mobile-menu-login-signup-container__login-btn mobile-menu-login-signup-container__login-btn--color-white btn">Sign up</p>
-                </Link>
-            </div>
+            ) : (
+                <div className="mobile-menu__mobile-menu-login-signup-container">
+                    <Link onClick={() => setOpenMobileMenu(!openMobileMenu)}  to="/login">
+                        <li className="mobile-menu-login-signup-container__login-btn">Login</li>
+                    </Link>
+                    <Link onClick={() => setOpenMobileMenu(!openMobileMenu)}  to="/signup">
+                        <li className="mobile-menu-login-signup-container__login-btn mobile-menu-login-signup-container__login-btn--color-white btn">Sign up</li>
+                    </Link>
+                </div>
+            )}
             <Link onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
                 <li>Home</li>
             </Link>
@@ -67,6 +75,13 @@ const MobileMenu = ({ openMobileMenu, setOpenMobileMenu }) => {
             <Link onClick={() => setOpenMobileMenu(!openMobileMenu)}  to="/faq">
                 <li>Help</li>
             </Link>
+            {user ? (
+                <Link onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
+                    <li>Log out</li>
+                </Link>
+            ) : (
+                <></>
+            )}
         </Ul>
     )
 }
