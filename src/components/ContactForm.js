@@ -23,8 +23,13 @@ function ContactForm() {
                     <p className="contact-form__contact-person">DANA CHITANIS</p>
                     <p className="contact-form__contact-info">Customer Service</p>
                     <div className="contact-form__contact-info">
-                        <p>(800) 123-45-67</p>
-                        <p>(800) 123-45-67</p>
+                        <a href="tel:(800) 123-45-67">
+                            <p className="contact-form__phone-number">(800) 123-45-67</p>
+                        </a>
+                        <br/>
+                        <a href="tel:(800) 123-45-68">
+                            <p className="contact-form__phone-number">(800) 123-45-68</p>
+                        </a>
                     </div>
                     <ExternalLink className="contact-form__email-link" href="mailto:mail@mail.com">
                         <span>mail@mail.com</span>
