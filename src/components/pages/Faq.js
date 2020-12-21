@@ -43,7 +43,7 @@ function Faq() {
                             <p>Babybel fondue stilton. Cheesy grin cheese slices chalk and cheese boursin mascarpone roquefort dolcelatte blue castello. Airedale say cheese camembert de normandie babybel boursin danish fontina babybel who moved my cheese. Queso say cheese.</p>
                         </Accordion>
                     </div>
-                    <h2 className="heading-secondary">Feel free to contact us</h2>
+                    <h1 className="heading-primary">Feel free to contact us</h1>
                     <ContactForm/>
                 </div>
             </div>

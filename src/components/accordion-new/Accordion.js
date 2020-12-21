@@ -13,20 +13,15 @@ const Accordion = props => {
         setActive(!active)
     }
 
-    // const titleStyle = {
-    //     fontWeight: 600,
-    //     fontSize: '14px'
-    // }
-
     return (
         <div className="accordion-section">
-            <button className="accordion pointer" onClick={toggleActive}>
+            <button className={active ? "accordion accordion--active pointer" : "accordion pointer"} onClick={toggleActive}>
                 <p className="accordion__title">{props.title}</p>
-                <Chevron className={active ? 'accordion-icon rotate' : 'accordion-icon'} width={10} fill={"#777"}/>
+                <Chevron className={active ? "accordion__icon accordion__icon--rotate" : "accordion__icon"} width={10} fill={"#777"}/>
             </button>
             <div
                 ref={contentRef}
-                className="accordion-content"
+                className="accordion__content"
             >
                 <div className="accordion__text">
                     {props.children}
