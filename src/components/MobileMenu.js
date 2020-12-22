@@ -45,7 +45,17 @@ const Ul = styled.ul`
 `;
 
 const MobileMenu = ({ openMobileMenu, setOpenMobileMenu }) => {
+    const token = localStorage.getItem('token');
     const user = localStorage.getItem('user');
+
+    const logOut = () => {
+        // (token) ? do : do
+        if (token || user) {
+            // localStorage.removeItem('token');
+            localStorage.removeItem('user');
+        }
+        setOpenMobileMenu(!openMobileMenu);
+    }
 
     return (
         <Ul openMobileMenu={openMobileMenu}>
@@ -76,7 +86,7 @@ const MobileMenu = ({ openMobileMenu, setOpenMobileMenu }) => {
                 <li>Help</li>
             </Link>
             {user ? (
-                <Link onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
+                <Link onClick={() => logOut()} to="/">
                     <li>Log out</li>
                 </Link>
             ) : (

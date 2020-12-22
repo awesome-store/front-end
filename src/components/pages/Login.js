@@ -38,7 +38,9 @@ function Login(props) {
                 localStorage.setItem('token', res.data.token);
                 localStorage.setItem('user', res.data.message);
                 console.log('token =>>>', localStorage.getItem('token'));
-                props.history.push('/account');
+                if (localStorage.getItem('token')) {
+                    props.history.push('/account');
+                }
             })
             .catch(err => console.log(err));
     }
