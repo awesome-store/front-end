@@ -45,7 +45,8 @@
   --color-gray: #879095;
   --color-dark-gray: #353B3E;
   --color-light-gray: #CFD7DC;
-  --color-gray-stroke: #979797; }
+  --color-gray-stroke: #979797;
+  --color-red: #ff0000; }
 
 /* selecting each and every element on the page and applying reset to it */
 *,
@@ -1459,6 +1460,10 @@ a {
     column-gap: 1rem;
     align-items: center;
     margin-bottom: 2rem; }
+  .login__missing-credentials {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--color-red); }
 
 .product-page__breadcrumbs-container {
   margin-top: 5rem; }

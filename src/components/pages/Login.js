@@ -11,6 +11,8 @@ function Login(props) {
         password: ''
     });
 
+    const [errorMessage, setErrorMessage] = useState('')
+
     const componentClicked = () => {
         console.log("clicked");
     }
@@ -42,7 +44,10 @@ function Login(props) {
                     props.history.push('/account');
                 }
             })
-            .catch(err => console.log(err));
+            .catch(err => {
+                console.log(err);
+                setErrorMessage("Wrong credentials");
+            });
     }
 
     return (
@@ -72,14 +77,16 @@ function Login(props) {
                     <div className="login__horizontal-line"></div>
                 </div>
                 <input className="login__input input" type="text" name="email" placeholder="Email" value={credentials.email} onChange={handleChange}/>
+                <p className="login__missing-credentials">{errorMessage}</p>
                 <input className="login__input input" type="password" name="password" placeholder="Password" value={credentials.password} onChange={handleChange}/>
+                <p className="login__missing-credentials">{errorMessage}</p>
                 <Link to="/" className="login__restore-link link">
                     <p>Restore password</p>
                 </Link>
                 <div className="login__log-in-btn btn btn--yellow pointer" onClick={ login }>
                     <p>Log in</p>
                 </div>
-                {/* <p className="login__missing-credentials">Enter email and password</p> */}
+                <p className="login__missing-credentials">{errorMessage}</p>
             </div>
         </div>
     )

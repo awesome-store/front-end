@@ -70,4 +70,10 @@
         align-items: center;
         margin-bottom: 2rem;
     }
+
+    &__missing-credentials {
+        margin-top: 1rem;
+        text-align: center;
+        color: var(--color-red);
+    }
 }
