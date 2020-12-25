@@ -1,4 +1,5 @@
 import React from 'react';
+import Debug from './Debug';
 import { withFormik } from 'formik';
 
 function MyForm({
@@ -20,7 +21,7 @@ function MyForm({
                 touched={touched}
                 values={values}
             />
-            {/* <Debug values={values} errors={errors} touched={touched} /> */}
+            <Debug values={values} errors={errors} touched={touched} />
         </>
     )
 }
