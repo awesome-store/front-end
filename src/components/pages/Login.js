@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import fb from '../../img/icons/fb-white.svg';
-import { Link } from 'react-router-dom';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 import FormFormik from '../form/FormFormik';
@@ -85,14 +84,16 @@ function Login(props) {
         firstName: name => nameValidation("First Name", name),
         lastName: name => nameValidation("Last Name", name),
         email: emailValidation,
-        age: ageValidation
+        age: ageValidation,
+        password: passwordValidation
     }
 
     const initialValues = {
         age: 10,
         email: "no@email",
         firstName: "Mary",
-        lastName: "Jane"
+        lastName: "Jane",
+        password: "1"
     }
 
     const login = e => {
@@ -145,14 +146,12 @@ function Login(props) {
                 <p className="login__missing-credentials">{errorMessage}</p>
                 <input className="login__input input" type="password" name="password" placeholder="Password" value={credentials.password} onChange={handleChange}/>
                 <p className="login__missing-credentials">{errorMessage}</p>
-                <Link to="/" className="login__restore-link link">
-                    <p>Restore password</p>
-                </Link>
+                
                 <div className="login__log-in-btn btn btn--yellow pointer" onClick={ login }>
                     <p>Log in</p>
                 </div>
-                <p className="login__missing-credentials">{errorMessage}</p>
                 <FormFormik validate={validate} initialValues={initialValues}/>
+                <p className="login__missing-credentials">{errorMessage}</p>
             </div>
         </div>
     )

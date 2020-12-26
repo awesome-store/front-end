@@ -13,7 +13,7 @@ function MyForm({
 }) {
     return (
         <>
-            <h2>Form</h2>
+            {/* <h2>Form</h2>  */}
             <Form
                 handleBlur={handleBlur}
                 handleChange={handleChange}
