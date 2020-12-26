@@ -41,7 +41,7 @@
         grid-template-columns: 10fr 1fr 10fr;
         column-gap: 1rem;
         align-items: center;
-        margin: 2rem 0;
+        margin-top: 2rem;
         color: var(--color-gray);
     }
 
@@ -52,15 +52,22 @@
 
     &__restore-link {
         display: inline-block;
-        margin-bottom: 2rem;
+        margin: 2rem 0;
     }
 
     &__input {
-        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    &__errors {
+        margin-top: .7rem;
+        color: var(--color-red);
     }
 
     &__log-in-btn {
+        width: 100%;
         max-width: none;
+        border: none;
     }
 
     &__terms-container {

@@ -30,70 +30,42 @@ function Login(props) {
         // console.log(this.state.password);
     };
 
-    const nameValidation = (fieldName, fieldValue) => {
-        if (fieldName.trim() === "") {
-            return `$${fieldName} is required`
-        }
-        if (/[^a-zA-z -]/.test(fieldName)) {
-            return "Invalid characters";
-        }
-        if (fieldValue.trim().length < 3) {
-            return `${fieldName} needs to be at least three characters`;
-        }
-        return null;
-    }
-
     const emailValidation = email => {
-        if (
-            /^[a-zA-Z0-9.!#$%&’*+/=^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
-                email
-            )
-        ) {
-            return null;
-        }
+        // if (
+        //     /^[a-zA-Z0-9.!#$%&’*+/=^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
+        //         email
+        //     )
+        // ) {
+        //     return null;
+        // }
         if (email.trim() === "") {
             return "Email is required";
         }
-        return "Please enter a valid email";
-    }
-
-    const ageValidation = age => {
-        if (!age) {
-            return "Age is required";
-        }
-        if (age < 18) {
-            return "Age must be at least 18";
-        }
-        if (age > 99) {
-            return "Age must be under 99";
-        }
         return null;
+        // return "Please enter a valid email";
     }
 
     const passwordValidation = password => {
         if (!password) {
             return "Password is required";
         }
-        if (password.length < 8) {
-            return "Passord needs to have at least 8 characters";
+        if (/[^a-zA-z -]/.test(password)) {
+            return "Invalid characters";
+        }
+        if (password.length < 4) {
+            return "Passord needs to have at least 4 characters";
         }
         return null;
     }
 
     const validate = {
-        firstName: name => nameValidation("First Name", name),
-        lastName: name => nameValidation("Last Name", name),
         email: emailValidation,
-        age: ageValidation,
         password: passwordValidation
     }
 
     const initialValues = {
-        age: 10,
-        email: "no@email",
-        firstName: "Mary",
-        lastName: "Jane",
-        password: "1"
+        email: "test",
+        password: "test"
     }
 
     const login = e => {
@@ -142,14 +114,13 @@ function Login(props) {
                     <p>OR</p>
                     <div className="login__horizontal-line"></div>
                 </div>
-                <input className="login__input input" type="text" name="email" placeholder="Email" value={credentials.email} onChange={handleChange}/>
+                {/* <input className="login__input input" type="text" name="email" placeholder="Email" value={credentials.email} onChange={handleChange}/>
                 <p className="login__missing-credentials">{errorMessage}</p>
                 <input className="login__input input" type="password" name="password" placeholder="Password" value={credentials.password} onChange={handleChange}/>
-                <p className="login__missing-credentials">{errorMessage}</p>
-                
-                <div className="login__log-in-btn btn btn--yellow pointer" onClick={ login }>
+                <p className="login__missing-credentials">{errorMessage}</p> */}
+                {/* <div className="login__log-in-btn btn btn--yellow pointer" onClick={ login }>
                     <p>Log in</p>
-                </div>
+                </div> */}
                 <FormFormik validate={validate} initialValues={initialValues}/>
                 <p className="login__missing-credentials">{errorMessage}</p>
             </div>
