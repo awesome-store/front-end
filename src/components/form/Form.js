@@ -27,7 +27,7 @@ function Form({
                             className="form-control"
                             id="first-name-input"
                             placeholder="Enter first name"
-                            value={value.firstName}
+                            value={values.firstName}
                             onChange={handleChange}
                             onBlur={handleBlur}
                             name="firstName"
@@ -86,6 +86,22 @@ function Form({
                             required
                         />
                         {touched.age && errors.age}
+                    </label>
+                </div>
+                <div className="form-group">
+                    <label htmlFor="password">
+                        Password *
+                        <input
+                            type="password"
+                            className="form-control"
+                            id="password"
+                            placeholder="Enter password"
+                            value={values.password || ""}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            name="password"
+                            required
+                        />
                     </label>
                 </div>
                 <div className="form-group">

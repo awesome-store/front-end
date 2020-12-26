@@ -1,6 +1,7 @@
 import React from 'react';
-import Debug from './Debug';
 import { withFormik } from 'formik';
+import Form from './Form';
+import Debug from './Debug';
 
 function MyForm({
     values,
@@ -33,12 +34,12 @@ const FormFormik = withFormik({
         };
     },
 
-    validate: (values, { validate }) => 
+    validate: (values, { validate }) =>
         Object.keys(values).reduce((errors, field) => {
             const error = validate[field](values[field]);
             return {
                 ...errors,
-                ...(error && { [filed]: error })
+                ...(error && { [field]: error })
             };
         }, {}),
 

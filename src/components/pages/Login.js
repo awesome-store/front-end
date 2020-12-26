@@ -3,6 +3,7 @@ import fb from '../../img/icons/fb-white.svg';
 import { Link } from 'react-router-dom';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
+import FormFormik from '../form/FormFormik';
 
 function Login(props) {
     const [credentials, setCredentials] = useState({
@@ -29,6 +30,70 @@ function Login(props) {
         // console.log(this.state.email);
         // console.log(this.state.password);
     };
+
+    const nameValidation = (fieldName, fieldValue) => {
+        if (fieldName.trim() === "") {
+            return `$${fieldName} is required`
+        }
+        if (/[^a-zA-z -]/.test(fieldName)) {
+            return "Invalid characters";
+        }
+        if (fieldValue.trim().length < 3) {
+            return `${fieldName} needs to be at least three characters`;
+        }
+        return null;
+    }
+
+    const emailValidation = email => {
+        if (
+            /^[a-zA-Z0-9.!#$%&’*+/=^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
+                email
+            )
+        ) {
+            return null;
+        }
+        if (email.trim() === "") {
+            return "Email is required";
+        }
+        return "Please enter a valid email";
+    }
+
+    const ageValidation = age => {
+        if (!age) {
+            return "Age is required";
+        }
+        if (age < 18) {
+            return "Age must be at least 18";
+        }
+        if (age > 99) {
+            return "Age must be under 99";
+        }
+        return null;
+    }
+
+    const passwordValidation = password => {
+        if (!password) {
+            return "Password is required";
+        }
+        if (password.length < 8) {
+            return "Passord needs to have at least 8 characters";
+        }
+        return null;
+    }
+
+    const validate = {
+        firstName: name => nameValidation("First Name", name),
+        lastName: name => nameValidation("Last Name", name),
+        email: emailValidation,
+        age: ageValidation
+    }
+
+    const initialValues = {
+        age: 10,
+        email: "no@email",
+        firstName: "Mary",
+        lastName: "Jane"
+    }
 
     const login = e => {
         // alert('lol')
@@ -87,6 +152,7 @@ function Login(props) {
                     <p>Log in</p>
                 </div>
                 <p className="login__missing-credentials">{errorMessage}</p>
+                <FormFormik validate={validate} initialValues={initialValues}/>
             </div>
         </div>
     )
