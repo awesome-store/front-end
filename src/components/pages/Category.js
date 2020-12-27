@@ -8,7 +8,7 @@ import TutorialBanners from "../banners/TutorialBanners";
 function Category() {
     const category = "Paint";
     return (
-        <div>
+        <>
             <div className="wrapper">
                 <div className="wrapper__inside-container">
                     <div className="category__breadcrumbs-container breadcrumbs-container align-self-start">
@@ -25,7 +25,7 @@ function Category() {
             </div>
             <WeDeliverBanner/>
             <CategoriesLinksHome/>
-        </div>
+        </>
     )
 }
 
