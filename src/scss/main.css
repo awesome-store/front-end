@@ -742,8 +742,6 @@ a {
     .header__right {
       margin-left: 0; } }
 @media only screen and (max-width: 1024px) {
-  .nav-cart__text-number {
-    display: none; }
   .nav-cart__text-items {
     display: none; } }
 @media only screen and (max-width: 768px) {
