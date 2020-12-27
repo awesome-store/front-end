@@ -2,7 +2,6 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 import { withFormik } from 'formik';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
-// import { axiosWithAuth } from '../../';
 import Form from './Form';
 import Debug from './Debug';
 
@@ -65,6 +64,7 @@ const FormFormik = withFormik({
                 localStorage.setItem('user', res.data.message);
                 console.log('token =>>>', localStorage.getItem('token'));
                 if (localStorage.getItem('token')) {
+                    console.log("should redirect now");
                     <Redirect to="/account"/>
                     // props.history.push('/account');
                 }
