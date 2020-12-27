@@ -1,5 +1,8 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 import { withFormik } from 'formik';
+import { axiosWithAuth } from '../../utils/axiosWithAuth';
+// import { axiosWithAuth } from '../../';
 import Form from './Form';
 import Debug from './Debug';
 
@@ -46,6 +49,30 @@ const FormFormik = withFormik({
     handleSubmit: (values, { setSubmitting }) => {
         alert(JSON.stringify(values, null, 2));
         setSubmitting(false);
+        // alert('lol');
+        // e.preventDefault();
+        console.log(values);
+        let testValues = {
+            name: 'test',
+            email: 'test',
+            password: 'test'
+        }
+        axiosWithAuth(false)
+            .post('/login', testValues)
+            .then(res => {
+                console.log(res);
+                localStorage.setItem('token', res.data.token);
+                localStorage.setItem('user', res.data.message);
+                console.log('token =>>>', localStorage.getItem('token'));
+                if (localStorage.getItem('token')) {
+                    <Redirect to="/account"/>
+                    // props.history.push('/account');
+                }
+            })
+            .catch(err => {
+                console.log(err);
+                // setErrorMessage("Wrong credentials");
+            });
     },
 
     validateOnChange: false,
