@@ -22,6 +22,16 @@
 }
 
 .product-card {
+    color: var(--color-black);
+
+    &__link-wrapper {
+        color: var(--color-black);
+
+        &:active {
+            color: var(--color-black);
+        }
+    }
+
     &__img-container {
         width: 100%;
     }
@@ -33,6 +43,7 @@
 
     &__heading {
         margin-top: 1rem;
+        color: var(--color-black);
     }
 
     &__stars {
@@ -49,6 +60,7 @@
         font-size: 2rem;
         font-weight: bold;
         margin-right: .5rem;
+        color: var(--color-black);
     }
 
     &__price-unit {
@@ -63,6 +75,7 @@
         width: 100%;
         padding: 1rem 0;
         margin-top: 1rem;
+        color: var(--color-black);
         background-color: var(--color-secondary);
         box-shadow: 0 1px 2px rgba(0,0,0,0.15);
         transition: box-shadow .3s ease-in, background-color .3s ease-in-out;

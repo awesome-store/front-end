@@ -7,8 +7,33 @@ import paint from '../../img/paint.png';
 import paintInUse1 from '../../img/paint-in-use1.png';
 import paintInUse2 from '../../img/paint-in-use2.png';
 import paintInUse3 from '../../img/paint-in-use3.png';
+import { useDispatch } from 'react-redux';
+import { addtocart } from "../../redux/reducer";
 
-function Product() {
+function Product(props) {
+    const productData = {
+        image: paint,
+        productTitle: "Behr Premium Oak Hans Wegner",
+        price: "29.99",
+        unit: "gal",
+        rating: "4",
+        id: 10
+    }
+
+    const dispatch = useDispatch();
+
+    const addToCart = () => {
+        const item = {
+            image: productData.image,
+            productTitle: productData.productTitle,
+            price: productData.price,
+            unit: productData.unit,
+            rating: productData.rating,
+            id: productData.id
+        };
+        dispatch(addtocart(item));
+    }
+
     return (
         <div>
             <div className="wrapper">
@@ -23,10 +48,10 @@ function Product() {
                     <div className="product">
                         <div className="product__top">
                             <div>
-                                <p className="product__title">Behr Premium Oak Hans Wegner</p>
+                                <p className="product__title">{productData.productTitle}</p>
                                 <div className="product__price-container">
-                                    <p className="product__price">$29.99</p>
-                                    <p className="product__price-unit">/ gal</p>
+                                    <p className="product__price">${productData.price}</p>
+                                    <p className="product__price-unit">/ {productData.unit}</p>
                                 </div>
                                 <div className="product__quantity-info-container">
                                     <div>
@@ -41,7 +66,7 @@ function Product() {
                                         <p className="product__quantity-info-container-title">Surface use type</p>
                                         <p className="product__quantity-info-container-info">Drywall, Masonry, Plaster</p>
                                     </div>
-                                    <div>
+                                    {/* <div>
                                         <p className="product__quantity-info-container-title">Quantity</p>
                                         <div className="product__quantity-container">
                                             <p className="product__quantity-value">1</p>
@@ -50,14 +75,14 @@ function Product() {
                                                 <p className="product__quantity-buttons-container-buttons pointer">-</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="product__add-to-cart-btn btn pointer">
+                                    </div> */}
+                                    <div className="product__add-to-cart-btn btn pointer" onClick={() => addToCart()}>
                                         <p>Add to Cart</p>
                                     </div>
                                 </div>
                             </div>
                             <div>
-                                <img className="img-fluid" src={paint} alt="paint"/>
+                                <img className="img-fluid" src={productData.image} alt="paint"/>
                             </div>
                         </div>
                         <div className="product__product-info">
