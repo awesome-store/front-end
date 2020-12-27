@@ -102,7 +102,7 @@ const Header = () => {
     const logOut = () => {
         // (token) ? do : do
         if (token || user) {
-            // localStorage.removeItem('token');
+            localStorage.removeItem('token');
             localStorage.removeItem('user');
         }
     }

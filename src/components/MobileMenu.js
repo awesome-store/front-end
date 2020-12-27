@@ -51,7 +51,7 @@ const MobileMenu = ({ openMobileMenu, setOpenMobileMenu }) => {
     const logOut = () => {
         // (token) ? do : do
         if (token || user) {
-            // localStorage.removeItem('token');
+            localStorage.removeItem('token');
             localStorage.removeItem('user');
         }
         setOpenMobileMenu(!openMobileMenu);
