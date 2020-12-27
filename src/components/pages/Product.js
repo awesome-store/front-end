@@ -35,7 +35,7 @@ function Product(props) {
     }
 
     return (
-        <div>
+        <>
             <div className="wrapper">
                 <div className="wrapper__inside-container">
                     <div className="breadcrumbs-container product-page__breadcrumbs-container align-self-start">
@@ -102,7 +102,7 @@ function Product(props) {
             </div>
             <WeDeliverBanner/>
             <CategoriesLinksHome/>
-        </div>
+        </>
     )
 }
 
