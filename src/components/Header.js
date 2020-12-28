@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // import { useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import MobileMenu from './MobileMenu';
 import styled from 'styled-components';
 import logo from "../img/logo.png";
@@ -10,6 +10,8 @@ import search from "../img/icons/search.svg";
 import avatarDefault from "../img/icons/avatar-default.svg";
 import avatar from "../img/avatar.png";
 import caret from "../img/icons/caret-down.svg";
+import { connect } from 'react-redux';
+import { authSetToken } from '../redux/reducer';
 
 const MobileSearch = styled.div`
     position: absolute;
@@ -91,19 +93,19 @@ const Bubble = styled.div`
     }
 `
 
-const Header = () => {
+const Header = (props) => {
+    const { user, token } = props;
+    const dispatch = useDispatch();
+
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
     const [openMobileSearch, setOpenMobileSearch] = useState(false);
     const [openBubble, setOpenBubble] = useState(false);
     const cart = useSelector(state => state.cart);
-    const token = localStorage.getItem('token');
-    const user = localStorage.getItem('user');
 
     const logOut = () => {
         // (token) ? do : do
         if (token || user) {
-            localStorage.removeItem('token');
-            localStorage.removeItem('user');
+            dispatch(authSetToken(null, null));
         }
     }
 
@@ -212,4 +214,4 @@ const Header = () => {
     );
 }
 
-export default Header;
+export default connect(({user, token}) => ({user, token}))(Header);
