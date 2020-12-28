@@ -4,7 +4,7 @@ import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props
 
 import { Link } from 'react-router-dom';
 
-function Form({
+function LoginForm({
     errors,
     handleBlur,
     handleChange,
@@ -94,4 +94,4 @@ function Form({
     )
 }
 
-export default Form;
+export default LoginForm;

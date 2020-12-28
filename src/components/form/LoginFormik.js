@@ -3,7 +3,7 @@ import React from 'react';
 import { withFormik } from 'formik';
 import { connect } from 'react-redux'
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
-import Form from './Form';
+import LoginForm from './LoginForm';
 import Debug from './Debug';
 import { withRouter } from 'react-router';
 import { authSetToken } from '../../redux/reducer';
@@ -18,7 +18,7 @@ function MyForm({
 }) {
     return (
         <>
-            <Form
+            <LoginForm
                 handleBlur={handleBlur}
                 handleChange={handleChange}
                 handleSubmit={handleSubmit}

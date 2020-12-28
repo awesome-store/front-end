@@ -2,7 +2,7 @@ import React from 'react';
 // import fb from '../../img/icons/fb-white.svg';
 // import { axiosWithAuth } from '../../utils/axiosWithAuth';
 // import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
-import FormFormik from '../form/FormFormik';
+import LoginFormik from '../form/LoginFormik';
 
 function Login(props) {
     // const [credentials, setCredentials] = useState({
@@ -121,7 +121,7 @@ function Login(props) {
                 {/* <div className="login__log-in-btn btn btn--yellow pointer" onClick={ login }>
                     <p>Log in</p>
                 </div> */}
-                <FormFormik validate={validate} initialValues={initialValues}/>
+                <LoginFormik validate={validate} initialValues={initialValues}/>
                 {/* <p className="login__missing-credentials">{errorMessage}</p> */}
             </div>
         </div>
