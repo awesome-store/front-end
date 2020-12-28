@@ -1,4 +1,5 @@
 import React from 'react';
+// import { Link } from 'react-router-dom';
 import Product from "./Product";
 import drill from "../../img/drill.png";
 import paint from "../../img/paint.png";
@@ -7,6 +8,73 @@ import toolkit from "../../img/toolkit.png";
 import cross from "../../img/icons/cross.svg";
 
 function CategoryProducts(props) {
+    const products = [
+        {
+            image: drill,
+            productTitle: "Ryobi Lithium-Ion Cordless Drill + Charger",
+            price: "49.99",
+            unit: "piece",
+            rating: "4",
+            id: 1
+        },
+        {
+            image: paint,
+            productTitle: "Glidden Fur Interior Antique Matte Finish",
+            price: "29.99",
+            unit: "piece",
+            rating: "4",
+            id: 2
+        },
+        {
+            image: toolkit,
+            productTitle: "DeWalt 20v Cordless Super Drill Kit",
+            price: "29.99",
+            unit: "piece",
+            rating: "4",
+            id: 3
+        },
+        {
+            image: screwdrivers,
+            productTitle: "Stanley Screwdriver Set Philips 6pcs",
+            price: "29.99",
+            unit: "piece",
+            rating: "4",
+            id: 4
+        },
+        {
+            image: paint,
+            productTitle: "Glidden Fur Interior Antique Matte Finish",
+            price: "29.99",
+            unit: "piece",
+            rating: "4",
+            id: 2
+        },
+        {
+            image: screwdrivers,
+            productTitle: "Stanley Screwdriver Set Philips 6pcs",
+            price: "29.99",
+            unit: "piece",
+            rating: "4",
+            id: 4
+        },
+        {
+            image: toolkit,
+            productTitle: "DeWalt 20v Cordless Super Drill Kit",
+            price: "29.99",
+            unit: "piece",
+            rating: "4",
+            id: 3
+        },
+        {
+            image: drill,
+            productTitle: "Ryobi Lithium-Ion Cordless Drill + Charger",
+            price: "49.99",
+            unit: "piece",
+            rating: "4",
+            id: 1
+        }
+    ];
+
     return (
         <section className={"product-cards-container " + props.className}>
             <div className="category-products__header-container">
@@ -175,16 +243,23 @@ function CategoryProducts(props) {
                         </div>
                     </div>
                 </div>
-                <Product img={drill}/>
-                <Product img={paint}/>
-                <Product img={toolkit}/>
-                <Product img={screwdrivers}/>
-                <Product img={paint}/>
-                <Product img={screwdrivers}/>
-                <Product img={toolkit}/>
-                <Product img={drill}/>
-                <Product img={toolkit}/>
-                <Product img={drill}/>
+                {
+                    products.map((product, index) => {
+                        return (
+                            // <Link className="product-cart__link-wrapper" to="/product">
+                                <Product
+                                    key={index}
+                                    img={product.image}
+                                    productTitle={product.productTitle}
+                                    price={product.price}
+                                    unit={product.unit}
+                                    rating={product.rating}
+                                    id={product.id}
+                                />
+                            // </Link>
+                        )
+                    })
+                }
             </div>
             <div className="btn pointer justify-self-center">
                 <span>Show More</span>

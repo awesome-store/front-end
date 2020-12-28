@@ -83,13 +83,14 @@ function PopularProducts(props) {
                         return (
                             // <Link className="product-cart__link-wrapper" to="/product">
                                 <Product
-                                key={index}
-                                img={product.image}
-                                productTitle={product.productTitle}
-                                price={product.price}
-                                unit={product.unit}
-                                rating={product.rating}
-                                id={product.id}/>
+                                    key={index}
+                                    img={product.image}
+                                    productTitle={product.productTitle}
+                                    price={product.price}
+                                    unit={product.unit}
+                                    rating={product.rating}
+                                    id={product.id}
+                                />
                             // </Link>
                         )
                     })
