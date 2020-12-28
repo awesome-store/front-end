@@ -24,7 +24,6 @@ function Product (props) {
         dispatch(addtocart(item));
     }
 
-
     return (
         <div className="product-cards__product-card">
             <div className="product-card__img-container">
