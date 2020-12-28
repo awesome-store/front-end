@@ -8,7 +8,7 @@ export const axiosWithAuth = (auth = true) => {
     }
 
     return axios.create({
-        baseURL: 'http://aw-store.herokuapp.com/auth/',
+        baseURL: 'https://aw-store.herokuapp.com/auth/',
         headers,
     });
 };
