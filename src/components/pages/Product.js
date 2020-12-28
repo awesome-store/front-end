@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import YouMightNeedProducts from "../products/YouMightNeedProducts"
 import WeDeliverBanner from '../banners/WeDeliverBanner';
 import CategoriesLinksHome from '../CategoriesLinksHome';
@@ -10,7 +10,7 @@ import paintInUse3 from '../../img/paint-in-use3.png';
 import { useDispatch } from 'react-redux';
 import { addtocart } from "../../redux/reducer";
 
-function Product(props) {
+function Product() {
     const productData = {
         image: paint,
         productTitle: "Behr Premium Oak Hans Wegner",
@@ -22,6 +22,8 @@ function Product(props) {
 
     const dispatch = useDispatch();
 
+    const [productAdded, setProductAdded] = useState(false);
+
     const addToCart = () => {
         const item = {
             image: productData.image,
@@ -31,6 +33,8 @@ function Product(props) {
             rating: productData.rating,
             id: productData.id
         };
+        setTimeout(() => setProductAdded(false), 1000);
+        setProductAdded(true);
         dispatch(addtocart(item));
     }
 
@@ -77,7 +81,13 @@ function Product(props) {
                                         </div>
                                     </div> */}
                                     <div className="product__add-to-cart-btn btn pointer" onClick={() => addToCart()}>
-                                        <p>Add to Cart</p>
+                                        {
+                                            (!productAdded) ? (
+                                                <p>Add to Cart</p>
+                                            ) : (
+                                                <p>Added ✅</p>
+                                            )
+                                        }
                                     </div>
                                 </div>
                             </div>

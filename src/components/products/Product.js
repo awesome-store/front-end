@@ -46,9 +46,9 @@ function Product (props) {
             <div className="product-card__button pointer" onClick={() => addToCart()}>
                 {
                     (!productAdded) ? (
-                        <span>Add to Cart</span>
+                        <p>Add to Cart</p>
                     ) : (
-                        <span>Added ✅</span>
+                        <p>Added ✅</p>
                     )
                 }
             </div>
