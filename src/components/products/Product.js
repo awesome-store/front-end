@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import goldstar from "../../img/icons/gold-star.svg";
 import star from "../../img/icons/star.svg";
 import { useDispatch } from 'react-redux';
@@ -6,6 +6,8 @@ import { addtocart } from "../../redux/reducer";
 
 function Product (props) {
     const dispatch = useDispatch();
+
+    const [productAdded, setProductAdded] = useState(false);
 
     const addToCart = () => {
         const item = {
@@ -16,8 +18,12 @@ function Product (props) {
             rating: props.rating,
             id: props.id
         };
+
+        setTimeout(() => setProductAdded(false), 1000);
+        setProductAdded(true);
         dispatch(addtocart(item));
     }
+
 
     return (
         <div className="product-cards__product-card">
@@ -38,7 +44,13 @@ function Product (props) {
                 <span style={{display: "none"}}>{props.id}</span>
             </div>
             <div className="product-card__button pointer" onClick={() => addToCart()}>
-                <span>Add to Cart</span>
+                {
+                    (!productAdded) ? (
+                        <span>Add to Cart</span>
+                    ) : (
+                        <span>Added ✅</span>
+                    )
+                }
             </div>
         </div>
     )

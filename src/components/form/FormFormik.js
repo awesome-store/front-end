@@ -1,9 +1,12 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
+// import { Redirect } from 'react-router-dom';
 import { withFormik } from 'formik';
+import { connect } from 'react-redux'
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import Form from './Form';
 import Debug from './Debug';
+import { withRouter } from 'react-router';
+import { authSetToken } from '../../redux/reducer';
 
 function MyForm({
     values,
@@ -45,8 +48,9 @@ const FormFormik = withFormik({
             };
         }, {}),
 
-    handleSubmit: (values, { setSubmitting }) => {
-        alert(JSON.stringify(values, null, 2));
+    handleSubmit: (values, { setSubmitting, props: { history, dispatch, token } }) => {
+        // alert(JSON.stringify(values, null, 2));
+
         setSubmitting(false);
         // alert('lol');
         // e.preventDefault();
@@ -60,13 +64,13 @@ const FormFormik = withFormik({
             .post('/login', testValues)
             .then(res => {
                 console.log(res);
-                localStorage.setItem('token', res.data.token);
-                localStorage.setItem('user', res.data.message);
+                const token = res.data.token;
+                dispatch(authSetToken(token, res.data.message));
                 console.log('token =>>>', localStorage.getItem('token'));
-                if (localStorage.getItem('token')) {
+                if (token) {
                     console.log("should redirect now");
-                    <Redirect to="/account"/>
-                    // props.history.push('/account');
+                    // <Redirect to="/account"/>
+                    history.push('/account');
                 }
             })
             .catch(err => {
@@ -80,4 +84,4 @@ const FormFormik = withFormik({
     displayName: "FormFormik"
 })(MyForm);
 
-export default FormFormik;
+export default connect(({user, token}) => ({user, token}), dispatch => ({dispatch}))(withRouter(FormFormik));

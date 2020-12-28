@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import fb from '../../img/icons/fb-white.svg';
-import { axiosWithAuth } from '../../utils/axiosWithAuth';
-import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
+import React from 'react';
+// import fb from '../../img/icons/fb-white.svg';
+// import { axiosWithAuth } from '../../utils/axiosWithAuth';
+// import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 import FormFormik from '../form/FormFormik';
 
 function Login(props) {

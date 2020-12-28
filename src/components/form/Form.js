@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import fb from '../../img/icons/fb-white.svg';
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 
 import { Link } from 'react-router-dom';
 
 function Form({
-    props,
     errors,
     handleBlur,
     handleChange,
@@ -13,11 +12,11 @@ function Form({
     touched,
     values
 }) {
-    const [credentials, setCredentials] = useState({
-        name: 'test',
-        email: '',
-        password: ''
-    });
+    // const [credentials, setCredentials] = useState({
+    //     name: 'test',
+    //     email: '',
+    //     password: ''
+    // });
 
     // const [errorMessage, setErrorMessage] = useState('');
 
@@ -28,26 +27,6 @@ function Form({
     const responseFacebook = (response) => {
         console.log(response);
     }
-
-    // const login = e => {
-    //     // alert('lol')
-    //     e.preventDefault();
-    //     axiosWithAuth(false)
-    //         .post('/login', credentials)
-    //         .then(res => {
-    //             console.log(res);
-    //             localStorage.setItem('token', res.data.token);
-    //             localStorage.setItem('user', res.data.message);
-    //             console.log('token =>>>', localStorage.getItem('token'));
-    //             if (localStorage.getItem('token')) {
-    //                 props.history.push('/account');
-    //             }
-    //         })
-    //         .catch(err => {
-    //             console.log(err);
-    //             setErrorMessage("Wrong credentials");
-    //         });
-    // }
 
     return (
         <form onSubmit={handleSubmit} autoComplete="off">
