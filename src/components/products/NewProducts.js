@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Product from "./Product";
 import drill from "../../img/drill.png";
 import paint from "../../img/paint.png";
@@ -81,7 +81,7 @@ function NewProducts(props) {
             {
                 products.map((product, index) => {
                     return (
-                        <Link className="product-cart__link-wrapper" to="/product">
+                        // <Link className="product-cart__link-wrapper" to="/product">
                             <Product
                             key={index}
                             img={product.image}
@@ -90,7 +90,7 @@ function NewProducts(props) {
                             unit={product.unit}
                             rating={product.rating}
                             id={product.id}/>
-                        </Link>
+                        // </Link>
                     )
                 })
             }
