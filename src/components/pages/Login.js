@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // import fb from '../../img/icons/fb-white.svg';
 // import { axiosWithAuth } from '../../utils/axiosWithAuth';
 // import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 import FormFormik from '../form/FormFormik';
 
 function Login(props) {
+    useEffect(() => {
+        const token = localStorage.getItem('token');
+
+        if (token) {
+            props.history.push("/account");
+        }
+    })
     // const [credentials, setCredentials] = useState({
         // name: 'test',
         // email: '',

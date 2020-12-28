@@ -22,7 +22,7 @@ const Routes = ({token}) => {
     // }, [token, location.pathname])
     return (
         <>
-        {JSON.stringify({token})}
+        {/* {JSON.stringify({token})} */}
         <Switch>
             <Route exact path="/" component={ Home }/>
             <Route path="/store" component={ Store }/>
