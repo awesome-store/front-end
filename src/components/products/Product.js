@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link } from 'react-router-dom';
 import goldstar from "../../img/icons/gold-star.svg";
 import star from "../../img/icons/star.svg";
 import { useDispatch } from 'react-redux';
@@ -24,25 +25,37 @@ function Product (props) {
         dispatch(addtocart(item));
     }
 
-
     return (
-        <div className="product-cards__product-card">
-            <div className="product-card__img-container">
-                <img className="product-card__img" src={props.img} alt={props.img}/>
-            </div>
-            <div className="product-card__stars">
-                <img src={goldstar} alt="goldstar"/>
-                <img src={goldstar} alt="goldstar"/>
-                <img src={goldstar} alt="goldstar"/>
-                <img src={goldstar} alt="goldstar"/>
-                <img src={star} alt="star"/>
-            </div>
-            <span className="product-card__heading">{props.productTitle}</span>
-            <div className="product-card__price-container">
-                <span className="product-card__price">${props.price}</span>
-                <span className="product-card__price-unit">/ {props.unit}</span>
-                <span style={{display: "none"}}>{props.id}</span>
-            </div>
+        <>
+            <Link className="product-cart__link-wrapper" to="/product">
+                <div className="product-cards__product-card">
+                    <div className="product-card__img-container">
+                        <img className="product-card__img" src={props.img} alt={props.img}/>
+                    </div>
+                    <div className="product-card__stars">
+                        <img src={goldstar} alt="goldstar"/>
+                        <img src={goldstar} alt="goldstar"/>
+                        <img src={goldstar} alt="goldstar"/>
+                        <img src={goldstar} alt="goldstar"/>
+                        <img src={star} alt="star"/>
+                    </div>
+                    <span className="product-card__heading">{props.productTitle}</span>
+                    <div className="product-card__price-container">
+                        <span className="product-card__price">${props.price}</span>
+                        <span className="product-card__price-unit">/ {props.unit}</span>
+                        <span style={{display: "none"}}>{props.id}</span>
+                    </div>
+                    {/* <div className="product-card__button pointer" onClick={() => addToCart()}>
+                        {
+                            (!productAdded) ? (
+                                <p>Add to Cart</p>
+                            ) : (
+                                <p>Added ✅</p>
+                            )
+                        }
+                    </div> */}
+                </div>
+            </Link>
             <div className="product-card__button pointer" onClick={() => addToCart()}>
                 {
                     (!productAdded) ? (
@@ -52,7 +65,7 @@ function Product (props) {
                     )
                 }
             </div>
-        </div>
+        </>
     )
 }
 

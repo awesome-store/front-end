@@ -9,13 +9,14 @@
     grid-template-columns: repeat(4, 1fr);
     row-gap: 3rem;
     column-gap: 3rem;
+    position: relative;
 
     &__product-card {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 2rem;
+        padding: 2rem 2rem 8rem 2rem;
         background-color: var(--color-light-gray);
         font-size: 2rem;
     }
@@ -70,6 +71,8 @@
 
     &__button {
         display: flex;
+        position: relative;
+        // bottom: 0rem;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -107,12 +110,13 @@
 @media only screen and (max-width: 500px) {
     .product-cards {
         &__product-card {
-            padding: 1.1rem;
-            
+            padding: 1.1rem 1.1rem 4.1rem 1.1rem;
+            margin-bottom: -4rem;
+
             &__price {
                 font-size: 1.5rem;
             }
-    
+
             &__price-unit {
                 font-size: .9rem;
             }
