@@ -1,6 +1,8 @@
 // initial state
 let initialState = {
-  cart: []
+  cart: [],
+  token: null,
+  user: null,
 }
 
 // action type
@@ -8,6 +10,9 @@ const ADD_TO_CART = 'ADDTOCART';
 const REMOVE_FROM_CART = 'REMOVEFROMCART';
 const ADD_QUANTITY = 'ADDQUANTITY';
 const SUBSTRACT_QUANTITY = 'SUBSTRACTQUANTITY';
+
+const AUTH_INIT = 'AUTH_INIT';
+const AUTH_SET_TOKEN = 'AUTH_SET_TOKEN';
 
 // action creators
 export const addtocart = (cart) => {
@@ -35,6 +40,35 @@ export const substractquantity = (id) => {
   return {
     type: SUBSTRACT_QUANTITY,
     payload: id
+  }
+}
+
+export const authInit = () => {
+  return {
+    type: AUTH_INIT,
+    payload: {
+      token: localStorage.getItem('token'),
+      user: localStorage.getItem('user'),
+    }
+
+  }
+}
+
+export const authSetToken = (token, user) => {
+  if (token) {
+    localStorage.setItem('token', token);
+  } else  {
+    localStorage.removeItem('token');
+  }
+  if (user) {
+    localStorage.setItem('user', user);
+  } else {
+    localStorage.removeItem('user');
+  }
+
+  return {
+    type: AUTH_SET_TOKEN,
+    payload: { token, user },
   }
 }
 
@@ -82,6 +116,12 @@ const reducer = (state = initialState, action) => {
         })
       }
       return state;
+
+    case AUTH_INIT:
+    case AUTH_SET_TOKEN:
+      const { token, user } = payload;
+
+      return {...state, ...{ token, user } };
 
     default: return state;
   }
