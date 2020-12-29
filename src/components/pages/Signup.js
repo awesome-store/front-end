@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // import { Link } from 'react-router-dom';
 import SignupFormik from '../form/SignupFormik';
 
-function Signup() {
+function Signup(props) {
+    useEffect(() => {
+        const token = localStorage.getItem('token');
+        if (token) {
+            props.history.push('/account');
+        }
+    })
+
     const nameValidation = name => {
         if (name.trim() === "") {
             return "Name is required";
