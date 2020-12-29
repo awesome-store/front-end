@@ -7,14 +7,8 @@ import LoginFormik from '../form/LoginFormik';
 function Login(props) {
     useEffect(() => {
         const token = localStorage.getItem('token');
-<<<<<<< HEAD
-
-        if (token) {
-            props.history.push("/account");
-=======
         if (token) {
             props.history.push('/account');
->>>>>>> master
         }
     })
     // const [credentials, setCredentials] = useState({

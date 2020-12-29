@@ -54,16 +54,12 @@ const LoginFormik = withFormik({
         // alert('lol');
         // e.preventDefault();
         console.log(values);
-<<<<<<< HEAD:src/components/form/FormFormik.js
-        values = {...values, ...{['name']: 'test'}}
-=======
         // let testValues = {
         //     name: 'test',
         //     email: 'test',
         //     password: 'test'
         // }
         values = {...values, ...{["name"]: "test"}};
->>>>>>> master:src/components/form/LoginFormik.js
         axiosWithAuth(false)
             .post('/login', values)
             .then(res => {
