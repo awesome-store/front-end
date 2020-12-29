@@ -1,18 +1,22 @@
 import React from 'react';
 import fb from '../../img/icons/fb-white.svg';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 
 import { Link } from 'react-router-dom';
+import { authSetToken } from '../../redux/reducer';
 
-function LoginForm({
+const LoginForm = ({
+    // props,
     errors,
     handleBlur,
     handleChange,
     handleSubmit,
     touched,
     values
-}) {
+}) => {
+    const dispatch = useDispatch();
+    // const {dispatch, history} = props;
 
     const loginErrors = useSelector(state => state.loginErrorMessage);
 
@@ -30,6 +34,13 @@ function LoginForm({
 
     const responseFacebook = (response) => {
         console.log(response);
+        if (response.accessToken) {
+            const token = response.accessToken;
+            const userData = {...response, ...{["type"]: "facebook"}};
+            console.log("token ", token);
+            console.log("userData ", userData);
+            dispatch(authSetToken(token, userData));
+        }
     }
 
     return (

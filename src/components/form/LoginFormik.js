@@ -63,24 +63,24 @@ const LoginFormik = withFormik({
         axiosWithAuth(false)
             .post('/login', values)
             .then(res => {
-                console.log(res);
+                // console.log(res);
                 const token = res.data.token;
-                dispatch(authSetToken(token, res.data.message));
-                console.log('token =>>>', localStorage.getItem('token'));
+                const userData = {
+                    type: "website",
+                    message: res.data.message
+                }
+                dispatch(authSetToken(token, userData));
+                // console.log('token =>>>', localStorage.getItem('token'));
                 if (token) {
-                    console.log("should redirect now");
+                    // console.log("should redirect now");
                     history.push('/account');
                 }
             })
             .catch(err => {
-                console.log(err);
-                console.log(err);
+                // console.log(err);
                 if (err.response.status === 401) {
                     dispatch(setLoginErrorMessage("Wrong email or password"));
                 }
-                // dispatch(authSetToken("token", "res.data.message"));
-                // console.log(loginErrorMessage);
-                // setErrorMessage("Wrong credentials");
             });
     },
 

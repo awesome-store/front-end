@@ -711,7 +711,12 @@ a {
     height: 42px;
     width: 42px; }
   .user__avatar {
-    width: 100%; }
+    width: 100%;
+    height: auto; }
+  .user__dropdown {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; }
   .user__caret-container {
     margin-left: .5rem; }
 

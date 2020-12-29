@@ -137,7 +137,14 @@
 
     &__avatar {
         width: 100%;
+        height: auto;
         // height: 100%;
+    }
+
+    &__dropdown {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
     }
 
     &__caret-container {

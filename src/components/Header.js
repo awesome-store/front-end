@@ -157,7 +157,13 @@ const Header = (props) => {
                         <div className="user">
                             <Link to="/account" className="user__link">
                                 <div className="user__avatar-container">
-                                    <img src={avatar} alt="User account" className="user__dropdown"/>
+                                    {
+                                        (user.type === "website") ? (
+                                            <img src={avatar} alt="User account" className="user__dropdown"/>
+                                        ) : (
+                                            <img src={user.picture.data.url} alt="User account" className="user__dropdown"/>
+                                        )
+                                    }
                                 </div>
                             </Link>
                             <div className="user__caret-container pointer" onClick={() => setOpenBubble(!openBubble)}>
@@ -166,7 +172,13 @@ const Header = (props) => {
                             <Bubble openBubble={openBubble}>
                                 <p className="user-bubble-container__title arrow">Profile</p>
                                 <Link className="user-bubble-container__link" to="/account">
-                                    <p className="user-bubble-container__user-name pointer">{user}</p>
+                                    {
+                                        (user.type === "website") ? (
+                                            <p className="user-bubble-container__user-name pointer">{user.message}</p>
+                                        ) : (
+                                            <p className="user-bubble-container__user-name pointer">{user.name}</p>
+                                        )
+                                    }
                                 </Link>
                                 <Link to="/login">
                                     <div className="user-bubble-container__log-out-container pointer" onClick={() => logOut()}>
@@ -189,7 +201,7 @@ const Header = (props) => {
                             </Link>
                             <Link to="/login" className="user__link">
                                 <div className="user__avatar-container">
-                                    <img src={avatarDefault} alt="User account" className=" user__avatar user__dropdown"/>
+                                    <img src={avatarDefault} alt="User account" className="user__avatar user__dropdown"/>
                                 </div>
                             </Link>
                         </div>

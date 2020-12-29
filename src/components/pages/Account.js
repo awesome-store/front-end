@@ -27,8 +27,7 @@ function Account() {
                 if (err.response.status === 401) {
                     history.push("/login");
                 }
-                // console.log(err)
-                // console.log(err.response);
+                console.log(err)
             })
     }, [history]);
 
