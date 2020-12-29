@@ -20,7 +20,7 @@ function Account() {
 
         axios.get('https://aw-store.herokuapp.com/auth/users', options)
             .then(res => {
-                console.log(res.data);
+                // console.log(res.data);
                 // setUsers(res.data);
             })
             .catch(err => {

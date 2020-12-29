@@ -4,7 +4,7 @@ import { addquantity, substractquantity, removefromcart } from '../../redux/redu
 
 function Cart() {
     const cart = useSelector(state => state.cart);
-    console.log(cart);
+    // console.log(cart);
 
     const estimate = cart.reduce((total, current) => total + current.quantity * current.price, 0);
     const tax = estimate / 100 * 10.1;
