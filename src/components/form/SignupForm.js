@@ -42,7 +42,7 @@ function SignupForm({
             {
                 (touched.email && errors.email) ?
                 (<p className="login__errors">
-                    {touched.email && touched.email}
+                    {touched.email && errors.email}
                 </p>) : null
             }
             <input
@@ -58,7 +58,7 @@ function SignupForm({
             />
             {
                 (touched.password && errors.password) ?
-                (<p>
+                (<p className="login__errors">
                     {touched.password && errors.password}
                 </p>) : null
             }
