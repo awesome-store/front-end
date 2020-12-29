@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Redirect } from 'react-router-dom';
 import { withFormik } from 'formik';
 import { connect } from 'react-redux'
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
@@ -31,7 +30,7 @@ function MyForm({
     )
 }
 
-const FormFormik = withFormik({
+const LoginFormik = withFormik({
     mapPropsToValues: ({ initialValues }) => {
         return {
             ...initialValues
@@ -59,6 +58,7 @@ const FormFormik = withFormik({
             email: 'test',
             password: 'test'
         }
+        // values = {...values, {["name"]: "test"}};
         axiosWithAuth(false)
             .post('/login', testValues)
             .then(res => {
@@ -68,7 +68,6 @@ const FormFormik = withFormik({
                 console.log('token =>>>', localStorage.getItem('token'));
                 if (token) {
                     console.log("should redirect now");
-                    // <Redirect to="/account"/>
                     history.push('/account');
                 }
             })
@@ -80,7 +79,7 @@ const FormFormik = withFormik({
 
     validateOnChange: false,
 
-    displayName: "FormFormik"
+    displayName: "LoginFormik"
 })(MyForm);
 
-export default connect(({user, token}) => ({user, token}), dispatch => ({dispatch}))(withRouter(FormFormik));
+export default connect(({user, token}) => ({user, token}), dispatch => ({dispatch}))(withRouter(LoginFormik));

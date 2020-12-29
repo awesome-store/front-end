@@ -49,7 +49,7 @@ function Login(props) {
         if (!password) {
             return "Password is required";
         }
-        if (/[^a-zA-z -]/.test(password)) {
+        if (/[^a-zA-Z -]/.test(password)) {
             return "Invalid characters";
         }
         if (password.length < 4) {
