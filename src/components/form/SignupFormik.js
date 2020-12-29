@@ -5,9 +5,9 @@ import { connect } from 'react-redux';
 import SignupForm from './SignupForm';
 import Debug from './Debug';
 import { withRouter } from 'react-router';
-// import { authSetToken } from '../../redux/reducer';
+import { authSetToken } from '../../redux/reducer';
 
-function MyForm({
+function MyFormTwo({
     values,
     touched,
     errors,
@@ -25,7 +25,7 @@ function MyForm({
                 touched={touched}
                 values={values}
             />
-            <Debug values={values} errors={errors} touched={touched} />
+            {/* <Debug values={values} errors={errors} touched={touched} /> */}
         </>
     )
 }
@@ -54,7 +54,7 @@ const SignupFormik = withFormik({
         //     .then(res => {
         //         console.log(res);
         //         const token = res.data.token;
-        //         dispatch(authSetToken(token, res.data.message));
+        //          dispatch(authSetToken(token, res.data.message));
         //         console.log('token => ', localStorage.getItem('token'));
         //         if (token) {
         //             console.log("should redirect now");;
@@ -69,6 +69,6 @@ const SignupFormik = withFormik({
     validateOnChange: false,
 
     displayName: "SignupFormik"
-})(MyForm);
+})(MyFormTwo);
 
-export default connect(({user, token}) => ({user, token}), dispatch => ({dispatch})(withRouter(SignupFormik)));
+export default connect(({user, token}) => ({user, token}), dispatch => ({dispatch}))(withRouter(SignupFormik));

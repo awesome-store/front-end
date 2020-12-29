@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
-import SignupFormik from '../form/SignupForm';
+import SignupFormik from '../form/SignupFormik';
 
 function Signup() {
     const nameValidation = name => {
@@ -45,7 +45,7 @@ function Signup() {
     return (
         <div className="login-wrapper">
             <div className="login">
-                <h1 className="login__heading">New Account</h1>
+                <h1 className="login__heading login__heading--no-mb">New Account</h1>
                 {/* <input className="login__input input" placeholder="Name"/>
                 <input className="login__input input" placeholder="Email"/>
                 <input className="login__input input" placeholder="Password"/>
