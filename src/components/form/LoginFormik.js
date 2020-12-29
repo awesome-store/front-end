@@ -1,12 +1,12 @@
 import React from 'react';
-// import { Redirect } from 'react-router-dom';
 import { withFormik } from 'formik';
-import { connect } from 'react-redux'
+import {  connect } from 'react-redux'
+// import { useSelector, useDispatch } from 'react-redux';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
-import Form from './Form';
-import Debug from './Debug';
+import LoginForm from './LoginForm';
+// import Debug from './Debug';
 import { withRouter } from 'react-router';
-import { authSetToken } from '../../redux/reducer';
+import { authSetToken, setLoginErrorMessage } from '../../redux/reducer';
 
 function MyForm({
     values,
@@ -18,8 +18,7 @@ function MyForm({
 }) {
     return (
         <>
-            {/* <h2>Form</h2>  */}
-            <Form
+            <LoginForm
                 handleBlur={handleBlur}
                 handleChange={handleChange}
                 handleSubmit={handleSubmit}
@@ -27,12 +26,12 @@ function MyForm({
                 touched={touched}
                 values={values}
             />
-            <Debug values={values} errors={errors} touched={touched} />
+            {/* <Debug values={values} errors={errors} touched={touched} /> */}
         </>
     )
 }
 
-const FormFormik = withFormik({
+const LoginFormik = withFormik({
     mapPropsToValues: ({ initialValues }) => {
         return {
             ...initialValues
@@ -55,7 +54,16 @@ const FormFormik = withFormik({
         // alert('lol');
         // e.preventDefault();
         console.log(values);
+<<<<<<< HEAD:src/components/form/FormFormik.js
         values = {...values, ...{['name']: 'test'}}
+=======
+        // let testValues = {
+        //     name: 'test',
+        //     email: 'test',
+        //     password: 'test'
+        // }
+        values = {...values, ...{["name"]: "test"}};
+>>>>>>> master:src/components/form/LoginFormik.js
         axiosWithAuth(false)
             .post('/login', values)
             .then(res => {
@@ -65,19 +73,24 @@ const FormFormik = withFormik({
                 console.log('token =>>>', localStorage.getItem('token'));
                 if (token) {
                     console.log("should redirect now");
-                    // <Redirect to="/account"/>
                     history.push('/account');
                 }
             })
             .catch(err => {
                 console.log(err);
+                console.log(err);
+                if (err.response.status === 401) {
+                    dispatch(setLoginErrorMessage("Wrong email or password"));
+                }
+                // dispatch(authSetToken("token", "res.data.message"));
+                // console.log(loginErrorMessage);
                 // setErrorMessage("Wrong credentials");
             });
     },
 
     validateOnChange: false,
 
-    displayName: "FormFormik"
+    displayName: "LoginFormik"
 })(MyForm);
 
-export default connect(({user, token}) => ({user, token}), dispatch => ({dispatch}))(withRouter(FormFormik));
+export default connect(({user, token}) => ({user, token}), dispatch => ({dispatch}))(withRouter(LoginFormik));

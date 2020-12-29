@@ -2,14 +2,19 @@ import React, { useEffect } from 'react';
 // import fb from '../../img/icons/fb-white.svg';
 // import { axiosWithAuth } from '../../utils/axiosWithAuth';
 // import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
-import FormFormik from '../form/FormFormik';
+import LoginFormik from '../form/LoginFormik';
 
 function Login(props) {
     useEffect(() => {
         const token = localStorage.getItem('token');
+<<<<<<< HEAD
 
         if (token) {
             props.history.push("/account");
+=======
+        if (token) {
+            props.history.push('/account');
+>>>>>>> master
         }
     })
     // const [credentials, setCredentials] = useState({
@@ -56,7 +61,7 @@ function Login(props) {
         if (!password) {
             return "Password is required";
         }
-        if (/[^a-zA-z -]/.test(password)) {
+        if (/[^a-zA-Z -]/.test(password)) {
             return "Invalid characters";
         }
         if (password.length < 4) {
@@ -128,7 +133,7 @@ function Login(props) {
                 {/* <div className="login__log-in-btn btn btn--yellow pointer" onClick={ login }>
                     <p>Log in</p>
                 </div> */}
-                <FormFormik validate={validate} initialValues={initialValues}/>
+                <LoginFormik validate={validate} initialValues={initialValues}/>
                 {/* <p className="login__missing-credentials">{errorMessage}</p> */}
             </div>
         </div>

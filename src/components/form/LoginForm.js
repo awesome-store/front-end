@@ -1,10 +1,11 @@
 import React from 'react';
 import fb from '../../img/icons/fb-white.svg';
+import { useSelector } from 'react-redux';
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 
 import { Link } from 'react-router-dom';
 
-function Form({
+function LoginForm({
     errors,
     handleBlur,
     handleChange,
@@ -12,6 +13,9 @@ function Form({
     touched,
     values
 }) {
+
+    const loginErrors = useSelector(state => state.loginErrorMessage);
+
     // const [credentials, setCredentials] = useState({
     //     name: 'test',
     //     email: '',
@@ -89,9 +93,9 @@ function Form({
             <button type="submit" className="login__log-in-btn btn btn--yellow pointer">
                 Log In
             </button>
-            {/* <p className="login__missing-credentials">{errorMessage}</p> */}
+            <p className="login__missing-credentials">{loginErrors}</p>
         </form>
     )
 }
 
-export default Form;
+export default LoginForm;
