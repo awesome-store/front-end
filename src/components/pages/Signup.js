@@ -46,16 +46,6 @@ function Signup() {
         <div className="login-wrapper">
             <div className="login">
                 <h1 className="login__heading login__heading--no-mb">New Account</h1>
-                {/* <input className="login__input input" placeholder="Name"/>
-                <input className="login__input input" placeholder="Email"/>
-                <input className="login__input input" placeholder="Password"/>
-                <div className="login__terms-container">
-                    <input className="" type="checkbox"/>
-                    <p>I agree with <Link className="link" to="/">Terms & Conditions</Link></p>
-                </div>
-                <div className="login__log-in-btn btn pointer">
-                    <p>Sign up</p>
-                </div> */}
                 <SignupFormik validate={validate} initialValues={initialValues}/>
             </div>
         </div>

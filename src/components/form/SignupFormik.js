@@ -3,9 +3,9 @@ import { withFormik } from 'formik';
 import { connect } from 'react-redux';
 // import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import SignupForm from './SignupForm';
-import Debug from './Debug';
+// import Debug from './Debug';
 import { withRouter } from 'react-router';
-import { authSetToken } from '../../redux/reducer';
+// import { authSetToken } from '../../redux/reducer';
 
 function MyFormTwo({
     values,

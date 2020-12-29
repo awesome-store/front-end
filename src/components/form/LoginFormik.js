@@ -1,11 +1,12 @@
 import React from 'react';
 import { withFormik } from 'formik';
-import { connect } from 'react-redux'
+import {  connect } from 'react-redux'
+// import { useSelector, useDispatch } from 'react-redux';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import LoginForm from './LoginForm';
-import Debug from './Debug';
+// import Debug from './Debug';
 import { withRouter } from 'react-router';
-import { authSetToken } from '../../redux/reducer';
+import { authSetToken, setLoginErrorMessage } from '../../redux/reducer';
 
 function MyForm({
     values,
@@ -25,7 +26,7 @@ function MyForm({
                 touched={touched}
                 values={values}
             />
-            <Debug values={values} errors={errors} touched={touched} />
+            {/* <Debug values={values} errors={errors} touched={touched} /> */}
         </>
     )
 }
@@ -53,14 +54,14 @@ const LoginFormik = withFormik({
         // alert('lol');
         // e.preventDefault();
         console.log(values);
-        let testValues = {
-            name: 'test',
-            email: 'test',
-            password: 'test'
-        }
-        // values = {...values, {["name"]: "test"}};
+        // let testValues = {
+        //     name: 'test',
+        //     email: 'test',
+        //     password: 'test'
+        // }
+        values = {...values, ...{["name"]: "test"}};
         axiosWithAuth(false)
-            .post('/login', testValues)
+            .post('/login', values)
             .then(res => {
                 console.log(res);
                 const token = res.data.token;
@@ -73,6 +74,12 @@ const LoginFormik = withFormik({
             })
             .catch(err => {
                 console.log(err);
+                console.log(err);
+                if (err.response.status === 401) {
+                    dispatch(setLoginErrorMessage("Wrong email or password"));
+                }
+                // dispatch(authSetToken("token", "res.data.message"));
+                // console.log(loginErrorMessage);
                 // setErrorMessage("Wrong credentials");
             });
     },

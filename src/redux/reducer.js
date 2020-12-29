@@ -3,16 +3,19 @@ let initialState = {
   cart: [],
   token: null,
   user: null,
+  loginErrorMessage: null
 }
 
 // action type
-const ADD_TO_CART = 'ADDTOCART';
-const REMOVE_FROM_CART = 'REMOVEFROMCART';
-const ADD_QUANTITY = 'ADDQUANTITY';
-const SUBSTRACT_QUANTITY = 'SUBSTRACTQUANTITY';
+const ADD_TO_CART = 'ADD_TO_CART';
+const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
+const ADD_QUANTITY = 'ADD_QUANTITY';
+const SUBSTRACT_QUANTITY = 'SUBSTRACT_QUANTITY';
 
 const AUTH_INIT = 'AUTH_INIT';
 const AUTH_SET_TOKEN = 'AUTH_SET_TOKEN';
+
+const LOGIN_ERROR_MESSAGE = 'LOGIN_ERROR_MESSAGE';
 
 // action creators
 export const addtocart = (cart) => {
@@ -50,7 +53,6 @@ export const authInit = () => {
       token: localStorage.getItem('token'),
       user: localStorage.getItem('user'),
     }
-
   }
 }
 
@@ -72,9 +74,16 @@ export const authSetToken = (token, user) => {
   }
 }
 
+export const setLoginErrorMessage = (message) => {
+  return {
+    type: LOGIN_ERROR_MESSAGE,
+    payload: message
+  }
+}
+
 // reducer
 const reducer = (state = initialState, action) => {
-  const { type, payload } = action
+  const { type, payload } = action;
   switch (type) {
     case ADD_TO_CART:
       const product = state.cart.find(item => item.id === payload.id);
@@ -120,8 +129,14 @@ const reducer = (state = initialState, action) => {
     case AUTH_INIT:
     case AUTH_SET_TOKEN:
       const { token, user } = payload;
-
       return {...state, ...{ token, user } };
+
+    case LOGIN_ERROR_MESSAGE:
+      if (payload) {
+        state.loginErrorMessage = payload;
+        return state;
+      }
+      break;
 
     default: return state;
   }
