@@ -24,9 +24,9 @@ function Account() {
                 // setUsers(res.data);
             })
             .catch(err => {
-                if (err.response.status === 401) {
-                    history.push("/login");
-                }
+                // if (err.response.status === 401) {
+                //     history.push("/login");
+                // }
                 console.log(err)
             })
     }, [history]);

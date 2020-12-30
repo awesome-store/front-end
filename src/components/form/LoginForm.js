@@ -36,7 +36,9 @@ const LoginForm = ({
         console.log(response);
         if (response.accessToken) {
             const token = response.accessToken;
-            const userData = {...response, ...{["type"]: "facebook"}};
+            // const userData = {...response, ...{["type"]: "facebook"}};
+            const userData = response;
+            userData.type = "facebook";
             console.log("token ", token);
             console.log("userData ", userData);
             dispatch(authSetToken(token, userData));
