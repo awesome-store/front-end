@@ -1,8 +1,7 @@
 import React from 'react';
-// import sliderChair from '../img/banner.png';
 import { Link } from 'react-router-dom';
 
-function Slider() {
+function SliderBannerOne() {
     return (
         <div className="top-slider__top-slider-content-container">
             <div className="top-slider__image-container">
@@ -21,4 +20,4 @@ function Slider() {
     )
 }
 
-export default Slider;
+export default SliderBannerOne;

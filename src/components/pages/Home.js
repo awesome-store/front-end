@@ -1,6 +1,6 @@
 import React from "react";
 import SearchBar from "../SearchBar";
-import Slider from "../Slider";
+import Slider from "../slider/Slider";
 import TwoMillionItemsBanner from "../banners/TwoMillionItemsBanner";
 import PromotionalBanners from "../banners/PromotionalBanners";
 import PopularProducts from "../products/PopularProducts";
