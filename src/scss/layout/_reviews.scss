@@ -1,0 +1,50 @@
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+.review {
+    display: grid;
+    row-gap: 1rem;
+
+    &__top {
+        display: flex;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__heading {
+        font-size: 2rem;
+    }
+
+    &__review-author-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        font-size: 1.6rem;
+        line-height: normal;
+    }
+
+    &__review-container {
+        margin-top: 1rem;
+        font-size: 1.6rem;
+        line-height: normal;
+        color: var(--color-dark-gray);
+    }
+}
+
+// @media only screen and (max-width: 768px) {
+//     .reviews {
+//         grid-template-columns: 1fr;
+//     }
+// }

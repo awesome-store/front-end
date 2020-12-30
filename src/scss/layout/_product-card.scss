@@ -1,0 +1,127 @@
+.product-cards-container {
+    width: 100%;
+    display: grid;
+    row-gap: 5rem;
+}
+
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 3rem;
+    column-gap: 3rem;
+
+    &__product-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        background-color: var(--color-light-gray);
+        font-size: 2rem;
+    }
+}
+
+.product-card {
+    color: var(--color-black);
+
+    &__link-wrapper {
+        color: var(--color-black);
+
+        &:active {
+            color: var(--color-black);
+        }
+    }
+
+    &__img-container {
+        width: 100%;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__heading {
+        margin-top: 1rem;
+        color: var(--color-black);
+    }
+
+    &__stars {
+        margin-top: 1rem;
+    }
+
+    &__price-container {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__price {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-right: .5rem;
+        color: var(--color-black);
+    }
+
+    &__price-unit {
+        color: var(--color-gray);
+        font-size: 1.2rem;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 0;
+        margin-top: 1rem;
+        color: var(--color-black);
+        background-color: var(--color-secondary);
+        box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+        transition: box-shadow .3s ease-in, background-color .3s ease-in-out;
+
+        &:hover {
+            background-color: #f3c12a;
+            box-shadow: -1px 15px 23px -10px #C4C4C4;
+        }
+
+        &:active {
+            background-color: #f3c12a;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .product-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .product-cards {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .product-cards {
+        &__product-card {
+            padding: 1.1rem;
+            
+            &__price {
+                font-size: 1.5rem;
+            }
+    
+            &__price-unit {
+                font-size: .9rem;
+            }
+        }
+    }
+
+    .product-card {
+        &__button {
+            font-size: 1.6rem;
+        }
+    }
+}

@@ -2,7 +2,48 @@
     cursor: pointer;
 }
 
+.arrow {
+    cursor: default;
+}
+
+.justify-self-center {
+    justify-self: center;
+}
+
+.align-self-start {
+    align-self: flex-start;
+}
+
 .caret {
     width: 1rem;
     height: 1rem;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.search-input {
+    width: 50%;
+    max-width: 60rem;
+    border: none;
+    border-bottom: 1px solid var(--color-gray);
+    padding: 1rem 1.5rem;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.link {
+    color: var(--color-secondary)
 }

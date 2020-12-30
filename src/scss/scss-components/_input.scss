@@ -1,3 +1,18 @@
+.input-container {
+    // display: flex;
+    // align-items: center;
+    display: grid;
+    row-gap: 1rem;
+    // grid-template-columns: repeat(2, minmax(0, auto));
+    // column-gap: 2rem;
+}
+
+.label {
+    font-size: .9rem;
+    // width: 7rem;
+    // margin-bottom: 1rem;
+}
+
 .input {
     width: 100%;
     padding: 1.5rem 2.5rem;

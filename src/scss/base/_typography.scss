@@ -2,10 +2,36 @@
     font-weight: 800;
     font-size: 4rem;
     color: var(--color-black-header);
+
+    &--white {
+        color: var(--color-primary);
+    }
 }
 
 .heading-secondary {
     font-weight: 800;
     font-size: 3rem;
     color: var(--color-black-header);
+}
+
+.heading-tertiary {
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--color-black-header);
+}
+
+.text {
+    font-size: 1.6rem;
+}
+
+.list {
+    list-style-type: disc;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.mt-50 {
+    margin-top: 50px;
 }

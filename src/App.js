@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import routes from './routes';
+import Routes from './routes';
+import { useDispatch } from 'react-redux';
+import { authInit } from './redux/reducer';
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(authInit());
+  }, [dispatch]);
   return (
-    <div className="App">
+    <div className="app">
       <Header/>
-      { routes }
+        <Routes />
       <Footer/>
     </div>
   );
