@@ -8,13 +8,7 @@ function SliderBannerTwo() {
                 {/* <img className="top-slider__image" src={sliderChair} alt="toolkit"/> */}
             </div>
             <div className="top-slider__text-container">
-                <h1 className="top-slider__heading">Furniture<br/>week</h1>
-                <p className="top-slider__text">Up to 50% off<br/>select furniture</p>
-                <Link to="/store">
-                    <div className="btn btn--small-screen pointer">
-                        <span>Browse in Store</span>
-                    </div>
-                </Link>
+                <h1 className="top-slider__heading">Furniture<br/>month</h1>
             </div>
         </div>
     )
