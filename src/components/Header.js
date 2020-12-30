@@ -161,6 +161,7 @@ const Header = (props) => {
                                         (user.type === "website") ? (
                                             <img src={avatar} alt="User account" className="user__dropdown"/>
                                         ) : (
+                                            // <img src={avatar} alt="User account" className="user__dropdown"/>
                                             <img src={user.picture.data.url} alt="User account" className="user__dropdown"/>
                                         )
                                     }
