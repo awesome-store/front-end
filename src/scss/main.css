@@ -480,6 +480,8 @@ a {
     color: var(--color-dark-gray);
     margin-top: 2rem;
     font-size: 1.5rem; }
+  .contact-form__phone-number-link {
+    color: var(--color-secondary); }
   .contact-form__phone-number {
     display: inline; }
   .contact-form__email-link {

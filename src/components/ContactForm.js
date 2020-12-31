@@ -23,11 +23,11 @@ function ContactForm() {
                     <p className="contact-form__contact-person">DANA CHITANIS</p>
                     <p className="contact-form__contact-info">Customer Service</p>
                     <div className="contact-form__contact-info">
-                        <a href="tel:(800) 123-45-67">
+                        <a className="contact-form__phone-number-link" href="tel:(800) 123-45-67">
                             <p className="contact-form__phone-number">(800) 123-45-67</p>
                         </a>
                         <br/>
-                        <a href="tel:(800) 123-45-68">
+                        <a className="contact-form__phone-number-link" href="tel:(800) 123-45-68">
                             <p className="contact-form__phone-number">(800) 123-45-68</p>
                         </a>
                     </div>

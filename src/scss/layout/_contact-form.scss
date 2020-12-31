@@ -50,6 +50,10 @@
         font-size: 1.5rem;
     }
 
+    &__phone-number-link {
+        color: var(--color-secondary);
+    }
+
     &__phone-number {
         display: inline;
     }
@@ -69,7 +73,7 @@
 
 @media only screen and (max-width: 768px) {
     .contact-form {
-    
+
         &__content {
             grid-template-columns: 1fr;
             row-gap: 3rem;
