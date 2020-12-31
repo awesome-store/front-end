@@ -1,7 +1,6 @@
 import React from 'react';
 import { withFormik } from 'formik';
 import {  connect } from 'react-redux'
-// import { useSelector, useDispatch } from 'react-redux';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import LoginForm from './LoginForm';
 // import Debug from './Debug';
@@ -51,20 +50,13 @@ const LoginFormik = withFormik({
         // alert(JSON.stringify(values, null, 2));
 
         setSubmitting(false);
-        // alert('lol');
-        // e.preventDefault();
-        console.log(values);
-        // let testValues = {
-        //     name: 'test',
-        //     email: 'test',
-        //     password: 'test'
-        // }
         // values = {...values, ...{["name"]: "test"}};
         values.name = "test";
         axiosWithAuth(false)
             .post('/login', values)
             .then(res => {
-                dispatch(setLoginLoader(true));
+                // dispatch(setLoginLoader(true));
+
                 // console.log(res);
                 const token = res.data.token;
                 const userData = {
@@ -72,8 +64,9 @@ const LoginFormik = withFormik({
                     message: res.data.message
                 }
                 dispatch(authSetToken(token, userData));
-                dispatch(setLoginLoader(false));
-                // console.log('token =>>>', localStorage.getItem('token'));
+
+                // dispatch(setLoginLoader(false));
+
                 if (token) {
                     // console.log("should redirect now");
                     history.push('/account');

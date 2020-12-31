@@ -1,5 +1,3 @@
-import facebookLoginRenderProps from "react-facebook-login/dist/facebook-login-render-props";
-
 // initial state
 let initialState = {
   cart: [],

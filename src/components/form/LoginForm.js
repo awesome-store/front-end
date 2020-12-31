@@ -17,17 +17,8 @@ const LoginForm = ({
 }) => {
     const dispatch = useDispatch();
     const loginLoader = useSelector(state => state.loginLoader);
-    // const {dispatch, history} = props;
 
     const loginErrors = useSelector(state => state.loginErrorMessage);
-
-    // const [credentials, setCredentials] = useState({
-    //     name: 'test',
-    //     email: '',
-    //     password: ''
-    // });
-
-    // const [errorMessage, setErrorMessage] = useState('');
 
     const componentClicked = () => {
         console.log("clicked");
