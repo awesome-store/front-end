@@ -1,12 +1,12 @@
 import React from 'react';
 import { withFormik } from 'formik';
 import {  connect } from 'react-redux'
-// import { useSelector, useDispatch } from 'react-redux';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import LoginForm from './LoginForm';
 // import Debug from './Debug';
 import { withRouter } from 'react-router';
 import { authSetToken, setLoginErrorMessage } from '../../redux/reducer';
+// import { setLoginLoader } from '../../redux/reducer';
 
 function MyForm({
     values,
@@ -51,19 +51,13 @@ const LoginFormik = withFormik({
         // alert(JSON.stringify(values, null, 2));
 
         setSubmitting(false);
-        // alert('lol');
-        // e.preventDefault();
-        console.log(values);
-        // let testValues = {
-        //     name: 'test',
-        //     email: 'test',
-        //     password: 'test'
-        // }
         // values = {...values, ...{["name"]: "test"}};
         values.name = "test";
         axiosWithAuth(false)
             .post('/login', values)
             .then(res => {
+                // dispatch(setLoginLoader(true));
+
                 // console.log(res);
                 const token = res.data.token;
                 const userData = {
@@ -71,15 +65,21 @@ const LoginFormik = withFormik({
                     message: res.data.message
                 }
                 dispatch(authSetToken(token, userData));
-                // console.log('token =>>>', localStorage.getItem('token'));
+
+                // dispatch(setLoginLoader(false));
+
                 if (token) {
                     // console.log("should redirect now");
                     history.push('/account');
                 }
             })
             .catch(err => {
-                // console.log(err);
-                if (err.response.status === 401) {
+                console.log(err);
+                // Error codes
+                // 401 - wrong password
+                // 500 - user with such email doesn't exist
+                // Even if the user's "name" is wrong the user still can log in
+                if ((err.response.status === 401) || (err.response.status === 500)) {
                     dispatch(setLoginErrorMessage("Wrong email or password"));
                 }
             });

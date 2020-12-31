@@ -3,7 +3,8 @@ let initialState = {
   cart: [],
   token: null,
   user: null,
-  loginErrorMessage: null
+  loginErrorMessage: null,
+  loginLoader: false
 }
 
 // action type
@@ -16,6 +17,7 @@ const AUTH_INIT = 'AUTH_INIT';
 const AUTH_SET_TOKEN = 'AUTH_SET_TOKEN';
 
 const LOGIN_ERROR_MESSAGE = 'LOGIN_ERROR_MESSAGE';
+const LOGIN_LOADER = 'LOGIN_LOADER';
 
 // action creators
 export const addtocart = (cart) => {
@@ -81,6 +83,13 @@ export const setLoginErrorMessage = (message) => {
   }
 }
 
+export const setLoginLoader = (bool) => {
+  return {
+    type: LOGIN_LOADER,
+    payload: bool
+  }
+}
+
 // reducer
 const reducer = (state = initialState, action) => {
   const { type, payload } = action;
@@ -137,6 +146,14 @@ const reducer = (state = initialState, action) => {
         return state;
       }
       break;
+
+    case LOGIN_LOADER:
+      if (payload) {
+        state.loginLoader = false;
+      } else {
+        state.loginLoader = true;
+      }
+      return state;
 
     default: return state;
   }

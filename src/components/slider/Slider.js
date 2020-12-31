@@ -1,12 +1,22 @@
 import React from 'react';
 // import sliderChair from '../img/banner.png';
-import SliderBannerOne from './SliderBannerOne';
+import { Link } from 'react-router-dom';
 
 function Slider() {
     return (
-        <>
-            <SliderBannerOne/>
-        </>
+        <div className="top-slider__top-slider-content-container">
+            <div className="top-slider__image-container">
+            </div>
+            <div className="top-slider__text-container">
+                <h1 className="top-slider__heading">Furniture<br/>week</h1>
+                <p className="top-slider__text">Up to 50% off<br/>select furniture</p>
+                <Link to="/store">
+                    <div className="btn btn--small-screen pointer">
+                        <span>Browse in Store</span>
+                    </div>
+                </Link>
+            </div>
+        </div>
     )
 }
 

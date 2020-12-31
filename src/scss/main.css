@@ -489,6 +489,8 @@ a {
     color: var(--color-dark-gray);
     margin-top: 2rem;
     font-size: 1.5rem; }
+  .contact-form__phone-number-link {
+    color: var(--color-secondary); }
   .contact-form__phone-number {
     display: inline; }
   .contact-form__email-link {
@@ -790,6 +792,24 @@ a {
   .search__input {
     min-width: initial;
     width: 100%; } }
+<<<<<<< HEAD
+>>>>>>> dev
+=======
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(88, 88, 88, 0.9); }
+  .loader-container__image {
+    width: 300px;
+    height: auto; }
+
 >>>>>>> dev
 .navigation {
   width: 100%;
