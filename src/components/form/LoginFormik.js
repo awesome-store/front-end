@@ -6,7 +6,7 @@ import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import LoginForm from './LoginForm';
 // import Debug from './Debug';
 import { withRouter } from 'react-router';
-import { authSetToken, setLoginErrorMessage } from '../../redux/reducer';
+import { authSetToken, setLoginErrorMessage, setLoginLoader } from '../../redux/reducer';
 
 function MyForm({
     values,
@@ -64,6 +64,7 @@ const LoginFormik = withFormik({
         axiosWithAuth(false)
             .post('/login', values)
             .then(res => {
+                // dispatch(setLoginLoader(true));
                 // console.log(res);
                 const token = res.data.token;
                 const userData = {
@@ -71,6 +72,7 @@ const LoginFormik = withFormik({
                     message: res.data.message
                 }
                 dispatch(authSetToken(token, userData));
+                // dispatch(setLoginLoader(false));
                 // console.log('token =>>>', localStorage.getItem('token'));
                 if (token) {
                     // console.log("should redirect now");
@@ -78,7 +80,8 @@ const LoginFormik = withFormik({
                 }
             })
             .catch(err => {
-                // console.log(err);
+                console.log(err);
+                // console.log(err.response);
                 if (err.response.status === 401) {
                     dispatch(setLoginErrorMessage("Wrong email or password"));
                 }

@@ -1,13 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Loader from '../Loader';
+import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 import fb from '../../img/icons/fb-white.svg';
 import { useDispatch, useSelector } from 'react-redux';
-import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
-
-import { Link } from 'react-router-dom';
 import { authSetToken } from '../../redux/reducer';
 
 const LoginForm = ({
-    // props,
+    props,
     errors,
     handleBlur,
     handleChange,
@@ -16,6 +16,7 @@ const LoginForm = ({
     values
 }) => {
     const dispatch = useDispatch();
+    const loginLoader = useSelector(state => state.loginLoader);
     // const {dispatch, history} = props;
 
     const loginErrors = useSelector(state => state.loginErrorMessage);
@@ -107,6 +108,9 @@ const LoginForm = ({
                 Log In
             </button>
             <p className="login__missing-credentials">{loginErrors}</p>
+            {(loginLoader) ? (
+                <Loader/>
+            ) : null}
         </form>
     )
 }

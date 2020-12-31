@@ -3,9 +3,9 @@ import loaderGif from "../img/loader.gif";
 
 function Loader() {
     return (
-        <>
-            <img src={loaderGif}/>
-        </>
+        <div>
+            <img src={loaderGif} alt="loader animation"/>
+        </div>
     )
 }
 
