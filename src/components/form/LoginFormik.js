@@ -81,7 +81,10 @@ const LoginFormik = withFormik({
             })
             .catch(err => {
                 console.log(err);
-                // console.log(err.response);
+                // Error codes
+                // 401 - wrong password
+                // 500 - user with such email doesn't exist
+                // Even if the user's "name" is wrong the user still can log in
                 if ((err.response.status === 401) || (err.response.status === 500)) {
                     dispatch(setLoginErrorMessage("Wrong email or password"));
                 }
