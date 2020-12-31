@@ -3,7 +3,7 @@ import loaderGif from "../img/loader.gif";
 
 function Loader() {
     return (
-        <div>
+        <div className="loader-container">
             <img src={loaderGif} alt="loader animation"/>
         </div>
     )

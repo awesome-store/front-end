@@ -64,7 +64,7 @@ const LoginFormik = withFormik({
         axiosWithAuth(false)
             .post('/login', values)
             .then(res => {
-                // dispatch(setLoginLoader(true));
+                dispatch(setLoginLoader(true));
                 // console.log(res);
                 const token = res.data.token;
                 const userData = {
@@ -72,7 +72,7 @@ const LoginFormik = withFormik({
                     message: res.data.message
                 }
                 dispatch(authSetToken(token, userData));
-                // dispatch(setLoginLoader(false));
+                dispatch(setLoginLoader(false));
                 // console.log('token =>>>', localStorage.getItem('token'));
                 if (token) {
                     // console.log("should redirect now");
