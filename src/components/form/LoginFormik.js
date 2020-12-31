@@ -5,7 +5,8 @@ import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import LoginForm from './LoginForm';
 // import Debug from './Debug';
 import { withRouter } from 'react-router';
-import { authSetToken, setLoginErrorMessage, setLoginLoader } from '../../redux/reducer';
+import { authSetToken, setLoginErrorMessage } from '../../redux/reducer';
+// import { setLoginLoader } from '../../redux/reducer';
 
 function MyForm({
     values,
