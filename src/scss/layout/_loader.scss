@@ -9,4 +9,9 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(88, 88, 88, 0.9);
+
+    &__image {
+        width: 300px;
+        height: auto;
+    }
 }
