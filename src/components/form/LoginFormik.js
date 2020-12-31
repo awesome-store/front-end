@@ -82,7 +82,7 @@ const LoginFormik = withFormik({
             .catch(err => {
                 console.log(err);
                 // console.log(err.response);
-                if (err.response.status === 401) {
+                if ((err.response.status === 401) || (err.response.status === 500)) {
                     dispatch(setLoginErrorMessage("Wrong email or password"));
                 }
             });
