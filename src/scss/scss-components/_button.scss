@@ -1,0 +1,28 @@
+//wrapper for a button
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 24rem;
+    padding: 2rem 10rem;
+    background-color: var(--color-black);
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    white-space: nowrap;
+
+    &--small {
+        max-width: 16rem;
+    }
+
+    &--yellow {
+        background-color: var(--color-secondary);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .btn {
+        &--small-screen {
+            padding: 1rem 2rem;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.breadcrumbs-container {
+    display: flex;
+    // display: grid;
+    align-items: center;
+    grid-template-rows: 1fr;
+
+    &__item {
+        font-size: 1.6rem;
+    
+        &--parent {
+            color: var(--color-secondary);
+            text-decoration: underline;
+        }
+    }
+
+    &__arrow {
+        margin: 0 1rem;
+    }
+}
+

@@ -1,17 +1,40 @@
+@import "abstracts/common";
 @import "abstracts/functions";
 @import "abstracts/mixings";
 @import "abstracts/variables";
 
-@import "base/base";
+@import "base/reset";
 @import "base/typography";
 
+@import "scss-components/accordion";
+@import "scss-components/banners";
+@import "scss-components/breadcrumbs";
+@import "scss-components/button";
+@import "scss-components/cards";
+@import "scss-components/input";
+@import "scss-components/wrapper";
+
+@import "layout/app";
+@import "layout/contact-form";
 @import "layout/footer";
 @import "layout/grid";
 @import "layout/header";
+@import "layout/loader";
 @import "layout/nav";
-@import "layout/search";
-@import "layout/content";
+@import "layout/product";
+@import "layout/product-card";
+@import "layout/reviews";
+@import "layout/search-bar";
+@import "layout/top-slider";
 
 @import "pages/about";
+@import "pages/account";
+@import "pages/category";
+@import "pages/cart";
 @import "pages/faq";
 @import "pages/home";
+@import "pages/login";
+@import "pages/product";
+@import "pages/store";
+@import "pages/tutorials";
+@import "pages/policies";
