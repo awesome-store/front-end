@@ -11,7 +11,7 @@ import avatarDefault from "../img/icons/avatar-default.svg";
 import avatar from "../img/avatar.png";
 import caret from "../img/icons/caret-down.svg";
 import { connect } from 'react-redux';
-import { authSetToken } from '../redux/reducer';
+import { authSetToken, setLoginErrorMessage } from '../redux/reducer';
 
 const MobileSearch = styled.div`
     position: absolute;
@@ -101,11 +101,15 @@ const Header = (props) => {
     const [openMobileSearch, setOpenMobileSearch] = useState(false);
     const [openBubble, setOpenBubble] = useState(false);
     const cart = useSelector(state => state.cart);
+    const loginErrorMessage = useSelector(state => state.loginErrorMessage);
 
     const logOut = () => {
         // (token) ? do : do
         if (token || user) {
             dispatch(authSetToken(null, null));
+        }
+        if (loginErrorMessage) {
+            dispatch(setLoginErrorMessage(null));
         }
     }
 
