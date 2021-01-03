@@ -129,13 +129,14 @@
     &__links-container {
         display: flex;
     }
-S
+
     &__link-item {
         color: var(--color-gray);
         white-space: nowrap;
     }
 
     &__link-item-text {
+        color: var(--color-gray);
         text-decoration: underline;
         line-height: normal;
     }

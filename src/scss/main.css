@@ -581,11 +581,11 @@ a {
 
 .footer-legal-container__links-container {
   display: flex; }
-S
 .footer-legal-container__link-item {
   color: var(--color-gray);
   white-space: nowrap; }
 .footer-legal-container__link-item-text {
+  color: var(--color-gray);
   text-decoration: underline;
   line-height: normal; }
 .footer-legal-container__link-item-policy {
