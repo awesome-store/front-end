@@ -161,14 +161,14 @@ const Header = (props) => {
                         <div className="user">
                             <Link to="/account" className="user__link">
                                 <div className="user__avatar-container">
-                                    {
+                                    {/* {
                                         (user.type === "website") ? (
                                             <img src={avatar} alt="User account" className="user__dropdown"/>
                                         ) : (
-                                            // <img src={avatar} alt="User account" className="user__dropdown"/>
                                             <img src={user.picture.data.url} alt="User account" className="user__dropdown"/>
                                         )
-                                    }
+                                    } */}
+                                    <img src={avatar} alt="User account" className="user__dropdown"/>
                                 </div>
                             </Link>
                             <div className="user__caret-container pointer" onClick={() => setOpenBubble(!openBubble)}>
