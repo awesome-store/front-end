@@ -17,10 +17,10 @@ Front-end for Homebuzz store built with React, Redux, and Sass.
 * React
 * Redux
 * SCSS
-* [Font Awesome](https://fontawesome.com/)
-* <a href="https://iconscout.com/icons/keyboard-down-arrow" target="_blank">Keyboard down arrow Icon</a> by <a href="https://iconscout.com/contributors/google-inc">Google Inc.</a> on <a href="https://iconscout.com">Iconscout</a>
+* [Font Awesome Icons](https://fontawesome.com/)
+<!-- * <a href="https://iconscout.com/icons/keyboard-down-arrow" target="_blank">Keyboard down arrow Icon</a> by <a href="https://iconscout.com/contributors/google-inc">Google Inc.</a> on <a href="https://iconscout.com">Iconscout</a>
 * [Privacy Policy Template](https://termly.io/resources/templates/privacy-policy-template/)
-* [Cookie Policy Template](https://termly.io/resources/templates/cookie-policy-template/)
+* [Cookie Policy Template](https://termly.io/resources/templates/cookie-policy-template/) -->
 
 ## Installation and Setup Instructions
 
