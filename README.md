@@ -10,7 +10,7 @@ Front-end for Homebuzz store built with React, Redux, and Sass.
 
 <img src="https://user-images.githubusercontent.com/3116876/104702212-488da100-56db-11eb-9b81-d8939c22f46a.png" width="500" alt="homebuzz screenshot" >
 
-![homebuzz](https://user-images.githubusercontent.com/3116876/104702212-488da100-56db-11eb-9b81-d8939c22f46a.png)
+<!-- ![homebuzz](https://user-images.githubusercontent.com/3116876/104702212-488da100-56db-11eb-9b81-d8939c22f46a.png) -->
 
 ## Technologies Used
 
