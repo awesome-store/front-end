@@ -67,7 +67,7 @@ function Footer() {
                     </div>
                     <div></div>
                     <div className="footer-legal-container__copyright-container">
-                        <p className="footer-legal-container__copyright-text">© 2020 Copyright</p>
+                        <p className="footer-legal-container__copyright-text">© 2021 Copyright</p>
                     </div>
                 </div>
             </div>

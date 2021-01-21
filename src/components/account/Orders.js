@@ -20,20 +20,20 @@ function Orders() {
                     <div className="order-wizard__dates-container">
                         <div>
                             <p>Order confirmed</p>
-                            <p>Feb 22, 2020</p>
+                            <p>Feb 22, 2021</p>
                         </div>
                         <div className="text-center">
                             <p>Shipped with FedEx</p>
                             <a className="link" href="./account">
                                 <p>Tracking Number</p>
                             </a>
-                            <p>Feb 24, 2020</p>
+                            <p>Feb 24, 2021</p>
                         </div>
                         <div className="text-right">
                             <p>Est. Delivery</p>
-                            <p>Feb 27, 2020</p>
+                            <p>Feb 27, 2021</p>
                         </div>
-                    </div>  
+                    </div>
                     <div className="order__order-column-names">
                         <p>Product</p>
                         <p>Price</p>
