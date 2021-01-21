@@ -1010,6 +1010,7 @@ a {
 }
 
 .footer-legal-container__link-item {
+  margin-bottom: .5rem;
   color: var(--color-gray);
   white-space: nowrap;
 }
