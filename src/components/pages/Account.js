@@ -5,6 +5,9 @@ import Orders from '../account/Orders';
 import EditAccount from '../account/EditAccount';
 import ContactSupport from '../account/ContactSupport';
 import PrivatePage from '../account/PrivatePage';
+import TutorialBanners from "../banners/TutorialBanners";
+import WeDeliverBanner from "../banners/WeDeliverBanner";
+import CategoriesLinksHome from "../CategoriesLinksHome";
 
 function Account() {
     const [currentTab, setCurrentTab] = useState({ value: "Orders" });
@@ -89,6 +92,13 @@ function Account() {
                     </div>
                 </div>) : null
             }
+            <div className="wrapper bg-color-light-gray">
+                <div className="wrapper__inside-container">
+                    <TutorialBanners/>
+                </div>
+            </div>
+            <WeDeliverBanner/>
+            <CategoriesLinksHome/>
         </>
     )
 }
