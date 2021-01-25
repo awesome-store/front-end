@@ -119,7 +119,7 @@ function Cart() {
                     </div>
                 </div>
             </div>
-            <div className="wrapper">
+            <div className="wrapper bg-color-light-gray">
                 <div className="wrapper__inside-container">
                     <TutorialBanners/>
                 </div>

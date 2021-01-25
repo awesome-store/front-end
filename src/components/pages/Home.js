@@ -27,7 +27,7 @@ function Home() {
                     <PromotionalBanners className="home__promotional-banners"/>
                 </div>
             </div>
-            <div className="wrapper home__tutorial-banner-wrapper">
+            <div className="wrapper bg-color-light-gray">
                 <div className="wrapper__inside-container">
                     <TutorialBanners/>
                 </div>
