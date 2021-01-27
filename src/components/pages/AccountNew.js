@@ -10,11 +10,11 @@ import WeDeliverBanner from "../banners/WeDeliverBanner";
 import CategoriesLinksHome from "../CategoriesLinksHome";
 
 const  AccountNew = (props) => {
+    const { user, token } = props;
     const [currentTab, setCurrentTab] = useState({ value: "Orders" });
     const history = useHistory();
 
     useEffect(() => {
-        const token = localStorage.getItem('token');
         const options = {
             headers: {
                 authorization: token
