@@ -10,6 +10,7 @@ import search from "../img/icons/search.svg";
 import avatarDefault from "../img/icons/avatar-default.svg";
 import avatar from "../img/avatar.png";
 import caret from "../img/icons/caret-down.svg";
+import exit from "../img/icons/exit.svg";
 import { connect } from 'react-redux';
 import { authSetToken, setLoginErrorMessage } from '../redux/reducer';
 
@@ -171,9 +172,10 @@ const Header = (props) => {
                                     <img src={avatar} alt="User account" className="user__dropdown"/>
                                 </div>
                             </Link>
-                            <div className="user__caret-container pointer" onClick={() => setOpenBubble(!openBubble)}>
+                            {/* <div className="user__caret-container pointer" onClick={() => setOpenBubble(!openBubble)}>
                                 <img src={caret} alt="caret down"/>
-                            </div>
+                            </div> */}
+                            <img className="pointer" src={exit} alt="logout" onClick={() => logOut()}/>
                             <Bubble openBubble={openBubble}>
                                 <p className="user-bubble-container__title arrow">Profile</p>
                                 <Link className="user-bubble-container__link" to="/account">
