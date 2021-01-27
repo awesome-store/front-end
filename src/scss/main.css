@@ -1166,6 +1166,10 @@ a {
   padding-right: 14px;
 }
 
+.header__logout {
+  margin-left: 2rem;
+}
+
 .search {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 40%;

@@ -9,7 +9,7 @@ import cartImg from "../img/icons/cart.svg";
 import search from "../img/icons/search.svg";
 import avatarDefault from "../img/icons/avatar-default.svg";
 import avatar from "../img/avatar.png";
-import caret from "../img/icons/caret-down.svg";
+// import caret from "../img/icons/caret-down.svg";
 import exit from "../img/icons/exit.svg";
 import { connect } from 'react-redux';
 import { authSetToken, setLoginErrorMessage } from '../redux/reducer';
@@ -66,33 +66,33 @@ const StyledBurger = styled.div`
     }
 `;
 
-const Bubble = styled.div`
-    display: ${({ openBubble }) => openBubble ? 'flex' : 'none'};
-    flex-direction: column;
-    position: absolute;
-    z-index: 999999;
-    top: 6rem;
-    right: -10px;
-    background-color: var(--color-primary);
-    color: var(--color-black);
-    border-radius: 4px;
-    -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.07), 0 4px 8px 0 rgba(0,0,0,0.07);
-    box-shadow: 0 0 0 1px rgba(0,0,0,0.07), 0 4px 8px 0 rgba(0,0,0,0.07);
+// const Bubble = styled.div`
+//     display: ${({ openBubble }) => openBubble ? 'flex' : 'none'};
+//     flex-direction: column;
+//     position: absolute;
+//     z-index: 999999;
+//     top: 6rem;
+//     right: -10px;
+//     background-color: var(--color-primary);
+//     color: var(--color-black);
+//     border-radius: 4px;
+//     -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.07), 0 4px 8px 0 rgba(0,0,0,0.07);
+//     box-shadow: 0 0 0 1px rgba(0,0,0,0.07), 0 4px 8px 0 rgba(0,0,0,0.07);
 
-    &:before {
-        content: '';
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        top: -5px;
-        right: 17px;
-        background: #fff;
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-        -webkit-box-shadow: -1px -1px 0 0 rgba(0,0,0,0.07);
-        box-shadow: -1px -1px 0 0 rgba(0,0,0,0.07);
-    }
-`
+//     &:before {
+//         content: '';
+//         position: absolute;
+//         width: 10px;
+//         height: 10px;
+//         top: -5px;
+//         right: 17px;
+//         background: #fff;
+//         -webkit-transform: rotate(45deg);
+//         transform: rotate(45deg);
+//         -webkit-box-shadow: -1px -1px 0 0 rgba(0,0,0,0.07);
+//         box-shadow: -1px -1px 0 0 rgba(0,0,0,0.07);
+//     }
+// `
 
 const Header = (props) => {
     const { user, token } = props;
@@ -100,7 +100,7 @@ const Header = (props) => {
 
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
     const [openMobileSearch, setOpenMobileSearch] = useState(false);
-    const [openBubble, setOpenBubble] = useState(false);
+    // const [openBubble, setOpenBubble] = useState(false);
     const cart = useSelector(state => state.cart);
     const loginErrorMessage = useSelector(state => state.loginErrorMessage);
 
@@ -175,8 +175,8 @@ const Header = (props) => {
                             {/* <div className="user__caret-container pointer" onClick={() => setOpenBubble(!openBubble)}>
                                 <img src={caret} alt="caret down"/>
                             </div> */}
-                            <img className="pointer" src={exit} alt="logout" onClick={() => logOut()}/>
-                            <Bubble openBubble={openBubble}>
+                            <img className="header__logout pointer" src={exit} alt="logout" onClick={() => logOut()}/>
+                            {/* <Bubble openBubble={openBubble}>
                                 <p className="user-bubble-container__title arrow">Profile</p>
                                 <Link className="user-bubble-container__link" to="/account">
                                     {
@@ -192,7 +192,7 @@ const Header = (props) => {
                                         <p>Log out</p>
                                     </div>
                                 </Link>
-                            </Bubble>
+                            </Bubble> */}
                             {/* <div className="user__user-bubble-container" >
                                 <p className="user-bubble-container__title arrow">Profile</p>
                                 <p className="user-bubble-container__user-name pointer">{user}</p>
