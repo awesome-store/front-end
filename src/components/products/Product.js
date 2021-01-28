@@ -19,7 +19,7 @@ function Product (props) {
             id: props.id
         };
 
-        setTimeout(() => setProductAdded(false), 1000);
+        // setTimeout(() => setProductAdded(false), 1000);
         setProductAdded(true);
         dispatch(addtocart(item));
     }
