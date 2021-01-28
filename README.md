@@ -1,26 +1,29 @@
 # Homebuzz
 
+## Overview
+
 Front-end for Homebuzz store built with React, Redux, and Sass.
 
 ## Link
 
 [https://homebuzz.netlify.app/#/](https://homebuzz.netlify.app/#/)
 
-## Project Screenshot
-
-<img src="https://user-images.githubusercontent.com/3116876/104702212-488da100-56db-11eb-9b81-d8939c22f46a.png" width="500" alt="homebuzz screenshot" >
-
-<!-- ![homebuzz](https://user-images.githubusercontent.com/3116876/104702212-488da100-56db-11eb-9b81-d8939c22f46a.png) -->
-
 ## Technologies Used
 
 * React
 * Redux
 * SCSS
+* Styled components
 * [Font Awesome Icons](https://fontawesome.com/)
 <!-- * <a href="https://iconscout.com/icons/keyboard-down-arrow" target="_blank">Keyboard down arrow Icon</a> by <a href="https://iconscout.com/contributors/google-inc">Google Inc.</a> on <a href="https://iconscout.com">Iconscout</a>
 * [Privacy Policy Template](https://termly.io/resources/templates/privacy-policy-template/)
 * [Cookie Policy Template](https://termly.io/resources/templates/cookie-policy-template/) -->
+
+## Preview
+
+<img src="https://user-images.githubusercontent.com/3116876/104702212-488da100-56db-11eb-9b81-d8939c22f46a.png" width="500" alt="homebuzz screenshot" >
+
+<!-- ![homebuzz](https://user-images.githubusercontent.com/3116876/104702212-488da100-56db-11eb-9b81-d8939c22f46a.png) -->
 
 ## Installation and Setup Instructions
 
