@@ -47,7 +47,7 @@
 }
 
 .bg-color-light-gray {
-  background-color: var(--color-light-gray);
+  background-color: #f5f7f8;
 }
 
 .link {
@@ -2654,7 +2654,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  background-color: var(--color-light-gray);
+  background-color: #f5f7f8;
 }
 
 .home__categories-links-home-inner-container {
@@ -2672,7 +2672,7 @@ a {
 }
 
 .home__tutorial-banner-wrapper {
-  background-color: var(--color-light-gray);
+  background-color: #f5f7f8;
 }
 
 .home__popular-products {
