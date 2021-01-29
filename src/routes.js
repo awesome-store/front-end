@@ -12,6 +12,7 @@ import Signup from './components/pages/Signup';
 import NotFound from './components/pages/NotFound';
 import PrivateRoute from './components/PrivateRoute';
 import Account from './components/pages/Account';
+import AccountNew from './components/pages/AccountNew';
 import PrivacyPolicy from './components/pages/PrivacyPolicy';
 import CookiesPolicy from './components/pages/CookiesPolicy';
 import { connect } from 'react-redux';
@@ -32,6 +33,7 @@ const Routes = ({token}) => {
             <Route path="/faq" component={ Faq }/>
             <Route path="/cart" component={ Cart }/>
             <PrivateRoute exact path="/account" component={ Account }/>
+            <PrivateRoute exact path="/account-new" component={ AccountNew }/>
             <Route path="/login" component={ Login }/>
             <Route path="/signup" component={ Signup }/>
             <Route path="/privacy-policy" component={ PrivacyPolicy } />

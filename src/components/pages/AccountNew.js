@@ -64,7 +64,30 @@ const  AccountNew = (props) => {
                 (localStorage.getItem('token')) ?
                 (<div className="wrapper">
                     <div className="wrapper__inside-container">
-
+                        <div className="account">
+                            <div className="account__header-container">
+                                <h1 className="account__heading-primary heading-primary">My account</h1>
+                                <ul className="account__options-list">
+                                    <li className="account__options-list-item pointer" onClick={ () => switchTab("Orders" )}>Orders</li>
+                                    <li className="account__options-list-item pointer" onClick={ () => switchTab("Edit Account" )}>Edit Account</li>
+                                    <li className="account__options-list-item pointer" onClick={ () => switchTab("Contact Support" )}>Contact Support</li>
+                                    <li className="account__options-list-item pointer" onClick={ () => switchTab("Private Page" )}>Private Page</li>
+                                </ul>
+                            </div>
+                            <div className="account__content-container">
+                                    {
+                                        currentTab.value === "Orders"
+                                        ? <Orders/>
+                                        : currentTab.value === "Edit Account"
+                                        ? <EditAccount/>
+                                        : currentTab.value === "Contact Support"
+                                        ? <ContactSupport/>
+                                        : currentTab.value === "Private Page"
+                                        ? <PrivatePage/>
+                                        : null
+                                    }
+                                </div>
+                        </div>
                     </div>
                 </div>) : null
             }

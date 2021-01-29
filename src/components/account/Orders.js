@@ -4,17 +4,19 @@ import toolkit from "../../img/toolkit.png";
 function Orders() {
     return (
         <div className="account__tab-container">
-            <h2 className="account__heading-primary heading-primary">My Orders</h2>
+            {/* <h2 className="account__heading-primary heading-primary">My Orders</h2> */}
             <div className="account__orders-container">
                 <div className="account__order">
-                    <p className="order__status">Status: Shipped</p>
-                    <p className="order__order-number">ORDER NUMBER: 235129352</p>
+                    <div className="order__status-container">
+                        <p className="order__status">Status: Shipped</p>
+                        <p className="order__order-number">ORDER NUMBER: 235129352</p>
+                    </div>
                     <div className="order__order-wizard">
                         <div className="order-wizard__connecting-line"></div>
                         <div className="order-wizard__step-container">
-                            <p className="order-wizard__step-circle">&#10003;</p>
-                            <p className="order-wizard__step-circle">&#10003;</p>
-                            <p className="order-wizard__step-circle">3</p>
+                            <p className="order-wizard__step-circle"></p>
+                            <p className="order-wizard__step-circle"></p>
+                            <p className="order-wizard__step-circle"></p>
                         </div>
                     </div>
                     <div className="order-wizard__dates-container">
