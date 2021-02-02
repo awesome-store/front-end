@@ -2020,7 +2020,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid var(--color-light-gray);
   padding: 2rem;
 }
 
@@ -2038,7 +2037,6 @@ a {
 .account-sidebar__item {
   padding: 1.6rem 1rem;
   font-size: 1.6rem;
-  border: 1px solid var(--color-light-gray);
 }
 
 .order__status-container {
@@ -2078,7 +2076,6 @@ a {
   font-size: 1.2rem;
   padding: 2rem 1rem;
   color: var(--color-gray);
-  border-bottom: 1px solid var(--color-light-gray);
 }
 
 .order__products-list {
@@ -2096,7 +2093,6 @@ a {
   display: grid;
   -ms-grid-columns: 4fr 2fr 1fr;
       grid-template-columns: 4fr 2fr 1fr;
-  border-bottom: 1px solid var(--color-light-gray);
 }
 
 .order__total-container {
@@ -2108,14 +2104,6 @@ a {
           justify-content: flex-end;
   padding: 2rem 0;
   font-size: 1.6rem;
-}
-
-.order__total-container--tax {
-  border-bottom: 1px solid var(--color-light-gray);
-}
-
-.order__total-container--shipping {
-  border-bottom: 3px solid var(--color-light-gray);
 }
 
 .order__total-dollar-text {

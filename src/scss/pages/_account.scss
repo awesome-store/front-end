@@ -80,7 +80,7 @@
     &__order {
         display: flex;
         flex-direction: column;
-        border: 1px solid var(--color-light-gray);
+        // border: 1px solid var(--color-light-gray);
         padding: 2rem;
     }
 }
@@ -96,7 +96,7 @@
     &__item {
         padding: 1.6rem 1rem;
         font-size: 1.6rem;
-        border: 1px solid var(--color-light-gray);
+        // border: 1px solid var(--color-light-gray);
     }
 }
 
@@ -130,7 +130,7 @@
         font-size: 1.2rem;
         padding: 2rem 1rem;
         color: var(--color-gray);
-        border-bottom: 1px solid var(--color-light-gray);
+        // border-bottom: 1px solid var(--color-light-gray);
     }
 
     &__products-list {
@@ -141,7 +141,7 @@
     &__product-item {
         display: grid;
         grid-template-columns: 4fr 2fr 1fr;
-        border-bottom: 1px solid var(--color-light-gray);
+        // border-bottom: 1px solid var(--color-light-gray);
     }
 
     &__total-container {
@@ -150,13 +150,13 @@
         padding: 2rem 0;
         font-size: 1.6rem;
 
-        &--tax {
-            border-bottom: 1px solid var(--color-light-gray);
-        }
+        // &--tax {
+        //     border-bottom: 1px solid var(--color-light-gray);
+        // }
 
-        &--shipping {
-            border-bottom: 3px solid var(--color-light-gray);
-        }
+        // &--shipping {
+        //     border-bottom: 3px solid var(--color-light-gray);
+        // }
     }
 
     &__total-dollar-text {
