@@ -9,8 +9,9 @@ import TutorialBanners from "../banners/TutorialBanners";
 import WeDeliverBanner from "../banners/WeDeliverBanner";
 import CategoriesLinksHome from "../CategoriesLinksHome";
 
-const  AccountNew = (props) => {
-    const { user, token } = props;
+const  AccountNew = ({ user, token }) => {
+    // const { user } = props;
+    // const { token } = props;
     const [currentTab, setCurrentTab] = useState({ value: "Orders" });
     const history = useHistory();
 
@@ -32,7 +33,7 @@ const  AccountNew = (props) => {
                 // }
                 console.log(err)
             })
-    }, [history]);
+    }, [history, token]);
 
     const switchTab = (str) => {
         switch (str) {
